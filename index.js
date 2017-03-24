@@ -14,7 +14,8 @@ var map = new mapboxgl.Map({
   zoom: 5.5, // starting zoom
   hash: true,
   dragRotate: false,
-  keyboard: false
+  keyboard: false,
+  maxBounds: [-87, -9, -70, 6]
 }).on('load', done)
 
 d3.json('data.json', function (err, _data) {
@@ -31,50 +32,97 @@ d3.json('data.json', function (err, _data) {
 function done () {
   if (--pending > 0) return
 
-  var landTitleAreas = addIds(filterGeom(data['Land Title Area']))
-  var settlements = addIds(unfurlSettlements(filterGeom(data['Settlements']), dataIndex))
+  var landTitleAreas = addZooms(map, addIds(unfurl(filterGeom(data['Land Title Area']), dataIndex)))
+  var settlements = addIds(unfurl(filterGeom(data['Settlements']), dataIndex))
+  map.addSource('land-title-areas', {
+    type: 'geojson',
+    data: landTitleAreas
+  })
+  map.addSource('settlements', {
+    type: 'geojson',
+    data: settlements
+  })
   map.addLayer({
     id: 'land-title-areas',
     type: 'fill',
-    source: {
-      type: 'geojson',
-      data: landTitleAreas
-    },
+    source: 'land-title-areas',
     layout: {},
     paint: {
-      'fill-color': '#088',
-      'fill-opacity': 0.8
+      'fill-color': {
+        type: 'identity',
+        property: 'Color'
+      },
+      'fill-opacity': 0.6
     }
+  })
+  map.addLayer({
+    id: 'land-title-areas-highlight',
+    type: 'fill',
+    source: 'land-title-areas',
+    layout: {},
+    paint: {
+      'fill-color': {
+        type: 'identity',
+        property: 'Color'
+      },
+      'fill-opacity': 0.7
+    },
+    filter: ['==', '_id', '']
+  })
+  map.addLayer({
+    id: 'land-title-areas-highlight-lines',
+    type: 'line',
+    source: 'land-title-areas',
+    layout: {},
+    paint: {
+      'line-color': {
+        type: 'identity',
+        property: 'Color'
+      },
+      'line-width': 3
+    },
+    filter: ['==', '_id', '']
   })
   map.addLayer({
     id: 'settlements',
     type: 'circle',
-    source: {
-      type: 'geojson',
-      data: settlements
-    },
+    source: 'settlements',
     layout: {},
     paint: {},
     filter: ['in', 'Land Title Area']
   })
+  map.addLayer({
+    id: 'settlements-labels',
+    type: 'symbol',
+    source: 'settlements',
+    layout: {
+      'text-field': '{Settlement}',
+      'text-anchor': 'bottom-left'
+    },
+    paint: {},
+    filter: ['in', 'Land Title Area']
+  })
+
+  var nav = new mapboxgl.NavigationControl()
+  map.addControl(nav, 'top-left')
 
   map.fitBounds(geojsonExtent(landTitleAreas), {padding: 20})
 
   map.on('move', function () {
-    var bounds = getBounds(map, {padding: '20%'})
     var toShow = landTitleAreas.features
-      .filter(overlapsBounds(bounds))
+      .filter(f => map.getZoom() > f.properties._zoom)
       .map(function (f) {
         return f.properties['Land Title Area']
       })
     if (arrayEqual(inView, toShow)) return
     map.setFilter('settlements', ['in', 'Land Title Area'].concat(inView = toShow))
+    map.setFilter('settlements-labels', ['in', 'Land Title Area'].concat(inView = toShow))
   })
 
   // Create a popup, but don't add it to the map yet.
   var popup = new mapboxgl.Popup({
-    closeButton: false,
-    closeOnClick: true
+    closeButton: true,
+    closeOnClick: false
   })
 
   map.on('mousemove', function (e) {
@@ -83,37 +131,31 @@ function done () {
 
     if (!settlements.length && (!areas.length || inView.indexOf(areas[0].properties['Land Title Area']) > -1)) {
       map.getCanvas().style.cursor = ''
-      popup.remove()
+      map.setFilter('land-title-areas-highlight', ['==', '_id', ''])
+      map.setFilter('land-title-areas-highlight-lines', ['==', '_id', ''])
       return
     }
     // Change the cursor style as a UI indicator.
     map.getCanvas().style.cursor = 'pointer'
-
-    if (settlements.length) {
-      var feature = dataIndex[settlements[0].properties._id]
-      popup.setLngLat(feature.geometry.coordinates)
-        .setHTML(renderSettlementPopup(feature.properties))
-        .addTo(map)
-      return
-    }
-
-    // Populate the popup and set its coordinates
-    // based on the feature found.
-    popup.setLngLat(map.unproject(e.point))
-        .setHTML(renderAreaPopup(dataIndex[areas[0].properties._id].properties))
-        .addTo(map)
+    if (settlements.length) return
+    map.setFilter('land-title-areas-highlight', ['==', '_id', areas[0].properties._id])
+    map.setFilter('land-title-areas-highlight-lines', ['==', '_id', areas[0].properties._id])
   })
 
   map.on('click', function (e) {
-    var features = map.queryRenderedFeatures(e.point, { layers: ['land-title-areas'] })
+    var areas = map.queryRenderedFeatures(e.point, { layers: ['land-title-areas'] })
+    var settlements = map.queryRenderedFeatures(e.point, { layers: ['settlements'] })
+    var feature
 
-    if (!features.length || inView.indexOf(features[0].properties['Land Title Area']) > -1) {
-      return
+    if (settlements.length) {
+      feature = dataIndex[settlements[0].properties._id]
+      popup.setLngLat(feature.geometry.coordinates)
+        .setHTML(renderSettlementPopup(feature.properties))
+        .addTo(map)
+    } else if (areas.length && inView.indexOf(areas[0].properties['Land Title Area']) < 0) {
+      feature = dataIndex[areas[0].properties._id]
+      map.fitBounds(geojsonExtent(feature), {padding: 20})
     }
-
-    var feature = dataIndex[features[0].properties._id]
-
-    map.fitBounds(geojsonExtent(feature), {padding: 20})
   })
 }
 
@@ -125,45 +167,37 @@ function filterGeom (fc) {
   }
 }
 
-// Return features which overlap a bounding box i.e.
-// the bounding box is inside the feature
-function overlapsBounds (bounds) {
-  return function (feature) {
-    var bbox = geojsonExtent(feature)
-    return (
-      bbox[0] < bounds.getWest() &&
-      bbox[2] > bounds.getEast()
-    ) || (
-      bbox[1] < bounds.getSouth() &&
-      bbox[3] > bounds.getNorth()
-    )
-  }
+function getZoom (map, feature, options) {
+  var padding = (options && options.padding) || 0
+  var maxZoom = (options && options.maxZoom) || 20
+
+  var bounds = mapboxgl.LngLatBounds.convert(geojsonExtent(feature))
+
+  var tr = map.transform
+  var nw = tr.project(bounds.getNorthWest())
+  var se = tr.project(bounds.getSouthEast())
+  var size = se.sub(nw)
+  var scaleX = (tr.width - padding * 2) / size.x
+  var scaleY = (tr.height - padding * 2) / size.y
+
+  return Math.min(tr.scaleZoom(tr.scale * Math.min(scaleX, scaleY)), maxZoom)
 }
 
-// Like map.getBounds() but accepts padding
-function getBounds (map, options) {
-  var padX
-  var padY
-  var padding = padX = padY = (options && options.padding) || 0
-  if (typeof padding === 'string') {
-    if (/%$/.test(padding)) {
-      padX = map.transform.width * parseInt(padding) / 100
-      padY = map.transform.height * parseInt(padding) / 100
-    }
-  }
-  return new mapboxgl.LngLatBounds(
-    map.unproject(new mapboxgl.Point(padX, map.transform.height - padY)),
-    map.unproject(new mapboxgl.Point(map.transform.width - padX, padY)))
-}
-
-function unfurlSettlements (settlements, index) {
+function unfurl (fc, index) {
   return {
     type: 'FeatureCollection',
-    features: settlements.features.map(function (f) {
+    features: fc.features.map(function (f) {
       var props = f.properties
       var newProps = Object.assign({}, props)
-      newProps['Land Title Area'] = index[props['Land Title Area'][0]].properties['Land Title Area']
-      newProps['Nationality'] = index[props['Nationality'][0]].properties['Nationality']
+      for (var key in props) {
+        if (!Array.isArray(props[key])) continue
+        newProps[key] = props[key].map(function (d) {
+          if (index[d]) {
+            return index[d].properties[key]
+          } else return d
+        })
+        if (newProps[key].length === 1) newProps[key] = newProps[key][0]
+      }
       return Object.assign({}, f, {
         properties: newProps
       })
@@ -180,6 +214,18 @@ function arrayEqual (arr1, arr2) {
   return true
 }
 
+function addZooms (map, fc) {
+  return {
+    type: 'FeatureCollection',
+    features: fc.features.map(function (f) {
+      var zoom = getZoom(map, f, {padding: 60})
+      return Object.assign({}, f, {
+        properties: Object.assign({}, f.properties, {_zoom: zoom})
+      })
+    })
+  }
+}
+
 function addIds (fc) {
   return {
     type: 'FeatureCollection',
@@ -191,13 +237,20 @@ function addIds (fc) {
   }
 }
 
-function renderAreaPopup (props) {
-  var nationality = dataIndex[props.Nationality[0]].properties.Nationality
-  return '<h1>' + nationality + '</h1>' +
-  '<img style="width: 200px; height: 200px" src="' + props.Photo[0].thumbnails.large.url + '">'
-}
-
 function renderSettlementPopup (props) {
-  return '<h1>' + props.Settlement + '</h1>' +
-    '<p><b>Installations: </b>' + props['Installation Count'] + '</p>'
+  var nationality = dataIndex[props.Nationality[0]].properties.Nationality
+  var html = `<div style="max-width: 200px">
+    <h1>${props.Settlement}</h1>
+    <p>${props.Settlement} es un asentamiento ${nationality} de {num_familias}
+    familias ubicado por {ubicacion}.</p>
+    <p>Alianze Ceibo esta trabajando en este asentamiento con los programas de
+    agua (${props['Installation Count']} sistemas instaladas) que sirve
+    ${props['Families Sum']} familias</p>
+    </div>`
+  if (props.Stories) {
+    html += `<ul>${props.Stories.map(id => (
+      `<li><a href="${dataIndex[id].properties.Link}">${dataIndex[id].properties.Title}</a></li>`
+    ))}</ul>`
+  }
+  return html
 }
