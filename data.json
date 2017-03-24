@@ -1440,6 +1440,9 @@
           "Settlements": [
             "recuUbO75IrI3wH40",
             "recCvjMsbA7zmK1NJ"
+          ],
+          "Color": [
+            "rgb(120, 28, 13)"
           ]
         },
         "geometry": {
@@ -1563,6 +1566,9 @@
           "Settlements": [
             "recLDyAp8npXT3ltE",
             "recOfk668icH21OHL"
+          ],
+          "Color": [
+            "rgb(68, 155, 49)"
           ]
         },
         "geometry": {
@@ -3514,6 +3520,9 @@
             "recOCt7b8Zorp0HvH",
             "recVTzqeEtrRB5hxY",
             "recsjnFvQFpCimzNn"
+          ],
+          "Color": [
+            "rgb(252, 233, 98)"
           ]
         },
         "geometry": {
@@ -4268,6 +4277,9 @@
             "recGWaTjgMQr60apG",
             "recYoZ3YHvRYzbgIm",
             "rec5jyHt3zUgjovsn"
+          ],
+          "Color": [
+            "rgb(68, 155, 49)"
           ]
         },
         "geometry": {
@@ -4673,6 +4685,9 @@
           "Story": "Between February and March ClearWater technicians installed 30 rainwater catchment systems in the community of Dovuno, benefitting over 200 people.",
           "Settlements": [
             "recstYD75GGhtoKVK"
+          ],
+          "Color": [
+            "rgb(68, 155, 49)"
           ]
         },
         "geometry": null
@@ -4712,6 +4727,9 @@
           "Settlements": [
             "recNKTjM6lnghxEc1",
             "recCrmsLnstJNkDq7"
+          ],
+          "Color": [
+            "rgb(120, 28, 13)"
           ]
         },
         "geometry": null
@@ -4752,6 +4770,9 @@
             "rec5rDRBBWRBCoQFv",
             "recF3dMxXgNs1qPPb",
             "recMLdTFGSCuwXUeP"
+          ],
+          "Color": [
+            "rgb(47, 129, 247)"
           ]
         },
         "geometry": {
@@ -6096,6 +6117,9 @@
           ],
           "Settlements": [
             "recujzxpakMNxhjAW"
+          ],
+          "Color": [
+            "rgb(68, 155, 49)"
           ]
         },
         "geometry": {
@@ -7966,7 +7990,8 @@
           ],
           "Land Title Area": [
             "rec8DreEWMFsfAHu0"
-          ]
+          ],
+          "Color": "rgb(252, 233, 98)"
         },
         "geometry": null
       },
@@ -8000,7 +8025,8 @@
           "Land Title Area": [
             "rec0U7CSPgqymTpM8",
             "recVqjBi7ce1faOQB"
-          ]
+          ],
+          "Color": "rgb(120, 28, 13)"
         },
         "geometry": null
       },
@@ -8033,7 +8059,8 @@
           ],
           "Land Title Area": [
             "recWnN8W3BcI1HiMQ"
-          ]
+          ],
+          "Color": "rgb(47, 129, 247)"
         },
         "geometry": null
       },
@@ -8069,7 +8096,8 @@
             "rece1KWFVf49sKmul",
             "rec3KP6G6vkees6Hb",
             "recL9aTDudHowsGAJ"
-          ]
+          ],
+          "Color": "rgb(68, 155, 49)"
         },
         "geometry": null
       },
