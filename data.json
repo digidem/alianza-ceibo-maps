@@ -7892,6 +7892,9 @@
           ],
           "Settlements": [
             "recF7FpWt0xnDhZzA"
+          ],
+          "Color": [
+            "#088"
           ]
         },
         "geometry": {
@@ -8130,7 +8133,8 @@
           ],
           "Land Title Area": [
             "recq7JCzDcDUz82Gx"
-          ]
+          ],
+          "Color": "#088"
         },
         "geometry": null
       }
