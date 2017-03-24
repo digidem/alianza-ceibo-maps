@@ -481,7 +481,10 @@
           ],
           "Installation Count": 8,
           "Families Sum": 9,
-          "Users Sum": 46
+          "Users Sum": 46,
+          "Stories": [
+            "recyfzSvVYwYuP2xW"
+          ]
         },
         "geometry": {
           "type": "Point",
@@ -598,7 +601,11 @@
           ],
           "Installation Count": 10,
           "Families Sum": 10,
-          "Users Sum": 123
+          "Users Sum": 123,
+          "Stories": [
+            "recVo2vWGN2wEjMnO",
+            "recLCmdPyND821xHQ"
+          ]
         },
         "geometry": {
           "type": "Point",
@@ -657,7 +664,10 @@
           ],
           "Installation Count": 29,
           "Families Sum": 34,
-          "Users Sum": 213
+          "Users Sum": 213,
+          "Stories": [
+            "recm2wfWFGxLaQKKa"
+          ]
         },
         "geometry": {
           "type": "Point",
@@ -738,7 +748,11 @@
           ],
           "Installation Count": 51,
           "Families Sum": 3,
-          "Users Sum": 410
+          "Users Sum": 410,
+          "Stories": [
+            "reciXaH5Frx9Mhs1R",
+            "recTvITq4XclRcPZc"
+          ]
         },
         "geometry": {
           "type": "Point",
@@ -807,7 +821,10 @@
           ],
           "Installation Count": 39,
           "Families Sum": 42,
-          "Users Sum": 248
+          "Users Sum": 248,
+          "Stories": [
+            "reccgg6R9ww7jZ0yd"
+          ]
         },
         "geometry": {
           "type": "Point",
@@ -908,7 +925,10 @@
           ],
           "Installation Count": 37,
           "Families Sum": 39,
-          "Users Sum": 238
+          "Users Sum": 238,
+          "Stories": [
+            "rec3Pu9WlBQZtbI7U"
+          ]
         },
         "geometry": {
           "type": "Point",
@@ -1185,7 +1205,10 @@
           ],
           "Installation Count": 9,
           "Families Sum": 9,
-          "Users Sum": 59
+          "Users Sum": 59,
+          "Stories": [
+            "recl1bfk9LC5j4HBX"
+          ]
         },
         "geometry": {
           "type": "Point",
@@ -1275,7 +1298,10 @@
           ],
           "Installation Count": 19,
           "Families Sum": 19,
-          "Users Sum": 177
+          "Users Sum": 177,
+          "Stories": [
+            "receOMazWSqCjZnnk"
+          ]
         },
         "geometry": {
           "type": "Point",
@@ -1390,7 +1416,11 @@
           ],
           "Installation Count": 21,
           "Families Sum": 22,
-          "Users Sum": 152
+          "Users Sum": 152,
+          "Stories": [
+            "rec6YpDsuobq5BZFF",
+            "recl0OJmqrktVrvw2"
+          ]
         },
         "geometry": {
           "type": "Point",
