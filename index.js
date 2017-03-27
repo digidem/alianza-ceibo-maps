@@ -18,6 +18,22 @@ var map = new mapboxgl.Map({
   maxBounds: [-87, -9, -70, 6]
 }).on('load', done)
 
+var menuDiv = document.createElement('div')
+
+menuDiv.innerHTML = renderMenu([
+  'Sistemas de agua',
+  'Defensores y defensoras',
+  'Mapeo territorial',
+  'Monitoreo ambiental',
+  'Mujer y familia',
+  'Practicas propias',
+  'Sistemas solares'
+])
+
+menuDiv.className = 'dd_map_menu'
+
+document.getElementById('map').appendChild(menuDiv)
+
 d3.json('data.json', function (err, _data) {
   if (err) return console.error(err)
   data = _data
@@ -250,7 +266,19 @@ function renderSettlementPopup (props) {
   if (props.Stories) {
     html += `<ul>${props.Stories.map(id => (
       `<li><a href="${dataIndex[id].properties.Link}">${dataIndex[id].properties.Title}</a></li>`
-    ))}</ul>`
+    )).join('\n')}</ul>`
   }
   return html
+}
+
+function renderMenu (items) {
+  return `<form action="#">
+    ${items.map(item => (
+      `<div>
+        <input type="checkbox" value="${item}" id="${item.replace(/\s/g, '-')}" checked />
+        <label for="${item.replace(/\s/g, '-')}">${item}</label>
+      </div>`
+    )).join('\n')}
+  </form>
+  `
 }
