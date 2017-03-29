@@ -260,8 +260,8 @@ function renderSettlementPopup (props) {
     <p>${props.Settlement} es un asentamiento ${nationality} de {num_familias}
     familias ubicado por {ubicacion}.</p>
     <p>Alianze Ceibo esta trabajando en este asentamiento con los programas de
-    agua (${props['Installation Count']} sistemas instaladas) que sirve
-    ${props['Families Sum']} familias</p>
+    agua (${props['Water Installations']} sistemas instaladas) que sirve
+    ${props['Water Families']} familias</p>
     </div>`
   if (props.Stories) {
     html += `<ul>${props.Stories.map(id => (
