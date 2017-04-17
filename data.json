@@ -1,15 +1,15 @@
 {
-  "Stories": {
+  "Historias": {
     "type": "FeatureCollection",
     "features": [
       {
         "type": "Feature",
         "id": "rec3Pu9WlBQZtbI7U",
         "properties": {
-          "Title": "The Forest Philosopher",
-          "Excerpt": "Celestino Piaguaje is a special figure among the Secoya. His life mission has been to bridge Secoya tradition with modern Western thought, to integrate Secoya spiritual belief with the teachings of the Bible. ",
-          "Link": "http://www.giveclearwater.org/2013/08/celestino-piaguaje-forest-philosopher/",
-          "Photo": [
+          "Titulo": "The Forest Philosopher",
+          "Resumen": "Celestino Piaguaje is a special figure among the Secoya. His life mission has been to bridge Secoya tradition with modern Western thought, to integrate Secoya spiritual belief with the teachings of the Bible. ",
+          "Vinculo": "http://www.giveclearwater.org/2013/08/celestino-piaguaje-forest-philosopher/",
+          "Foto": [
             {
               "id": "attPx8IOU8xCa9C8P",
               "url": "https://dl.airtable.com/gKsuMtJoQHysETjWP20g_f4ace1d161e9c06354dd7e41081169b13bb8fa19.jpg",
@@ -30,20 +30,29 @@
               }
             }
           ],
-          "Installations": [
-            "recCCTpDe9knnAsqr"
-          ]
+          "Lon": -76.29567,
+          "Lat": -0.29208,
+          "Comunidad": [
+            "recMLdTFGSCuwXUeP"
+          ],
+          "Idioma": "EN"
         },
-        "geometry": null
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.29567,
+            -0.29208
+          ]
+        }
       },
       {
         "type": "Feature",
         "id": "rec6YpDsuobq5BZFF",
         "properties": {
-          "Title": "Meet Fabian Umenda",
-          "Excerpt": "As ClearWater coordinator for Sinangüe, Fabian was present for every stage in the installation of rain catchment systems in his community; helping to transport materials by canoe to houses along the river and informing the Nationalities Coordinator if materials or tools were missing. Thanks to Fabian’s hard work, the installation of 24 rainwater systems was a smooth process.",
-          "Link": "http://www.giveclearwater.org/2014/02/meet-fabian-umenda-cofan-coordinator-sinangue/",
-          "Photo": [
+          "Titulo": "Meet Fabian Umenda",
+          "Resumen": "As ClearWater coordinator for Sinangüe, Fabian was present for every stage in the installation of rain catchment systems in his community; helping to transport materials by canoe to houses along the river and informing the Nationalities Coordinator if materials or tools were missing. Thanks to Fabian’s hard work, the installation of 24 rainwater systems was a smooth process.",
+          "Vinculo": "http://www.giveclearwater.org/2014/02/meet-fabian-umenda-cofan-coordinator-sinangue/",
+          "Foto": [
             {
               "id": "att9SysRSKsxmknMi",
               "url": "https://dl.airtable.com/YCD0E6lgSoOJptP0FZc2_e13ebc8dad1032a696ab4df4866ce569a9a025bb.jpg",
@@ -64,20 +73,29 @@
               }
             }
           ],
-          "Installations": [
-            "recq9sEO6AFLKkVee"
-          ]
+          "Lon": -77.43051,
+          "Lat": 0.12366,
+          "Comunidad": [
+            "recujzxpakMNxhjAW"
+          ],
+          "Idioma": "EN"
         },
-        "geometry": null
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -77.43051,
+            0.12366
+          ]
+        }
       },
       {
         "type": "Feature",
         "id": "recLCmdPyND821xHQ",
         "properties": {
-          "Title": "Two Generations of Waorani",
-          "Excerpt": "Ocata and Moipa are father and son, members of the Waorani Nationality. In many ways they embody the contemporary story of the Waorani: a strong and proud hunting culture that controlled the largest territory of Ecuador’s Amazonian peoples.",
-          "Link": "http://www.giveclearwater.org/2014/01/ocata-moipa-nihua-generations-waorani/",
-          "Photo": [
+          "Titulo": "Two Generations of Waorani",
+          "Resumen": "Ocata and Moipa are father and son, members of the Waorani Nationality. In many ways they embody the contemporary story of the Waorani: a strong and proud hunting culture that controlled the largest territory of Ecuador’s Amazonian peoples.",
+          "Vinculo": "http://www.giveclearwater.org/2014/01/ocata-moipa-nihua-generations-waorani/",
+          "Foto": [
             {
               "id": "attZVPXr9Pfg8eTq8",
               "url": "https://dl.airtable.com/7yThDHqwSb2v7tvQlq3x_94ed09f4702e1ada37f39a845e95630568ed0371.jpg",
@@ -98,20 +116,29 @@
               }
             }
           ],
-          "Installations": [
-            "rec0uDBJ9XYh8aRfh"
-          ]
+          "Lon": -76.76534,
+          "Lat": -0.76935,
+          "Comunidad": [
+            "recCvjMsbA7zmK1NJ"
+          ],
+          "Idioma": "EN"
         },
-        "geometry": null
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.76534,
+            -0.76935
+          ]
+        }
       },
       {
         "type": "Feature",
         "id": "recTvITq4XclRcPZc",
         "properties": {
-          "Title": "30 Years in Rumipamba",
-          "Excerpt": "Unlike the majority of Rumipamba’s founding community members, Salome did not move to the area from one of the Kichwa communities near Tena. She and her husband José and their children moved from the highland city of Latacunga over 30 years ago.",
-          "Link": "http://www.giveclearwater.org/2013/10/salome-chuquitarco-30-years-rumipamba/",
-          "Photo": [
+          "Titulo": "30 Years in Rumipamba",
+          "Resumen": "Unlike the majority of Rumipamba’s founding community members, Salome did not move to the area from one of the Kichwa communities near Tena. She and her husband José and their children moved from the highland city of Latacunga over 30 years ago.",
+          "Vinculo": "http://www.giveclearwater.org/2013/10/salome-chuquitarco-30-years-rumipamba/",
+          "Foto": [
             {
               "id": "attW7uCbrde9IHkaB",
               "url": "https://dl.airtable.com/Xaa60pY9QUKkBVpXBqQF_ca6e17865ff2780b74d2477720b8e6ff6ee08329.jpg",
@@ -132,20 +159,29 @@
               }
             }
           ],
-          "Installations": [
-            "recGjyeK0hUjR6CFm"
-          ]
+          "Lon": -76.89038,
+          "Lat": -0.81232,
+          "Comunidad": [
+            "recF7FpWt0xnDhZzA"
+          ],
+          "Idioma": "EN"
         },
-        "geometry": null
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.89038,
+            -0.81232
+          ]
+        }
       },
       {
         "type": "Feature",
         "id": "recVo2vWGN2wEjMnO",
         "properties": {
-          "Title": "Visiting Yawepare",
-          "Excerpt": "Accompanying Mitch Anderson, former Amazon Watch corporate accountability director and the current international director for the ClearWater project, on a trip to Yawepare to install 13 rain catchment systems in the community, three of which would be installed in the neighboring community of Nampa Eno.",
-          "Link": "http://www.giveclearwater.org/2013/04/visiting-yawepare-clean-water-amazon/",
-          "Photo": [
+          "Titulo": "Visiting Yawepare",
+          "Resumen": "Accompanying Mitch Anderson, former Amazon Watch corporate accountability director and the current international director for the ClearWater project, on a trip to Yawepare to install 13 rain catchment systems in the community, three of which would be installed in the neighboring community of Nampa Eno.",
+          "Vinculo": "http://www.giveclearwater.org/2013/04/visiting-yawepare-clean-water-amazon/",
+          "Foto": [
             {
               "id": "attWwsXzpLIzXFaYJ",
               "url": "https://dl.airtable.com/J5dSKkGlSHy5UZbsWhOt_3a065a87002a076c266a1ae99c7dc0707678b4e6.jpg",
@@ -166,20 +202,29 @@
               }
             }
           ],
-          "Installations": [
-            "recR29LXkFbiH4oYn"
-          ]
+          "Lon": -76.7652,
+          "Lat": -0.76924,
+          "Comunidad": [
+            "recCvjMsbA7zmK1NJ"
+          ],
+          "Idioma": "EN"
         },
-        "geometry": null
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.7652,
+            -0.76924
+          ]
+        }
       },
       {
         "type": "Feature",
         "id": "reccgg6R9ww7jZ0yd",
         "properties": {
-          "Title": "Meet Gonzalo Criollo",
-          "Excerpt": "Gonzálo Criollo is the son of renowned Cofán shaman Rufino Criollo, and brother of Cofán musicians Silverio and Claus Criollo. Culture and arts run in his family, but Gonzalo has chosen another path: working with his hands. As a senior technician, Gonzálo brings tremendous support to ClearWater.",
-          "Link": "http://www.giveclearwater.org/2012/05/meet-community-technicians-3-gonzalo-criollo/",
-          "Photo": [
+          "Titulo": "Meet Gonzalo Criollo",
+          "Resumen": "Gonzálo Criollo is the son of renowned Cofán shaman Rufino Criollo, and brother of Cofán musicians Silverio and Claus Criollo. Culture and arts run in his family, but Gonzalo has chosen another path: working with his hands. As a senior technician, Gonzálo brings tremendous support to ClearWater.",
+          "Vinculo": "http://www.giveclearwater.org/2012/05/meet-community-technicians-3-gonzalo-criollo/",
+          "Foto": [
             {
               "id": "att4fjEBo5cXXQQu0",
               "url": "https://dl.airtable.com/U2Y8Ejw0Q3Cq4xUKcABI_c3a1ba1bc5f3ddd9aa89064c7b2a215a73cd12a6.jpg",
@@ -200,20 +245,29 @@
               }
             }
           ],
-          "Installations": [
-            "rec6XRXSyxq8roDXO"
-          ]
+          "Lon": -76.7032,
+          "Lat": 0.04655,
+          "Comunidad": [
+            "recGWaTjgMQr60apG"
+          ],
+          "Idioma": "EN"
         },
-        "geometry": null
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.7032,
+            0.04655
+          ]
+        }
       },
       {
         "type": "Feature",
         "id": "receOMazWSqCjZnnk",
         "properties": {
-          "Title": "Meet Celio Piaguaje",
-          "Excerpt": "Meet Celio Piaguaje, Siona technician from the community Sototsiayá. At age 40, Celio stands as one of the most experienced workers in the group. Dedicated to agriculture his entire life, Celio truly knows the meaning of hard work. Every day during construction, Celio takes a 45 minute ride on his dugout canoe to be a part of the ClearWater project.",
-          "Link": "http://www.giveclearwater.org/2012/05/meet-community-technicians-4-celio-piaguaje/",
-          "Photo": [
+          "Titulo": "Meet Celio Piaguaje",
+          "Resumen": "Meet Celio Piaguaje, Siona technician from the community Sototsiayá. At age 40, Celio stands as one of the most experienced workers in the group. Dedicated to agriculture his entire life, Celio truly knows the meaning of hard work. Every day during construction, Celio takes a 45 minute ride on his dugout canoe to be a part of the ClearWater project.",
+          "Vinculo": "http://www.giveclearwater.org/2012/05/meet-community-technicians-4-celio-piaguaje/",
+          "Foto": [
             {
               "id": "attcjRGUx27UoTEbe",
               "url": "https://dl.airtable.com/RlLXHGcHRNyP9LSNeh1P_59361e073ca6e04004c9a0dd76f1af1f204433ec.jpg",
@@ -234,20 +288,29 @@
               }
             }
           ],
-          "Installations": [
-            "recv7Q3Hjd8sdpEfs"
-          ]
+          "Lon": -76.43775,
+          "Lat": -0.24031,
+          "Comunidad": [
+            "recsjnFvQFpCimzNn"
+          ],
+          "Idioma": "EN"
         },
-        "geometry": null
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.43775,
+            -0.24031
+          ]
+        }
       },
       {
         "type": "Feature",
         "id": "reciXaH5Frx9Mhs1R",
         "properties": {
-          "Title": "Remediation in Rumipamba",
-          "Excerpt": "The Kichwa community of Rumipamba has been at the epicenter of Texaco’s contamination and the 20-year legal battle to bring the company to justice. In the meantime, community members are taking steps to improve the health situation in Rumipamba.",
-          "Link": "http://www.giveclearwater.org/2014/02/remediating_rumi/",
-          "Photo": [
+          "Titulo": "Remediation in Rumipamba",
+          "Resumen": "The Kichwa community of Rumipamba has been at the epicenter of Texaco’s contamination and the 20-year legal battle to bring the company to justice. In the meantime, community members are taking steps to improve the health situation in Rumipamba.",
+          "Vinculo": "http://www.giveclearwater.org/2014/02/remediating_rumi/",
+          "Foto": [
             {
               "id": "attrwfkLb7xqj3Wv0",
               "url": "https://dl.airtable.com/jpahFTqdRR2fBe3iOSma_67072799790941d2c0a153a900f35d866eba0b35.jpg",
@@ -268,20 +331,29 @@
               }
             }
           ],
-          "Installations": [
-            "rec9jx9j6N4subJXU"
-          ]
+          "Lon": -76.88737,
+          "Lat": -0.79563,
+          "Comunidad": [
+            "recF7FpWt0xnDhZzA"
+          ],
+          "Idioma": "EN"
         },
-        "geometry": null
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.88737,
+            -0.79563
+          ]
+        }
       },
       {
         "type": "Feature",
         "id": "recl0OJmqrktVrvw2",
         "properties": {
-          "Title": "Masters of the River",
-          "Excerpt": "The Cofán community of Sinangüe is located in the tropical foothills of the Andes Mountains. Just beyond, the landscape levels out into the seemingly infinite Western Amazon Basin. This is the ancestral homeland of the Cofán people. They have lived here in these mountain forests for hundreds, if not thousands of years.",
-          "Link": "http://www.giveclearwater.org/2013/09/cofan-sinague-masters-river/",
-          "Photo": [
+          "Titulo": "Masters of the River",
+          "Resumen": "The Cofán community of Sinangüe is located in the tropical foothills of the Andes Mountains. Just beyond, the landscape levels out into the seemingly infinite Western Amazon Basin. This is the ancestral homeland of the Cofán people. They have lived here in these mountain forests for hundreds, if not thousands of years.",
+          "Vinculo": "http://www.giveclearwater.org/2013/09/cofan-sinague-masters-river/",
+          "Foto": [
             {
               "id": "attBXOKLhptGyIon4",
               "url": "https://dl.airtable.com/lrSqB9AKTK6jpzKq10Wo_c9a354a4e3ec1f0f58c07b1a4d00562b55fcb34f.jpg",
@@ -302,20 +374,29 @@
               }
             }
           ],
-          "Installations": [
-            "recmfrLtW1FTDOFBZ"
-          ]
+          "Lon": -77.41278,
+          "Lat": 0.10422,
+          "Comunidad": [
+            "recujzxpakMNxhjAW"
+          ],
+          "Idioma": "EN"
         },
-        "geometry": null
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -77.41278,
+            0.10422
+          ]
+        }
       },
       {
         "type": "Feature",
         "id": "recl1bfk9LC5j4HBX",
         "properties": {
-          "Title": "Meet Hugo Payaguaje",
-          "Excerpt": "From the community of Aboquehuira, Hugo stays busy working for the betterment of his people. In addition to being ClearWater coordinator for the Siona nationality, he is president of the Siona federation, a school teacher, and is pursuing a degree from Cuenca University through its distance learning program.",
-          "Link": "http://www.giveclearwater.org/2014/01/meet-hugo-payaguaje-clearwater-coordinator-siona-nationality/",
-          "Photo": [
+          "Titulo": "Meet Hugo Payaguaje",
+          "Resumen": "From the community of Aboquehuira, Hugo stays busy working for the betterment of his people. In addition to being ClearWater coordinator for the Siona nationality, he is president of the Siona federation, a school teacher, and is pursuing a degree from Cuenca University through its distance learning program.",
+          "Vinculo": "http://www.giveclearwater.org/2014/01/meet-hugo-payaguaje-clearwater-coordinator-siona-nationality/",
+          "Foto": [
             {
               "id": "attZD1UVc202Zvvn5",
               "url": "https://dl.airtable.com/g89UYzulSptCFqrXGnFo_3f886a54542a95159156ccab3eb78816de84223a.jpg",
@@ -336,20 +417,29 @@
               }
             }
           ],
-          "Installations": [
-            "rec9LSjxZmhSfzoDm"
-          ]
+          "Lon": -76.48181,
+          "Lat": -0.20619,
+          "Comunidad": [
+            "recYRj07a06XLUIBQ"
+          ],
+          "Idioma": "EN"
         },
-        "geometry": null
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.48181,
+            -0.20619
+          ]
+        }
       },
       {
         "type": "Feature",
         "id": "recm2wfWFGxLaQKKa",
         "properties": {
-          "Title": "A Day with Rogelio",
-          "Excerpt": "Rogelio Payaguaje lives in the Secoya community of San Pablo. He has three daughters and many grandchildren. Rogelio is in his mid-seventies, and like all Secoya his age he is still very active, as life in the forest requires. Every day he fishes, collects fruit, and works in his garden.",
-          "Link": "http://www.giveclearwater.org/2013/09/day-rogelio/",
-          "Photo": [
+          "Titulo": "A Day with Rogelio",
+          "Resumen": "Rogelio Payaguaje lives in the Secoya community of San Pablo. He has three daughters and many grandchildren. Rogelio is in his mid-seventies, and like all Secoya his age he is still very active, as life in the forest requires. Every day he fishes, collects fruit, and works in his garden.",
+          "Vinculo": "http://www.giveclearwater.org/2013/09/day-rogelio/",
+          "Foto": [
             {
               "id": "att7tNOKObCEESTEy",
               "url": "https://dl.airtable.com/hnqMmfaNSyqf2dXH19c1_6cf87ef5cf12102b98270b525c2cd5346daee3d5.jpg",
@@ -370,9 +460,91 @@
               }
             }
           ],
-          "Installations": [
-            "reckmAdDLoGYBtQ1Z"
+          "Lon": -76.47743,
+          "Lat": -0.2902,
+          "Comunidad": [
+            "recF3dMxXgNs1qPPb"
+          ],
+          "Idioma": "EN"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.47743,
+            -0.2902
           ]
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "recxQNz0HRrsFCIKF",
+        "properties": {
+          "Titulo": "Historia Ejemplo",
+          "Resumen": "Aqui pueden poner un resumen de ~50 palabras",
+          "Vinculo": "http://example.com/vinculo_a_blog_post",
+          "Foto": [
+            {
+              "id": "att7slAq4nETbctj8",
+              "url": "https://dl.airtable.com/9hP10PhCTTu7ulntPrRe_tree.jpg",
+              "filename": "tree.jpg",
+              "size": 429194,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/X2n9CxB2QEOHhcKGWN9Z_small_tree.jpg",
+                  "width": 27,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/ySe7fOIlSqAZFLFdPXgS_large_tree.jpg",
+                  "width": 479,
+                  "height": 512
+                }
+              }
+            },
+            {
+              "id": "attrm5s9hEfJSkty9",
+              "url": "https://dl.airtable.com/64l1OMqQniN9xD6s5V7g_forest.jpg",
+              "filename": "forest.jpg",
+              "size": 2395129,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/JLZp1j4TMyQzpl7tQ7aR_small_forest.jpg",
+                  "width": 54,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/zc0IzHIDRrmxIDoWZTP7_large_forest.jpg",
+                  "width": 512,
+                  "height": 512
+                }
+              }
+            },
+            {
+              "id": "attkrBwSiJeA4Id8h",
+              "url": "https://dl.airtable.com/JjLDzXmKSsu9l0xMlzlX_river.jpg",
+              "filename": "river.jpg",
+              "size": 32758,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/9C8Z393xRmeJJnURCvk8_small_river.jpg",
+                  "width": 58,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/W97Bpn5SqyRtHkKzZn3M_large_river.jpg",
+                  "width": 512,
+                  "height": 400
+                }
+              }
+            }
+          ],
+          "Comunidad": [
+            "rec1e8A3YqHHWiUA4"
+          ],
+          "Idioma": "ES"
         },
         "geometry": null
       },
@@ -380,10 +552,10 @@
         "type": "Feature",
         "id": "recyfzSvVYwYuP2xW",
         "properties": {
-          "Title": "A Trip Up the Pisorie River",
-          "Excerpt": "Accompanying the Cofán of Ukavati on a journey up the Pissorie River, ClearWater international field director Alex Goff experiences both struggle and beauty, frenetic energy and deep calm. ",
-          "Link": "http://www.giveclearwater.org/2014/01/trip-pisorie-river/",
-          "Photo": [
+          "Titulo": "A Trip Up the Pisorie River",
+          "Resumen": "Accompanying the Cofán of Ukavati on a journey up the Pissorie River, ClearWater international field director Alex Goff experiences both struggle and beauty, frenetic energy and deep calm. ",
+          "Vinculo": "http://www.giveclearwater.org/2014/01/trip-pisorie-river/",
+          "Foto": [
             {
               "id": "attWexll8x7AbqKeE",
               "url": "https://dl.airtable.com/yDjv2J0DSLixHDYEwWTc_52d532896ccf20292e5c0454ea38da3dd170c108.jpg",
@@ -404,22 +576,31 @@
               }
             }
           ],
-          "Installations": [
-            "rec9NG2Do4C6kVjBU"
-          ]
+          "Lon": -76.67872,
+          "Lat": -0.01607,
+          "Comunidad": [
+            "rec5jyHt3zUgjovsn"
+          ],
+          "Idioma": "EN"
         },
-        "geometry": null
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.67872,
+            -0.01607
+          ]
+        }
       }
     ]
   },
-  "Settlements": {
+  "Comunidades": {
     "type": "FeatureCollection",
     "features": [
       {
         "type": "Feature",
         "id": "rec1e8A3YqHHWiUA4",
         "properties": {
-          "Settlement": "Bavoroe",
+          "Comunidad": "Bavoroe",
           "Installations": [
             "rec6cVfVwnvYoMGSK",
             "recOO7y9X7lGLechc",
@@ -430,20 +611,45 @@
             "rec7r1Cn1gKlYYKRx",
             "recHHjSr7SFJGVgSH"
           ],
-          "Land Title Area": [
-            "recDrJE2C9e8NCpf0"
+          "Nacionalidad": [
+            "recmAG2tQi6scRRzZ"
           ],
           "Lon": -76.72881755,
           "Lat": 0.05326492998,
-          "Programs": [
-            "recEXL7xBNNCJWMYR"
+          "Programas": [
+            "Sistemas de agua",
+            "Sistemas solares"
           ],
-          "Nationality": [
-            "recmAG2tQi6scRRzZ"
+          "Historias": [
+            "recxQNz0HRrsFCIKF"
           ],
-          "Water Installations": 8,
-          "Water Families": 8,
-          "Water Users": 41
+          "Foto": [
+            {
+              "id": "atteU8amfOJyujtaU",
+              "url": "https://dl.airtable.com/3lDQkVNBSw257hkVkJMf_iceberg3.jpg",
+              "filename": "iceberg3.jpg",
+              "size": 86257,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/CoMdUrFmTbSRl6UA1Vzj_small_iceberg3.jpg",
+                  "width": 54,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/JXWfiec6QQKpg7CDyiLE_large_iceberg3.jpg",
+                  "width": 512,
+                  "height": 512
+                }
+              }
+            }
+          ],
+          "Descripción": "The A'I Kofan community of Bavoroe lies close to the Aguarico River in the Ecuadorian Amazon. Composed of eight families, Bavoroe works with ClearWater and the Ceibo Alliance on two programs",
+          "Agua": 8,
+          "Agua Familias": 8,
+          "Agua Usuarios": 41,
+          "Most recent": "2014-12-22",
+          "First": "2013-12-17"
         },
         "geometry": {
           "type": "Point",
@@ -455,9 +661,259 @@
       },
       {
         "type": "Feature",
+        "id": "rec28YhIokWprxude",
+        "properties": {
+          "Comunidad": "Menimpare",
+          "Installations": [
+            "recYhB8pZRBFRzKrF",
+            "recUjee7bUwwtRQlA",
+            "recckltz5n4aV3xkf",
+            "rec1eLVm2qs74TK1h",
+            "recN51CFp7Mg3rBFm",
+            "rec9NIayn35VDcNhh",
+            "recS9KFdS3PBUyESE",
+            "reclg2q0Xwa8Gio5Y",
+            "recDe0ngK4B4HdTCP",
+            "recrfg5mDKKej2X5H",
+            "rec3ysoTUtbSWJPn4",
+            "recykWhEXFvZf9EYN",
+            "recaC7uPgU2Rx2Oa8"
+          ],
+          "Nacionalidad": [
+            "rec7nhastozSVnJax"
+          ],
+          "Programas": [
+            "Sistemas de agua",
+            "Mujer y familia"
+          ],
+          "Foto": [
+            {
+              "id": "attguA4X1dopDW61o",
+              "url": "https://dl.airtable.com/s85PPVFcSRSjmA1PuUzE_o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "filename": "o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "size": 550050,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/dYsC3xYGRHetfYr9H1T3_small_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 54,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/lSidcdFuQsqxVEEzshYS_large_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 512,
+                  "height": 380
+                }
+              }
+            }
+          ],
+          "Agua": 13,
+          "Agua Familias": 13,
+          "Agua Usuarios": 0,
+          "Most recent": "2015-11-30",
+          "First": "2015-11-30"
+        },
+        "geometry": null
+      },
+      {
+        "type": "Feature",
+        "id": "rec2tTzVungo7ktGn",
+        "properties": {
+          "Comunidad": "Wentaro",
+          "Nacionalidad": [
+            "rec7nhastozSVnJax"
+          ],
+          "Programas": [
+            "Mujer y familia"
+          ],
+          "Foto": [
+            {
+              "id": "attguA4X1dopDW61o",
+              "url": "https://dl.airtable.com/s85PPVFcSRSjmA1PuUzE_o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "filename": "o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "size": 550050,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/dYsC3xYGRHetfYr9H1T3_small_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 54,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/lSidcdFuQsqxVEEzshYS_large_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 512,
+                  "height": 380
+                }
+              }
+            }
+          ],
+          "Agua": 0,
+          "Agua Familias": 0,
+          "Agua Usuarios": 0
+        },
+        "geometry": null
+      },
+      {
+        "type": "Feature",
+        "id": "rec3gtwYX0ot5HrdH",
+        "properties": {
+          "Comunidad": "Guiyero",
+          "Installations": [
+            "recS5D4YLD858feQO",
+            "recLVw1MkZTCAk8iQ",
+            "rec9p4XiOA8nM9FD5",
+            "recpkwf73IaQksexC",
+            "reczqj48s3mfXZ0St",
+            "recaMHg61chZGvL0X",
+            "reccWgKIMwkhQEkBr",
+            "recV4ncWPr06A8tKF",
+            "recvvIdYJno0toc9c",
+            "recxMpaDnbh00fCsf",
+            "recAkqIpqa9ncEV3h",
+            "rec3PGJFAJzYe6vNm",
+            "rectFcoVmZphhLdKd",
+            "recL8Oqlj6mL2AYEl"
+          ],
+          "Nacionalidad": [
+            "rec7nhastozSVnJax"
+          ],
+          "Programas": [
+            "Sistemas de agua",
+            "Mujer y familia"
+          ],
+          "Foto": [
+            {
+              "id": "attguA4X1dopDW61o",
+              "url": "https://dl.airtable.com/s85PPVFcSRSjmA1PuUzE_o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "filename": "o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "size": 550050,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/dYsC3xYGRHetfYr9H1T3_small_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 54,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/lSidcdFuQsqxVEEzshYS_large_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 512,
+                  "height": 380
+                }
+              }
+            }
+          ],
+          "Agua": 14,
+          "Agua Familias": 14,
+          "Agua Usuarios": 0,
+          "Most recent": "2014-12-30",
+          "First": "2014-12-30"
+        },
+        "geometry": null
+      },
+      {
+        "type": "Feature",
+        "id": "rec3l0Q38OQEsxqg6",
+        "properties": {
+          "Comunidad": "Wewonpare",
+          "Installations": [
+            "rec0ITpeMQVFgVZbX",
+            "recomq0pyLpLUxLg2"
+          ],
+          "Nacionalidad": [
+            "rec7nhastozSVnJax"
+          ],
+          "Programas": [
+            "Sistemas de agua",
+            "Sistemas solares"
+          ],
+          "Foto": [
+            {
+              "id": "attguA4X1dopDW61o",
+              "url": "https://dl.airtable.com/s85PPVFcSRSjmA1PuUzE_o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "filename": "o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "size": 550050,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/dYsC3xYGRHetfYr9H1T3_small_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 54,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/lSidcdFuQsqxVEEzshYS_large_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 512,
+                  "height": 380
+                }
+              }
+            }
+          ],
+          "Agua": 2,
+          "Agua Familias": 2,
+          "Agua Usuarios": 0,
+          "Most recent": "2016-12-30",
+          "First": "2016-12-30"
+        },
+        "geometry": null
+      },
+      {
+        "type": "Feature",
+        "id": "rec4X0dGmSNKz17xb",
+        "properties": {
+          "Comunidad": "Sëoquëya",
+          "Installations": [
+            "receWN89rm7kWm237",
+            "recg86KrGsy7p7GzG",
+            "recPCV7FzKXCmRxQn",
+            "recdejBC7oFgTIakT",
+            "recmhY5Vrv3wVnUX4",
+            "recpyuodVma5DBVKS",
+            "recNx0ckl62516btv",
+            "rec448hwx5209QgFr",
+            "recsoWsDHNGpp3pJq",
+            "recrvn5Haz7vR7NO9",
+            "recivz1Y8XUZzs99Q"
+          ],
+          "Nacionalidad": [
+            "rec7QOgAYxMln7nHN"
+          ],
+          "Programas": [
+            "Sistemas de agua",
+            "Mujer y familia"
+          ],
+          "Foto": [
+            {
+              "id": "att8myDMfecw5dDtG",
+              "url": "https://dl.airtable.com/89uZq9QjR26WKRzHWE60_sahara-desert.jpg",
+              "filename": "sahara-desert.jpg",
+              "size": 169005,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/ZdcUI0O5TeeZGuSRqwXl_small_sahara-desert.jpg",
+                  "width": 54,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/z0FfPlbTQmIPrXngig8g_large_sahara-desert.jpg",
+                  "width": 512,
+                  "height": 512
+                }
+              }
+            }
+          ],
+          "Agua": 11,
+          "Agua Familias": 11,
+          "Agua Usuarios": 0,
+          "Most recent": "2015-09-20",
+          "First": "2015-09-20"
+        },
+        "geometry": null
+      },
+      {
+        "type": "Feature",
         "id": "rec5jyHt3zUgjovsn",
         "properties": {
-          "Settlement": "Ukavati",
+          "Comunidad": "Ukavati",
           "Installations": [
             "rec9NG2Do4C6kVjBU",
             "rec4jFoExR5nX5YXk",
@@ -468,23 +924,44 @@
             "rec723JpQs7AQic4J",
             "recaMNYJ5s2p6NagP"
           ],
-          "Land Title Area": [
-            "recDrJE2C9e8NCpf0"
+          "Nacionalidad": [
+            "recmAG2tQi6scRRzZ"
           ],
           "Lon": -76.6687015,
           "Lat": -0.01243151623,
-          "Programs": [
-            "recEXL7xBNNCJWMYR"
+          "Programas": [
+            "Sistemas de agua",
+            "Sistemas solares"
           ],
-          "Nationality": [
-            "recmAG2tQi6scRRzZ"
-          ],
-          "Water Installations": 8,
-          "Water Families": 9,
-          "Water Users": 46,
-          "Stories": [
+          "Historias": [
             "recyfzSvVYwYuP2xW"
-          ]
+          ],
+          "Foto": [
+            {
+              "id": "atteU8amfOJyujtaU",
+              "url": "https://dl.airtable.com/3lDQkVNBSw257hkVkJMf_iceberg3.jpg",
+              "filename": "iceberg3.jpg",
+              "size": 86257,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/CoMdUrFmTbSRl6UA1Vzj_small_iceberg3.jpg",
+                  "width": 54,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/JXWfiec6QQKpg7CDyiLE_large_iceberg3.jpg",
+                  "width": 512,
+                  "height": 512
+                }
+              }
+            }
+          ],
+          "Agua": 8,
+          "Agua Familias": 9,
+          "Agua Usuarios": 46,
+          "Most recent": "2014-01-23",
+          "First": "2014-01-15"
         },
         "geometry": {
           "type": "Point",
@@ -498,7 +975,7 @@
         "type": "Feature",
         "id": "rec5rDRBBWRBCoQFv",
         "properties": {
-          "Settlement": "Bellavista",
+          "Comunidad": "Bellavista",
           "Installations": [
             "recLqoiTKkheQpnqB",
             "recdddcwsbQ8zWfXr",
@@ -508,22 +985,52 @@
             "rech7mQqjg5aVcUVT",
             "recFD4GDWTwcBj9MF",
             "reckDXcyjKE7kRDE4",
-            "recZz9pu0ALEXKJoe"
+            "recZz9pu0ALEXKJoe",
+            "recZ5nI0I2lT19xhU",
+            "recVZdkgh9Urtft4g",
+            "rec6WW7R9ctz3Gn3t",
+            "recz1k06nPKyggxMF",
+            "recAj5SvsBI5EOCNl",
+            "recaG6yl2oDB6w1G1",
+            "rec0zDwkI0mIRMoby",
+            "rec3I4OcH9TKos8K4"
           ],
-          "Land Title Area": [
-            "recWnN8W3BcI1HiMQ"
+          "Nacionalidad": [
+            "recHGwwudtmODsfLg"
           ],
           "Lon": -76.42408349,
           "Lat": -0.298919395,
-          "Programs": [
-            "recEXL7xBNNCJWMYR"
+          "Programas": [
+            "Sistemas de agua",
+            "Defensores y defensoras",
+            "Mapeo territorial"
           ],
-          "Nationality": [
-            "recHGwwudtmODsfLg"
+          "Foto": [
+            {
+              "id": "att8myDMfecw5dDtG",
+              "url": "https://dl.airtable.com/89uZq9QjR26WKRzHWE60_sahara-desert.jpg",
+              "filename": "sahara-desert.jpg",
+              "size": 169005,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/ZdcUI0O5TeeZGuSRqwXl_small_sahara-desert.jpg",
+                  "width": 54,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/z0FfPlbTQmIPrXngig8g_large_sahara-desert.jpg",
+                  "width": 512,
+                  "height": 512
+                }
+              }
+            }
           ],
-          "Water Installations": 9,
-          "Water Families": 13,
-          "Water Users": 89
+          "Agua": 17,
+          "Agua Familias": 29,
+          "Agua Usuarios": 185,
+          "Most recent": "2013-09-11",
+          "First": "2012-05-14"
         },
         "geometry": {
           "type": "Point",
@@ -535,9 +1042,331 @@
       },
       {
         "type": "Feature",
+        "id": "rec7pGRJ4GFNwLhda",
+        "properties": {
+          "Comunidad": "Buenavista",
+          "Installations": [
+            "recbXzCVUtAAOu2y8",
+            "rec94D8sXk0nTl7wN",
+            "recULqDJHaPYFuLuW",
+            "recweD1EJf2AkqRIZ",
+            "rec3GuY2iiBO2xk35",
+            "rechwxloBu8g5yHgD",
+            "rec9HU5kKMWk4W6vZ",
+            "recm5Nmmmz3dhv2Sf",
+            "recNXcRxbCZvSKgXt",
+            "rec5ulaupEkarid74",
+            "recE1kMGop59eoEx0",
+            "recTQF7XPOKEzUFm4",
+            "recioKCnjdYe7cBjp",
+            "recfhiadFj17DqvPj",
+            "recgxofu25mUJc2Pb",
+            "rec09QoZQA6qsRLPR",
+            "recNsmNma1jSr4z1x",
+            "recLSvAQyHpOo3Yrv",
+            "recyTkpxb4qjhKS96",
+            "recwoFtvF8Q2rZpMI",
+            "reczseghgstP1nqY4",
+            "recUE7JrAV1PZZ2d7",
+            "recUqHZKhvsfjiNDU",
+            "recxClko4Rl7B1WsB",
+            "recF1dHfxJTLeemLL",
+            "recVgV6rFYYEMRnGv",
+            "recNp76R3Ye0Q6cOx",
+            "recUClcO1qbXcftU1",
+            "recWuLW4qnssfZn1B",
+            "recWn4dAwKyhMOnFR",
+            "rec9zXDUqS4cekhgH",
+            "rec5xxZc7qOKnj0IB",
+            "recILLPS28hVESdtK",
+            "recC9WI3bfWeO3mfq",
+            "recRKfe8Bn3sMgQ9K"
+          ],
+          "Nacionalidad": [
+            "rec7QOgAYxMln7nHN"
+          ],
+          "Programas": [
+            "Sistemas de agua",
+            "Defensores y defensoras",
+            "Mujer y familia"
+          ],
+          "Foto": [
+            {
+              "id": "attiw9QQfgVxDDcMM",
+              "url": "https://dl.airtable.com/xZPoUzRwqQ7DQWgELnbA_GBR.jpg",
+              "filename": "GBR.jpg",
+              "size": 115627,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/12XIYPpcS2WM9iApKIiC_small_GBR.jpg",
+                  "width": 48,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/nX7E2ZKJRZGJx0fLYaJT_large_GBR.jpg",
+                  "width": 512,
+                  "height": 512
+                }
+              }
+            }
+          ],
+          "Agua": 35,
+          "Agua Familias": 35,
+          "Agua Usuarios": 0,
+          "Most recent": "2016-01-11",
+          "First": "2016-01-11"
+        },
+        "geometry": null
+      },
+      {
+        "type": "Feature",
+        "id": "rec7yjbcFaEh2X3j8",
+        "properties": {
+          "Agua": 0,
+          "Agua Familias": 0,
+          "Agua Usuarios": 0
+        },
+        "geometry": null
+      },
+      {
+        "type": "Feature",
+        "id": "rec8WEq2gHmNrrR0I",
+        "properties": {
+          "Comunidad": "Kenaweno",
+          "Installations": [
+            "recRdaQ49ShUNj6OS",
+            "reciJdYpb1Nh9iUqh",
+            "rec7J3HCi0YEZWElK",
+            "recE8HiyJa9BlzG1U",
+            "recMoowemCmv9Z8hk",
+            "recCqgkFq4pBpkWlD",
+            "recwSi5KekKfz9qlz",
+            "recxTpynYRbCrOCgd",
+            "reczX3XIrT3aJRU6z",
+            "recPOJLjS9Hb4QrRT"
+          ],
+          "Nacionalidad": [
+            "rec7nhastozSVnJax"
+          ],
+          "Programas": [
+            "Sistemas de agua",
+            "Mujer y familia",
+            "Mapeo territorial"
+          ],
+          "Foto": [
+            {
+              "id": "attguA4X1dopDW61o",
+              "url": "https://dl.airtable.com/s85PPVFcSRSjmA1PuUzE_o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "filename": "o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "size": 550050,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/dYsC3xYGRHetfYr9H1T3_small_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 54,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/lSidcdFuQsqxVEEzshYS_large_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 512,
+                  "height": 380
+                }
+              }
+            }
+          ],
+          "Agua": 10,
+          "Agua Familias": 10,
+          "Agua Usuarios": 0,
+          "Most recent": "2016-11-30",
+          "First": "2016-11-30"
+        },
+        "geometry": null
+      },
+      {
+        "type": "Feature",
+        "id": "rec996gRhguwjouTe",
+        "properties": {
+          "Comunidad": "Kakataro",
+          "Nacionalidad": [
+            "rec7nhastozSVnJax"
+          ],
+          "Programas": [
+            "Mujer y familia"
+          ],
+          "Foto": [
+            {
+              "id": "attguA4X1dopDW61o",
+              "url": "https://dl.airtable.com/s85PPVFcSRSjmA1PuUzE_o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "filename": "o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "size": 550050,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/dYsC3xYGRHetfYr9H1T3_small_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 54,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/lSidcdFuQsqxVEEzshYS_large_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 512,
+                  "height": 380
+                }
+              }
+            }
+          ],
+          "Agua": 0,
+          "Agua Familias": 0,
+          "Agua Usuarios": 0
+        },
+        "geometry": null
+      },
+      {
+        "type": "Feature",
+        "id": "rec9OlycuOUlTjFAh",
+        "properties": {
+          "Comunidad": "Yaretaro",
+          "Nacionalidad": [
+            "rec7nhastozSVnJax"
+          ],
+          "Programas": [
+            "Sistemas de agua"
+          ],
+          "Foto": [
+            {
+              "id": "attguA4X1dopDW61o",
+              "url": "https://dl.airtable.com/s85PPVFcSRSjmA1PuUzE_o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "filename": "o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "size": 550050,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/dYsC3xYGRHetfYr9H1T3_small_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 54,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/lSidcdFuQsqxVEEzshYS_large_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 512,
+                  "height": 380
+                }
+              }
+            }
+          ],
+          "Agua": 0,
+          "Agua Familias": 0,
+          "Agua Usuarios": 0
+        },
+        "geometry": null
+      },
+      {
+        "type": "Feature",
+        "id": "rec9VyegpMIfGS8qd",
+        "properties": {
+          "Comunidad": "Apaika",
+          "Nacionalidad": [
+            "rec7nhastozSVnJax"
+          ],
+          "Programas": [
+            "Sistemas de agua",
+            "Mujer y familia"
+          ],
+          "Foto": [
+            {
+              "id": "attguA4X1dopDW61o",
+              "url": "https://dl.airtable.com/s85PPVFcSRSjmA1PuUzE_o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "filename": "o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "size": 550050,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/dYsC3xYGRHetfYr9H1T3_small_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 54,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/lSidcdFuQsqxVEEzshYS_large_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 512,
+                  "height": 380
+                }
+              }
+            }
+          ],
+          "Agua": 0,
+          "Agua Familias": 0,
+          "Agua Usuarios": 0
+        },
+        "geometry": null
+      },
+      {
+        "type": "Feature",
+        "id": "recA8QrdxGKZVhRDP",
+        "properties": {
+          "Comunidad": "Wisuya",
+          "Installations": [
+            "recGckcfX3lLnpxuB",
+            "rec6dMrZSlKkey29i",
+            "recPOT0IPfW7pgmfC",
+            "recI8W5TXtpRp4ruM",
+            "recqp0dEvO4KCQmMv",
+            "recyaTsI0Cf2knPlF",
+            "recT41fsapVtwguVo",
+            "recMyiY9rVr0L9grQ",
+            "recg8WZUfNY2xAUlD",
+            "rec5tr9jUbwO8SfDf",
+            "recTnuzCFHjKhJGrl",
+            "recSA2ijeRp5E5you",
+            "recrAnanNn24Psnpy",
+            "rechkb15rfiSSxq5b",
+            "recsYW3SSudeoF0MC",
+            "recFS459ZHGnQaLmN",
+            "recWh5tAhXydg0RoY",
+            "rec9aOEMSxdNNQe2l",
+            "recIn2NgadikdNnsm",
+            "recDxuIj0YDb1vcE0"
+          ],
+          "Nacionalidad": [
+            "rec7QOgAYxMln7nHN"
+          ],
+          "Programas": [
+            "Sistemas de agua",
+            "Defensores y defensoras",
+            "Practicas propias"
+          ],
+          "Foto": [
+            {
+              "id": "attiw9QQfgVxDDcMM",
+              "url": "https://dl.airtable.com/xZPoUzRwqQ7DQWgELnbA_GBR.jpg",
+              "filename": "GBR.jpg",
+              "size": 115627,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/12XIYPpcS2WM9iApKIiC_small_GBR.jpg",
+                  "width": 48,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/nX7E2ZKJRZGJx0fLYaJT_large_GBR.jpg",
+                  "width": 512,
+                  "height": 512
+                }
+              }
+            }
+          ],
+          "Agua": 20,
+          "Agua Familias": 20,
+          "Agua Usuarios": 0,
+          "Most recent": "2016-01-11",
+          "First": "2016-01-11"
+        },
+        "geometry": null
+      },
+      {
+        "type": "Feature",
         "id": "recCrmsLnstJNkDq7",
         "properties": {
-          "Settlement": "Tobeta",
+          "Comunidad": "Tobeta",
           "Installations": [
             "recSfHgwSuhgsEKOB",
             "reckvQe6QIkq6DGqy",
@@ -548,20 +1377,40 @@
             "rectWUgyOmyexMWEi",
             "recK9g1q3HEWzBkpr"
           ],
-          "Land Title Area": [
-            "rec0U7CSPgqymTpM8"
+          "Nacionalidad": [
+            "rec7nhastozSVnJax"
           ],
           "Lon": -76.69103578,
           "Lat": -0.7054983617,
-          "Programs": [
-            "recEXL7xBNNCJWMYR"
+          "Programas": [
+            "Sistemas de agua"
           ],
-          "Nationality": [
-            "rec7nhastozSVnJax"
+          "Foto": [
+            {
+              "id": "attguA4X1dopDW61o",
+              "url": "https://dl.airtable.com/s85PPVFcSRSjmA1PuUzE_o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "filename": "o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "size": 550050,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/dYsC3xYGRHetfYr9H1T3_small_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 54,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/lSidcdFuQsqxVEEzshYS_large_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 512,
+                  "height": 380
+                }
+              }
+            }
           ],
-          "Water Installations": 8,
-          "Water Families": 9,
-          "Water Users": 48
+          "Agua": 8,
+          "Agua Familias": 9,
+          "Agua Usuarios": 48,
+          "Most recent": "2014-04-27",
+          "First": "2014-04-24"
         },
         "geometry": {
           "type": "Point",
@@ -575,7 +1424,7 @@
         "type": "Feature",
         "id": "recCvjMsbA7zmK1NJ",
         "properties": {
-          "Settlement": "Yawepare",
+          "Comunidad": "Yawepare",
           "Installations": [
             "recR29LXkFbiH4oYn",
             "rec0uDBJ9XYh8aRfh",
@@ -588,24 +1437,44 @@
             "recrWng5nT12pvKm8",
             "rec4SzeCT0q1IzxLA"
           ],
-          "Land Title Area": [
-            "rec0U7CSPgqymTpM8"
+          "Nacionalidad": [
+            "rec7nhastozSVnJax"
           ],
           "Lon": -76.76713205,
           "Lat": -0.7689119198,
-          "Programs": [
-            "recEXL7xBNNCJWMYR"
+          "Programas": [
+            "Sistemas de agua"
           ],
-          "Nationality": [
-            "rec7nhastozSVnJax"
-          ],
-          "Water Installations": 10,
-          "Water Families": 10,
-          "Water Users": 123,
-          "Stories": [
+          "Historias": [
             "recVo2vWGN2wEjMnO",
             "recLCmdPyND821xHQ"
-          ]
+          ],
+          "Foto": [
+            {
+              "id": "attguA4X1dopDW61o",
+              "url": "https://dl.airtable.com/s85PPVFcSRSjmA1PuUzE_o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "filename": "o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "size": 550050,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/dYsC3xYGRHetfYr9H1T3_small_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 54,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/lSidcdFuQsqxVEEzshYS_large_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 512,
+                  "height": 380
+                }
+              }
+            }
+          ],
+          "Agua": 10,
+          "Agua Familias": 10,
+          "Agua Usuarios": 123,
+          "Most recent": "2013-03-22",
+          "First": "2013-03-17"
         },
         "geometry": {
           "type": "Point",
@@ -617,9 +1486,47 @@
       },
       {
         "type": "Feature",
+        "id": "recEVHL1QfGOi76Pd",
+        "properties": {
+          "Comunidad": "Tarangaro",
+          "Nacionalidad": [
+            "rec7nhastozSVnJax"
+          ],
+          "Programas": [
+            "Mujer y familia"
+          ],
+          "Foto": [
+            {
+              "id": "attguA4X1dopDW61o",
+              "url": "https://dl.airtable.com/s85PPVFcSRSjmA1PuUzE_o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "filename": "o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "size": 550050,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/dYsC3xYGRHetfYr9H1T3_small_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 54,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/lSidcdFuQsqxVEEzshYS_large_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 512,
+                  "height": 380
+                }
+              }
+            }
+          ],
+          "Agua": 0,
+          "Agua Familias": 0,
+          "Agua Usuarios": 0
+        },
+        "geometry": null
+      },
+      {
+        "type": "Feature",
         "id": "recF3dMxXgNs1qPPb",
         "properties": {
-          "Settlement": "San Pablo",
+          "Comunidad": "San Pablo",
           "Installations": [
             "recKwWP1rFyZyxOwr",
             "recS0afR8tljZiq8H",
@@ -649,25 +1556,96 @@
             "reckmAdDLoGYBtQ1Z",
             "recJNLgY4Zb9uqKHw",
             "recaEGV2E8VVTKbsp",
-            "recs8A9mxpt421dI6"
+            "recs8A9mxpt421dI6",
+            "rec9wdinEp4NW0iUY",
+            "rec0RVjiCv1wMbIxR",
+            "recsD52fzFdzFCPOy",
+            "recZVbuqu85H35K0K",
+            "recfmJL77PGsGEj2w",
+            "recZNcqQFAL8mcjBg",
+            "recm9C5GYfK73SHlc",
+            "recphAe49geIUYTZp",
+            "recG06swpgYYRXUpw",
+            "recDu8pclzC1cmUbE",
+            "recMrMLqc96P1fcsk",
+            "recQyxaVMPxJyZ0xK",
+            "recujukSfr6gzQV5m",
+            "recUlJ0bEpxLQTYNO",
+            "recLMiNf1MJLX4xIF",
+            "recZwXaPU0yANHA1H",
+            "recZjf82aZNaaO63n",
+            "recl3uWpXYt7ld0uw",
+            "recJXraDDNiaMS2Pg",
+            "recSUwuwwrJAiJvII",
+            "recOyiIzdALI9atap",
+            "recsbGmwD3MPgHISo",
+            "reclkT4u3OhrAkAkZ",
+            "recVDsnNLu6WbFCEF",
+            "recpivP9qK2zdaOHv",
+            "recGRydpj0wgU6nb6",
+            "recmqXl41r57RsQ7a",
+            "recGKkD3Ri1A7bC5N",
+            "recYYJxHPudeNuVqe",
+            "recVTwGG3ZpVVPkSy",
+            "rechbnppAx2urao3t",
+            "recRIk07aV6e9uscf",
+            "recaKKkuWnt7zkrAK",
+            "recZGqCQIWVUFx66R",
+            "recUWoKMouvr2gBy1",
+            "recYrUZcBzNoE2Tz8",
+            "recOKloyeFf9oPQ1T",
+            "recLfMn8f3qIw4RyY",
+            "rec0W93datR4U3xKE",
+            "recv2r5Dwp0x1r1Dp",
+            "recHhmCeMzIzme02O",
+            "recMpFid4ahnzqnuC",
+            "reccF7NJ8xn9dAQTA",
+            "recwCi5EdCn2RB1Nm",
+            "recRRBsuGxtTkwGKc",
+            "recarmPtzYLeF3TZa"
           ],
-          "Land Title Area": [
-            "recWnN8W3BcI1HiMQ"
+          "Nacionalidad": [
+            "recHGwwudtmODsfLg"
           ],
           "Lon": -76.42698767,
           "Lat": -0.2558891192,
-          "Programs": [
-            "recEXL7xBNNCJWMYR"
+          "Programas": [
+            "Sistemas de agua",
+            "Defensores y defensoras",
+            "Monitoreo ambiental",
+            "Mapeo territorial",
+            "Practicas propias",
+            "Sistemas solares"
           ],
-          "Nationality": [
-            "recHGwwudtmODsfLg"
-          ],
-          "Water Installations": 29,
-          "Water Families": 34,
-          "Water Users": 213,
-          "Stories": [
+          "Historias": [
             "recm2wfWFGxLaQKKa"
-          ]
+          ],
+          "Foto": [
+            {
+              "id": "att8myDMfecw5dDtG",
+              "url": "https://dl.airtable.com/89uZq9QjR26WKRzHWE60_sahara-desert.jpg",
+              "filename": "sahara-desert.jpg",
+              "size": 169005,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/ZdcUI0O5TeeZGuSRqwXl_small_sahara-desert.jpg",
+                  "width": 54,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/z0FfPlbTQmIPrXngig8g_large_sahara-desert.jpg",
+                  "width": 512,
+                  "height": 512
+                }
+              }
+            }
+          ],
+          "Agua": 75,
+          "Agua Familias": 80,
+          "Agua Usuarios": 213,
+          "Most recent": "2015-05-20",
+          "First": "2012-04-25"
         },
         "geometry": {
           "type": "Point",
@@ -681,7 +1659,7 @@
         "type": "Feature",
         "id": "recF7FpWt0xnDhZzA",
         "properties": {
-          "Settlement": "Rumipamba",
+          "Comunidad": "Rumipamba",
           "Installations": [
             "rec9jx9j6N4subJXU",
             "recGjyeK0hUjR6CFm",
@@ -735,24 +1713,23 @@
             "recbvjf5I26IZtxBw",
             "recOFgNawTuPKgHDg"
           ],
-          "Land Title Area": [
-            "recq7JCzDcDUz82Gx"
+          "Nacionalidad": [
+            "reczA7fT6xso1KoGY"
           ],
           "Lon": -76.89142263,
           "Lat": -0.8153306443,
-          "Programs": [
-            "recEXL7xBNNCJWMYR"
+          "Programas": [
+            "Sistemas de agua"
           ],
-          "Nationality": [
-            "reczA7fT6xso1KoGY"
-          ],
-          "Water Installations": 51,
-          "Water Families": 3,
-          "Water Users": 410,
-          "Stories": [
+          "Historias": [
             "reciXaH5Frx9Mhs1R",
             "recTvITq4XclRcPZc"
-          ]
+          ],
+          "Agua": 51,
+          "Agua Familias": 3,
+          "Agua Usuarios": 410,
+          "Most recent": "2013-08-16",
+          "First": "2012-08-14"
         },
         "geometry": {
           "type": "Point",
@@ -764,9 +1741,111 @@
       },
       {
         "type": "Feature",
+        "id": "recFwXEE5UupKEzI3",
+        "properties": {
+          "Comunidad": "Timpoca",
+          "Installations": [
+            "recrQbt2cxemr0rWF",
+            "recDpVo2oK9RFYnnH",
+            "rec40C81jS5p4BDeG",
+            "rect6sB4qA2FB89AS"
+          ],
+          "Nacionalidad": [
+            "rec7nhastozSVnJax"
+          ],
+          "Programas": [
+            "Sistemas de agua",
+            "Mujer y familia"
+          ],
+          "Foto": [
+            {
+              "id": "attguA4X1dopDW61o",
+              "url": "https://dl.airtable.com/s85PPVFcSRSjmA1PuUzE_o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "filename": "o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "size": 550050,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/dYsC3xYGRHetfYr9H1T3_small_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 54,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/lSidcdFuQsqxVEEzshYS_large_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 512,
+                  "height": 380
+                }
+              }
+            }
+          ],
+          "Agua": 0,
+          "Agua Familias": 4,
+          "Agua Usuarios": 0,
+          "Most recent": "2014-12-30",
+          "First": "2014-12-30"
+        },
+        "geometry": null
+      },
+      {
+        "type": "Feature",
+        "id": "recFyPGB7xbR0J8c9",
+        "properties": {
+          "Comunidad": "Mañoko",
+          "Installations": [
+            "recrWOPDzQdsRuLJm",
+            "rec3qK6GLhhogSpIm",
+            "recEcxhKbc9MCS2rL",
+            "recT55jeyvXbE9HfG",
+            "recbN5ALzp6Yb2Kuc",
+            "recjsjhbnMYqYYP34",
+            "recUDlDJVzArWpQuf",
+            "rec5F2yTgt2Vp5tWK",
+            "recNK2x3Aem1IkBDn",
+            "recCcso8dxFIPBBSt"
+          ],
+          "Nacionalidad": [
+            "recHGwwudtmODsfLg"
+          ],
+          "Programas": [
+            "Sistemas de agua",
+            "Sistemas solares",
+            "Mapeo territorial",
+            "Defensores y defensoras"
+          ],
+          "Foto": [
+            {
+              "id": "att8myDMfecw5dDtG",
+              "url": "https://dl.airtable.com/89uZq9QjR26WKRzHWE60_sahara-desert.jpg",
+              "filename": "sahara-desert.jpg",
+              "size": 169005,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/ZdcUI0O5TeeZGuSRqwXl_small_sahara-desert.jpg",
+                  "width": 54,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/z0FfPlbTQmIPrXngig8g_large_sahara-desert.jpg",
+                  "width": 512,
+                  "height": 512
+                }
+              }
+            }
+          ],
+          "Agua": 10,
+          "Agua Familias": 10,
+          "Agua Usuarios": 0,
+          "Most recent": "2016-04-30",
+          "First": "2016-04-30"
+        },
+        "geometry": null
+      },
+      {
+        "type": "Feature",
         "id": "recGWaTjgMQr60apG",
         "properties": {
-          "Settlement": "Cofan Dureno",
+          "Comunidad": "Cofan Dureno",
           "Installations": [
             "rec6XRXSyxq8roDXO",
             "recXQcWpH94gLZVA2",
@@ -787,7 +1866,6 @@
             "recH8Z56VxQAv0UJ6",
             "reci4yQ1iNKVu8mmB",
             "recENfgKIy1KVsxiC",
-            "recm7E0yyrQhU2NpN",
             "recqiUoaZJDrYEJqZ",
             "rec3wdRDbwXS7q0ot",
             "recrA9H1cVcWU9DC4",
@@ -806,25 +1884,48 @@
             "recHqFCvhFVT0sgHy",
             "recBESS41Ls8MGKEA",
             "recwZWkiP2gNNyVpX",
-            "rec5nNooA9BxYY7uc"
+            "rec5nNooA9BxYY7uc",
+            "recm7E0yyrQhU2NpN"
           ],
-          "Land Title Area": [
-            "recDrJE2C9e8NCpf0"
+          "Nacionalidad": [
+            "recmAG2tQi6scRRzZ"
           ],
           "Lon": -76.6986327,
           "Lat": 0.04844549956,
-          "Programs": [
-            "recEXL7xBNNCJWMYR"
+          "Programas": [
+            "Sistemas de agua",
+            "Monitoreo ambiental"
           ],
-          "Nationality": [
-            "recmAG2tQi6scRRzZ"
-          ],
-          "Water Installations": 39,
-          "Water Families": 42,
-          "Water Users": 248,
-          "Stories": [
+          "Historias": [
             "reccgg6R9ww7jZ0yd"
-          ]
+          ],
+          "Foto": [
+            {
+              "id": "atteU8amfOJyujtaU",
+              "url": "https://dl.airtable.com/3lDQkVNBSw257hkVkJMf_iceberg3.jpg",
+              "filename": "iceberg3.jpg",
+              "size": 86257,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/CoMdUrFmTbSRl6UA1Vzj_small_iceberg3.jpg",
+                  "width": 54,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/JXWfiec6QQKpg7CDyiLE_large_iceberg3.jpg",
+                  "width": 512,
+                  "height": 512
+                }
+              }
+            }
+          ],
+          "Descripción": "The A'I Kofan community of Dureno lies close to the Aguarico River in the Ecuadorian Amazon. Composed of 42 families, Dureno works with ClearWater and the Ceibo Alliance on two programs",
+          "Agua": 39,
+          "Agua Familias": 42,
+          "Agua Usuarios": 248,
+          "Most recent": "2011-11-01",
+          "First": "2011-01-01"
         },
         "geometry": {
           "type": "Point",
@@ -836,29 +1937,259 @@
       },
       {
         "type": "Feature",
+        "id": "recHJB9fSYTl0MQG1",
+        "properties": {
+          "Comunidad": "Nemonpare",
+          "Installations": [
+            "recVkxuXcNHjDspn5",
+            "reccGuDbazwGitU15",
+            "recvZXMZN9FSmSutd",
+            "recq16xLYm7h5uo4d",
+            "recQfumxFH26wx1Ws",
+            "recR8h5hfI7QZH2IO",
+            "rec7kwl7lhprgP86s"
+          ],
+          "Nacionalidad": [
+            "rec7nhastozSVnJax"
+          ],
+          "Programas": [
+            "Sistemas de agua",
+            "Defensores y defensoras",
+            "Sistemas solares",
+            "Mapeo territorial",
+            "Mujer y familia"
+          ],
+          "Foto": [
+            {
+              "id": "attguA4X1dopDW61o",
+              "url": "https://dl.airtable.com/s85PPVFcSRSjmA1PuUzE_o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "filename": "o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "size": 550050,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/dYsC3xYGRHetfYr9H1T3_small_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 54,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/lSidcdFuQsqxVEEzshYS_large_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 512,
+                  "height": 380
+                }
+              }
+            }
+          ],
+          "Agua": 7,
+          "Agua Familias": 7,
+          "Agua Usuarios": 0,
+          "Most recent": "2015-08-20",
+          "First": "2015-08-20"
+        },
+        "geometry": null
+      },
+      {
+        "type": "Feature",
+        "id": "recK4rEeMtxayhBXN",
+        "properties": {
+          "Comunidad": "Chandiana’e",
+          "Installations": [
+            "rec2dEbYNGAsJtuaN",
+            "recbd3Jks4Ofrxefi",
+            "recy4P0VfHzrTEB1v",
+            "receA4k3GgXiucuZG",
+            "receqZRUNtDMjyCDN",
+            "recYz289XwxaTbldB",
+            "recGJr4GPFxzAfgWn",
+            "recWGbTPVHp3HaASv",
+            "recE30zkWuVNqjcuh"
+          ],
+          "Nacionalidad": [
+            "recmAG2tQi6scRRzZ"
+          ],
+          "Programas": [
+            "Sistemas de agua",
+            "Sistemas solares",
+            "Practicas propias"
+          ],
+          "Foto": [
+            {
+              "id": "atteU8amfOJyujtaU",
+              "url": "https://dl.airtable.com/3lDQkVNBSw257hkVkJMf_iceberg3.jpg",
+              "filename": "iceberg3.jpg",
+              "size": 86257,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/CoMdUrFmTbSRl6UA1Vzj_small_iceberg3.jpg",
+                  "width": 54,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/JXWfiec6QQKpg7CDyiLE_large_iceberg3.jpg",
+                  "width": 512,
+                  "height": 512
+                }
+              }
+            }
+          ],
+          "Agua": 9,
+          "Agua Familias": 9,
+          "Agua Usuarios": 0,
+          "Most recent": "2016-03-08",
+          "First": "2016-03-08"
+        },
+        "geometry": null
+      },
+      {
+        "type": "Feature",
+        "id": "recKWlidS4Y9g5Z6R",
+        "properties": {
+          "Comunidad": "Nenquipare",
+          "Nacionalidad": [
+            "rec7nhastozSVnJax"
+          ],
+          "Programas": [
+            "Sistemas de agua",
+            "Mujer y familia"
+          ],
+          "Foto": [
+            {
+              "id": "attguA4X1dopDW61o",
+              "url": "https://dl.airtable.com/s85PPVFcSRSjmA1PuUzE_o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "filename": "o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "size": 550050,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/dYsC3xYGRHetfYr9H1T3_small_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 54,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/lSidcdFuQsqxVEEzshYS_large_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 512,
+                  "height": 380
+                }
+              }
+            }
+          ],
+          "Agua": 0,
+          "Agua Familias": 0,
+          "Agua Usuarios": 0
+        },
+        "geometry": null
+      },
+      {
+        "type": "Feature",
+        "id": "recKwtunJ5On933T2",
+        "properties": {
+          "Comunidad": "Uperito",
+          "Installations": [
+            "recDA3tL2c6ijMXkb",
+            "recoLbG4gj5CRaC14",
+            "recB8LSOmOwLHlOpk",
+            "recBq7dStlWjrQVSD",
+            "recigDyOuyXBvrtzD",
+            "recODm16mCAIITgpT",
+            "recxBGV01iutnqy9h",
+            "recmXLwd12Uo3OGgC",
+            "reckljHIfnD4aWnH8",
+            "recJIhSVegf0p4PZ7",
+            "recuTFCnop4B664Yb",
+            "rec6myaIENzrdNSkF",
+            "recdoquUZa5xbVNDL",
+            "rec039OhQlXWPyAyN",
+            "reckQ1TnEIRUfwTtO",
+            "recINZ3fX9H3lF2cr",
+            "recFQAi630b1TaHVp",
+            "reclepw0lIJqAc5K8",
+            "recZWitdBUWh7pjCI",
+            "recU4r1OrEwc6J6c0",
+            "recxA6m4Z78GvIIpj",
+            "recQ2HGqoeF2tsWXq"
+          ],
+          "Nacionalidad": [
+            "recmAG2tQi6scRRzZ"
+          ],
+          "Programas": [
+            "Sistemas de agua"
+          ],
+          "Foto": [
+            {
+              "id": "atteU8amfOJyujtaU",
+              "url": "https://dl.airtable.com/3lDQkVNBSw257hkVkJMf_iceberg3.jpg",
+              "filename": "iceberg3.jpg",
+              "size": 86257,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/CoMdUrFmTbSRl6UA1Vzj_small_iceberg3.jpg",
+                  "width": 54,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/JXWfiec6QQKpg7CDyiLE_large_iceberg3.jpg",
+                  "width": 512,
+                  "height": 512
+                }
+              }
+            }
+          ],
+          "Agua": 22,
+          "Agua Familias": 22,
+          "Agua Usuarios": 0,
+          "Most recent": "2017-02-28",
+          "First": "2017-02-28"
+        },
+        "geometry": null
+      },
+      {
+        "type": "Feature",
         "id": "recLDyAp8npXT3ltE",
         "properties": {
-          "Settlement": "Paccoya",
+          "Comunidad": "Paccoya",
           "Installations": [
             "recIenCM9vsCHqnp9",
             "rec6p8v6sNNCGyj2g",
             "recTsw4vdb6BpQ5OP",
             "recVTAm24YU0XZh5o"
           ],
-          "Land Title Area": [
-            "rec3KP6G6vkees6Hb"
+          "Nacionalidad": [
+            "recmAG2tQi6scRRzZ"
           ],
           "Lon": -75.76493,
           "Lat": -0.31765,
-          "Programs": [
-            "recEXL7xBNNCJWMYR"
+          "Programas": [
+            "Sistemas de agua"
           ],
-          "Nationality": [
-            "recmAG2tQi6scRRzZ"
+          "Foto": [
+            {
+              "id": "atteU8amfOJyujtaU",
+              "url": "https://dl.airtable.com/3lDQkVNBSw257hkVkJMf_iceberg3.jpg",
+              "filename": "iceberg3.jpg",
+              "size": 86257,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/CoMdUrFmTbSRl6UA1Vzj_small_iceberg3.jpg",
+                  "width": 54,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/JXWfiec6QQKpg7CDyiLE_large_iceberg3.jpg",
+                  "width": 512,
+                  "height": 512
+                }
+              }
+            }
           ],
-          "Water Installations": 4,
-          "Water Families": 4,
-          "Water Users": 24
+          "Descripción": "The A'I Kofan community of Paccoya lies close to the Paccoya River in the Ecuadorian Amazon. Composed of four families, Paccoya works with ClearWater and the Ceibo Alliance on one program",
+          "Agua": 4,
+          "Agua Familias": 4,
+          "Agua Usuarios": 24,
+          "Most recent": "2014-10-12",
+          "First": "2014-10-11"
         },
         "geometry": {
           "type": "Point",
@@ -870,9 +2201,59 @@
       },
       {
         "type": "Feature",
+        "id": "recLaodqR3XmtYlQD",
+        "properties": {
+          "Comunidad": "Ganqueta",
+          "Installations": [
+            "recAaag4V5qci3FZZ",
+            "recmSgLnzODXbD5cP",
+            "recOYVIaL1SsEqkrM",
+            "rec6d7VAiAmCdm1bg",
+            "recqrZanyj2gmFChb",
+            "rec6OrbJQ5D6KvjEJ",
+            "recaxVhPahWq7PKDl",
+            "recoZe4xBJBucQVgO"
+          ],
+          "Nacionalidad": [
+            "rec7nhastozSVnJax"
+          ],
+          "Programas": [
+            "Sistemas de agua"
+          ],
+          "Foto": [
+            {
+              "id": "attguA4X1dopDW61o",
+              "url": "https://dl.airtable.com/s85PPVFcSRSjmA1PuUzE_o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "filename": "o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "size": 550050,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/dYsC3xYGRHetfYr9H1T3_small_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 54,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/lSidcdFuQsqxVEEzshYS_large_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 512,
+                  "height": 380
+                }
+              }
+            }
+          ],
+          "Agua": 0,
+          "Agua Familias": 8,
+          "Agua Usuarios": 0,
+          "Most recent": "2014-12-30",
+          "First": "2014-12-30"
+        },
+        "geometry": null
+      },
+      {
+        "type": "Feature",
         "id": "recMLdTFGSCuwXUeP",
         "properties": {
-          "Settlement": "Siekoya Remolino",
+          "Comunidad": "Siekoya Remolino",
           "Installations": [
             "recZs8I1cTDUgm24G",
             "rec41SM3GqhFHdLUW",
@@ -912,23 +2293,47 @@
             "recsd3IXL9pfU2oDi",
             "recCCTpDe9knnAsqr"
           ],
-          "Land Title Area": [
-            "recWnN8W3BcI1HiMQ"
+          "Nacionalidad": [
+            "recHGwwudtmODsfLg"
           ],
           "Lon": -76.28109108,
           "Lat": -0.2933087228,
-          "Programs": [
-            "recEXL7xBNNCJWMYR"
+          "Programas": [
+            "Sistemas de agua",
+            "Defensores y defensoras",
+            "Monitoreo ambiental",
+            "Mujer y familia",
+            "Practicas propias"
           ],
-          "Nationality": [
-            "recHGwwudtmODsfLg"
-          ],
-          "Water Installations": 37,
-          "Water Families": 39,
-          "Water Users": 238,
-          "Stories": [
+          "Historias": [
             "rec3Pu9WlBQZtbI7U"
-          ]
+          ],
+          "Foto": [
+            {
+              "id": "att8myDMfecw5dDtG",
+              "url": "https://dl.airtable.com/89uZq9QjR26WKRzHWE60_sahara-desert.jpg",
+              "filename": "sahara-desert.jpg",
+              "size": 169005,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/ZdcUI0O5TeeZGuSRqwXl_small_sahara-desert.jpg",
+                  "width": 54,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/z0FfPlbTQmIPrXngig8g_large_sahara-desert.jpg",
+                  "width": 512,
+                  "height": 512
+                }
+              }
+            }
+          ],
+          "Agua": 37,
+          "Agua Familias": 39,
+          "Agua Usuarios": 238,
+          "Most recent": "2013-09-03",
+          "First": "2013-08-20"
         },
         "geometry": {
           "type": "Point",
@@ -942,7 +2347,7 @@
         "type": "Feature",
         "id": "recNKTjM6lnghxEc1",
         "properties": {
-          "Settlement": "Miwaguno",
+          "Comunidad": "Miwaguno",
           "Installations": [
             "rec8thBE6GX31mocv",
             "recbzlud9kzx898WF",
@@ -968,20 +2373,41 @@
             "recSsFf63fumznziG",
             "recITlmTtx4yoRSIx"
           ],
-          "Land Title Area": [
-            "rec0U7CSPgqymTpM8"
+          "Nacionalidad": [
+            "rec7nhastozSVnJax"
           ],
           "Lon": -76.72857661,
           "Lat": -0.7295955137,
-          "Programs": [
-            "recEXL7xBNNCJWMYR"
+          "Programas": [
+            "Sistemas de agua",
+            "Mujer y familia"
           ],
-          "Nationality": [
-            "rec7nhastozSVnJax"
+          "Foto": [
+            {
+              "id": "attguA4X1dopDW61o",
+              "url": "https://dl.airtable.com/s85PPVFcSRSjmA1PuUzE_o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "filename": "o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "size": 550050,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/dYsC3xYGRHetfYr9H1T3_small_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 54,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/lSidcdFuQsqxVEEzshYS_large_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 512,
+                  "height": 380
+                }
+              }
+            }
           ],
-          "Water Installations": 23,
-          "Water Families": 30,
-          "Water Users": 155
+          "Agua": 23,
+          "Agua Familias": 30,
+          "Agua Usuarios": 155,
+          "Most recent": "2014-04-23",
+          "First": "2014-04-12"
         },
         "geometry": {
           "type": "Point",
@@ -995,7 +2421,7 @@
         "type": "Feature",
         "id": "recOCt7b8Zorp0HvH",
         "properties": {
-          "Settlement": "Bi'aña",
+          "Comunidad": "Bi'aña",
           "Installations": [
             "recWj6ol78U8kMzAk",
             "recyFrUxvNeSey3Bj",
@@ -1003,22 +2429,46 @@
             "recjOj3AqD9Us3eVm",
             "recZZscrpsIgr81QZ",
             "rectjZzsS8HniEqR5",
-            "reciSbUJAC0mv4PeT"
+            "reciSbUJAC0mv4PeT",
+            "rec5Fls4EorpnNyMt",
+            "recY9i0gcfSBQMrU0"
           ],
-          "Land Title Area": [
-            "rec8DreEWMFsfAHu0"
+          "Nacionalidad": [
+            "rec7QOgAYxMln7nHN"
           ],
           "Lon": -76.51348505,
           "Lat": -0.2320293562,
-          "Programs": [
-            "recEXL7xBNNCJWMYR"
+          "Programas": [
+            "Sistemas de agua",
+            "Defensores y defensoras",
+            "Monitoreo ambiental"
           ],
-          "Nationality": [
-            "rec7QOgAYxMln7nHN"
+          "Foto": [
+            {
+              "id": "attiw9QQfgVxDDcMM",
+              "url": "https://dl.airtable.com/xZPoUzRwqQ7DQWgELnbA_GBR.jpg",
+              "filename": "GBR.jpg",
+              "size": 115627,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/12XIYPpcS2WM9iApKIiC_small_GBR.jpg",
+                  "width": 48,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/nX7E2ZKJRZGJx0fLYaJT_large_GBR.jpg",
+                  "width": 512,
+                  "height": 512
+                }
+              }
+            }
           ],
-          "Water Installations": 7,
-          "Water Families": 7,
-          "Water Users": 47
+          "Agua": 9,
+          "Agua Familias": 9,
+          "Agua Usuarios": 47,
+          "Most recent": "2014-12-20",
+          "First": "2014-01-20"
         },
         "geometry": {
           "type": "Point",
@@ -1030,9 +2480,48 @@
       },
       {
         "type": "Feature",
+        "id": "recOI0PqgXb84snJR",
+        "properties": {
+          "Comunidad": "Yoweweno",
+          "Nacionalidad": [
+            "rec7nhastozSVnJax"
+          ],
+          "Programas": [
+            "Sistemas de agua",
+            "Mujer y familia"
+          ],
+          "Foto": [
+            {
+              "id": "attguA4X1dopDW61o",
+              "url": "https://dl.airtable.com/s85PPVFcSRSjmA1PuUzE_o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "filename": "o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "size": 550050,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/dYsC3xYGRHetfYr9H1T3_small_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 54,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/lSidcdFuQsqxVEEzshYS_large_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 512,
+                  "height": 380
+                }
+              }
+            }
+          ],
+          "Agua": 0,
+          "Agua Familias": 0,
+          "Agua Usuarios": 0
+        },
+        "geometry": null
+      },
+      {
+        "type": "Feature",
         "id": "recOfk668icH21OHL",
         "properties": {
-          "Settlement": "Sábalo",
+          "Comunidad": "Sábalo",
           "Installations": [
             "recqUY0VrI0b7gc5R",
             "rech6MYPTt2rKTERW",
@@ -1063,20 +2552,42 @@
             "rec3LdPPiDGzgJr4T",
             "receZOszuUHKm2O3B"
           ],
-          "Land Title Area": [
-            "rec3KP6G6vkees6Hb"
+          "Nacionalidad": [
+            "recmAG2tQi6scRRzZ"
           ],
           "Lon": -75.67926862,
           "Lat": -0.3592832907,
-          "Programs": [
-            "recEXL7xBNNCJWMYR"
+          "Programas": [
+            "Sistemas de agua",
+            "Sistemas solares",
+            "Practicas propias"
           ],
-          "Nationality": [
-            "recmAG2tQi6scRRzZ"
+          "Foto": [
+            {
+              "id": "atteU8amfOJyujtaU",
+              "url": "https://dl.airtable.com/3lDQkVNBSw257hkVkJMf_iceberg3.jpg",
+              "filename": "iceberg3.jpg",
+              "size": 86257,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/CoMdUrFmTbSRl6UA1Vzj_small_iceberg3.jpg",
+                  "width": 54,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/JXWfiec6QQKpg7CDyiLE_large_iceberg3.jpg",
+                  "width": 512,
+                  "height": 512
+                }
+              }
+            }
           ],
-          "Water Installations": 28,
-          "Water Families": 28,
-          "Water Users": 148
+          "Agua": 28,
+          "Agua Familias": 28,
+          "Agua Usuarios": 148,
+          "Most recent": "2015-10-09",
+          "First": "2014-10-01"
         },
         "geometry": {
           "type": "Point",
@@ -1090,7 +2601,7 @@
         "type": "Feature",
         "id": "recOrJCB4XNX1YswX",
         "properties": {
-          "Settlement": "Centro Upirito Canqque",
+          "Comunidad": "Centro Upirito Canqque",
           "Installations": [
             "recrwBrLH33EPTI23",
             "recXh3AfqxFYWXbO4",
@@ -1103,22 +2614,57 @@
             "recEfh7qnZSM3iXNw",
             "recsh9ztN4qLa4kas",
             "recfY0KcCOCaMSuhT",
-            "recXjQdscg1x47sUI"
+            "recXjQdscg1x47sUI",
+            "rechkcTJDAs0gnIM8",
+            "recTJd4UjC2swPGJv",
+            "rec4R3p8bAZi83bv2",
+            "recI9TbXf8tIaQRGx",
+            "recluwXveyopduymJ",
+            "recgD8m9UEBH8YFud",
+            "recAWhFzFV7OwTYne",
+            "recxZd8LETAIbbibz",
+            "reciocgdl8bxUe2LE",
+            "rec9LmuUZGSVXqIBS",
+            "recbeiU1vAgRZXfEh",
+            "recHE3vNeje79urMX",
+            "recgxJGClXD94Kbeo",
+            "rec9dbtMQqJJdGCHj"
           ],
-          "Land Title Area": [
-            "recDrJE2C9e8NCpf0"
+          "Nacionalidad": [
+            "recmAG2tQi6scRRzZ"
           ],
           "Lon": -76.68214518,
           "Lat": 0.03119701175,
-          "Programs": [
-            "recEXL7xBNNCJWMYR"
+          "Programas": [
+            "Sistemas de agua"
           ],
-          "Nationality": [
-            "recmAG2tQi6scRRzZ"
+          "Foto": [
+            {
+              "id": "atteU8amfOJyujtaU",
+              "url": "https://dl.airtable.com/3lDQkVNBSw257hkVkJMf_iceberg3.jpg",
+              "filename": "iceberg3.jpg",
+              "size": 86257,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/CoMdUrFmTbSRl6UA1Vzj_small_iceberg3.jpg",
+                  "width": 54,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/JXWfiec6QQKpg7CDyiLE_large_iceberg3.jpg",
+                  "width": 512,
+                  "height": 512
+                }
+              }
+            }
           ],
-          "Water Installations": 12,
-          "Water Families": 12,
-          "Water Users": 77
+          "Descripción": "The A'I Kofan community of Upirito lies close to the Aguarico River in the Ecuadorian Amazon. Composed of 26 families, Upirito works with ClearWater and the Ceibo Alliance on one program",
+          "Agua": 26,
+          "Agua Familias": 26,
+          "Agua Usuarios": 77,
+          "Most recent": "2016-11-25",
+          "First": "2012-01-01"
         },
         "geometry": {
           "type": "Point",
@@ -1130,9 +2676,299 @@
       },
       {
         "type": "Feature",
+        "id": "recPuF7pRs3yUVQ1V",
+        "properties": {
+          "Comunidad": "Daipare",
+          "Installations": [
+            "rec3Jzdv1pbXMiQMw",
+            "recVsIogbXWSjoaHQ",
+            "recCUTc4MN7Mdj4zH",
+            "recGK1zJ3y4FS70DW",
+            "recejDy0v1uQDJpC8",
+            "recIl8oBBimXblslK",
+            "rec6uHCiYncprZo49",
+            "recnCrPeAGBEyIgfL",
+            "rec6ypCqjZuju0vQk",
+            "recf2bWOFmYnKPsZo",
+            "recB0rbRjBJIZJ9kP",
+            "recfZzt6c4VrTIc5u",
+            "reciYEEthPjBxZN2f",
+            "rec84rhxejRmXvzlc",
+            "reciNYFbN2KilR9HF"
+          ],
+          "Nacionalidad": [
+            "rec7nhastozSVnJax"
+          ],
+          "Programas": [
+            "Sistemas de agua",
+            "Mapeo territorial",
+            "Mujer y familia"
+          ],
+          "Foto": [
+            {
+              "id": "attguA4X1dopDW61o",
+              "url": "https://dl.airtable.com/s85PPVFcSRSjmA1PuUzE_o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "filename": "o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "size": 550050,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/dYsC3xYGRHetfYr9H1T3_small_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 54,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/lSidcdFuQsqxVEEzshYS_large_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 512,
+                  "height": 380
+                }
+              }
+            }
+          ],
+          "Agua": 15,
+          "Agua Familias": 15,
+          "Agua Usuarios": 0,
+          "Most recent": "2016-11-30",
+          "First": "2016-11-30"
+        },
+        "geometry": null
+      },
+      {
+        "type": "Feature",
+        "id": "recRfatd3eaTyBXL0",
+        "properties": {
+          "Comunidad": "Keweriuno",
+          "Nacionalidad": [
+            "rec7nhastozSVnJax"
+          ],
+          "Programas": [
+            "Sistemas de agua",
+            "Mujer y familia"
+          ],
+          "Foto": [
+            {
+              "id": "attguA4X1dopDW61o",
+              "url": "https://dl.airtable.com/s85PPVFcSRSjmA1PuUzE_o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "filename": "o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "size": 550050,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/dYsC3xYGRHetfYr9H1T3_small_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 54,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/lSidcdFuQsqxVEEzshYS_large_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 512,
+                  "height": 380
+                }
+              }
+            }
+          ],
+          "Agua": 0,
+          "Agua Familias": 0,
+          "Agua Usuarios": 0
+        },
+        "geometry": null
+      },
+      {
+        "type": "Feature",
+        "id": "recSjsRVO0nzkgMxL",
+        "properties": {
+          "Comunidad": "Tzapino",
+          "Installations": [
+            "rec9XfnlLfygNvFfa",
+            "rec6rpIuT2Hl2EjnU",
+            "recSOEqWGkjNQII6F",
+            "rec2fYxhgHizTTIHP",
+            "recngmzK3gO9Rs413",
+            "recII1XZnBWLPf9qL",
+            "recE9zvuMKU8OBhm5"
+          ],
+          "Nacionalidad": [
+            "rec7nhastozSVnJax"
+          ],
+          "Programas": [
+            "Sistemas de agua",
+            "Sistemas solares",
+            "Mujer y familia"
+          ],
+          "Foto": [
+            {
+              "id": "attguA4X1dopDW61o",
+              "url": "https://dl.airtable.com/s85PPVFcSRSjmA1PuUzE_o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "filename": "o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "size": 550050,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/dYsC3xYGRHetfYr9H1T3_small_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 54,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/lSidcdFuQsqxVEEzshYS_large_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 512,
+                  "height": 380
+                }
+              }
+            }
+          ],
+          "Agua": 7,
+          "Agua Familias": 7,
+          "Agua Usuarios": 0,
+          "Most recent": "2016-12-30",
+          "First": "2016-12-30"
+        },
+        "geometry": null
+      },
+      {
+        "type": "Feature",
+        "id": "recUMxvA22x5k7lT4",
+        "properties": {
+          "Comunidad": "Ñoneno",
+          "Nacionalidad": [
+            "rec7nhastozSVnJax"
+          ],
+          "Programas": [
+            "Sistemas de agua"
+          ],
+          "Foto": [
+            {
+              "id": "attguA4X1dopDW61o",
+              "url": "https://dl.airtable.com/s85PPVFcSRSjmA1PuUzE_o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "filename": "o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "size": 550050,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/dYsC3xYGRHetfYr9H1T3_small_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 54,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/lSidcdFuQsqxVEEzshYS_large_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 512,
+                  "height": 380
+                }
+              }
+            }
+          ],
+          "Agua": 0,
+          "Agua Familias": 0,
+          "Agua Usuarios": 0
+        },
+        "geometry": null
+      },
+      {
+        "type": "Feature",
+        "id": "recUfHK2OgfET001H",
+        "properties": {
+          "Comunidad": "Kiwaro",
+          "Installations": [
+            "recVOO0K7vTh5UqoW",
+            "recROOk7Yfc4gRdXh",
+            "rectexmUSD1aQHnzx",
+            "rec0F2LunPqrYkjyU",
+            "recuWPj8GLEU48Gs3",
+            "recQRMGfrnJIhpYUq",
+            "rec4zeG4VIWZPD7N6",
+            "recTxmjvpzMwpkDYU"
+          ],
+          "Nacionalidad": [
+            "rec7nhastozSVnJax"
+          ],
+          "Programas": [
+            "Sistemas de agua",
+            "Mapeo territorial",
+            "Mujer y familia",
+            "Sistemas solares",
+            "Defensores y defensoras"
+          ],
+          "Foto": [
+            {
+              "id": "attguA4X1dopDW61o",
+              "url": "https://dl.airtable.com/s85PPVFcSRSjmA1PuUzE_o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "filename": "o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "size": 550050,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/dYsC3xYGRHetfYr9H1T3_small_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 54,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/lSidcdFuQsqxVEEzshYS_large_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 512,
+                  "height": 380
+                }
+              }
+            }
+          ],
+          "Agua": 8,
+          "Agua Familias": 8,
+          "Agua Usuarios": 0,
+          "Most recent": "2015-08-20",
+          "First": "2015-08-20"
+        },
+        "geometry": null
+      },
+      {
+        "type": "Feature",
+        "id": "recUh3St4TaXUx4zo",
+        "properties": {
+          "Comunidad": "Dayuno",
+          "Installations": [
+            "rec4SI9LGV7MFbCL1",
+            "recEMdgIQTGRdNfQE",
+            "recZU4YXzwqNJnsdK",
+            "recdwCzyVsqyvqRny",
+            "rec8a8ml8e4wGyVeH",
+            "recNy9glZure3cszP"
+          ],
+          "Nacionalidad": [
+            "rec7nhastozSVnJax"
+          ],
+          "Programas": [
+            "Sistemas de agua",
+            "Mujer y familia"
+          ],
+          "Foto": [
+            {
+              "id": "attguA4X1dopDW61o",
+              "url": "https://dl.airtable.com/s85PPVFcSRSjmA1PuUzE_o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "filename": "o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "size": 550050,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/dYsC3xYGRHetfYr9H1T3_small_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 54,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/lSidcdFuQsqxVEEzshYS_large_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 512,
+                  "height": 380
+                }
+              }
+            }
+          ],
+          "Agua": 6,
+          "Agua Familias": 6,
+          "Agua Usuarios": 0,
+          "Most recent": "2015-08-20",
+          "First": "2015-08-20"
+        },
+        "geometry": null
+      },
+      {
+        "type": "Feature",
         "id": "recVTzqeEtrRB5hxY",
         "properties": {
-          "Settlement": "Orahuëaya",
+          "Comunidad": "Orahuëaya",
           "Installations": [
             "rectROHLzPQ8TpxSe",
             "recMmiH2ay4IUilse",
@@ -1151,22 +2987,45 @@
             "reclSdbghYBmCQTe5",
             "recZ0hhHWjjCIt4nq",
             "rectQ9t4ZEYe1HaJN",
-            "recf9tBBzJLdadUzn"
+            "recf9tBBzJLdadUzn",
+            "recQShCBRDVPcl22a"
           ],
-          "Land Title Area": [
-            "rec8DreEWMFsfAHu0"
+          "Nacionalidad": [
+            "rec7QOgAYxMln7nHN"
           ],
           "Lon": -76.53822158,
           "Lat": -0.1930378792,
-          "Programs": [
-            "recEXL7xBNNCJWMYR"
+          "Programas": [
+            "Sistemas de agua",
+            "Defensores y defensoras",
+            "Mapeo territorial"
           ],
-          "Nationality": [
-            "rec7QOgAYxMln7nHN"
+          "Foto": [
+            {
+              "id": "attiw9QQfgVxDDcMM",
+              "url": "https://dl.airtable.com/xZPoUzRwqQ7DQWgELnbA_GBR.jpg",
+              "filename": "GBR.jpg",
+              "size": 115627,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/12XIYPpcS2WM9iApKIiC_small_GBR.jpg",
+                  "width": 48,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/nX7E2ZKJRZGJx0fLYaJT_large_GBR.jpg",
+                  "width": 512,
+                  "height": 512
+                }
+              }
+            }
           ],
-          "Water Installations": 18,
-          "Water Families": 18,
-          "Water Users": 94
+          "Agua": 19,
+          "Agua Familias": 19,
+          "Agua Usuarios": 94,
+          "Most recent": "2014-12-20",
+          "First": "2014-01-30"
         },
         "geometry": {
           "type": "Point",
@@ -1178,9 +3037,85 @@
       },
       {
         "type": "Feature",
+        "id": "recWANUTAlbXmztQV",
+        "properties": {
+          "Comunidad": "Gabaro",
+          "Nacionalidad": [
+            "rec7nhastozSVnJax"
+          ],
+          "Programas": [
+            "Sistemas de agua"
+          ],
+          "Foto": [
+            {
+              "id": "attguA4X1dopDW61o",
+              "url": "https://dl.airtable.com/s85PPVFcSRSjmA1PuUzE_o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "filename": "o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "size": 550050,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/dYsC3xYGRHetfYr9H1T3_small_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 54,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/lSidcdFuQsqxVEEzshYS_large_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 512,
+                  "height": 380
+                }
+              }
+            }
+          ],
+          "Agua": 0,
+          "Agua Familias": 0,
+          "Agua Usuarios": 0
+        },
+        "geometry": null
+      },
+      {
+        "type": "Feature",
+        "id": "recXw7fvmRTEZxc41",
+        "properties": {
+          "Comunidad": "Uttuvoe",
+          "Nacionalidad": [
+            "recmAG2tQi6scRRzZ"
+          ],
+          "Programas": [
+            "Sistemas de agua"
+          ],
+          "Foto": [
+            {
+              "id": "atteU8amfOJyujtaU",
+              "url": "https://dl.airtable.com/3lDQkVNBSw257hkVkJMf_iceberg3.jpg",
+              "filename": "iceberg3.jpg",
+              "size": 86257,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/CoMdUrFmTbSRl6UA1Vzj_small_iceberg3.jpg",
+                  "width": 54,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/JXWfiec6QQKpg7CDyiLE_large_iceberg3.jpg",
+                  "width": 512,
+                  "height": 512
+                }
+              }
+            }
+          ],
+          "Agua": 0,
+          "Agua Familias": 0,
+          "Agua Usuarios": 0
+        },
+        "geometry": null
+      },
+      {
+        "type": "Feature",
         "id": "recYRj07a06XLUIBQ",
         "properties": {
-          "Settlement": "Aboquehuira",
+          "Comunidad": "Aboquehuira",
           "Installations": [
             "rec9LSjxZmhSfzoDm",
             "recoXKMio7yb0RjmR",
@@ -1192,23 +3127,48 @@
             "recn0wYNMx1IGykUm",
             "recHMjrbMCZ9CQyTB"
           ],
-          "Land Title Area": [
-            "rec8DreEWMFsfAHu0"
+          "Nacionalidad": [
+            "rec7QOgAYxMln7nHN"
           ],
           "Lon": -76.481621,
           "Lat": -0.2083409857,
-          "Programs": [
-            "recEXL7xBNNCJWMYR"
+          "Programas": [
+            "Sistemas de agua",
+            "Defensores y defensoras",
+            "Practicas propias",
+            "Sistemas solares",
+            "Monitoreo ambiental"
           ],
-          "Nationality": [
-            "rec7QOgAYxMln7nHN"
-          ],
-          "Water Installations": 9,
-          "Water Families": 9,
-          "Water Users": 59,
-          "Stories": [
+          "Historias": [
             "recl1bfk9LC5j4HBX"
-          ]
+          ],
+          "Foto": [
+            {
+              "id": "attiw9QQfgVxDDcMM",
+              "url": "https://dl.airtable.com/xZPoUzRwqQ7DQWgELnbA_GBR.jpg",
+              "filename": "GBR.jpg",
+              "size": 115627,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/12XIYPpcS2WM9iApKIiC_small_GBR.jpg",
+                  "width": 48,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/nX7E2ZKJRZGJx0fLYaJT_large_GBR.jpg",
+                  "width": 512,
+                  "height": 512
+                }
+              }
+            }
+          ],
+          "Descripción": "The Siona community of Aboquehuira lies close to the Aguarico River in the Ecuadorian Amazon. Composed of nine families, Aboquehuira works with ClearWater and the Ceibo Alliance on five programs",
+          "Agua": 9,
+          "Agua Familias": 9,
+          "Agua Usuarios": 59,
+          "Most recent": "2014-01-25",
+          "First": "2014-01-20"
         },
         "geometry": {
           "type": "Point",
@@ -1220,9 +3180,47 @@
       },
       {
         "type": "Feature",
+        "id": "recYkOSlzv1roKlA8",
+        "properties": {
+          "Comunidad": "Bataboro",
+          "Nacionalidad": [
+            "rec7nhastozSVnJax"
+          ],
+          "Programas": [
+            "Mujer y familia"
+          ],
+          "Foto": [
+            {
+              "id": "attguA4X1dopDW61o",
+              "url": "https://dl.airtable.com/s85PPVFcSRSjmA1PuUzE_o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "filename": "o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "size": 550050,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/dYsC3xYGRHetfYr9H1T3_small_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 54,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/lSidcdFuQsqxVEEzshYS_large_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 512,
+                  "height": 380
+                }
+              }
+            }
+          ],
+          "Agua": 0,
+          "Agua Familias": 0,
+          "Agua Usuarios": 0
+        },
+        "geometry": null
+      },
+      {
+        "type": "Feature",
         "id": "recYoZ3YHvRYzbgIm",
         "properties": {
-          "Settlement": "Pisorie Canqque",
+          "Comunidad": "Pisorie Canqque",
           "Installations": [
             "reczuqNxQZjx9N3kE",
             "rec2GJX0HxEBRyDor",
@@ -1236,20 +3234,41 @@
             "rec3uJLY9QnZXql13",
             "recZWHCMyssxlDJNC"
           ],
-          "Land Title Area": [
-            "recDrJE2C9e8NCpf0"
+          "Nacionalidad": [
+            "recmAG2tQi6scRRzZ"
           ],
           "Lon": -76.76001702,
           "Lat": 0.01141198162,
-          "Programs": [
-            "recEXL7xBNNCJWMYR"
+          "Programas": [
+            "Sistemas de agua"
           ],
-          "Nationality": [
-            "recmAG2tQi6scRRzZ"
+          "Foto": [
+            {
+              "id": "atteU8amfOJyujtaU",
+              "url": "https://dl.airtable.com/3lDQkVNBSw257hkVkJMf_iceberg3.jpg",
+              "filename": "iceberg3.jpg",
+              "size": 86257,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/CoMdUrFmTbSRl6UA1Vzj_small_iceberg3.jpg",
+                  "width": 54,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/JXWfiec6QQKpg7CDyiLE_large_iceberg3.jpg",
+                  "width": 512,
+                  "height": 512
+                }
+              }
+            }
           ],
-          "Water Installations": 11,
-          "Water Families": 12,
-          "Water Users": 67
+          "Descripción": "The A'I Kofan community of Pisorie Canqque lies close to the Aguarico River in the Ecuadorian Amazon. Composed of 12 families, Pisorie Canqque works with ClearWater and the Ceibo Alliance on one program",
+          "Agua": 11,
+          "Agua Familias": 12,
+          "Agua Usuarios": 67,
+          "Most recent": "2014-01-31",
+          "First": "2014-01-30"
         },
         "geometry": {
           "type": "Point",
@@ -1261,9 +3280,581 @@
       },
       {
         "type": "Feature",
+        "id": "recZIQE6c0Lyw0rHN",
+        "properties": {
+          "Comunidad": "Tepapare",
+          "Installations": [
+            "recRu3tuaoscUMWRn",
+            "recwrmnseMtkonxzH",
+            "recRDRiXpjWJcg3GY",
+            "recq2n3CeUoqoAhDa"
+          ],
+          "Nacionalidad": [
+            "rec7nhastozSVnJax"
+          ],
+          "Programas": [
+            "Sistemas de agua",
+            "Mujer y familia"
+          ],
+          "Foto": [
+            {
+              "id": "attguA4X1dopDW61o",
+              "url": "https://dl.airtable.com/s85PPVFcSRSjmA1PuUzE_o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "filename": "o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "size": 550050,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/dYsC3xYGRHetfYr9H1T3_small_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 54,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/lSidcdFuQsqxVEEzshYS_large_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 512,
+                  "height": 380
+                }
+              }
+            }
+          ],
+          "Agua": 4,
+          "Agua Familias": 4,
+          "Agua Usuarios": 0,
+          "Most recent": "2015-08-20",
+          "First": "2015-08-20"
+        },
+        "geometry": null
+      },
+      {
+        "type": "Feature",
+        "id": "recZO42URyar47XiJ",
+        "properties": {
+          "Comunidad": "Peneno",
+          "Nacionalidad": [
+            "rec7nhastozSVnJax"
+          ],
+          "Programas": [
+            "Sistemas de agua",
+            "Mujer y familia"
+          ],
+          "Foto": [
+            {
+              "id": "attguA4X1dopDW61o",
+              "url": "https://dl.airtable.com/s85PPVFcSRSjmA1PuUzE_o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "filename": "o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "size": 550050,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/dYsC3xYGRHetfYr9H1T3_small_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 54,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/lSidcdFuQsqxVEEzshYS_large_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 512,
+                  "height": 380
+                }
+              }
+            }
+          ],
+          "Agua": 0,
+          "Agua Familias": 0,
+          "Agua Usuarios": 0
+        },
+        "geometry": null
+      },
+      {
+        "type": "Feature",
+        "id": "recbb8v2HuaIkbxXf",
+        "properties": {
+          "Comunidad": "Toñampare",
+          "Installations": [
+            "recmLtokbrsQGFIyM",
+            "reclPWrbaWUWKJ9NS",
+            "recr2g7lu21NrDOuU",
+            "recSCC8Ad1RQBc1z5",
+            "recsW2ivCdOVxnbB4",
+            "receYnl66OVMEuuKx",
+            "recHJ4N2jp0FQTy3R",
+            "recQCFlXa4lbKHNB5",
+            "recCzyQot6cAplbyf",
+            "recPHR52jCIySwv1Z",
+            "recjK4a2QvR3Bk9Y5",
+            "reclKAIzpusyPZODv",
+            "recHIYYo6XFYQUeSd",
+            "recAskadcW0u2Mtjt",
+            "recbs9rCwjFzle0eV",
+            "rec9wfw739thOuz8C",
+            "recLocHbG4WDg4YNI",
+            "rec3ZUygdYRmsCrUn",
+            "recXUY1cTZQjbdrV4",
+            "recJn1GIPUIUenEGl",
+            "recaUYqDoLG7bmcCK",
+            "recQ6tGgkoaepeSZN",
+            "recoJH5XdwJ1GI2YD",
+            "recqsytfSJQ6PlOhi",
+            "recw7pUg30keBCHDk",
+            "rec5uawqmwPQN9ovc",
+            "recMPJA14S7pbOsiy",
+            "recusJQnOPZYA6vOu",
+            "recJA0tHAvnyydO1t",
+            "recZQTR9M0tloUS0V",
+            "recAxugrsIBnifiQX",
+            "recD4Snzz9qLGSpTL",
+            "recDj9FZUTmSGGKTA",
+            "recHC5H5NzqYJCf9H",
+            "recSmlMzAaiF4YGbH",
+            "recIgjo9KFbVQu8Hx",
+            "recOiQbJVprIyHjXw",
+            "recd3ivIgrJWILwl9",
+            "recbg6S07KxnFECL0",
+            "recBLZsynoFQy21af",
+            "rectmDUkQN6ZjiMDu",
+            "recI8a3zri6RYgMx3",
+            "recGwbAb6RjImBLrt",
+            "recv7vvj1wztkZn3w",
+            "recneTkYTll2kpJix",
+            "rec09QomO6AYG9gYf",
+            "recNNo7LPawtfc6IZ"
+          ],
+          "Nacionalidad": [
+            "rec7nhastozSVnJax"
+          ],
+          "Programas": [
+            "Sistemas de agua",
+            "Mujer y familia",
+            "Mapeo territorial"
+          ],
+          "Foto": [
+            {
+              "id": "attguA4X1dopDW61o",
+              "url": "https://dl.airtable.com/s85PPVFcSRSjmA1PuUzE_o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "filename": "o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "size": 550050,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/dYsC3xYGRHetfYr9H1T3_small_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 54,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/lSidcdFuQsqxVEEzshYS_large_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 512,
+                  "height": 380
+                }
+              }
+            }
+          ],
+          "Agua": 47,
+          "Agua Familias": 47,
+          "Agua Usuarios": 0,
+          "Most recent": "2016-11-30",
+          "First": "2016-11-30"
+        },
+        "geometry": null
+      },
+      {
+        "type": "Feature",
+        "id": "reccUjavRdDz5hNAu",
+        "properties": {
+          "Comunidad": "Koniampare",
+          "Installations": [
+            "recPyNWajIl9L9ItU",
+            "recFOY2XApZmqWEgw",
+            "recOgCMQbV6Kt1oSY",
+            "recq04Y5P9WrBXGuj",
+            "recbeSqFK9CCOxDm3",
+            "rec124OXUJ1LBb2Pp",
+            "recG4mO0E4pH5eOLW",
+            "recAfEkxcGaQcSsGk",
+            "reclcOtzMHzQpn6XR",
+            "rec4Rvm05NLbfcTLI",
+            "recxfnLPvUaiKLKUi"
+          ],
+          "Nacionalidad": [
+            "rec7nhastozSVnJax"
+          ],
+          "Programas": [
+            "Sistemas de agua",
+            "Mujer y familia"
+          ],
+          "Foto": [
+            {
+              "id": "attguA4X1dopDW61o",
+              "url": "https://dl.airtable.com/s85PPVFcSRSjmA1PuUzE_o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "filename": "o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "size": 550050,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/dYsC3xYGRHetfYr9H1T3_small_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 54,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/lSidcdFuQsqxVEEzshYS_large_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 512,
+                  "height": 380
+                }
+              }
+            }
+          ],
+          "Agua": 11,
+          "Agua Familias": 11,
+          "Agua Usuarios": 0,
+          "Most recent": "2015-11-30",
+          "First": "2015-11-30"
+        },
+        "geometry": null
+      },
+      {
+        "type": "Feature",
+        "id": "recf2yAnWctnsvWQ3",
+        "properties": {
+          "Comunidad": "Geyepare",
+          "Installations": [
+            "recoJkppzerk7LxpH",
+            "recEU5SGWgv260IQq"
+          ],
+          "Nacionalidad": [
+            "rec7nhastozSVnJax"
+          ],
+          "Programas": [
+            "Sistemas de agua",
+            "Sistemas solares",
+            "Mujer y familia"
+          ],
+          "Foto": [
+            {
+              "id": "attguA4X1dopDW61o",
+              "url": "https://dl.airtable.com/s85PPVFcSRSjmA1PuUzE_o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "filename": "o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "size": 550050,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/dYsC3xYGRHetfYr9H1T3_small_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 54,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/lSidcdFuQsqxVEEzshYS_large_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 512,
+                  "height": 380
+                }
+              }
+            }
+          ],
+          "Agua": 2,
+          "Agua Familias": 2,
+          "Agua Usuarios": 0,
+          "Most recent": "2015-12-30",
+          "First": "2015-12-30"
+        },
+        "geometry": null
+      },
+      {
+        "type": "Feature",
+        "id": "recgTpeb0yva3e5ew",
+        "properties": {
+          "Comunidad": "Gemeneweno",
+          "Nacionalidad": [
+            "rec7nhastozSVnJax"
+          ],
+          "Programas": [
+            "Sistemas de agua"
+          ],
+          "Foto": [
+            {
+              "id": "attguA4X1dopDW61o",
+              "url": "https://dl.airtable.com/s85PPVFcSRSjmA1PuUzE_o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "filename": "o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "size": 550050,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/dYsC3xYGRHetfYr9H1T3_small_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 54,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/lSidcdFuQsqxVEEzshYS_large_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 512,
+                  "height": 380
+                }
+              }
+            }
+          ],
+          "Agua": 0,
+          "Agua Familias": 0,
+          "Agua Usuarios": 0
+        },
+        "geometry": null
+      },
+      {
+        "type": "Feature",
+        "id": "rech4VGeqCBohUak8",
+        "properties": {
+          "Comunidad": "Tayuscanqque/Avie",
+          "Installations": [
+            "recJxQmehkqpz5OJn",
+            "recpiDp6S0hiN48JO",
+            "recwGQRif1Yu8X3tj",
+            "recje0g6Kh1S9xbje",
+            "recS6mVjWDYJOzOmu",
+            "reckVr2uFIYrmjkmQ",
+            "recmXkEci0wHiEpzI",
+            "rec9oRPtBkhNVNjj2"
+          ],
+          "Nacionalidad": [
+            "recmAG2tQi6scRRzZ"
+          ],
+          "Programas": [
+            "Sistemas de agua",
+            "Practicas propias"
+          ],
+          "Foto": [
+            {
+              "id": "atteU8amfOJyujtaU",
+              "url": "https://dl.airtable.com/3lDQkVNBSw257hkVkJMf_iceberg3.jpg",
+              "filename": "iceberg3.jpg",
+              "size": 86257,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/CoMdUrFmTbSRl6UA1Vzj_small_iceberg3.jpg",
+                  "width": 54,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/JXWfiec6QQKpg7CDyiLE_large_iceberg3.jpg",
+                  "width": 512,
+                  "height": 512
+                }
+              }
+            }
+          ],
+          "Agua": 8,
+          "Agua Familias": 8,
+          "Agua Usuarios": 0,
+          "Most recent": "2015-07-15",
+          "First": "2015-07-15"
+        },
+        "geometry": null
+      },
+      {
+        "type": "Feature",
+        "id": "reck5JuhF5oB2WDyM",
+        "properties": {
+          "Comunidad": "Waiya",
+          "Nacionalidad": [
+            "recHGwwudtmODsfLg"
+          ],
+          "Programas": [
+            "Sistemas de agua",
+            "Defensores y defensoras",
+            "Mapeo territorial",
+            "Practicas propias",
+            "Mujer y familia",
+            "Monitoreo ambiental"
+          ],
+          "Foto": [
+            {
+              "id": "att8myDMfecw5dDtG",
+              "url": "https://dl.airtable.com/89uZq9QjR26WKRzHWE60_sahara-desert.jpg",
+              "filename": "sahara-desert.jpg",
+              "size": 169005,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/ZdcUI0O5TeeZGuSRqwXl_small_sahara-desert.jpg",
+                  "width": 54,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/z0FfPlbTQmIPrXngig8g_large_sahara-desert.jpg",
+                  "width": 512,
+                  "height": 512
+                }
+              }
+            }
+          ],
+          "Agua": 0,
+          "Agua Familias": 0,
+          "Agua Usuarios": 0
+        },
+        "geometry": null
+      },
+      {
+        "type": "Feature",
+        "id": "reckr6AcSI7WnwT1K",
+        "properties": {
+          "Comunidad": "Tiweno",
+          "Nacionalidad": [
+            "rec7nhastozSVnJax"
+          ],
+          "Programas": [
+            "Mujer y familia"
+          ],
+          "Foto": [
+            {
+              "id": "attguA4X1dopDW61o",
+              "url": "https://dl.airtable.com/s85PPVFcSRSjmA1PuUzE_o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "filename": "o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "size": 550050,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/dYsC3xYGRHetfYr9H1T3_small_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 54,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/lSidcdFuQsqxVEEzshYS_large_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 512,
+                  "height": 380
+                }
+              }
+            }
+          ],
+          "Agua": 0,
+          "Agua Familias": 0,
+          "Agua Usuarios": 0
+        },
+        "geometry": null
+      },
+      {
+        "type": "Feature",
+        "id": "recooJ7fODKE1aOl1",
+        "properties": {
+          "Comunidad": "Tarapuya/Tarabiaya",
+          "Installations": [
+            "recEtT5a5r7b4wV8D",
+            "recYVvf9q0J5G3m8i",
+            "recC0CcRRHhgworbn",
+            "recu3EXFbJ8WU04LT",
+            "reccd9tPx01Wh65yI",
+            "rec7G2q0pRsADAjGM",
+            "recX0kzAIWNX32MCg",
+            "recH1pzwoPnr5m459",
+            "rec0Cwx2gjRnx4WWW",
+            "recTY4s6BRDTqjsfX",
+            "rec4WnZuq7cSMjnzH",
+            "reczt4ar8d2sjfBCA",
+            "recmm7pI60XZIDLaV",
+            "recInxdHSKBfIe4B8",
+            "rechYeZPX1E2NXcob",
+            "recf1QpCWcdQinIim",
+            "rectfFCgFB0CcNo76",
+            "recPMwFvyVcEKgxwI",
+            "recIxgWfjAxgmauhL",
+            "rec8kjMjOoilauGDO",
+            "recjspPgG5wGP5KVD"
+          ],
+          "Nacionalidad": [
+            "rec7QOgAYxMln7nHN"
+          ],
+          "Programas": [
+            "Sistemas de agua",
+            "Mujer y familia"
+          ],
+          "Foto": [
+            {
+              "id": "attiw9QQfgVxDDcMM",
+              "url": "https://dl.airtable.com/xZPoUzRwqQ7DQWgELnbA_GBR.jpg",
+              "filename": "GBR.jpg",
+              "size": 115627,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/12XIYPpcS2WM9iApKIiC_small_GBR.jpg",
+                  "width": 48,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/nX7E2ZKJRZGJx0fLYaJT_large_GBR.jpg",
+                  "width": 512,
+                  "height": 512
+                }
+              }
+            }
+          ],
+          "Agua": 21,
+          "Agua Familias": 21,
+          "Agua Usuarios": 0,
+          "Most recent": "2015-09-30",
+          "First": "2015-09-30"
+        },
+        "geometry": null
+      },
+      {
+        "type": "Feature",
+        "id": "recpF69mTsbrHURLd",
+        "properties": {
+          "Comunidad": "Puerto Bolivar",
+          "Installations": [
+            "rechY3NexS5QIXLqx",
+            "recmwTTZpKr1ZmRMc",
+            "rec6COmLWgogNftBG",
+            "recZZNUnlAU3eKfpr",
+            "recMrUR2gaBawZxcU",
+            "reck6W5Ox1rBRSYTW",
+            "recZ4WNWILUoojDSZ",
+            "rec66NQriBcTj6wQK",
+            "recrBrt5MT0QQRWHd",
+            "recjFAcB5EMo1KiDC",
+            "rec38rpOHJHEh95iM",
+            "rec5MV0gvp2F6v9Z4",
+            "recLNNhUscWsi2bkV",
+            "recDXQhh5zTxRapoD",
+            "recctui4ZiYal6vSO",
+            "recsERslrWNUkjSqj",
+            "recjX8EAQd6ii8y3d",
+            "recYpPfwqdaeyGjBK"
+          ],
+          "Nacionalidad": [
+            "rec7QOgAYxMln7nHN"
+          ],
+          "Programas": [
+            "Sistemas de agua",
+            "Mujer y familia"
+          ],
+          "Foto": [
+            {
+              "id": "attiw9QQfgVxDDcMM",
+              "url": "https://dl.airtable.com/xZPoUzRwqQ7DQWgELnbA_GBR.jpg",
+              "filename": "GBR.jpg",
+              "size": 115627,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/12XIYPpcS2WM9iApKIiC_small_GBR.jpg",
+                  "width": 48,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/nX7E2ZKJRZGJx0fLYaJT_large_GBR.jpg",
+                  "width": 512,
+                  "height": 512
+                }
+              }
+            }
+          ],
+          "Agua": 18,
+          "Agua Familias": 18,
+          "Agua Usuarios": 0,
+          "Most recent": "2015-10-20",
+          "First": "2015-10-20"
+        },
+        "geometry": null
+      },
+      {
+        "type": "Feature",
         "id": "recsjnFvQFpCimzNn",
         "properties": {
-          "Settlement": "Sotosiaya",
+          "Comunidad": "Sotosiaya",
           "Installations": [
             "recv7Q3Hjd8sdpEfs",
             "recU1Rq4kvgehnf5n",
@@ -1283,25 +3874,73 @@
             "rec744RVn2NH89Zu2",
             "rec90n9tgFtkgKK7q",
             "recYhat5r7nAzl4lp",
-            "recyMTweat2jirDLU"
+            "recyMTweat2jirDLU",
+            "rec08OLyavoN9k1FR",
+            "recXHdSHzvV8C9aAw",
+            "reccM80pWQxnYTZoB",
+            "receb9IYb31Jd6yGA",
+            "rec8ld9OCzp3FYtyo",
+            "rec38LjijfBY6KTDL",
+            "recTkzXX87BD5byob",
+            "recJ1MHRWfFiQLIvr",
+            "recwt3Ny0OPX8uVtR",
+            "rec78iAUl5Qzk7UKw",
+            "recDajvJBBPtMN2zB",
+            "recFuXSk9ZD681PMA",
+            "rec0K7wRkXAJKXTF3",
+            "recrukuMfNqNRsvgy",
+            "rec822eHHoW4hmlso",
+            "recyStqhBwu5Z4LGe",
+            "reckJy090tbAbgcoA",
+            "recqrq020VXJ2Aqwp",
+            "rec3MtjThYWDLjK2O",
+            "recJqLl3IG57IbsbG",
+            "reclZSeBUIn4CcGrZ",
+            "recTX5w6yV7oy2u7A",
+            "rec82vT8w2bXGR9uQ",
+            "recgxWPD6PSFudNM2",
+            "rec4N9CPp9tr0RywU"
           ],
-          "Land Title Area": [
-            "rec8DreEWMFsfAHu0"
+          "Nacionalidad": [
+            "rec7QOgAYxMln7nHN"
           ],
           "Lon": -76.43724247,
           "Lat": -0.2412469478,
-          "Programs": [
-            "recEXL7xBNNCJWMYR"
+          "Programas": [
+            "Sistemas de agua",
+            "Defensores y defensoras",
+            "Mapeo territorial",
+            "Practicas propias"
           ],
-          "Nationality": [
-            "rec7QOgAYxMln7nHN"
-          ],
-          "Water Installations": 19,
-          "Water Families": 19,
-          "Water Users": 177,
-          "Stories": [
+          "Historias": [
             "receOMazWSqCjZnnk"
-          ]
+          ],
+          "Foto": [
+            {
+              "id": "attiw9QQfgVxDDcMM",
+              "url": "https://dl.airtable.com/xZPoUzRwqQ7DQWgELnbA_GBR.jpg",
+              "filename": "GBR.jpg",
+              "size": 115627,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/12XIYPpcS2WM9iApKIiC_small_GBR.jpg",
+                  "width": 48,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/nX7E2ZKJRZGJx0fLYaJT_large_GBR.jpg",
+                  "width": 512,
+                  "height": 512
+                }
+              }
+            }
+          ],
+          "Agua": 44,
+          "Agua Familias": 44,
+          "Agua Usuarios": 177,
+          "Most recent": "2016-09-15",
+          "First": "2012-10-25"
         },
         "geometry": {
           "type": "Point",
@@ -1315,24 +3954,78 @@
         "type": "Feature",
         "id": "recstYD75GGhtoKVK",
         "properties": {
-          "Settlement": "Dovuno",
+          "Comunidad": "Dovuno",
           "Installations": [
-            "receMnVtA2xhYmzu0"
+            "receMnVtA2xhYmzu0",
+            "reclxumfD7DX5u6Nn",
+            "rec8zdUhujkO53DLj",
+            "recVrDzvUXZ05IZ6H",
+            "recocXimMW2MwuTLw",
+            "rec90cLO9tpmd7GNS",
+            "reccg91UwvtzGVXUd",
+            "recWw1SAaPCCDKRx3",
+            "rec0ehLFyHraUJyUL",
+            "recsOWbl94om8xImw",
+            "recvMCQFghWTXs86z",
+            "recToeplAY5jiIue1",
+            "recVhDUM4T6EIeNG9",
+            "rec2mQs2oMB4fELyS",
+            "recBPuOg1qdOhok2S",
+            "rec0i4eKqoFun6heH",
+            "recx3F08ecHrW5ii7",
+            "recnaIgVRxVRzg5qj",
+            "recPNTq3XijL0FAYc",
+            "recDfAKf6Z4IcBHtQ",
+            "recbwQi3QgNE5URsy",
+            "recp0RB0iTlyVq3bg",
+            "recbnquwT2iBytFSU",
+            "recIuVbntHDoalv1r",
+            "recPNpWo4FAgYsqfD",
+            "recj9559txxh9UhOc",
+            "recbsyC1VFAHPrxsd",
+            "rec6cCmuuIy6sF3wp",
+            "recwh3zlDVE9L31ge",
+            "recYn2sb5yq5Xbr7V",
+            "recP3vRLbX4pucPE9",
+            "recGvSmjvpTOG2yvi",
+            "recGqkmRs4ZNC3AxC",
+            "reckRQcbZpfgcG6Kr"
           ],
-          "Land Title Area": [
-            "recL9aTDudHowsGAJ"
+          "Nacionalidad": [
+            "recmAG2tQi6scRRzZ"
           ],
           "Lon": -77.09742335,
           "Lat": 0.02429216516,
-          "Programs": [
-            "recEXL7xBNNCJWMYR"
+          "Programas": [
+            "Sistemas de agua",
+            "Practicas propias"
           ],
-          "Nationality": [
-            "recmAG2tQi6scRRzZ"
+          "Foto": [
+            {
+              "id": "atteU8amfOJyujtaU",
+              "url": "https://dl.airtable.com/3lDQkVNBSw257hkVkJMf_iceberg3.jpg",
+              "filename": "iceberg3.jpg",
+              "size": 86257,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/CoMdUrFmTbSRl6UA1Vzj_small_iceberg3.jpg",
+                  "width": 54,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/JXWfiec6QQKpg7CDyiLE_large_iceberg3.jpg",
+                  "width": 512,
+                  "height": 512
+                }
+              }
+            }
           ],
-          "Water Installations": 1,
-          "Water Families": 1,
-          "Water Users": 7
+          "Agua": 34,
+          "Agua Familias": 32,
+          "Agua Usuarios": 16,
+          "Most recent": "2015-03-30",
+          "First": "2015-03-11"
         },
         "geometry": {
           "type": "Point",
@@ -1346,26 +4039,46 @@
         "type": "Feature",
         "id": "recuUbO75IrI3wH40",
         "properties": {
-          "Settlement": "Nampo Eno",
+          "Comunidad": "Nampo Eno",
           "Installations": [
             "recn2tvj1IZp7URAg",
             "recAZp7V5nfWasBzv",
             "recvA5b66e3IviG60"
           ],
-          "Land Title Area": [
-            "rec0U7CSPgqymTpM8"
+          "Nacionalidad": [
+            "rec7nhastozSVnJax"
           ],
           "Lon": -76.74962991,
           "Lat": -0.7382197576,
-          "Programs": [
-            "recEXL7xBNNCJWMYR"
+          "Programas": [
+            "Sistemas de agua"
           ],
-          "Nationality": [
-            "rec7nhastozSVnJax"
+          "Foto": [
+            {
+              "id": "attguA4X1dopDW61o",
+              "url": "https://dl.airtable.com/s85PPVFcSRSjmA1PuUzE_o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "filename": "o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "size": 550050,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/dYsC3xYGRHetfYr9H1T3_small_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 54,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/lSidcdFuQsqxVEEzshYS_large_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 512,
+                  "height": 380
+                }
+              }
+            }
           ],
-          "Water Installations": 3,
-          "Water Families": 3,
-          "Water Users": 37
+          "Agua": 3,
+          "Agua Familias": 3,
+          "Agua Usuarios": 37,
+          "Most recent": "2013-03-24",
+          "First": "2013-03-22"
         },
         "geometry": {
           "type": "Point",
@@ -1377,9 +4090,48 @@
       },
       {
         "type": "Feature",
+        "id": "recuZJUZ7pznTDFuC",
+        "properties": {
+          "Comunidad": "Dicaro",
+          "Nacionalidad": [
+            "rec7nhastozSVnJax"
+          ],
+          "Programas": [
+            "Sistemas de agua",
+            "Mujer y familia"
+          ],
+          "Foto": [
+            {
+              "id": "attguA4X1dopDW61o",
+              "url": "https://dl.airtable.com/s85PPVFcSRSjmA1PuUzE_o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "filename": "o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "size": 550050,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/dYsC3xYGRHetfYr9H1T3_small_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 54,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/lSidcdFuQsqxVEEzshYS_large_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 512,
+                  "height": 380
+                }
+              }
+            }
+          ],
+          "Agua": 0,
+          "Agua Familias": 0,
+          "Agua Usuarios": 0
+        },
+        "geometry": null
+      },
+      {
+        "type": "Feature",
         "id": "recujzxpakMNxhjAW",
         "properties": {
-          "Settlement": "Sinangue",
+          "Comunidad": "Sinangue",
           "Installations": [
             "recq9sEO6AFLKkVee",
             "recmfrLtW1FTDOFBZ",
@@ -1403,24 +4155,47 @@
             "recWBe29U6fQw2yF8",
             "receRnkuKKCvHJyiS"
           ],
-          "Land Title Area": [
-            "rece1KWFVf49sKmul"
+          "Nacionalidad": [
+            "recmAG2tQi6scRRzZ"
           ],
           "Lon": -77.43049196,
           "Lat": 0.1236344282,
-          "Programs": [
-            "recEXL7xBNNCJWMYR"
+          "Programas": [
+            "Sistemas de agua",
+            "Defensores y defensoras",
+            "Monitoreo ambiental",
+            "Mapeo territorial"
           ],
-          "Nationality": [
-            "recmAG2tQi6scRRzZ"
-          ],
-          "Water Installations": 21,
-          "Water Families": 22,
-          "Water Users": 152,
-          "Stories": [
+          "Historias": [
             "rec6YpDsuobq5BZFF",
             "recl0OJmqrktVrvw2"
-          ]
+          ],
+          "Foto": [
+            {
+              "id": "atteU8amfOJyujtaU",
+              "url": "https://dl.airtable.com/3lDQkVNBSw257hkVkJMf_iceberg3.jpg",
+              "filename": "iceberg3.jpg",
+              "size": 86257,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/CoMdUrFmTbSRl6UA1Vzj_small_iceberg3.jpg",
+                  "width": 54,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/JXWfiec6QQKpg7CDyiLE_large_iceberg3.jpg",
+                  "width": 512,
+                  "height": 512
+                }
+              }
+            }
+          ],
+          "Agua": 21,
+          "Agua Familias": 22,
+          "Agua Usuarios": 152,
+          "Most recent": "2014-01-18",
+          "First": "2014-01-18"
         },
         "geometry": {
           "type": "Point",
@@ -1429,24 +4204,412 @@
             0.1236344282
           ]
         }
+      },
+      {
+        "type": "Feature",
+        "id": "recvDqmGd7xP62UOe",
+        "properties": {
+          "Comunidad": "Tiwino",
+          "Nacionalidad": [
+            "rec7nhastozSVnJax"
+          ],
+          "Programas": [
+            "Mujer y familia"
+          ],
+          "Foto": [
+            {
+              "id": "attguA4X1dopDW61o",
+              "url": "https://dl.airtable.com/s85PPVFcSRSjmA1PuUzE_o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "filename": "o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "size": 550050,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/dYsC3xYGRHetfYr9H1T3_small_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 54,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/lSidcdFuQsqxVEEzshYS_large_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 512,
+                  "height": 380
+                }
+              }
+            }
+          ],
+          "Agua": 0,
+          "Agua Familias": 0,
+          "Agua Usuarios": 0
+        },
+        "geometry": null
+      },
+      {
+        "type": "Feature",
+        "id": "recwLskwhS45Mzk04",
+        "properties": {
+          "Comunidad": "San Victoriano ",
+          "Installations": [
+            "recsjZI7CRnYIX1IZ",
+            "rec1lDDlOHCMe1Jdt",
+            "recrv3tjrF0VpBRuE",
+            "recU6hF8L4tonbxhS",
+            "recQ5TNnE2qbt9fZe",
+            "recUMMVLoMbSU6YDC",
+            "reclcO2VhpN3NW1r5",
+            "rec4w6YlrQqmlnT93",
+            "recYHpFcu0JrHkwnR",
+            "receQUtm0Auvs31Yk",
+            "recdrn5IrzM4L1ZIF",
+            "recSSmRQOoNoXuBqK",
+            "rec5nh4HFZbRE86s1"
+          ],
+          "Nacionalidad": [
+            "rec7QOgAYxMln7nHN"
+          ],
+          "Programas": [
+            "Sistemas de agua",
+            "Mujer y familia"
+          ],
+          "Foto": [
+            {
+              "id": "attiw9QQfgVxDDcMM",
+              "url": "https://dl.airtable.com/xZPoUzRwqQ7DQWgELnbA_GBR.jpg",
+              "filename": "GBR.jpg",
+              "size": 115627,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/12XIYPpcS2WM9iApKIiC_small_GBR.jpg",
+                  "width": 48,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/nX7E2ZKJRZGJx0fLYaJT_large_GBR.jpg",
+                  "width": 512,
+                  "height": 512
+                }
+              }
+            }
+          ],
+          "Agua": 13,
+          "Agua Familias": 13,
+          "Agua Usuarios": 0,
+          "Most recent": "2015-09-20",
+          "First": "2015-09-20"
+        },
+        "geometry": null
+      },
+      {
+        "type": "Feature",
+        "id": "recweSnkIEnnfMVNy",
+        "properties": {
+          "Comunidad": "Damointaro",
+          "Installations": [
+            "reck4eCILCyVTNFzp",
+            "recOwiwjZpbZlXum9",
+            "recQSnVQeDk192aha",
+            "recMf7hFTJ2Pl36nH",
+            "recrWnwXO5xo4fBWF",
+            "rec0jdCNOYbaDA4X9",
+            "recbNj3riEVNVSW96",
+            "recdnW0UaGwPBSfVX",
+            "rec9E2eEFLKTNbAaV",
+            "recacUrnJf6MVMPD5",
+            "recC1IMo34hfoYDiU",
+            "recSsU8A7LVHFwzkN",
+            "recePYlSsYi3mMnyl",
+            "recbjaFt8IzfYNFCy"
+          ],
+          "Nacionalidad": [
+            "rec7nhastozSVnJax"
+          ],
+          "Programas": [
+            "Sistemas de agua",
+            "Mapeo territorial",
+            "Mujer y familia"
+          ],
+          "Foto": [
+            {
+              "id": "attguA4X1dopDW61o",
+              "url": "https://dl.airtable.com/s85PPVFcSRSjmA1PuUzE_o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "filename": "o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "size": 550050,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/dYsC3xYGRHetfYr9H1T3_small_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 54,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/lSidcdFuQsqxVEEzshYS_large_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 512,
+                  "height": 380
+                }
+              }
+            }
+          ],
+          "Agua": 14,
+          "Agua Familias": 14,
+          "Agua Usuarios": 0,
+          "Most recent": "2016-12-30",
+          "First": "2016-12-30"
+        },
+        "geometry": null
+      },
+      {
+        "type": "Feature",
+        "id": "recxTl4g6rkbRbFvu",
+        "properties": {
+          "Comunidad": "Acaro",
+          "Installations": [
+            "recqFKTZIfBUJYnYC",
+            "recWBkSazhYwHSiO5",
+            "recxgRE80WZdTgeHD",
+            "reco4t6MVxQ6Vi5Lx",
+            "recrDvUMVFSQOq199",
+            "recHXvKbhUWXdagDS"
+          ],
+          "Nacionalidad": [
+            "rec7nhastozSVnJax"
+          ],
+          "Programas": [
+            "Sistemas de agua",
+            "Mapeo territorial",
+            "Sistemas solares",
+            "Mujer y familia"
+          ],
+          "Foto": [
+            {
+              "id": "attguA4X1dopDW61o",
+              "url": "https://dl.airtable.com/s85PPVFcSRSjmA1PuUzE_o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "filename": "o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "size": 550050,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/dYsC3xYGRHetfYr9H1T3_small_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 54,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/lSidcdFuQsqxVEEzshYS_large_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 512,
+                  "height": 380
+                }
+              }
+            }
+          ],
+          "Agua": 6,
+          "Agua Familias": 6,
+          "Agua Usuarios": 0,
+          "Most recent": "2016-12-30",
+          "First": "2016-12-30"
+        },
+        "geometry": null
+      },
+      {
+        "type": "Feature",
+        "id": "recxUkn9VPV4jaMeg",
+        "properties": {
+          "Comunidad": "Gareno ",
+          "Installations": [
+            "recKF2aV78AhOoirm",
+            "rec83hGVU7C5c7zcy",
+            "recLvLNOXwQVxQIEp",
+            "recWKpg7FI80waTEp",
+            "recpdUkbuECj4CqJn",
+            "recKn43MO3aMuPISw",
+            "recBo2pM3k72CXiZY",
+            "rec7FmCGlH3tfoodG",
+            "recdo5OBte9HXz6tT",
+            "rechPbVY6x3BWe1ol",
+            "reccih4z5QmrwUEWB",
+            "recECSaLka1VU5DSx",
+            "recIM3T5ms2umikBR",
+            "recNKqW0va1fKLbY3",
+            "recubGvAX4Yjkg2kk",
+            "recFjBC2zDyXxf127",
+            "rec5xzXYT0f1lCiAt",
+            "recvSTpR6MbRmjyJq",
+            "recWH2d61nt7xxLMy",
+            "recNh2vsvDthZ5cv7",
+            "recf1xv3yH26ky3cu",
+            "recWfGAEe3sZ5LF9D",
+            "recA2ZAFONMkqOhS3",
+            "recGO4lvWPSQr1DZz",
+            "rec01rvcZAJWQ4wzg",
+            "recSPsOahUemrDzI9"
+          ],
+          "Nacionalidad": [
+            "rec7nhastozSVnJax"
+          ],
+          "Programas": [
+            "Sistemas de agua",
+            "Mujer y familia"
+          ],
+          "Foto": [
+            {
+              "id": "attguA4X1dopDW61o",
+              "url": "https://dl.airtable.com/s85PPVFcSRSjmA1PuUzE_o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "filename": "o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "size": 550050,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/dYsC3xYGRHetfYr9H1T3_small_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 54,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/lSidcdFuQsqxVEEzshYS_large_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 512,
+                  "height": 380
+                }
+              }
+            }
+          ],
+          "Agua": 26,
+          "Agua Familias": 26,
+          "Agua Usuarios": 0,
+          "Most recent": "2015-04-30",
+          "First": "2015-04-30"
+        },
+        "geometry": null
+      },
+      {
+        "type": "Feature",
+        "id": "recy3BZ5TP6lwZEwt",
+        "properties": {
+          "Comunidad": "Secoya Eno",
+          "Installations": [
+            "recS1Ux7HQyts143k",
+            "recpUF7XpeRW2flQ5",
+            "recfwx2viJidMzl6g",
+            "recisKyOvxn2HXior",
+            "recHrih9ZACwmEUke",
+            "rec5eGjHjbkeRSxIP",
+            "recbwPLwhaWqSqchc",
+            "recnJFjRHNk3zZCp3",
+            "recXNOFqscbFu9GW9",
+            "recTNzpzduCYO677D",
+            "rect2gEXX0MaogdEI",
+            "recKU2fQsI6PmsWV2",
+            "recz1YNXptnKqeQgr",
+            "recw5rnRUYvcbqbkI",
+            "rec0uPT9oNaQ9MQ5w",
+            "recPCUND3p3j9Of1o",
+            "recC0OmfwoYRCtg57",
+            "recAStsG7eUWCQj7z",
+            "recNIjjjo8eu9uxjL",
+            "recsYd9J2Zw2ztsDO",
+            "recp75btoL4CX7ra7",
+            "rec5TFOBooE9404gl",
+            "recRYlw1gMWnamc81",
+            "recs2qxmfzN6wsPK8",
+            "rec9lJvliLc2ib7Gt",
+            "recJFINtuYt1BIMzO",
+            "recjW7OkxFpOr2lR4",
+            "rec9sIToXzzUsTFdY",
+            "recIyVFBHrR0INUIv",
+            "recmG1cRii9pESgcR"
+          ],
+          "Nacionalidad": [
+            "recHGwwudtmODsfLg"
+          ],
+          "Programas": [
+            "Sistemas de agua"
+          ],
+          "Foto": [
+            {
+              "id": "att8myDMfecw5dDtG",
+              "url": "https://dl.airtable.com/89uZq9QjR26WKRzHWE60_sahara-desert.jpg",
+              "filename": "sahara-desert.jpg",
+              "size": 169005,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/ZdcUI0O5TeeZGuSRqwXl_small_sahara-desert.jpg",
+                  "width": 54,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/z0FfPlbTQmIPrXngig8g_large_sahara-desert.jpg",
+                  "width": 512,
+                  "height": 512
+                }
+              }
+            }
+          ],
+          "Agua": 30,
+          "Agua Familias": 30,
+          "Agua Usuarios": 0,
+          "Most recent": "2015-02-20",
+          "First": "2015-02-20"
+        },
+        "geometry": null
+      },
+      {
+        "type": "Feature",
+        "id": "reczlAU8IIeq4IVJG",
+        "properties": {
+          "Comunidad": "Gametaro",
+          "Installations": [
+            "recIfdvbqkBV7ZPNt"
+          ],
+          "Nacionalidad": [
+            "rec7nhastozSVnJax"
+          ],
+          "Programas": [
+            "Sistemas de agua",
+            "Sistemas solares",
+            "Mujer y familia"
+          ],
+          "Foto": [
+            {
+              "id": "attguA4X1dopDW61o",
+              "url": "https://dl.airtable.com/s85PPVFcSRSjmA1PuUzE_o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "filename": "o-NEW-ENGLAND-AUTUMN-570.jpg",
+              "size": 550050,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/dYsC3xYGRHetfYr9H1T3_small_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 54,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/lSidcdFuQsqxVEEzshYS_large_o-NEW-ENGLAND-AUTUMN-570.jpg",
+                  "width": 512,
+                  "height": 380
+                }
+              }
+            }
+          ],
+          "Agua": 1,
+          "Agua Familias": 1,
+          "Agua Usuarios": 0,
+          "Most recent": "2015-08-20",
+          "First": "2015-08-20"
+        },
+        "geometry": null
       }
     ]
   },
-  "Land Title Area": {
+  "Areas": {
     "type": "FeatureCollection",
     "features": [
       {
         "type": "Feature",
         "id": "rec0U7CSPgqymTpM8",
         "properties": {
-          "Land Title Area": "Waorani",
-          "Nationality": [
+          "Area nombre": "Waorani",
+          "Nacionalidad": [
             "rec7nhastozSVnJax"
           ],
-          "Technicians": 4,
-          "Excerpt": "In 2013, ClearWater began a pilot project in the Waorani community of Yawepare using a new long-lasting galvanized steel design for our clean water systems.",
-          "Story": "In 2013, ClearWater began a pilot project in the Waorani community of Yawepare using a new design for metal catchment system frames that will last five times longer than wooden frames. 13 systems were built, benefitting 75 people. ClearWater will expand construction in additional Waorani communities starting in early 2014.",
-          "Photo": [
+          "Resumen": "In 2013, ClearWater began a pilot project in the Waorani community of Yawepare using a new long-lasting galvanized steel design for our clean water systems.",
+          "Historia": "In 2013, ClearWater began a pilot project in the Waorani community of Yawepare using a new design for metal catchment system frames that will last five times longer than wooden frames. 13 systems were built, benefitting 75 people. ClearWater will expand construction in additional Waorani communities starting in early 2014.",
+          "Foto": [
             {
               "id": "attNIgpYYqT2SUmuy",
               "url": "https://dl.airtable.com/XWOqj0BhTzefCMNNb8t9_9145e76e503def5d5f40321ccafb64f04153dc22.jpg",
@@ -1466,12 +4629,6 @@
                 }
               }
             }
-          ],
-          "Settlements": [
-            "recuUbO75IrI3wH40",
-            "recCvjMsbA7zmK1NJ",
-            "recNKTjM6lnghxEc1",
-            "recCrmsLnstJNkDq7"
           ],
           "Color": [
             "rgb(120, 28, 13)"
@@ -5757,14 +8914,13 @@
         "type": "Feature",
         "id": "rec3KP6G6vkees6Hb",
         "properties": {
-          "Land Title Area": "Sábalo",
-          "Nationality": [
+          "Area nombre": "Sábalo",
+          "Nacionalidad": [
             "recmAG2tQi6scRRzZ"
           ],
-          "Technicians": 2,
-          "Excerpt": "In November of 2014, ClearWater completed installations in the Cofán community of Sábalo, located along the Aguarico River, between the Cuyabeno Reserve and the Peruvian border. Approximately 200 people now have access to clean drinking water.",
-          "Story": "Between October and November of 2014 ClearWater completed the installation of 32 rainwater catchment systems in the ocmmunity of Sábalo, benegfitting over 200 people.",
-          "Photo": [
+          "Resumen": "In November of 2014, ClearWater completed installations in the Cofán community of Sábalo, located along the Aguarico River, between the Cuyabeno Reserve and the Peruvian border. Approximately 200 people now have access to clean drinking water.",
+          "Historia": "Between October and November of 2014 ClearWater completed the installation of 32 rainwater catchment systems in the ocmmunity of Sábalo, benegfitting over 200 people.",
+          "Foto": [
             {
               "id": "att8idCpdB0mJQc7Z",
               "url": "https://dl.airtable.com/mFq3dUF2Tg6izDd4iu2k_13b5299ad1fd0e4e3af7fddb80e01992b526ecec.jpg",
@@ -5784,10 +8940,6 @@
                 }
               }
             }
-          ],
-          "Settlements": [
-            "recLDyAp8npXT3ltE",
-            "recOfk668icH21OHL"
           ],
           "Color": [
             "rgb(68, 155, 49)"
@@ -7709,14 +10861,13 @@
         "type": "Feature",
         "id": "rec8DreEWMFsfAHu0",
         "properties": {
-          "Land Title Area": "Siona",
-          "Nationality": [
+          "Area nombre": "Siona",
+          "Nacionalidad": [
             "rec7QOgAYxMln7nHN"
           ],
-          "Technicians": 4,
-          "Excerpt": "Since 2012, ClearWater has built rainwater catchment systems in the Siona communities of Sotosiaya, Aboquehuira, Bi'aña, and Orahuëaya, providing safe access to clean water for hundreds of people.",
-          "Story": "ClearWater began installations with the Siona nationality in October 2012, constructing 20 rain catchment systems in the community of Sotosiaya, benefitting over 100 people. From November 2013 through January 2014, an additional 36 rainwater systems were built in the communities of Aboquehuira, Bi'aña, and Orahuëaya. Siona technicians working for ClearWater are dedicated to improving the living conditions for all Siona community members by providing them with clean drinking water.",
-          "Photo": [
+          "Resumen": "Since 2012, ClearWater has built rainwater catchment systems in the Siona communities of Sotosiaya, Aboquehuira, Bi'aña, and Orahuëaya, providing safe access to clean water for hundreds of people.",
+          "Historia": "ClearWater began installations with the Siona nationality in October 2012, constructing 20 rain catchment systems in the community of Sotosiaya, benefitting over 100 people. From November 2013 through January 2014, an additional 36 rainwater systems were built in the communities of Aboquehuira, Bi'aña, and Orahuëaya. Siona technicians working for ClearWater are dedicated to improving the living conditions for all Siona community members by providing them with clean drinking water.",
+          "Foto": [
             {
               "id": "attWp2fLLqXvN4FQB",
               "url": "https://dl.airtable.com/t4iv2UORuu2on6HDDb0o_e6fc5df5705389f53f6ed255d6c67cb1b5a2774a.jpg",
@@ -7736,12 +10887,6 @@
                 }
               }
             }
-          ],
-          "Settlements": [
-            "recYRj07a06XLUIBQ",
-            "recOCt7b8Zorp0HvH",
-            "recVTzqeEtrRB5hxY",
-            "recsjnFvQFpCimzNn"
           ],
           "Color": [
             "rgb(252, 233, 98)"
@@ -8465,14 +11610,13 @@
         "type": "Feature",
         "id": "recDrJE2C9e8NCpf0",
         "properties": {
-          "Land Title Area": "Cofan Dureno",
-          "Nationality": [
+          "Area nombre": "Cofan Dureno",
+          "Nacionalidad": [
             "recmAG2tQi6scRRzZ"
           ],
-          "Technicians": 4,
-          "Excerpt": "ClearWater first broke ground in Ecuador in late 2011, building rainwater catchment systems in the community of Cofan Dureno. ",
-          "Story": "The ClearWater project broke ground in the community of Cofan Dureno from November, 2011 when 52 rainwater catchment systems were built, providing 350 people with much-needed clean water. From November 2013 through January 2014, ClearWater built 53 rain catchments systems in the communities of Bavoroe, Ukavati, Pisorie Canqque, and Uttuvoe",
-          "Photo": [
+          "Resumen": "ClearWater first broke ground in Ecuador in late 2011, building rainwater catchment systems in the community of Cofan Dureno. ",
+          "Historia": "The ClearWater project broke ground in the community of Cofan Dureno from November, 2011 when 52 rainwater catchment systems were built, providing 350 people with much-needed clean water. From November 2013 through January 2014, ClearWater built 53 rain catchments systems in the communities of Bavoroe, Ukavati, Pisorie Canqque, and Uttuvoe",
+          "Foto": [
             {
               "id": "attIfWYhgbKIWDnve",
               "url": "https://dl.airtable.com/fmMj5vPS1WifFv3ZP2Cy_fb595705fa561b62fc4aad71c979fad33b58eb5a.jpg",
@@ -8492,13 +11636,6 @@
                 }
               }
             }
-          ],
-          "Settlements": [
-            "rec1e8A3YqHHWiUA4",
-            "recOrJCB4XNX1YswX",
-            "recGWaTjgMQr60apG",
-            "recYoZ3YHvRYzbgIm",
-            "rec5jyHt3zUgjovsn"
           ],
           "Color": [
             "rgb(68, 155, 49)"
@@ -8898,16 +12035,12 @@
         "type": "Feature",
         "id": "recL9aTDudHowsGAJ",
         "properties": {
-          "Land Title Area": "Dovuno",
-          "Nationality": [
+          "Area nombre": "Dovuno",
+          "Nacionalidad": [
             "recmAG2tQi6scRRzZ"
           ],
-          "Technicians": 1,
-          "Excerpt": "In March, 2015, ClearWater completed rainwater catchment system installations for all Cofán families in the community of Dovuno, located along the Aguarico River. Approximately 200 people now have access to clean drinking water in this community. ",
-          "Story": "Between February and March ClearWater technicians installed 30 rainwater catchment systems in the community of Dovuno, benefitting over 200 people.",
-          "Settlements": [
-            "recstYD75GGhtoKVK"
-          ],
+          "Resumen": "In March, 2015, ClearWater completed rainwater catchment system installations for all Cofán families in the community of Dovuno, located along the Aguarico River. Approximately 200 people now have access to clean drinking water in this community. ",
+          "Historia": "Between February and March ClearWater technicians installed 30 rainwater catchment systems in the community of Dovuno, benefitting over 200 people.",
           "Color": [
             "rgb(68, 155, 49)"
           ]
@@ -11164,14 +14297,13 @@
         "type": "Feature",
         "id": "recWnN8W3BcI1HiMQ",
         "properties": {
-          "Land Title Area": "Secoya",
-          "Nationality": [
+          "Area nombre": "Secoya",
+          "Nacionalidad": [
             "recHGwwudtmODsfLg"
           ],
-          "Technicians": 6,
-          "Excerpt": "Beginning in the communities of San Pablo and Bellavista in 2012, ClearWater has worked with local coordinators and technicians to build rainwater catchment systems for the Secoya people.",
-          "Story": "The Secoya are highly organized and dedicated to building clean water solutions for the nationality. ClearWater first began building in the communities of San Pablo and Bellavista in 2012. Over the months of July and August 2013 ClearWater installed an additional 55 rainwater systems in Secoya territory, in the communities of San Pablo and Siecoya Remolino.",
-          "Photo": [
+          "Resumen": "Beginning in the communities of San Pablo and Bellavista in 2012, ClearWater has worked with local coordinators and technicians to build rainwater catchment systems for the Secoya people.",
+          "Historia": "The Secoya are highly organized and dedicated to building clean water solutions for the nationality. ClearWater first began building in the communities of San Pablo and Bellavista in 2012. Over the months of July and August 2013 ClearWater installed an additional 55 rainwater systems in Secoya territory, in the communities of San Pablo and Siecoya Remolino.",
+          "Foto": [
             {
               "id": "attrsKSRRVU2Xu62Z",
               "url": "https://dl.airtable.com/1XM5VGgTMeR34KyJ2iNr_10c5c91f0a9bd9dabb7543491e78f894863bf5e7.jpg",
@@ -11191,11 +14323,6 @@
                 }
               }
             }
-          ],
-          "Settlements": [
-            "rec5rDRBBWRBCoQFv",
-            "recF3dMxXgNs1qPPb",
-            "recMLdTFGSCuwXUeP"
           ],
           "Color": [
             "rgb(47, 129, 247)"
@@ -12513,14 +15640,13 @@
         "type": "Feature",
         "id": "rece1KWFVf49sKmul",
         "properties": {
-          "Land Title Area": "Sinangue",
-          "Nationality": [
+          "Area nombre": "Sinangue",
+          "Nacionalidad": [
             "recmAG2tQi6scRRzZ"
           ],
-          "Technicians": 1,
-          "Excerpt": "Between Nov. 2013 & Jan. 2014, ClearWater completed an installation of clean water systems throughout the Cofan settlement of Sinangue, providing access to clean water for this community in the Andes foothills.",
-          "Story": "ClearWater began installations in the Cofán community of Sinangue, located in the foothills of the Andes mountains, in late November of 2013. 24 systems were built, benefitting over 100 people. Systems were completed in January of 2014.",
-          "Photo": [
+          "Resumen": "Between Nov. 2013 & Jan. 2014, ClearWater completed an installation of clean water systems throughout the Cofan settlement of Sinangue, providing access to clean water for this community in the Andes foothills.",
+          "Historia": "ClearWater began installations in the Cofán community of Sinangue, located in the foothills of the Andes mountains, in late November of 2013. 24 systems were built, benefitting over 100 people. Systems were completed in January of 2014.",
+          "Foto": [
             {
               "id": "attwumOvNW7nhCgNL",
               "url": "https://dl.airtable.com/VmsUbOYySguP33OYHFZi_2514490688c80d0f60240b517340d74b5cf4c559.jpg",
@@ -12540,9 +15666,6 @@
                 }
               }
             }
-          ],
-          "Settlements": [
-            "recujzxpakMNxhjAW"
           ],
           "Color": [
             "rgb(68, 155, 49)"
@@ -14286,16 +17409,943 @@
       },
       {
         "type": "Feature",
+        "id": "recm0jKSQR3D0wJVp",
+        "properties": {
+          "Area nombre": "Cofan Bermejo",
+          "Nacionalidad": [
+            "recmAG2tQi6scRRzZ"
+          ],
+          "Color": [
+            "rgb(68, 155, 49)"
+          ]
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -77.429712,
+                0.437228
+              ],
+              [
+                -77.43167,
+                0.439118
+              ],
+              [
+                -77.436974,
+                0.433467
+              ],
+              [
+                -77.438056,
+                0.433481
+              ],
+              [
+                -77.445456,
+                0.427444
+              ],
+              [
+                -77.452517,
+                0.426462
+              ],
+              [
+                -77.459582,
+                0.427579
+              ],
+              [
+                -77.462808,
+                0.426604
+              ],
+              [
+                -77.463125,
+                0.421415
+              ],
+              [
+                -77.464738,
+                0.415387
+              ],
+              [
+                -77.465402,
+                0.410413
+              ],
+              [
+                -77.462522,
+                0.40715
+              ],
+              [
+                -77.462074,
+                0.405076
+              ],
+              [
+                -77.462642,
+                0.396638
+              ],
+              [
+                -77.467488,
+                0.39612
+              ],
+              [
+                -77.489154,
+                0.39973
+              ],
+              [
+                -77.511163,
+                0.405749
+              ],
+              [
+                -77.513956,
+                0.404084
+              ],
+              [
+                -77.506257,
+                0.396338
+              ],
+              [
+                -77.502322,
+                0.39347
+              ],
+              [
+                -77.496048,
+                0.383657
+              ],
+              [
+                -77.493879,
+                0.375507
+              ],
+              [
+                -77.492737,
+                0.366956
+              ],
+              [
+                -77.493173,
+                0.359087
+              ],
+              [
+                -77.491537,
+                0.35674
+              ],
+              [
+                -77.489026,
+                0.347844
+              ],
+              [
+                -77.485366,
+                0.33954
+              ],
+              [
+                -77.479749,
+                0.339792
+              ],
+              [
+                -77.471494,
+                0.337283
+              ],
+              [
+                -77.465257,
+                0.335012
+              ],
+              [
+                -77.449636,
+                0.327782
+              ],
+              [
+                -77.44631,
+                0.325152
+              ],
+              [
+                -77.444408,
+                0.322342
+              ],
+              [
+                -77.440665,
+                0.314391
+              ],
+              [
+                -77.438229,
+                0.311163
+              ],
+              [
+                -77.431576,
+                0.30405
+              ],
+              [
+                -77.4309,
+                0.302592
+              ],
+              [
+                -77.453234,
+                0.302408
+              ],
+              [
+                -77.454035,
+                0.299826
+              ],
+              [
+                -77.430002,
+                0.299981
+              ],
+              [
+                -77.429718,
+                0.29386
+              ],
+              [
+                -77.454554,
+                0.291437
+              ],
+              [
+                -77.454273,
+                0.289663
+              ],
+              [
+                -77.436246,
+                0.290393
+              ],
+              [
+                -77.434683,
+                0.288457
+              ],
+              [
+                -77.4336,
+                0.281642
+              ],
+              [
+                -77.44045,
+                0.281156
+              ],
+              [
+                -77.440971,
+                0.279503
+              ],
+              [
+                -77.455713,
+                0.278209
+              ],
+              [
+                -77.455832,
+                0.276354
+              ],
+              [
+                -77.437164,
+                0.2766
+              ],
+              [
+                -77.437484,
+                0.271478
+              ],
+              [
+                -77.429152,
+                0.274867
+              ],
+              [
+                -77.428893,
+                0.254962
+              ],
+              [
+                -77.42515,
+                0.245038
+              ],
+              [
+                -77.418437,
+                0.235532
+              ],
+              [
+                -77.4122,
+                0.231109
+              ],
+              [
+                -77.403647,
+                0.226387
+              ],
+              [
+                -77.397767,
+                0.224355
+              ],
+              [
+                -77.38767,
+                0.220291
+              ],
+              [
+                -77.367297,
+                0.21563
+              ],
+              [
+                -77.363542,
+                0.216588
+              ],
+              [
+                -77.361379,
+                0.219975
+              ],
+              [
+                -77.359654,
+                0.22046
+              ],
+              [
+                -77.359904,
+                0.224614
+              ],
+              [
+                -77.358877,
+                0.227208
+              ],
+              [
+                -77.359055,
+                0.232947
+              ],
+              [
+                -77.357384,
+                0.238253
+              ],
+              [
+                -77.358337,
+                0.240078
+              ],
+              [
+                -77.356125,
+                0.2422
+              ],
+              [
+                -77.351869,
+                0.242999
+              ],
+              [
+                -77.344618,
+                0.24547
+              ],
+              [
+                -77.342718,
+                0.245104
+              ],
+              [
+                -77.335573,
+                0.247574
+              ],
+              [
+                -77.324778,
+                0.247571
+              ],
+              [
+                -77.31836,
+                0.251482
+              ],
+              [
+                -77.315306,
+                0.251632
+              ],
+              [
+                -77.308014,
+                0.249222
+              ],
+              [
+                -77.305707,
+                0.249114
+              ],
+              [
+                -77.302195,
+                0.247586
+              ],
+              [
+                -77.298373,
+                0.244102
+              ],
+              [
+                -77.292704,
+                0.241241
+              ],
+              [
+                -77.289907,
+                0.242101
+              ],
+              [
+                -77.288188,
+                0.239993
+              ],
+              [
+                -77.285989,
+                0.239305
+              ],
+              [
+                -77.283938,
+                0.243152
+              ],
+              [
+                -77.278952,
+                0.239647
+              ],
+              [
+                -77.279509,
+                0.235562
+              ],
+              [
+                -77.273784,
+                0.230075
+              ],
+              [
+                -77.265601,
+                0.229034
+              ],
+              [
+                -77.256399,
+                0.229092
+              ],
+              [
+                -77.248574,
+                0.230405
+              ],
+              [
+                -77.232941,
+                0.236579
+              ],
+              [
+                -77.226336,
+                0.239737
+              ],
+              [
+                -77.221632,
+                0.243087
+              ],
+              [
+                -77.211322,
+                0.249212
+              ],
+              [
+                -77.204954,
+                0.251844
+              ],
+              [
+                -77.198654,
+                0.253017
+              ],
+              [
+                -77.194589,
+                0.249872
+              ],
+              [
+                -77.17646,
+                0.287193
+              ],
+              [
+                -77.171362,
+                0.288764
+              ],
+              [
+                -77.168099,
+                0.287226
+              ],
+              [
+                -77.164748,
+                0.287561
+              ],
+              [
+                -77.165135,
+                0.292964
+              ],
+              [
+                -77.162213,
+                0.294245
+              ],
+              [
+                -77.161822,
+                0.29189
+              ],
+              [
+                -77.158756,
+                0.291362
+              ],
+              [
+                -77.154047,
+                0.293938
+              ],
+              [
+                -77.151774,
+                0.294146
+              ],
+              [
+                -77.145499,
+                0.291913
+              ],
+              [
+                -77.144683,
+                0.295952
+              ],
+              [
+                -77.141279,
+                0.299619
+              ],
+              [
+                -77.139182,
+                0.300284
+              ],
+              [
+                -77.135475,
+                0.298372
+              ],
+              [
+                -77.132606,
+                0.294918
+              ],
+              [
+                -77.129321,
+                0.289778
+              ],
+              [
+                -77.127983,
+                0.288594
+              ],
+              [
+                -77.125197,
+                0.288606
+              ],
+              [
+                -77.121501,
+                0.291662
+              ],
+              [
+                -77.12169,
+                0.294455
+              ],
+              [
+                -77.120673,
+                0.296743
+              ],
+              [
+                -77.116577,
+                0.301464
+              ],
+              [
+                -77.114187,
+                0.302208
+              ],
+              [
+                -77.111683,
+                0.30159
+              ],
+              [
+                -77.108963,
+                0.297018
+              ],
+              [
+                -77.104671,
+                0.293197
+              ],
+              [
+                -77.101983,
+                0.29156
+              ],
+              [
+                -77.097569,
+                0.291687
+              ],
+              [
+                -77.096771,
+                0.294567
+              ],
+              [
+                -77.092552,
+                0.298338
+              ],
+              [
+                -77.09114,
+                0.303211
+              ],
+              [
+                -77.092603,
+                0.304665
+              ],
+              [
+                -77.096711,
+                0.301819
+              ],
+              [
+                -77.116707,
+                0.311838
+              ],
+              [
+                -77.114532,
+                0.321133
+              ],
+              [
+                -77.158586,
+                0.368008
+              ],
+              [
+                -77.173794,
+                0.368674
+              ],
+              [
+                -77.186848,
+                0.380599
+              ],
+              [
+                -77.189813,
+                0.378297
+              ],
+              [
+                -77.192479,
+                0.37769
+              ],
+              [
+                -77.19489,
+                0.374793
+              ],
+              [
+                -77.199392,
+                0.372732
+              ],
+              [
+                -77.199874,
+                0.368987
+              ],
+              [
+                -77.200861,
+                0.367398
+              ],
+              [
+                -77.205793,
+                0.367202
+              ],
+              [
+                -77.210924,
+                0.362785
+              ],
+              [
+                -77.217533,
+                0.36244
+              ],
+              [
+                -77.220492,
+                0.363186
+              ],
+              [
+                -77.222858,
+                0.365223
+              ],
+              [
+                -77.229258,
+                0.360831
+              ],
+              [
+                -77.233759,
+                0.362646
+              ],
+              [
+                -77.23726,
+                0.366073
+              ],
+              [
+                -77.242044,
+                0.364536
+              ],
+              [
+                -77.24318,
+                0.362401
+              ],
+              [
+                -77.246731,
+                0.361509
+              ],
+              [
+                -77.249264,
+                0.364675
+              ],
+              [
+                -77.254964,
+                0.364285
+              ],
+              [
+                -77.258245,
+                0.366657
+              ],
+              [
+                -77.259029,
+                0.368382
+              ],
+              [
+                -77.263203,
+                0.36982
+              ],
+              [
+                -77.265557,
+                0.369749
+              ],
+              [
+                -77.268858,
+                0.367147
+              ],
+              [
+                -77.269109,
+                0.365171
+              ],
+              [
+                -77.270965,
+                0.363448
+              ],
+              [
+                -77.277957,
+                0.364744
+              ],
+              [
+                -77.279563,
+                0.363129
+              ],
+              [
+                -77.283067,
+                0.362554
+              ],
+              [
+                -77.288786,
+                0.363474
+              ],
+              [
+                -77.291782,
+                0.365522
+              ],
+              [
+                -77.296634,
+                0.364914
+              ],
+              [
+                -77.299505,
+                0.367914
+              ],
+              [
+                -77.302681,
+                0.367951
+              ],
+              [
+                -77.305177,
+                0.370071
+              ],
+              [
+                -77.309458,
+                0.37248
+              ],
+              [
+                -77.311419,
+                0.375103
+              ],
+              [
+                -77.31156,
+                0.377725
+              ],
+              [
+                -77.313111,
+                0.380509
+              ],
+              [
+                -77.316466,
+                0.379218
+              ],
+              [
+                -77.319284,
+                0.380189
+              ],
+              [
+                -77.319925,
+                0.383062
+              ],
+              [
+                -77.326167,
+                0.386334
+              ],
+              [
+                -77.328164,
+                0.3891
+              ],
+              [
+                -77.330109,
+                0.387718
+              ],
+              [
+                -77.334034,
+                0.387756
+              ],
+              [
+                -77.339385,
+                0.389051
+              ],
+              [
+                -77.340919,
+                0.390704
+              ],
+              [
+                -77.346431,
+                0.391551
+              ],
+              [
+                -77.349714,
+                0.390798
+              ],
+              [
+                -77.357668,
+                0.396226
+              ],
+              [
+                -77.359454,
+                0.392886
+              ],
+              [
+                -77.36188,
+                0.392959
+              ],
+              [
+                -77.362164,
+                0.395617
+              ],
+              [
+                -77.366891,
+                0.397613
+              ],
+              [
+                -77.368782,
+                0.397685
+              ],
+              [
+                -77.370423,
+                0.400129
+              ],
+              [
+                -77.373348,
+                0.400453
+              ],
+              [
+                -77.375633,
+                0.39715
+              ],
+              [
+                -77.378524,
+                0.396217
+              ],
+              [
+                -77.380326,
+                0.396846
+              ],
+              [
+                -77.382967,
+                0.395842
+              ],
+              [
+                -77.380863,
+                0.391063
+              ],
+              [
+                -77.379151,
+                0.390452
+              ],
+              [
+                -77.37851,
+                0.387434
+              ],
+              [
+                -77.379546,
+                0.385387
+              ],
+              [
+                -77.382115,
+                0.385173
+              ],
+              [
+                -77.384005,
+                0.386754
+              ],
+              [
+                -77.38975,
+                0.387727
+              ],
+              [
+                -77.391925,
+                0.390386
+              ],
+              [
+                -77.393673,
+                0.391105
+              ],
+              [
+                -77.392352,
+                0.393798
+              ],
+              [
+                -77.393386,
+                0.395918
+              ],
+              [
+                -77.396329,
+                0.396943
+              ],
+              [
+                -77.398718,
+                0.40068
+              ],
+              [
+                -77.404747,
+                0.403449
+              ],
+              [
+                -77.407743,
+                0.407078
+              ],
+              [
+                -77.410455,
+                0.406756
+              ],
+              [
+                -77.412684,
+                0.408751
+              ],
+              [
+                -77.412218,
+                0.412666
+              ],
+              [
+                -77.415215,
+                0.415146
+              ],
+              [
+                -77.416426,
+                0.419566
+              ],
+              [
+                -77.420618,
+                0.420519
+              ],
+              [
+                -77.421938,
+                0.422568
+              ],
+              [
+                -77.422721,
+                0.425981
+              ],
+              [
+                -77.421113,
+                0.42986
+              ],
+              [
+                -77.420973,
+                0.436203
+              ],
+              [
+                -77.424607,
+                0.438287
+              ],
+              [
+                -77.429712,
+                0.437228
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
         "id": "recq7JCzDcDUz82Gx",
         "properties": {
-          "Land Title Area": "Rumipamba",
-          "Nationality": [
+          "Area nombre": "Rumipamba",
+          "Nacionalidad": [
             "reczA7fT6xso1KoGY"
           ],
-          "Technicians": 2,
-          "Excerpt": "In 2013, ClearWater built rainwater systems in the Kichwa village of Rumipamba, with more installations planned for additional Kichwa communities in the bear future.",
-          "Story": "Installation of 53 catchment systems has already begun in the Kichwa village of Rumipamba, starting in May of 2013, which will benefit approximately 350 people. ClearWater will also be working with other Kichwa communities in the near future, ensuring clean water for all oil-affected indigenous communities.",
-          "Photo": [
+          "Resumen": "In 2013, ClearWater built rainwater systems in the Kichwa village of Rumipamba, with more installations planned for additional Kichwa communities in the bear future.",
+          "Historia": "Installation of 53 catchment systems has already begun in the Kichwa village of Rumipamba, starting in May of 2013, which will benefit approximately 350 people. ClearWater will also be working with other Kichwa communities in the near future, ensuring clean water for all oil-affected indigenous communities.",
+          "Foto": [
             {
               "id": "attsnQB6trT4HFfBU",
               "url": "https://dl.airtable.com/YJJOUETRQwGoBnpbu3kR_021762085648c1911c4c4ad7e3f5945120519607.jpg",
@@ -14315,9 +18365,6 @@
                 }
               }
             }
-          ],
-          "Settlements": [
-            "recF7FpWt0xnDhZzA"
           ],
           "Color": [
             "#088"
@@ -14387,16 +18434,16 @@
       }
     ]
   },
-  "Nationalities": {
+  "Nacionalidades": {
     "type": "FeatureCollection",
     "features": [
       {
         "type": "Feature",
         "id": "rec7QOgAYxMln7nHN",
         "properties": {
-          "Nationality": "Siona",
-          "Excerpt": "Like the neighboring Secoya, the Siona currently suffer from the health and economic impacts of oil contamination, the industrial cultivation of African oil palm, deforestation, and expanding colonist settlement in their territory.",
-          "Photo": [
+          "Nacionalidad": "Siona",
+          "Resumen": "Like the neighboring Secoya, the Siona currently suffer from the health and economic impacts of oil contamination, the industrial cultivation of African oil palm, deforestation, and expanding colonist settlement in their territory.",
+          "Foto": [
             {
               "id": "attwwP8EMqDxoYnGg",
               "url": "https://dl.airtable.com/56nOjABnROC2g9EQy32v_e6902972e3ba8f090419d1279e1178c0edd89013.jpg",
@@ -14417,10 +18464,22 @@
               }
             }
           ],
-          "Land Title Area": [
+          "Area": [
             "rec8DreEWMFsfAHu0"
           ],
-          "Color": "rgb(252, 233, 98)"
+          "Color": "rgb(252, 233, 98)",
+          "Comunidades": [
+            "recYRj07a06XLUIBQ",
+            "recOCt7b8Zorp0HvH",
+            "recVTzqeEtrRB5hxY",
+            "recsjnFvQFpCimzNn",
+            "rec7pGRJ4GFNwLhda",
+            "recpF69mTsbrHURLd",
+            "recwLskwhS45Mzk04",
+            "recooJ7fODKE1aOl1",
+            "recA8QrdxGKZVhRDP",
+            "rec4X0dGmSNKz17xb"
+          ]
         },
         "geometry": null
       },
@@ -14428,9 +18487,9 @@
         "type": "Feature",
         "id": "rec7nhastozSVnJax",
         "properties": {
-          "Nationality": "Waorani",
-          "Excerpt": "The Waorani are the most recently contacted of all Ecuadorian indigenous peoples. Since first contact in 1956, the Waorani have experienced a rapid and difficult assimilation into broader Ecuadorian society. Their territories have been greatly reduced, with remaining lands despoiled by industrial activities and settlement by colonists. Logging, oil drilling and related road-building have severely scarred Waorani lands.",
-          "Photo": [
+          "Nacionalidad": "Waorani",
+          "Resumen": "The Waorani are the most recently contacted of all Ecuadorian indigenous peoples. Since first contact in 1956, the Waorani have experienced a rapid and difficult assimilation into broader Ecuadorian society. Their territories have been greatly reduced, with remaining lands despoiled by industrial activities and settlement by colonists. Logging, oil drilling and related road-building have severely scarred Waorani lands.",
+          "Foto": [
             {
               "id": "attDvWe8ReLQNBgDf",
               "url": "https://dl.airtable.com/oJeQRFhdSdqKeveGG89F_faa74d00e9aa122debc8659305d03211f95bd4cd.jpg",
@@ -14451,10 +18510,51 @@
               }
             }
           ],
-          "Land Title Area": [
+          "Area": [
             "rec0U7CSPgqymTpM8"
           ],
-          "Color": "rgb(120, 28, 13)"
+          "Color": "rgb(120, 28, 13)",
+          "Comunidades": [
+            "recNKTjM6lnghxEc1",
+            "recuUbO75IrI3wH40",
+            "recCrmsLnstJNkDq7",
+            "recCvjMsbA7zmK1NJ",
+            "recxTl4g6rkbRbFvu",
+            "rec9VyegpMIfGS8qd",
+            "recYkOSlzv1roKlA8",
+            "recPuF7pRs3yUVQ1V",
+            "recweSnkIEnnfMVNy",
+            "recUh3St4TaXUx4zo",
+            "recuZJUZ7pznTDFuC",
+            "recWANUTAlbXmztQV",
+            "reczlAU8IIeq4IVJG",
+            "recLaodqR3XmtYlQD",
+            "recxUkn9VPV4jaMeg",
+            "recgTpeb0yva3e5ew",
+            "recf2yAnWctnsvWQ3",
+            "rec3gtwYX0ot5HrdH",
+            "rec996gRhguwjouTe",
+            "rec8WEq2gHmNrrR0I",
+            "recRfatd3eaTyBXL0",
+            "recUfHK2OgfET001H",
+            "reccUjavRdDz5hNAu",
+            "rec28YhIokWprxude",
+            "recHJB9fSYTl0MQG1",
+            "recKWlidS4Y9g5Z6R",
+            "recUMxvA22x5k7lT4",
+            "recZO42URyar47XiJ",
+            "recEVHL1QfGOi76Pd",
+            "recZIQE6c0Lyw0rHN",
+            "recFwXEE5UupKEzI3",
+            "reckr6AcSI7WnwT1K",
+            "recvDqmGd7xP62UOe",
+            "recbb8v2HuaIkbxXf",
+            "recSjsRVO0nzkgMxL",
+            "rec2tTzVungo7ktGn",
+            "rec3l0Q38OQEsxqg6",
+            "rec9OlycuOUlTjFAh",
+            "recOI0PqgXb84snJR"
+          ]
         },
         "geometry": null
       },
@@ -14462,9 +18562,9 @@
         "type": "Feature",
         "id": "recHGwwudtmODsfLg",
         "properties": {
-          "Nationality": "Secoya",
-          "Excerpt": "The Secoya live along the Aguarico River. Though the name means “rich water” oil contamination has taken a heavy toll on the river as well as the streams, marshes, and groundwater in the area. Traditional subsistence activities such as hunting, fishing, and growing edible crops have also been harmed.",
-          "Photo": [
+          "Nacionalidad": "Secoya",
+          "Resumen": "The Secoya live along the Aguarico River. Though the name means “rich water” oil contamination has taken a heavy toll on the river as well as the streams, marshes, and groundwater in the area. Traditional subsistence activities such as hunting, fishing, and growing edible crops have also been harmed.",
+          "Foto": [
             {
               "id": "attgCYUYmyVWiS5ny",
               "url": "https://dl.airtable.com/iNjEOqYSGOk0SR7PSikQ_5f3728bbfe791b98912d0793f03939cf10da5c0e.jpg",
@@ -14485,10 +18585,18 @@
               }
             }
           ],
-          "Land Title Area": [
+          "Area": [
             "recWnN8W3BcI1HiMQ"
           ],
-          "Color": "rgb(47, 129, 247)"
+          "Color": "rgb(47, 129, 247)",
+          "Comunidades": [
+            "rec5rDRBBWRBCoQFv",
+            "recF3dMxXgNs1qPPb",
+            "recMLdTFGSCuwXUeP",
+            "recFyPGB7xbR0J8c9",
+            "recy3BZ5TP6lwZEwt",
+            "reck5JuhF5oB2WDyM"
+          ]
         },
         "geometry": null
       },
@@ -14496,9 +18604,9 @@
         "type": "Feature",
         "id": "recmAG2tQi6scRRzZ",
         "properties": {
-          "Nationality": "Cofan",
-          "Excerpt": "Centuries ago, the Cofan people migrated from the foothills of the Andes to inhabit a large territory in the northern Ecuadorian Amazon. The Cofan have been inspiring protagonists in efforts to hold oil companies accountable for devastating contamination in their communities. While they fight for their culture and territory, they continue to suffer from lack of clean water.",
-          "Photo": [
+          "Nacionalidad": "Cofan",
+          "Resumen": "Centuries ago, the Cofan people migrated from the foothills of the Andes to inhabit a large territory in the northern Ecuadorian Amazon. The Cofan have been inspiring protagonists in efforts to hold oil companies accountable for devastating contamination in their communities. While they fight for their culture and territory, they continue to suffer from lack of clean water.",
+          "Foto": [
             {
               "id": "att1JbnP5gMT0ESoH",
               "url": "https://dl.airtable.com/mTlW8yUSXiycA549c4ow_3a61041ce425c4c6f4798323b0ddcdd1a04ba4ae.jpg",
@@ -14519,13 +18627,29 @@
               }
             }
           ],
-          "Land Title Area": [
+          "Area": [
             "recDrJE2C9e8NCpf0",
             "rece1KWFVf49sKmul",
             "rec3KP6G6vkees6Hb",
-            "recL9aTDudHowsGAJ"
+            "recL9aTDudHowsGAJ",
+            "recm0jKSQR3D0wJVp"
           ],
-          "Color": "rgb(68, 155, 49)"
+          "Color": "rgb(68, 155, 49)",
+          "Comunidades": [
+            "rec1e8A3YqHHWiUA4",
+            "recOrJCB4XNX1YswX",
+            "recGWaTjgMQr60apG",
+            "recLDyAp8npXT3ltE",
+            "recYoZ3YHvRYzbgIm",
+            "recOfk668icH21OHL",
+            "recujzxpakMNxhjAW",
+            "rec5jyHt3zUgjovsn",
+            "recstYD75GGhtoKVK",
+            "recK4rEeMtxayhBXN",
+            "rech4VGeqCBohUak8",
+            "recKwtunJ5On933T2",
+            "recXw7fvmRTEZxc41"
+          ]
         },
         "geometry": null
       },
@@ -14533,9 +18657,9 @@
         "type": "Feature",
         "id": "reczA7fT6xso1KoGY",
         "properties": {
-          "Nationality": "Kichwa",
-          "Excerpt": "The Kichwa of the Amazon are the most numerous of Ecuador’s indigenous Amazonian peoples. With a remediation ever on the horizon, they have taken up the painstaking process of cleaning up the mess that the oil companies have left behind.",
-          "Photo": [
+          "Nacionalidad": "Kichwa",
+          "Resumen": "The Kichwa of the Amazon are the most numerous of Ecuador’s indigenous Amazonian peoples. With a remediation ever on the horizon, they have taken up the painstaking process of cleaning up the mess that the oil companies have left behind.",
+          "Foto": [
             {
               "id": "attZp6dGGrhEAdRi1",
               "url": "https://dl.airtable.com/yZlGktCjRjuOjRuuH5DL_8d39470d6636810c694e56118871e0a2ba38e0f2.jpg",
@@ -14556,94 +18680,13 @@
               }
             }
           ],
-          "Land Title Area": [
+          "Area": [
             "recq7JCzDcDUz82Gx"
           ],
-          "Color": "#088"
-        },
-        "geometry": null
-      }
-    ]
-  },
-  "Programs": {
-    "type": "FeatureCollection",
-    "features": [
-      {
-        "type": "Feature",
-        "id": "rec6lAQWtusbS1Gj9",
-        "properties": {
-          "Name": "Practicas Propias"
-        },
-        "geometry": null
-      },
-      {
-        "type": "Feature",
-        "id": "recEXL7xBNNCJWMYR",
-        "properties": {
-          "Name": "Agua",
-          "Settlements": [
-            "rec1e8A3YqHHWiUA4",
-            "recOrJCB4XNX1YswX",
-            "recGWaTjgMQr60apG",
-            "recYoZ3YHvRYzbgIm",
-            "rec5jyHt3zUgjovsn",
-            "recYRj07a06XLUIBQ",
-            "rec5rDRBBWRBCoQFv",
-            "recOCt7b8Zorp0HvH",
-            "recNKTjM6lnghxEc1",
-            "recuUbO75IrI3wH40",
-            "recVTzqeEtrRB5hxY",
-            "recLDyAp8npXT3ltE",
-            "recF7FpWt0xnDhZzA",
-            "recOfk668icH21OHL",
-            "recF3dMxXgNs1qPPb",
-            "recMLdTFGSCuwXUeP",
-            "recujzxpakMNxhjAW",
-            "recsjnFvQFpCimzNn",
-            "recCrmsLnstJNkDq7",
-            "recCvjMsbA7zmK1NJ",
-            "recstYD75GGhtoKVK"
+          "Color": "#088",
+          "Comunidades": [
+            "recF7FpWt0xnDhZzA"
           ]
-        },
-        "geometry": null
-      },
-      {
-        "type": "Feature",
-        "id": "recNj502wytuTLGbW",
-        "properties": {
-          "Name": "Solar"
-        },
-        "geometry": null
-      },
-      {
-        "type": "Feature",
-        "id": "recR3iBHqJ2zfR5fR",
-        "properties": {
-          "Name": "Monitoreo"
-        },
-        "geometry": null
-      },
-      {
-        "type": "Feature",
-        "id": "recUBKl8f5YyVKawH",
-        "properties": {
-          "Name": "Mapeo"
-        },
-        "geometry": null
-      },
-      {
-        "type": "Feature",
-        "id": "recrWcx9qBXwurct1",
-        "properties": {
-          "Name": "Defensor@s"
-        },
-        "geometry": null
-      },
-      {
-        "type": "Feature",
-        "id": "recwij4VHDDRyJcDb",
-        "properties": {
-          "Name": "Mujer y Familia"
         },
         "geometry": null
       }
