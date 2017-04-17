@@ -113,7 +113,9 @@ function done () {
     source: 'settlements',
     layout: {
       'text-field': '{Settlement}',
-      'text-anchor': 'bottom-left'
+      'text-anchor': 'bottom-left',
+      'text-justify': 'left',
+      'text-offset': [0.2, -0.2]
     },
     paint: {},
     filter: ['in', 'Land Title Area']
