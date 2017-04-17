@@ -100,6 +100,15 @@ function done () {
     filter: ['==', '_id', '']
   })
   map.addLayer({
+    id: 'settlements-small',
+    type: 'circle',
+    source: 'settlements',
+    layout: {},
+    paint: {
+      'circle-radius': 1.5
+    }
+  })
+  map.addLayer({
     id: 'settlements',
     type: 'circle',
     source: 'settlements',
