@@ -1,0 +1,28 @@
+{
+  "name": "areas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "areas": "build.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node bin/build.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@turf/buffer": "^4.1.0",
+    "@turf/meta": "^4.1.0",
+    "aws-sdk": "^2.45.0",
+    "base-convertor": "^1.1.0",
+    "d3-ease": "^1.0.3",
+    "dotenv": "^4.0.0",
+    "geojson-rewind": "^0.2.0",
+    "glob": "^7.1.1",
+    "mapbox": "^1.0.0-beta6",
+    "progress": "^2.0.0",
+    "round-to": "^2.0.0"
+  }
+}
