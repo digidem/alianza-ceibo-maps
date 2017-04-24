@@ -957,12 +957,12 @@
               }
             }
           ],
+          "Descripción": "The A'I Kofan community of Ukavati lies close to the Aguarico River in the Ecuadorian Amazon. Composed of 9 families, Ukavati works with ClearWater and the Ceibo Alliance on two programs",
           "Agua": 8,
           "Agua Familias": 9,
           "Agua Usuarios": 46,
           "Most recent": "2014-01-23",
-          "First": "2014-01-15",
-          "Descripción": "The A'I Kofan community of Ukavati lies close to the Aguarico River in the Ecuadorian Amazon. Composed of 9 families, Ukavati works with ClearWater and the Ceibo Alliance on two programs"
+          "First": "2014-01-15"
         },
         "geometry": {
           "type": "Point",
@@ -1117,16 +1117,6 @@
           "Agua Usuarios": 0,
           "Most recent": "2016-01-11",
           "First": "2016-01-11"
-        },
-        "geometry": null
-      },
-      {
-        "type": "Feature",
-        "id": "rec7yjbcFaEh2X3j8",
-        "properties": {
-          "Agua": 0,
-          "Agua Familias": 0,
-          "Agua Usuarios": 0
         },
         "geometry": null
       },
@@ -2034,12 +2024,12 @@
               }
             }
           ],
+          "Descripción": "The A'I Kofan community of Chandiana'e lies close to the Bermejo River in the Ecuadorian Amazon. Composed of nine families, Chandiana'e works with ClearWater and the Ceibo Alliance on three programs",
           "Agua": 9,
           "Agua Familias": 9,
           "Agua Usuarios": 0,
           "Most recent": "2016-03-08",
-          "First": "2016-03-08",
-          "Descripción": "The A'I Kofan community of Chandiana'e lies close to the Bermejo River in the Ecuadorian Amazon. Composed of nine families, Chandiana'e works with ClearWater and the Ceibo Alliance on three programs"
+          "First": "2016-03-08"
         },
         "geometry": null
       },
@@ -2138,12 +2128,12 @@
               }
             }
           ],
+          "Descripción": "The A'I Kofan community of Uperito lies close to the Aguarico River in the Ecuadorian Amazon. Composed of 22 families, Uperito works with ClearWater and the Ceibo Alliance on one program",
           "Agua": 22,
           "Agua Familias": 22,
           "Agua Usuarios": 0,
           "Most recent": "2017-02-28",
-          "First": "2017-02-28",
-          "Descripción": "The A'I Kofan community of Uperito lies close to the Aguarico River in the Ecuadorian Amazon. Composed of 22 families, Uperito works with ClearWater and the Ceibo Alliance on one program"
+          "First": "2017-02-28"
         },
         "geometry": null
       },
@@ -2586,12 +2576,12 @@
               }
             }
           ],
+          "Descripción": "The A'I Kofan community of Sábalo lies close to the Aguarico River in the Ecuadorian Amazon. Composed of 28 families, Sábalo works with ClearWater and the Ceibo Alliance on three program",
           "Agua": 28,
           "Agua Familias": 28,
           "Agua Usuarios": 148,
           "Most recent": "2015-10-09",
-          "First": "2014-10-01",
-          "Descripción": "The A'I Kofan community of Sábalo lies close to the Aguarico River in the Ecuadorian Amazon. Composed of 28 families, Sábalo works with ClearWater and the Ceibo Alliance on three program"
+          "First": "2014-10-01"
         },
         "geometry": {
           "type": "Point",
@@ -3640,12 +3630,12 @@
               }
             }
           ],
+          "Descripción": "The A'I Kofan community of Avie/Tayuscanqque lies close to the Bermejo and San Miguel Rivers in the Ecuadorian Amazon. Composed of eight families, Avie/Tayuscanqque works with ClearWater and the Ceibo Alliance on two programs",
           "Agua": 8,
           "Agua Familias": 8,
           "Agua Usuarios": 0,
           "Most recent": "2015-07-15",
-          "First": "2015-07-15",
-          "Descripción": "The A'I Kofan community of Avie/Tayuscanqque lies close to the Bermejo and San Miguel Rivers in the Ecuadorian Amazon. Composed of eight families, Avie/Tayuscanqque works with ClearWater and the Ceibo Alliance on two programs"
+          "First": "2015-07-15"
         },
         "geometry": null
       },
@@ -4026,12 +4016,12 @@
               }
             }
           ],
+          "Descripción": "The A'I Kofan community of Dovuno lies close to the Aguarico River in the Ecuadorian Amazon. Composed of 32 families, Dovuno works with ClearWater and the Ceibo Alliance on two programs",
           "Agua": 34,
           "Agua Familias": 32,
           "Agua Usuarios": 16,
           "Most recent": "2015-03-30",
-          "First": "2015-03-11",
-          "Descripción": "The A'I Kofan community of Dovuno lies close to the Aguarico River in the Ecuadorian Amazon. Composed of 32 families, Dovuno works with ClearWater and the Ceibo Alliance on two programs"
+          "First": "2015-03-11"
         },
         "geometry": {
           "type": "Point",
@@ -4197,12 +4187,12 @@
               }
             }
           ],
+          "Descripción": "The A'I Kofan community of Sinangoé lies close to the Upper Aguarico River in the Ecuadorian Amazon. Composed of 22 families, Sinangoé works with ClearWater and the Ceibo Alliance on four programs",
           "Agua": 21,
           "Agua Familias": 22,
           "Agua Usuarios": 152,
           "Most recent": "2014-01-18",
-          "First": "2014-01-18",
-          "Descripción": "The A'I Kofan community of Sinangoé lies close to the Upper Aguarico River in the Ecuadorian Amazon. Composed of 22 families, Sinangoé works with ClearWater and the Ceibo Alliance on four programs"
+          "First": "2014-01-18"
         },
         "geometry": {
           "type": "Point",
