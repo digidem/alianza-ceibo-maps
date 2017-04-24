@@ -905,9 +905,17 @@
           "Agua Familias": 11,
           "Agua Usuarios": 0,
           "Most recent": "2015-09-20",
-          "First": "2015-09-20"
+          "First": "2015-09-20",
+          "Lon": -76.15747,
+          "Lat": -0.08181
         },
-        "geometry": null
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.15747,
+            -0.08181
+          ]
+        }
       },
       {
         "type": "Feature",
@@ -1828,9 +1836,17 @@
           "Agua Familias": 10,
           "Agua Usuarios": 0,
           "Most recent": "2016-04-30",
-          "First": "2016-04-30"
+          "First": "2016-04-30",
+          "Lon": -75.23758,
+          "Lat": -0.53249
         },
-        "geometry": null
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -75.23758,
+            -0.53249
+          ]
+        }
       },
       {
         "type": "Feature",
@@ -2029,9 +2045,17 @@
           "Agua Familias": 9,
           "Agua Usuarios": 0,
           "Most recent": "2016-03-08",
-          "First": "2016-03-08"
+          "First": "2016-03-08",
+          "Lon": -77.32991,
+          "Lat": 0.28798
         },
-        "geometry": null
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -77.32991,
+            0.28798
+          ]
+        }
       },
       {
         "type": "Feature",
@@ -2133,9 +2157,17 @@
           "Agua Familias": 22,
           "Agua Usuarios": 0,
           "Most recent": "2017-02-28",
-          "First": "2017-02-28"
+          "First": "2017-02-28",
+          "Lon": -76.696808,
+          "Lat": 0.045434
         },
-        "geometry": null
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.696808,
+            0.045434
+          ]
+        }
       },
       {
         "type": "Feature",
@@ -3635,9 +3667,17 @@
           "Agua Familias": 8,
           "Agua Usuarios": 0,
           "Most recent": "2015-07-15",
-          "First": "2015-07-15"
+          "First": "2015-07-15",
+          "Lon": -77.099415,
+          "Lat": 0.292058
         },
-        "geometry": null
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -77.099415,
+            0.292058
+          ]
+        }
       },
       {
         "type": "Feature",
@@ -3780,9 +3820,17 @@
           "Agua Familias": 21,
           "Agua Usuarios": 0,
           "Most recent": "2015-09-30",
-          "First": "2015-09-30"
+          "First": "2015-09-30",
+          "Lon": -76.17416,
+          "Lat": -0.08839
         },
-        "geometry": null
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.17416,
+            -0.08839
+          ]
+        }
       },
       {
         "type": "Feature",
@@ -4292,9 +4340,17 @@
           "Agua Familias": 13,
           "Agua Usuarios": 0,
           "Most recent": "2015-09-20",
-          "First": "2015-09-20"
+          "First": "2015-09-20",
+          "Lon": -76.14552,
+          "Lat": -0.09499
         },
-        "geometry": null
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.14552,
+            -0.09499
+          ]
+        }
       },
       {
         "type": "Feature",
@@ -4542,9 +4598,17 @@
           "Agua Familias": 30,
           "Agua Usuarios": 0,
           "Most recent": "2015-02-20",
-          "First": "2015-02-20"
+          "First": "2015-02-20",
+          "Lon": -76.484941,
+          "Lat": -0.189487
         },
-        "geometry": null
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.484941,
+            -0.189487
+          ]
+        }
       },
       {
         "type": "Feature",
