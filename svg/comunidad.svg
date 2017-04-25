@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="Layer_1"
+   data-name="Layer 1"
+   width="24"
+   height="24"
+   viewBox="0 0 19.200004 19.200004"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="comunidad.svg">
+  <metadata
+     id="metadata11">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>CommunityIcon</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs9" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1232"
+     inkscape:window-height="794"
+     id="namedview7"
+     showgrid="false"
+     units="px"
+     inkscape:zoom="12.430377"
+     inkscape:cx="13.451422"
+     inkscape:cy="20.346032"
+     inkscape:window-x="125"
+     inkscape:window-y="99"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="Layer_1" />
+  <title
+     id="title3">CommunityIcon</title>
+  <path
+     d="M 0,10.187513 Q 0,10.090603 0,9.993692 C 0.065321,9.918232 0.12825,9.840396 0.1963125,9.767655 Q 4.6184185,5.0401358 9.041507,0.31359729 c 0.3914209,-0.4182654 0.7249418,-0.4181687 1.116911,6.551e-4 q 2.67746,2.86083461 5.353715,5.72285121 1.846219,1.9760194 3.687871,3.9566004 l 0,0.193821 c -0.13245,0.04212 -0.264423,0.118731 -0.397425,0.12068 -0.787294,0.01155 -1.574828,0.0058 -2.362279,0.0058 -0.06624,0 -0.132488,0 -0.220253,0 l 0,8.882879 -4.978261,0 0,-5.4482 -3.2973756,0 0,5.45132 -4.9540248,0 0,-8.885995 -0.2307036,0 c -0.7874516,-3.9e-5 -1.5750005,0.0057 -2.3622794,-0.0058 C 0.2644088,10.306209 0.1324425,10.229629 0,10.187513 Z"
+     id="path5"
+     inkscape:connector-curvature="0"
+     style="fill:#5b310b" />
+</svg>

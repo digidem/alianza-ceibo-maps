@@ -7,6 +7,9 @@ const {coordEach} = require('@turf/meta')
 const buffer = require('@turf/buffer')
 const d3 = require('d3-ease')
 const rewind = require('geojson-rewind')
+const mapshaper = require('mapshaper')
+
+const mapshaperCommands = '-simplify visvalingam weighted weighting=2 interval=2000 keep-shapes'
 
 const all = {
   type: 'FeatureCollection',
@@ -24,21 +27,38 @@ files.forEach(function (filename) {
 
 all.features = all.features
   // STEP 1: buffer each feature by 1km to smooth out boundary
-  .map(f => {
-    const buffered = buffer(f, 1, 'kilometers')
-    // buffered.properties = f.properties
-    // buffered.properties._id = f.id
-    return buffered
-  })
+  // .map(f => {
+  //   const buffered = buffer(f, 1, 'kilometers')
+  //   // buffered.properties = f.properties
+  //   // buffered.properties._id = f.id
+  //   return buffered
+  // })
   // STEP 2: add multiple buffers up to 10km, gradually increasing
   // spacing between buffers to get a visually smooth gradient
-  .reduce(bufferReduce, [])
+  // .reduce(bufferReduce, [])
   // STEP 3: Round coordinates to 6 decimal places
   .map(round)
+  .map(f => ({
+    type: f.type,
+    geometry: f.geometry,
+    properties: {
+      nacionalidad: f.properties.nacionalidad,
+      name: f.properties.nombre,
+      _id: f.id
+    }
+  }))
   // STEP 4: Ensure winding order is correct
   .map(f => rewind(f))
 
-fs.writeFileSync('areas.geojson', JSON.stringify(all, null, 2))
+simplify(all, (err, geojson) => {
+  if (err) return console.error(err)
+  all.features = geojson.features.map(f => rewind(f))
+  save()
+})
+
+function save () {
+  fs.writeFileSync('areas.geojson', JSON.stringify(all, null, 2))
+}
 
 function round (f) {
   coordEach(f, function (coord) {
@@ -54,6 +74,13 @@ function round (f) {
 // ([].concat creates a new array)
 function pushArray (arr0, arr1) {
   Array.prototype.push.apply(arr0, arr1)
+}
+
+function simplify (fc, cb) {
+  mapshaper.applyCommands(mapshaperCommands, fc, (err, data) => {
+    if (err) return cb(err)
+    cb(null, JSON.parse(data))
+  })
 }
 
 function bufferReduce (acc, f) {

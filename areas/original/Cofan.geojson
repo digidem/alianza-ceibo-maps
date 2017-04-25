@@ -3,7 +3,7 @@
   "features": [
     {
       "type": "Feature",
-      "id": 9971782470564948000,
+      "id": "6eeb5720-fb98-4ac5-a304-307e498d0ebf",
       "properties": {
         "nombre": "Sábalo",
         "nacionalidad": "Cofan"
@@ -1922,7 +1922,7 @@
     },
     {
       "type": "Feature",
-      "id": 5817032558531308000,
+      "id": "dbf99f4b-4595-49c7-b86e-42921e32e5a7",
       "properties": {
         "nombre": "Cofan Dureno",
         "nacionalidad": "Cofan"
@@ -2319,7 +2319,7 @@
     },
     {
       "type": "Feature",
-      "id": 803139422412950000,
+      "id": "554d5914-68f3-4d38-912c-6b9eb7dd266f",
       "properties": {
         "nombre": "Dovuno",
         "nacionalidad": "Cofan"
@@ -4574,7 +4574,7 @@
     },
     {
       "type": "Feature",
-      "id": 6115306443526742000,
+      "id": "dae4998f-11a8-4042-88fa-9d51c19fad94",
       "properties": {
         "nombre": "Sinangue",
         "nacionalidad": "Cofan"
@@ -6317,7 +6317,7 @@
     },
     {
       "type": "Feature",
-      "id": 4481775348201824000,
+      "id": "178af3fb-087a-4930-853b-2133d000d50b",
       "properties": {
         "nombre": "Cofan Bermejo",
         "nacionalidad": "Cofan"

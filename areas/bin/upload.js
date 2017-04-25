@@ -7,14 +7,15 @@ const ProgressBar = require('progress')
 
 require('dotenv').config()
 
-const argv = process.argv.slice(2)
-const filepath = path.join(process.cwd(), argv[0])
+const argv = require('minimist')(process.argv.slice(2))
+const filepath = path.join(process.cwd(), argv._[0])
+const name = argv.name || path.parse(filepath).name
 
 const client = new MapboxClient(process.env.MAPBOX_TOKEN)
 
 var AWS = require('aws-sdk')
 
-var uploadBar = createProgressBar('uploading')
+var uploadBar //= createProgressBar('uploading')
 var processBar
 
 client.createUploadCredentials(function (err, credentials) {
@@ -33,21 +34,22 @@ client.createUploadCredentials(function (err, credentials) {
   }, function (err, resp) {
     if (err) return onError(err)
     client.createUpload({
-      tileset: ['gmaclennan', 'alianza-areas'].join('.'),
+      tileset: ['gmaclennan', name].join('.'),
       url: credentials.url,
-      name: 'alianza-areas'
+      name: name
     }, function (err, upload) {
-      processBar = createProgressBar('processing')
+      // processBar = createProgressBar('processing')
       monitorUpload(err, upload)
     })
-  }).on('httpUploadProgress', progress => uploadBar.tick(progress.loaded / progress.total))
+  }).on('httpUploadProgress', progress => console.log('upload', progress.loaded / progress.total)) //uploadBar.tick(progress.loaded / progress.total))
 })
 
 function monitorUpload (err, upload) {
   if (err) return onError(err)
   if (upload.error) return onError(upload.error)
   if (upload.progress === 1) return
-  processBar.tick(upload.progress)
+  console.log('process', upload.progress)
+  // processBar.tick(upload.progress)
   setTimeout(() => client.readUpload(upload.id, monitorUpload), 200)
 }
 

@@ -22,6 +22,8 @@
     "geojson-rewind": "^0.2.0",
     "glob": "^7.1.1",
     "mapbox": "^1.0.0-beta6",
+    "mapshaper": "^0.4.16",
+    "minimist": "^1.2.0",
     "progress": "^2.0.0",
     "round-to": "^2.0.0"
   }
