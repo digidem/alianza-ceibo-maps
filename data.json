@@ -3285,44 +3285,6 @@
       },
       {
         "type": "Feature",
-        "id": "recXw7fvmRTEZxc41",
-        "properties": {
-          "Comunidad": "Uttuvoe",
-          "Nacionalidad": [
-            "recmAG2tQi6scRRzZ"
-          ],
-          "Programas": [
-            "Sistemas de agua"
-          ],
-          "Foto": [
-            {
-              "id": "atteU8amfOJyujtaU",
-              "url": "https://dl.airtable.com/3lDQkVNBSw257hkVkJMf_iceberg3.jpg",
-              "filename": "iceberg3.jpg",
-              "size": 86257,
-              "type": "image/jpeg",
-              "thumbnails": {
-                "small": {
-                  "url": "https://dl.airtable.com/CoMdUrFmTbSRl6UA1Vzj_small_iceberg3.jpg",
-                  "width": 54,
-                  "height": 36
-                },
-                "large": {
-                  "url": "https://dl.airtable.com/JXWfiec6QQKpg7CDyiLE_large_iceberg3.jpg",
-                  "width": 512,
-                  "height": 512
-                }
-              }
-            }
-          ],
-          "Agua": 0,
-          "Agua Familias": 0,
-          "Agua Usuarios": 0
-        },
-        "geometry": null
-      },
-      {
-        "type": "Feature",
         "id": "recYRj07a06XLUIBQ",
         "properties": {
           "Comunidad": "Aboquehuira",
@@ -5476,8 +5438,7 @@
             "recstYD75GGhtoKVK",
             "recK4rEeMtxayhBXN",
             "rech4VGeqCBohUak8",
-            "recKwtunJ5On933T2",
-            "recXw7fvmRTEZxc41"
+            "recKwtunJ5On933T2"
           ]
         },
         "geometry": null
