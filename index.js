@@ -5,40 +5,32 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiZ21hY2xlbm5hbiIsImEiOiJSaWVtd2lRIn0.ASYMZE2Hh
 var data
 var areas
 var dataIndex = {}
-var inView = []
+var maxPrograms = 0
 
-var areasFillColor = {
-  property: 'nacionalidad',
-  type: 'categorical',
-  stops: [
-    ['Cofan', '#168623'],
-    ['Siona', '#fee93f'],
-    ['Secoya', '#1a86e5'],
-    ['Waorani', '#7b271d']
-  ]
+var COLORS = {
+  Cofan: '#168623',
+  Siona: '#fee93f',
+  Secoya: '#1a86e5',
+  Waorani: '#7b271d'
 }
 
-var areasLayer = {
-  id: 'alianza-areas',
-  type: 'fill',
-  source: 'areas',
-  layout: {},
-  paint: {
-    'fill-color': areasFillColor,
-    'fill-opacity': 0.5
-  }
-}
-
-var areasLayerHighlight = {
+var areaHighlightLayer = {
   id: 'alianza-areas-highlight',
-  type: 'fill',
+  type: 'line',
   source: 'areas',
+  filter: ['==', '_id', ''],
   layout: {},
   paint: {
-    'fill-color': areasFillColor,
-    'fill-opacity': 0.7
-  },
-  filter: ['==', '_id', '']
+    'line-opacity': 0.8,
+    'line-color': {
+      property: 'nacionalidad',
+      type: 'categorical',
+      stops: Object.keys(COLORS).map(function (key) {
+        return [key, COLORS[key]]
+      })
+    },
+    'line-width': 3
+  }
 }
 
 var comunidadesLayerDots = {
@@ -74,6 +66,7 @@ var comunidadesLayerHouses = {
     },
     'icon-image': 'comunidad',
     'text-ignore-placement': true,
+    'text-optional': true,
     'text-font': [
       'DIN Offc Pro Regular',
       'Arial Unicode MS Regular'
@@ -94,7 +87,7 @@ var comunidadesLayerHouses = {
       ]
     },
     'text-anchor': 'top',
-    'text-field': '{name}',
+    'text-field': '{Comunidad}',
     'text-max-width': 6
   },
   'paint': {
@@ -103,6 +96,44 @@ var comunidadesLayerHouses = {
     'text-halo-width': 1
   }
 }
+
+var comunidadesLayerDotsHighlight = Object.assign({}, comunidadesLayerDots, {
+  id: 'alianza-comunidades-dots-highlight',
+  source: 'comunidades',
+  filter: ['==', '_id', ''],
+  layout: {},
+  paint: Object.assign({}, comunidadesLayerDots.paint, {
+    'circle-radius': {
+      'base': 1.4,
+      'stops': [
+        [6, 1.1],
+        [10, 6]
+      ]
+    }
+  })
+})
+
+var comunidadesLayerHousesHighlight = Object.assign({}, comunidadesLayerHouses, {
+  id: 'alianza-comunidades-houses-highlight',
+  source: 'comunidades',
+  filter: ['==', '_id', ''],
+  layout: Object.assign({}, comunidadesLayerHouses.layout, {
+    'icon-size': {
+      'base': 1.2,
+      'stops': [
+        [10, 0.8],
+        [13, 1.2]
+      ]
+    }
+  })
+})
+
+var comunidadesInteractiveLayers = [
+  'alianza-comunidades-dots',
+  'alianza-comunidades-houses',
+  'alianza-comunidades-dots-highlight',
+  'alianza-comunidades-houses-highlight'
+]
 
 var pending = 3
 
@@ -139,16 +170,6 @@ d3.json('areas/areas.geojson', function (err, _data) {
 
 var menuDiv = document.createElement('div')
 
-menuDiv.innerHTML = renderMenu([
-  'Sistemas de agua',
-  'Defensores y defensoras',
-  'Mapeo territorial',
-  'Monitoreo ambiental',
-  'Mujer y familia',
-  'Practicas propias',
-  'Sistemas solares'
-])
-
 menuDiv.className = 'dd_map_menu'
 
 document.getElementById('map').appendChild(menuDiv)
@@ -156,8 +177,11 @@ document.getElementById('map').appendChild(menuDiv)
 function onLoad () {
   if (--pending > 0) return
   var comunidades = addIds(unfurl(filterGeom(data['Comunidades']), dataIndex))
-  areasLayer = getLayerWithZooms(map, areas, areasLayer)
-  areasLayerHighlight = getLayerWithZooms(map, areas, areasLayerHighlight)
+  var programas = getPrograms(comunidades)
+  menuDiv.innerHTML = renderMenu(programas)
+
+  var areaLayers = generateAreaLayers(map, areas)
+
   map.addSource('comunidades', {
     type: 'geojson',
     data: comunidades
@@ -166,53 +190,71 @@ function onLoad () {
     type: 'geojson',
     data: areas
   })
-  map.addLayer(areasLayer)
-  map.addLayer(areasLayerHighlight)
+
+  Object.keys(areaLayers).forEach(function (id) {
+    map.addLayer(areaLayers[id])
+  })
+  map.addLayer(areaHighlightLayer)
   map.addLayer(comunidadesLayerDots)
   map.addLayer(comunidadesLayerHouses)
+  map.addLayer(comunidadesLayerDotsHighlight)
+  map.addLayer(comunidadesLayerHousesHighlight)
 
   var nav = new mapboxgl.NavigationControl()
   map.addControl(nav, 'top-left')
 
   map.fitBounds(geojsonExtent(areas), {padding: 20})
 
-  map.on('move', function () {
-    // map.setFilter('alianza-areas', ['>', '_zoom', map.getZoom() - 1])
-  })
-
   // Create a popup, but don't add it to the map yet.
   var popup = new mapboxgl.Popup({
     closeButton: true,
-    closeOnClick: true
+    closeOnClick: false
   })
 
   map.on('mousemove', function (e) {
-    var areas = map.queryRenderedFeatures(e.point, { layers: ['alianza-areas'] })
-    var comunidades = map.queryRenderedFeatures(e.point, { layers: ['alianza-comunidades-dots', 'alianza-comunidades-houses'] })
+    var areas = map.queryRenderedFeatures(e.point, { layers: Object.keys(areaLayers) })
+    var comunidades = map.queryRenderedFeatures(e.point, { layers: comunidadesInteractiveLayers })
+    var areaHovered = areas && areas[0] && map.getZoom() < areas[0].layer.maxzoom && areas[0]
+    var communityHovered = comunidades && comunidades[0]
 
-    if (!comunidades.length && (!areas.length || inView.indexOf(areas[0].properties['Land Title Area']) > -1)) {
+    if (areaHovered || communityHovered) {
+      map.getCanvas().style.cursor = 'pointer'
+    } else {
       map.getCanvas().style.cursor = ''
       map.setFilter('alianza-areas-highlight', ['==', '_id', ''])
+      map.setFilter('alianza-comunidades-houses-highlight', ['==', '_id', ''])
+      map.setFilter('alianza-comunidades-dots-highlight', ['==', '_id', ''])
       return
     }
-    // Change the cursor style as a UI indicator.
-    map.getCanvas().style.cursor = 'pointer'
-    if (comunidades.length) return
-    map.setFilter('alianza-areas-highlight', ['==', '_id', areas[0].properties._id])
+
+    if (communityHovered) {
+      var id = comunidades[0].properties._id
+      map.getSource('')
+      map.setFilter('alianza-areas-highlight', ['==', '_id', ''])
+      map.setFilter('alianza-comunidades-houses-highlight', ['==', '_id', id])
+      map.setFilter('alianza-comunidades-dots-highlight', ['==', '_id', id])
+    } else if (areaHovered) {
+      map.setFilter('alianza-areas-highlight', ['==', '_id', areas[0].properties._id])
+    }
   })
 
   map.on('click', function (e) {
-    var areas = map.queryRenderedFeatures(e.point, { layers: ['alianza-areas'] })
-    var comunidades = map.queryRenderedFeatures(e.point, { layers: ['alianza-comunidades-dots', 'alianza-comunidades-houses'] })
-    var feature
-    console.log(comunidades)
-    if (comunidades.length) {
-      feature = dataIndex[comunidades[0].properties._id]
+    var areas = map.queryRenderedFeatures(e.point, { layers: Object.keys(areaLayers) })
+    var comunidades = map.queryRenderedFeatures(e.point, { layers: comunidadesInteractiveLayers })
+    var areaClicked = areas && areas[0] && map.getZoom() < areas[0].layer.maxzoom && areas[0]
+    var communityClicked = comunidades && comunidades[0]
+
+    if (communityClicked) {
+      var feature = dataIndex[communityClicked.properties._id]
       popup.setLngLat(feature.geometry.coordinates)
         .setHTML(renderComunidadPopup(feature.properties))
         .addTo(map)
-    } else if (areas.length && inView.indexOf(areas[0].properties['Land Title Area']) < 0) {
-      var area = dataIndex[areas[0].properties._id]
+    } else {
+      popup.remove()
+    }
+
+    if (areaClicked) {
+      var area = dataIndex[areaClicked.properties._id]
       map.fitBounds(geojsonExtent(area), {padding: 20})
       map.setFilter('alianza-areas-highlight', ['==', '_id', ''])
     }
@@ -220,11 +262,9 @@ function onLoad () {
 }
 
 // Only return features with geometry
-function filterGeom (fc) {
-  return {
-    type: 'FeatureCollection',
-    features: fc.features.filter(function (f) { return f.geometry })
-  }
+function filterGeom (featureCollection) {
+  var featuresWithGeom = featureCollection.features.filter(function (f) { return f.geometry })
+  return fc(featuresWithGeom)
 }
 
 function getZoom (map, feature, options) {
@@ -243,85 +283,52 @@ function getZoom (map, feature, options) {
   return Math.min(tr.scaleZoom(tr.scale * Math.min(scaleX, scaleY)), maxZoom)
 }
 
-function unfurl (fc, index) {
-  return {
-    type: 'FeatureCollection',
-    features: fc.features.map(function (f) {
-      var props = f.properties
-      var newProps = Object.assign({}, props)
-      for (var key in props) {
-        if (!Array.isArray(props[key])) continue
-        newProps[key] = props[key].map(function (d) {
-          if (index[d]) {
-            return index[d].properties[key]
-          } else return d
-        })
-        if (newProps[key].length === 1) newProps[key] = newProps[key][0]
-      }
-      return Object.assign({}, f, {
-        properties: newProps
+function unfurl (featureCollection, index) {
+  var featuresWithRefs = featureCollection.features.map(function (f) {
+    var props = f.properties
+    var newProps = Object.assign({}, props)
+    for (var key in props) {
+      if (!Array.isArray(props[key])) continue
+      newProps[key] = props[key].map(function (d) {
+        if (index[d]) {
+          return index[d].properties[key]
+        } else return d
       })
-    })
-  }
-}
-
-function arrayEqual (arr1, arr2) {
-  if (arr1 === arr2) return true
-  if (arr1.length !== arr2.length) return false
-  for (var i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i]) return false
-  }
-  return true
-}
-
-// function addZooms (map, fc) {
-//   return {
-//     type: 'FeatureCollection',
-//     features: fc.features.map(function (f) {
-//       var zoom = getZoom(map, f, {padding: 60})
-//       return Object.assign({}, f, {
-//         properties: Object.assign({}, f.properties, {_zoom: zoom})
-//       })
-//     })
-//   }
-// }
-
-function getLayerWithZooms (map, areas, layer) {
-  var zoom = getZoom(map, areas, {padding: 20})
-  return Object.assign({}, layer, {
-    maxzoom: zoom + 3,
-    paint: Object.assign({}, layer.paint, {
-      'fill-opacity': {
-        stops: [
-          [0, layer.paint['fill-opacity']],
-          [zoom + 1, layer.paint['fill-opacity']],
-          [zoom + 3, 0]
-        ]
-      }
+      if (newProps[key].length === 1) newProps[key] = newProps[key][0]
+    }
+    return Object.assign({}, f, {
+      properties: newProps
     })
   })
+  return fc(featuresWithRefs)
 }
 
-function addIds (fc) {
-  return {
-    type: 'FeatureCollection',
-    features: fc.features.map(function (f) {
-      return Object.assign({}, f, {
-        properties: Object.assign({}, f.properties, {_id: f.id})
-      })
+function addIds (featureCollection) {
+  var featuresWithIds = featureCollection.features.map(function (f) {
+    return Object.assign({}, f, {
+      properties: Object.assign({}, f.properties, {_id: f.id})
     })
-  }
+  })
+  return fc(featuresWithIds)
 }
 
 function renderComunidadPopup (props) {
   var nacionalidad = dataIndex[props.Nacionalidad[0]].properties.Nacionalidad
-  var html = `<div style="max-width: 200px">
-    <h1>${props.Comunidad}</h1>
-    <p>${props.Comunidad} es un asentamiento ${nacionalidad} de {num_familias}
-    familias ubicado por {ubicacion}.</p>
-    <p>Alianze Ceibo esta trabajando en este asentamiento con los programas de
-    agua (${props['Water Installations']} sistemas instaladas) que sirve
-    ${props['Water Families']} familias</p>
+  var fotoUrl = props.Foto && props.Foto[0] && props.Foto[0].thumbnails.large.url
+  var desc = props.Descripción || 'Description pending'
+  var programas = props.Programas || []
+  console.log(props)
+  var html = `<div class='popup-wrapper'>
+    ${!fotoUrl ? `` : `<img src=${fotoUrl}>`}
+    <div class='popup-inner'>
+      <h1>${props.Comunidad}</h1>
+      <p>${desc}</p>
+      <ul>
+        ${programas.map(function (p) {
+          return `<li>${p}</li>`
+        }).join('\n')}
+      </ul>
+    </div>
     </div>`
   if (props.Stories) {
     html += `<ul>${props.Stories.map(id => (
@@ -343,10 +350,70 @@ function renderMenu (items) {
   `
 }
 
-// Make a FeatureCollection
 function fc (features) {
   return {
     type: 'FeatureCollection',
     features: features
   }
+}
+
+function getPrograms (featureCollection) {
+  var programs = {}
+  featureCollection.features.forEach(function (f) {
+    var programas = f.properties.Programas
+    if (!Array.isArray(programas)) programas = [programas]
+    programas.forEach(function (p) {
+      programs[p] = true
+    })
+  })
+  return Object.keys(programs)
+}
+
+// Mutates input featureCollection
+function flattenPrograms (featureCollection) {
+  featureCollection.features.forEach(function (f) {
+    var programas = f.properties.Programas
+    if (!Array.isArray(programas)) {
+      programas = f.properties.Programas = [programas]
+    }
+    programas.forEach(function (p, i) {
+      f.properties['Programas.' + i] = p
+      maxPrograms = Math.max(maxPrograms, i)
+    })
+  })
+  return featureCollection
+}
+
+function getFilter (maxPrograms, selection) {
+  var filter = ['any']
+  for (var i = 0; i < maxPrograms; i++) {
+    filter.push(['in', 'Programas.' + i].concat(selection))
+  }
+  return filter
+}
+
+function generateAreaLayers (map, areas) {
+  var layers = {}
+  areas.features.forEach(function (f) {
+    var id = f.properties._id
+    var zoom = getZoom(map, f, {padding: 60})
+    layers[id] = {
+      id: id,
+      type: 'fill',
+      source: 'areas',
+      maxzoom: zoom - 0.09,
+      filter: ['==', '_id', id],
+      paint: {
+        'fill-color': COLORS[f.properties.nacionalidad],
+        'fill-opacity': {
+          stops: [
+            [0, 0.5],
+            [zoom - 2, 0.5],
+            [zoom - 0.1, 0]
+          ]
+        }
+      }
+    }
+  })
+  return layers
 }
