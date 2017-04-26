@@ -3847,9 +3847,17 @@
           ],
           "Agua": 0,
           "Agua Familias": 0,
-          "Agua Usuarios": 0
+          "Agua Usuarios": 0,
+          "Lon": -75.78082,
+          "Lat": -1.02659
         },
-        "geometry": null
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -75.78082,
+            -1.02659
+          ]
+        }
       },
       {
         "type": "Feature",
