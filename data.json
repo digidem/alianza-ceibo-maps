@@ -731,6 +731,8 @@
           "Nacionalidad": [
             "rec7nhastozSVnJax"
           ],
+          "Lon": -77.22129,
+          "Lat": -1.02303,
           "Programas": [
             "Mujer y familia"
           ],
@@ -757,9 +759,7 @@
           ],
           "Agua": 0,
           "Agua Familias": 0,
-          "Agua Usuarios": 0,
-          "Lon": -77.22129,
-          "Lat": -1.02303
+          "Agua Usuarios": 0
         },
         "geometry": {
           "type": "Point",
@@ -1238,6 +1238,8 @@
           "Nacionalidad": [
             "rec7nhastozSVnJax"
           ],
+          "Lon": -77.31581,
+          "Lat": -1.03389,
           "Programas": [
             "Mujer y familia"
           ],
@@ -1264,9 +1266,7 @@
           ],
           "Agua": 0,
           "Agua Familias": 0,
-          "Agua Usuarios": 0,
-          "Lon": -77.31581,
-          "Lat": -1.03389
+          "Agua Usuarios": 0
         },
         "geometry": {
           "type": "Point",
@@ -1284,6 +1284,8 @@
           "Nacionalidad": [
             "rec7nhastozSVnJax"
           ],
+          "Lon": -77.44561,
+          "Lat": -1.18729,
           "Programas": [
             "Sistemas de agua"
           ],
@@ -1310,9 +1312,7 @@
           ],
           "Agua": 0,
           "Agua Familias": 0,
-          "Agua Usuarios": 0,
-          "Lon": -77.44561,
-          "Lat": -1.18729
+          "Agua Usuarios": 0
         },
         "geometry": {
           "type": "Point",
@@ -1330,6 +1330,8 @@
           "Nacionalidad": [
             "rec7nhastozSVnJax"
           ],
+          "Lon": -77.07712,
+          "Lat": -1.0121,
           "Programas": [
             "Sistemas de agua",
             "Mujer y familia"
@@ -1357,9 +1359,7 @@
           ],
           "Agua": 0,
           "Agua Familias": 0,
-          "Agua Usuarios": 0,
-          "Lon": -77.07712,
-          "Lat": -1.0121
+          "Agua Usuarios": 0
         },
         "geometry": {
           "type": "Point",
@@ -1571,6 +1571,8 @@
           "Nacionalidad": [
             "rec7nhastozSVnJax"
           ],
+          "Lon": -77.38356,
+          "Lat": -1.40061,
           "Programas": [
             "Mujer y familia"
           ],
@@ -1597,9 +1599,7 @@
           ],
           "Agua": 0,
           "Agua Familias": 0,
-          "Agua Usuarios": 0,
-          "Lon": -77.38356,
-          "Lat": -1.40061
+          "Agua Usuarios": 0
         },
         "geometry": {
           "type": "Point",
@@ -1840,6 +1840,8 @@
           "Nacionalidad": [
             "rec7nhastozSVnJax"
           ],
+          "Lon": -76.37622,
+          "Lat": -0.67113,
           "Programas": [
             "Sistemas de agua",
             "Mujer y familia"
@@ -1869,9 +1871,7 @@
           "Agua Familias": 4,
           "Agua Usuarios": 0,
           "Most recent": "2014-12-30",
-          "First": "2014-12-30",
-          "Lon": -76.37622,
-          "Lat": -0.67113
+          "First": "2014-12-30"
         },
         "geometry": {
           "type": "Point",
@@ -2169,6 +2169,8 @@
           "Nacionalidad": [
             "rec7nhastozSVnJax"
           ],
+          "Lon": -77.01845,
+          "Lat": -1.01575,
           "Programas": [
             "Sistemas de agua",
             "Mujer y familia"
@@ -2196,9 +2198,7 @@
           ],
           "Agua": 0,
           "Agua Familias": 0,
-          "Agua Usuarios": 0,
-          "Lon": -77.01845,
-          "Lat": -1.01575
+          "Agua Usuarios": 0
         },
         "geometry": {
           "type": "Point",
@@ -2354,6 +2354,8 @@
           "Nacionalidad": [
             "rec7nhastozSVnJax"
           ],
+          "Lon": -76.46189,
+          "Lat": -0.64317,
           "Programas": [
             "Sistemas de agua"
           ],
@@ -2382,9 +2384,7 @@
           "Agua Familias": 8,
           "Agua Usuarios": 0,
           "Most recent": "2014-12-30",
-          "First": "2014-12-30",
-          "Lon": -76.46189,
-          "Lat": -0.64317
+          "First": "2014-12-30"
         },
         "geometry": {
           "type": "Point",
@@ -2631,6 +2631,8 @@
           "Nacionalidad": [
             "rec7nhastozSVnJax"
           ],
+          "Lon": -76.18832,
+          "Lat": -1.04637,
           "Programas": [
             "Sistemas de agua",
             "Mujer y familia"
@@ -2658,9 +2660,7 @@
           ],
           "Agua": 0,
           "Agua Familias": 0,
-          "Agua Usuarios": 0,
-          "Lon": -76.18832,
-          "Lat": -1.04637
+          "Agua Usuarios": 0
         },
         "geometry": {
           "type": "Point",
@@ -2903,6 +2903,8 @@
           "Nacionalidad": [
             "rec7nhastozSVnJax"
           ],
+          "Lon": -77.16446,
+          "Lat": -1.02046,
           "Programas": [
             "Sistemas de agua",
             "Mujer y familia"
@@ -2930,9 +2932,7 @@
           ],
           "Agua": 0,
           "Agua Familias": 0,
-          "Agua Usuarios": 0,
-          "Lon": -77.16446,
-          "Lat": -1.02046
+          "Agua Usuarios": 0
         },
         "geometry": {
           "type": "Point",
@@ -3009,6 +3009,8 @@
           "Nacionalidad": [
             "rec7nhastozSVnJax"
           ],
+          "Lon": -76.88592,
+          "Lat": -1.04421,
           "Programas": [
             "Sistemas de agua"
           ],
@@ -3035,9 +3037,7 @@
           ],
           "Agua": 0,
           "Agua Familias": 0,
-          "Agua Usuarios": 0,
-          "Lon": -76.88592,
-          "Lat": -1.04421
+          "Agua Usuarios": 0
         },
         "geometry": {
           "type": "Point",
@@ -3245,6 +3245,8 @@
           "Nacionalidad": [
             "rec7nhastozSVnJax"
           ],
+          "Lon": -76.2183,
+          "Lat": -1.10268,
           "Programas": [
             "Sistemas de agua"
           ],
@@ -3271,9 +3273,7 @@
           ],
           "Agua": 0,
           "Agua Familias": 0,
-          "Agua Usuarios": 0,
-          "Lon": -76.2183,
-          "Lat": -1.10268
+          "Agua Usuarios": 0
         },
         "geometry": {
           "type": "Point",
@@ -3314,33 +3314,33 @@
           "Historias": [
             "recl1bfk9LC5j4HBX"
           ],
-          "Foto": [
-            {
-              "id": "attiw9QQfgVxDDcMM",
-              "url": "https://dl.airtable.com/xZPoUzRwqQ7DQWgELnbA_GBR.jpg",
-              "filename": "GBR.jpg",
-              "size": 115627,
-              "type": "image/jpeg",
-              "thumbnails": {
-                "small": {
-                  "url": "https://dl.airtable.com/12XIYPpcS2WM9iApKIiC_small_GBR.jpg",
-                  "width": 48,
-                  "height": 36
-                },
-                "large": {
-                  "url": "https://dl.airtable.com/nX7E2ZKJRZGJx0fLYaJT_large_GBR.jpg",
-                  "width": 512,
-                  "height": 512
-                }
-              }
-            }
-          ],
           "Descripción": "The Siona community of Aboquehuira lies close to the Aguarico River in the Ecuadorian Amazon. Composed of nine families, Aboquehuira works with ClearWater and the Ceibo Alliance on five programs",
           "Agua": 9,
           "Agua Familias": 9,
           "Agua Usuarios": 59,
           "Most recent": "2014-01-25",
-          "First": "2014-01-20"
+          "First": "2014-01-20",
+          "Foto": [
+            {
+              "id": "attYWJ8hO8nBOI6et",
+              "url": "https://dl.airtable.com/Bi63wRwTeC9apUGinRVj__MG_9533.jpg",
+              "filename": "_MG_9533.jpg",
+              "size": 3340979,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/mfWa7jC5RMG1Ak7NOj3l_small__MG_9533.jpg",
+                  "width": 54,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/gSyCBWvcTgeUTzD11hBg_large__MG_9533.jpg",
+                  "width": 768,
+                  "height": 512
+                }
+              }
+            }
+          ]
         },
         "geometry": {
           "type": "Point",
@@ -3358,6 +3358,8 @@
           "Nacionalidad": [
             "rec7nhastozSVnJax"
           ],
+          "Lon": -76.95461,
+          "Lat": -1.16223,
           "Programas": [
             "Mujer y familia"
           ],
@@ -3384,9 +3386,7 @@
           ],
           "Agua": 0,
           "Agua Familias": 0,
-          "Agua Usuarios": 0,
-          "Lon": -76.95461,
-          "Lat": -1.16223
+          "Agua Usuarios": 0
         },
         "geometry": {
           "type": "Point",
@@ -3521,6 +3521,8 @@
           "Nacionalidad": [
             "rec7nhastozSVnJax"
           ],
+          "Lon": -76.4252,
+          "Lat": -0.77638,
           "Programas": [
             "Sistemas de agua",
             "Mujer y familia"
@@ -3548,9 +3550,7 @@
           ],
           "Agua": 0,
           "Agua Familias": 0,
-          "Agua Usuarios": 0,
-          "Lon": -76.4252,
-          "Lat": -0.77638
+          "Agua Usuarios": 0
         },
         "geometry": {
           "type": "Point",
@@ -3733,6 +3733,8 @@
           "Nacionalidad": [
             "rec7nhastozSVnJax"
           ],
+          "Lon": -77.08339,
+          "Lat": -1.28794,
           "Programas": [
             "Sistemas de agua",
             "Sistemas solares",
@@ -3763,9 +3765,7 @@
           "Agua Familias": 2,
           "Agua Usuarios": 0,
           "Most recent": "2015-12-30",
-          "First": "2015-12-30",
-          "Lon": -77.08339,
-          "Lat": -1.28794
+          "First": "2015-12-30"
         },
         "geometry": {
           "type": "Point",
@@ -3783,6 +3783,8 @@
           "Nacionalidad": [
             "rec7nhastozSVnJax"
           ],
+          "Lon": -75.78082,
+          "Lat": -1.02659,
           "Programas": [
             "Sistemas de agua"
           ],
@@ -3809,9 +3811,7 @@
           ],
           "Agua": 0,
           "Agua Familias": 0,
-          "Agua Usuarios": 0,
-          "Lon": -75.78082,
-          "Lat": -1.02659
+          "Agua Usuarios": 0
         },
         "geometry": {
           "type": "Point",
@@ -3889,6 +3889,8 @@
           "Nacionalidad": [
             "recHGwwudtmODsfLg"
           ],
+          "Lon": -76.423687,
+          "Lat": -0.254205,
           "Programas": [
             "Sistemas de agua",
             "Defensores y defensoras",
@@ -3920,9 +3922,7 @@
           ],
           "Agua": 0,
           "Agua Familias": 0,
-          "Agua Usuarios": 0,
-          "Lat": -0.254205,
-          "Lon": -76.423687
+          "Agua Usuarios": 0
         },
         "geometry": {
           "type": "Point",
@@ -3940,6 +3940,8 @@
           "Nacionalidad": [
             "rec7nhastozSVnJax"
           ],
+          "Lon": -77.45519,
+          "Lat": -1.32114,
           "Programas": [
             "Mujer y familia"
           ],
@@ -3966,9 +3968,7 @@
           ],
           "Agua": 0,
           "Agua Familias": 0,
-          "Agua Usuarios": 0,
-          "Lon": -77.45519,
-          "Lat": -1.32114
+          "Agua Usuarios": 0
         },
         "geometry": {
           "type": "Point",
@@ -4366,6 +4366,8 @@
           "Nacionalidad": [
             "rec7nhastozSVnJax"
           ],
+          "Lon": -76.21435,
+          "Lat": -0.9371,
           "Programas": [
             "Sistemas de agua",
             "Mujer y familia"
@@ -4393,9 +4395,7 @@
           ],
           "Agua": 0,
           "Agua Familias": 0,
-          "Agua Usuarios": 0,
-          "Lon": -76.21435,
-          "Lat": -0.9371
+          "Agua Usuarios": 0
         },
         "geometry": {
           "type": "Point",
@@ -4492,6 +4492,8 @@
           "Nacionalidad": [
             "rec7nhastozSVnJax"
           ],
+          "Lon": -76.94228,
+          "Lat": -1.12921,
           "Programas": [
             "Mujer y familia"
           ],
@@ -4518,9 +4520,7 @@
           ],
           "Agua": 0,
           "Agua Familias": 0,
-          "Agua Usuarios": 0,
-          "Lon": -76.94228,
-          "Lat": -1.12921
+          "Agua Usuarios": 0
         },
         "geometry": {
           "type": "Point",
