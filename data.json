@@ -4688,7 +4688,28 @@
           "Agua Familias": 6,
           "Agua Usuarios": 0,
           "Most recent": "2016-12-30",
-          "First": "2016-12-30"
+          "First": "2016-12-30",
+          "Foto": [
+            {
+              "id": "attHbvN56JhHBdn9S",
+              "url": "https://dl.airtable.com/eU0dBfInT6yk7ZJsTDgg__MG_0354.JPG",
+              "filename": "_MG_0354.JPG",
+              "size": 750195,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/ufeea28TgGL7VIUk2cJg_small__MG_0354.JPG",
+                  "width": 54,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/0C6qfJ8mQsSUEOTzRv1Y_large__MG_0354.JPG",
+                  "width": 768,
+                  "height": 512
+                }
+              }
+            }
+          ]
         },
         "geometry": {
           "type": "Point",
