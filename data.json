@@ -3314,12 +3314,6 @@
           "Historias": [
             "recl1bfk9LC5j4HBX"
           ],
-          "Descripción": "The Siona community of Aboquehuira lies close to the Aguarico River in the Ecuadorian Amazon. Composed of nine families, Aboquehuira works with ClearWater and the Ceibo Alliance on five programs",
-          "Agua": 9,
-          "Agua Familias": 9,
-          "Agua Usuarios": 59,
-          "Most recent": "2014-01-25",
-          "First": "2014-01-20",
           "Foto": [
             {
               "id": "attYWJ8hO8nBOI6et",
@@ -3340,7 +3334,13 @@
                 }
               }
             }
-          ]
+          ],
+          "Descripción": "The Siona community of Aboquehuira lies close to the Aguarico River in the Ecuadorian Amazon. Composed of nine families, Aboquehuira works with ClearWater and the Ceibo Alliance on five programs",
+          "Agua": 9,
+          "Agua Familias": 9,
+          "Agua Usuarios": 59,
+          "Most recent": "2014-01-25",
+          "First": "2014-01-20"
         },
         "geometry": {
           "type": "Point",
@@ -4688,28 +4688,7 @@
           "Agua Familias": 6,
           "Agua Usuarios": 0,
           "Most recent": "2016-12-30",
-          "First": "2016-12-30",
-          "Foto": [
-            {
-              "id": "attBmDqKh01uT0LdN",
-              "url": "https://dl.airtable.com/uRny7lzaR7q5XALGuMSr__MG_0354.JPG",
-              "filename": "_MG_0354.JPG",
-              "size": 4329071,
-              "type": "image/jpeg",
-              "thumbnails": {
-                "small": {
-                  "url": "https://dl.airtable.com/jIDsX0zmTkC4lCz0bGQm_small__MG_0354.JPG",
-                  "width": 54,
-                  "height": 36
-                },
-                "large": {
-                  "url": "https://dl.airtable.com/2RPSaBNMQZCBHBpC73LW_large__MG_0354.JPG",
-                  "width": 768,
-                  "height": 512
-                }
-              }
-            }
-          ]
+          "First": "2016-12-30"
         },
         "geometry": {
           "type": "Point",
