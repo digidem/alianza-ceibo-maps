@@ -3074,32 +3074,20 @@
             "Sistemas solares",
             "Defensores y defensoras"
           ],
-          "Foto": [
-            {
-              "id": "attguA4X1dopDW61o",
-              "url": "https://dl.airtable.com/s85PPVFcSRSjmA1PuUzE_o-NEW-ENGLAND-AUTUMN-570.jpg",
-              "filename": "o-NEW-ENGLAND-AUTUMN-570.jpg",
-              "size": 550050,
-              "type": "image/jpeg",
-              "thumbnails": {
-                "small": {
-                  "url": "https://dl.airtable.com/dYsC3xYGRHetfYr9H1T3_small_o-NEW-ENGLAND-AUTUMN-570.jpg",
-                  "width": 54,
-                  "height": 36
-                },
-                "large": {
-                  "url": "https://dl.airtable.com/lSidcdFuQsqxVEEzshYS_large_o-NEW-ENGLAND-AUTUMN-570.jpg",
-                  "width": 512,
-                  "height": 380
-                }
-              }
-            }
-          ],
           "Agua": 8,
           "Agua Familias": 8,
           "Agua Usuarios": 0,
           "Most recent": "2015-08-20",
-          "First": "2015-08-20"
+          "First": "2015-08-20",
+          "Foto": [
+            {
+              "id": "att3QiWuXeAIJaZJY",
+              "url": "https://dl.airtable.com/RolgLl6xQyPb7wohHHKz_kiwaro.jpg",
+              "filename": "kiwaro.jpg",
+              "size": 631966,
+              "type": "image/jpeg"
+            }
+          ]
         },
         "geometry": {
           "type": "Point",
