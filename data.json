@@ -2864,7 +2864,28 @@
           "Agua Familias": 15,
           "Agua Usuarios": 0,
           "Most recent": "2016-11-30",
-          "First": "2016-11-30"
+          "First": "2016-11-30",
+          "Foto": [
+            {
+              "id": "att8K85RBC2IfYF5B",
+              "url": "https://dl.airtable.com/K4nTgacSRhOadd78Gcj4_daipare.jpg",
+              "filename": "daipare.jpg",
+              "size": 632514,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/ho9XIo5FTwKVQ2UjXgb7_small_daipare.jpg",
+                  "width": 64,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/kSdVxdRsm2cSFsdGBmtQ_large_daipare.jpg",
+                  "width": 910,
+                  "height": 512
+                }
+              }
+            }
+          ]
         },
         "geometry": {
           "type": "Point",
