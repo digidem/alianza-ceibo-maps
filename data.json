@@ -1711,7 +1711,28 @@
           "Agua Familias": 80,
           "Agua Usuarios": 213,
           "Most recent": "2015-05-20",
-          "First": "2012-04-25"
+          "First": "2012-04-25",
+          "Foto": [
+            {
+              "id": "attF8KsmjtEv9wY5r",
+              "url": "https://dl.airtable.com/a0HnOFYRqCFyyVhlqrqG_IMG_3026.jpg",
+              "filename": "IMG_3026.jpg",
+              "size": 718130,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/6mxotM4fS5iELTPjmp0X_small_IMG_3026.jpg",
+                  "width": 54,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/g6ycBjQGS62bEj5iWMfx_large_IMG_3026.jpg",
+                  "width": 768,
+                  "height": 512
+                }
+              }
+            }
+          ]
         },
         "geometry": {
           "type": "Point",
