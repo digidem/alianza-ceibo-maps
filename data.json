@@ -2715,33 +2715,33 @@
             "Sistemas solares",
             "Practicas propias"
           ],
-          "Foto": [
-            {
-              "id": "atteU8amfOJyujtaU",
-              "url": "https://dl.airtable.com/3lDQkVNBSw257hkVkJMf_iceberg3.jpg",
-              "filename": "iceberg3.jpg",
-              "size": 86257,
-              "type": "image/jpeg",
-              "thumbnails": {
-                "small": {
-                  "url": "https://dl.airtable.com/CoMdUrFmTbSRl6UA1Vzj_small_iceberg3.jpg",
-                  "width": 54,
-                  "height": 36
-                },
-                "large": {
-                  "url": "https://dl.airtable.com/JXWfiec6QQKpg7CDyiLE_large_iceberg3.jpg",
-                  "width": 512,
-                  "height": 512
-                }
-              }
-            }
-          ],
           "Descripción": "The A'I Kofan community of Sábalo lies close to the Aguarico River in the Ecuadorian Amazon. Composed of 28 families, Sábalo works with ClearWater and the Ceibo Alliance on three program",
           "Agua": 28,
           "Agua Familias": 28,
           "Agua Usuarios": 148,
           "Most recent": "2015-10-09",
-          "First": "2014-10-01"
+          "First": "2014-10-01",
+          "Foto": [
+            {
+              "id": "attVPKpD9eTIkXDLm",
+              "url": "https://dl.airtable.com/gg0mcR1RXm8E5uUq6wBg_thumb_IMG_5297_1024.jpg",
+              "filename": "thumb_IMG_5297_1024.jpg",
+              "size": 260243,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/5SQ7qKvdRPuEqzCFs6Nt_small_thumb_IMG_5297_1024.jpg",
+                  "width": 54,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/mkTfOqiEQX2ajWbdz2vs_large_thumb_IMG_5297_1024.jpg",
+                  "width": 768,
+                  "height": 512
+                }
+              }
+            }
+          ]
         },
         "geometry": {
           "type": "Point",
@@ -4268,27 +4268,6 @@
           "Programas": [
             "Sistemas de agua",
             "Practicas propias"
-          ],
-          "Foto": [
-            {
-              "id": "atteU8amfOJyujtaU",
-              "url": "https://dl.airtable.com/3lDQkVNBSw257hkVkJMf_iceberg3.jpg",
-              "filename": "iceberg3.jpg",
-              "size": 86257,
-              "type": "image/jpeg",
-              "thumbnails": {
-                "small": {
-                  "url": "https://dl.airtable.com/CoMdUrFmTbSRl6UA1Vzj_small_iceberg3.jpg",
-                  "width": 54,
-                  "height": 36
-                },
-                "large": {
-                  "url": "https://dl.airtable.com/JXWfiec6QQKpg7CDyiLE_large_iceberg3.jpg",
-                  "width": 512,
-                  "height": 512
-                }
-              }
-            }
           ],
           "Descripción": "The A'I Kofan community of Dovuno lies close to the Aguarico River in the Ecuadorian Amazon. Composed of 32 families, Dovuno works with ClearWater and the Ceibo Alliance on two programs",
           "Agua": 34,
