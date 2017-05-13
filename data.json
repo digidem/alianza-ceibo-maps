@@ -2064,32 +2064,32 @@
             "Mapeo territorial",
             "Mujer y familia"
           ],
-          "Foto": [
-            {
-              "id": "attguA4X1dopDW61o",
-              "url": "https://dl.airtable.com/s85PPVFcSRSjmA1PuUzE_o-NEW-ENGLAND-AUTUMN-570.jpg",
-              "filename": "o-NEW-ENGLAND-AUTUMN-570.jpg",
-              "size": 550050,
-              "type": "image/jpeg",
-              "thumbnails": {
-                "small": {
-                  "url": "https://dl.airtable.com/dYsC3xYGRHetfYr9H1T3_small_o-NEW-ENGLAND-AUTUMN-570.jpg",
-                  "width": 54,
-                  "height": 36
-                },
-                "large": {
-                  "url": "https://dl.airtable.com/lSidcdFuQsqxVEEzshYS_large_o-NEW-ENGLAND-AUTUMN-570.jpg",
-                  "width": 512,
-                  "height": 380
-                }
-              }
-            }
-          ],
           "Agua": 7,
           "Agua Familias": 7,
           "Agua Usuarios": 0,
           "Most recent": "2015-08-20",
-          "First": "2015-08-20"
+          "First": "2015-08-20",
+          "Foto": [
+            {
+              "id": "att8MeR7CF14yfJI5",
+              "url": "https://dl.airtable.com/AFyj9NPkQjC2NKbEmqcB_nemonpare.jpg",
+              "filename": "nemonpare.jpg",
+              "size": 558688,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/DNzaHaJQoyBRdBQjHEg7_small_nemonpare.jpg",
+                  "width": 54,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/AtKcfUQX213gb8eWntg7_large_nemonpare.jpg",
+                  "width": 769,
+                  "height": 512
+                }
+              }
+            }
+          ]
         },
         "geometry": {
           "type": "Point",
@@ -3085,7 +3085,19 @@
               "url": "https://dl.airtable.com/RolgLl6xQyPb7wohHHKz_kiwaro.jpg",
               "filename": "kiwaro.jpg",
               "size": 631966,
-              "type": "image/jpeg"
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/QO7bcvPMQHaNE4yXvzB8_small_kiwaro.jpg",
+                  "width": 64,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/wG0VbAJhQgyfwzWwzl41_large_kiwaro.jpg",
+                  "width": 910,
+                  "height": 512
+                }
+              }
             }
           ]
         },
