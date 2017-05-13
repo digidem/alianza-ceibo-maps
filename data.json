@@ -623,33 +623,33 @@
           "Historias": [
             "recxQNz0HRrsFCIKF"
           ],
-          "Foto": [
-            {
-              "id": "atteU8amfOJyujtaU",
-              "url": "https://dl.airtable.com/3lDQkVNBSw257hkVkJMf_iceberg3.jpg",
-              "filename": "iceberg3.jpg",
-              "size": 86257,
-              "type": "image/jpeg",
-              "thumbnails": {
-                "small": {
-                  "url": "https://dl.airtable.com/CoMdUrFmTbSRl6UA1Vzj_small_iceberg3.jpg",
-                  "width": 54,
-                  "height": 36
-                },
-                "large": {
-                  "url": "https://dl.airtable.com/JXWfiec6QQKpg7CDyiLE_large_iceberg3.jpg",
-                  "width": 512,
-                  "height": 512
-                }
-              }
-            }
-          ],
           "Descripción": "The A'I Kofan community of Bavoroe lies close to the Aguarico River in the Ecuadorian Amazon. Composed of eight families, Bavoroe works with ClearWater and the Ceibo Alliance on two programs",
           "Agua": 8,
           "Agua Familias": 8,
           "Agua Usuarios": 41,
           "Most recent": "2014-12-22",
-          "First": "2013-12-17"
+          "First": "2013-12-17",
+          "Foto": [
+            {
+              "id": "att5nJFwZ13rufudt",
+              "url": "https://dl.airtable.com/PessoA1yTIWGno4fyOqd_bavoroe.jpg",
+              "filename": "bavoroe.jpg",
+              "size": 732854,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/Ep4YvswYSiB0DaFN5jgY_small_bavoroe.jpg",
+                  "width": 54,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/3fq3H5dQoafqAd5egkj5_large_bavoroe.jpg",
+                  "width": 769,
+                  "height": 512
+                }
+              }
+            }
+          ]
         },
         "geometry": {
           "type": "Point",
