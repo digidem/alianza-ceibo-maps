@@ -4372,27 +4372,6 @@
             "Sistemas de agua",
             "Mujer y familia"
           ],
-          "Foto": [
-            {
-              "id": "attguA4X1dopDW61o",
-              "url": "https://dl.airtable.com/s85PPVFcSRSjmA1PuUzE_o-NEW-ENGLAND-AUTUMN-570.jpg",
-              "filename": "o-NEW-ENGLAND-AUTUMN-570.jpg",
-              "size": 550050,
-              "type": "image/jpeg",
-              "thumbnails": {
-                "small": {
-                  "url": "https://dl.airtable.com/dYsC3xYGRHetfYr9H1T3_small_o-NEW-ENGLAND-AUTUMN-570.jpg",
-                  "width": 54,
-                  "height": 36
-                },
-                "large": {
-                  "url": "https://dl.airtable.com/lSidcdFuQsqxVEEzshYS_large_o-NEW-ENGLAND-AUTUMN-570.jpg",
-                  "width": 512,
-                  "height": 380
-                }
-              }
-            }
-          ],
           "Agua": 0,
           "Agua Familias": 0,
           "Agua Usuarios": 0
