@@ -1816,7 +1816,28 @@
           "Agua Familias": 3,
           "Agua Usuarios": 410,
           "Most recent": "2013-08-16",
-          "First": "2012-08-14"
+          "First": "2012-08-14",
+          "Foto": [
+            {
+              "id": "attzJMEsBb1cwn0sV",
+              "url": "https://dl.airtable.com/2vNyloHISeSL3n3tMs0x_BZkuJNwVSkW4GQNA5iVj_full_b05b517b90daefcd655a4c27367366a0a5d99074.jpg",
+              "filename": "BZkuJNwVSkW4GQNA5iVj_full_b05b517b90daefcd655a4c27367366a0a5d99074.jpg",
+              "size": 1667081,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/FTnhtiqxT4aldfGn1yBN_small_BZkuJNwVSkW4GQNA5iVj_full_b05b517b90daefcd655a4c27367366a0a5d99074.jpg",
+                  "width": 54,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/XRqGwE0S7OV0Ou0ADbdw_large_BZkuJNwVSkW4GQNA5iVj_full_b05b517b90daefcd655a4c27367366a0a5d99074.jpg",
+                  "width": 773,
+                  "height": 512
+                }
+              }
+            }
+          ]
         },
         "geometry": {
           "type": "Point",
@@ -2305,7 +2326,28 @@
           "Agua Familias": 4,
           "Agua Usuarios": 24,
           "Most recent": "2014-10-12",
-          "First": "2014-10-11"
+          "First": "2014-10-11",
+          "Foto": [
+            {
+              "id": "attt6p1XafxtRVLMy",
+              "url": "https://dl.airtable.com/TopYvCvQZKcq9lnncdNn_jsk7yCfERJ6J7jkqFuBB_full_a5ef0c006e7b2c78900d5f9be95714ebaa65664e.jpg",
+              "filename": "jsk7yCfERJ6J7jkqFuBB_full_a5ef0c006e7b2c78900d5f9be95714ebaa65664e.jpg",
+              "size": 1880509,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/UZ9SyOxZTVCvSQPMxZVs_small_jsk7yCfERJ6J7jkqFuBB_full_a5ef0c006e7b2c78900d5f9be95714ebaa65664e.jpg",
+                  "width": 48,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/WTv9pPY7RbWJUVHlUme5_large_jsk7yCfERJ6J7jkqFuBB_full_a5ef0c006e7b2c78900d5f9be95714ebaa65664e.jpg",
+                  "width": 683,
+                  "height": 512
+                }
+              }
+            }
+          ]
         },
         "geometry": {
           "type": "Point",
@@ -3401,33 +3443,33 @@
           "Programas": [
             "Sistemas de agua"
           ],
-          "Foto": [
-            {
-              "id": "atteU8amfOJyujtaU",
-              "url": "https://dl.airtable.com/3lDQkVNBSw257hkVkJMf_iceberg3.jpg",
-              "filename": "iceberg3.jpg",
-              "size": 86257,
-              "type": "image/jpeg",
-              "thumbnails": {
-                "small": {
-                  "url": "https://dl.airtable.com/CoMdUrFmTbSRl6UA1Vzj_small_iceberg3.jpg",
-                  "width": 54,
-                  "height": 36
-                },
-                "large": {
-                  "url": "https://dl.airtable.com/JXWfiec6QQKpg7CDyiLE_large_iceberg3.jpg",
-                  "width": 512,
-                  "height": 512
-                }
-              }
-            }
-          ],
           "Descripción": "The A'I Kofan community of Pisorie Canqque lies close to the Aguarico River in the Ecuadorian Amazon. Composed of 12 families, Pisorie Canqque works with ClearWater and the Ceibo Alliance on one program",
           "Agua": 11,
           "Agua Familias": 12,
           "Agua Usuarios": 67,
           "Most recent": "2014-01-31",
-          "First": "2014-01-30"
+          "First": "2014-01-30",
+          "Foto": [
+            {
+              "id": "attbTLyxuUC6Z5H2P",
+              "url": "https://dl.airtable.com/bHavZhwYSdG2AYdmlGLW_VVyMzhHIRCEtdc55Z2pQ_full_fbf7fe46c91ca360b178b2c7e0e2b7a8b6011de0.jpg",
+              "filename": "VVyMzhHIRCEtdc55Z2pQ_full_fbf7fe46c91ca360b178b2c7e0e2b7a8b6011de0.jpg",
+              "size": 2065263,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/TBIZ2AuNTcGTR1YSVECt_small_VVyMzhHIRCEtdc55Z2pQ_full_fbf7fe46c91ca360b178b2c7e0e2b7a8b6011de0.jpg",
+                  "width": 48,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/VgduOQawTUu0T0xj4pcr_large_VVyMzhHIRCEtdc55Z2pQ_full_fbf7fe46c91ca360b178b2c7e0e2b7a8b6011de0.jpg",
+                  "width": 683,
+                  "height": 512
+                }
+              }
+            }
+          ]
         },
         "geometry": {
           "type": "Point",
