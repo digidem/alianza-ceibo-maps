@@ -2300,27 +2300,6 @@
           "Programas": [
             "Sistemas de agua"
           ],
-          "Foto": [
-            {
-              "id": "atteU8amfOJyujtaU",
-              "url": "https://dl.airtable.com/3lDQkVNBSw257hkVkJMf_iceberg3.jpg",
-              "filename": "iceberg3.jpg",
-              "size": 86257,
-              "type": "image/jpeg",
-              "thumbnails": {
-                "small": {
-                  "url": "https://dl.airtable.com/CoMdUrFmTbSRl6UA1Vzj_small_iceberg3.jpg",
-                  "width": 54,
-                  "height": 36
-                },
-                "large": {
-                  "url": "https://dl.airtable.com/JXWfiec6QQKpg7CDyiLE_large_iceberg3.jpg",
-                  "width": 512,
-                  "height": 512
-                }
-              }
-            }
-          ],
           "Descripción": "The A'I Kofan community of Paccoya lies close to the Paccoya River in the Ecuadorian Amazon. Composed of four families, Paccoya works with ClearWater and the Ceibo Alliance on one program",
           "Agua": 4,
           "Agua Familias": 4,
