@@ -1046,11 +1046,6 @@
             "Defensores y defensoras",
             "Mapeo territorial"
           ],
-          "Agua": 17,
-          "Agua Familias": 29,
-          "Agua Usuarios": 185,
-          "Most recent": "2013-09-11",
-          "First": "2012-05-14",
           "Foto": [
             {
               "id": "attH3SWk4KwvMw915",
@@ -1071,7 +1066,12 @@
                 }
               }
             }
-          ]
+          ],
+          "Agua": 17,
+          "Agua Familias": 29,
+          "Agua Usuarios": 185,
+          "Most recent": "2013-09-11",
+          "First": "2012-05-14"
         },
         "geometry": {
           "type": "Point",
@@ -1812,11 +1812,6 @@
             "reciXaH5Frx9Mhs1R",
             "recTvITq4XclRcPZc"
           ],
-          "Agua": 51,
-          "Agua Familias": 3,
-          "Agua Usuarios": 410,
-          "Most recent": "2013-08-16",
-          "First": "2012-08-14",
           "Foto": [
             {
               "id": "attzJMEsBb1cwn0sV",
@@ -1837,7 +1832,12 @@
                 }
               }
             }
-          ]
+          ],
+          "Agua": 51,
+          "Agua Familias": 3,
+          "Agua Usuarios": 410,
+          "Most recent": "2013-08-16",
+          "First": "2012-08-14"
         },
         "geometry": {
           "type": "Point",
@@ -2146,12 +2146,6 @@
             "Sistemas solares",
             "Practicas propias"
           ],
-          "Descripción": "The A'I Kofan community of Chandiana'e lies close to the Bermejo River in the Ecuadorian Amazon. Composed of nine families, Chandiana'e works with ClearWater and the Ceibo Alliance on three programs",
-          "Agua": 9,
-          "Agua Familias": 9,
-          "Agua Usuarios": 0,
-          "Most recent": "2016-03-08",
-          "First": "2016-03-08",
           "Foto": [
             {
               "id": "attUaA07QOwCjwmfE",
@@ -2172,7 +2166,13 @@
                 }
               }
             }
-          ]
+          ],
+          "Descripción": "The A'I Kofan community of Chandiana'e lies close to the Bermejo River in the Ecuadorian Amazon. Composed of nine families, Chandiana'e works with ClearWater and the Ceibo Alliance on three programs",
+          "Agua": 9,
+          "Agua Familias": 9,
+          "Agua Usuarios": 0,
+          "Most recent": "2016-03-08",
+          "First": "2016-03-08"
         },
         "geometry": {
           "type": "Point",
@@ -2321,12 +2321,6 @@
           "Programas": [
             "Sistemas de agua"
           ],
-          "Descripción": "The A'I Kofan community of Paccoya lies close to the Paccoya River in the Ecuadorian Amazon. Composed of four families, Paccoya works with ClearWater and the Ceibo Alliance on one program",
-          "Agua": 4,
-          "Agua Familias": 4,
-          "Agua Usuarios": 24,
-          "Most recent": "2014-10-12",
-          "First": "2014-10-11",
           "Foto": [
             {
               "id": "attt6p1XafxtRVLMy",
@@ -2347,7 +2341,13 @@
                 }
               }
             }
-          ]
+          ],
+          "Descripción": "The A'I Kofan community of Paccoya lies close to the Paccoya River in the Ecuadorian Amazon. Composed of four families, Paccoya works with ClearWater and the Ceibo Alliance on one program",
+          "Agua": 4,
+          "Agua Familias": 4,
+          "Agua Usuarios": 24,
+          "Most recent": "2014-10-12",
+          "First": "2014-10-11"
         },
         "geometry": {
           "type": "Point",
@@ -2609,11 +2609,6 @@
             "Defensores y defensoras",
             "Monitoreo ambiental"
           ],
-          "Agua": 9,
-          "Agua Familias": 9,
-          "Agua Usuarios": 47,
-          "Most recent": "2014-12-20",
-          "First": "2014-01-20",
           "Foto": [
             {
               "id": "attBoZm8p2q7PhyXX",
@@ -2634,7 +2629,12 @@
                 }
               }
             }
-          ]
+          ],
+          "Agua": 9,
+          "Agua Familias": 9,
+          "Agua Usuarios": 47,
+          "Most recent": "2014-12-20",
+          "First": "2014-01-20"
         },
         "geometry": {
           "type": "Point",
@@ -2813,12 +2813,6 @@
           "Programas": [
             "Sistemas de agua"
           ],
-          "Descripción": "The A'I Kofan community of Upirito lies close to the Aguarico River in the Ecuadorian Amazon. Composed of 26 families, Upirito works with ClearWater and the Ceibo Alliance on one program",
-          "Agua": 26,
-          "Agua Familias": 26,
-          "Agua Usuarios": 77,
-          "Most recent": "2016-11-25",
-          "First": "2012-01-01",
           "Foto": [
             {
               "id": "attsBTVw4BbYpxP1f",
@@ -2839,7 +2833,13 @@
                 }
               }
             }
-          ]
+          ],
+          "Descripción": "The A'I Kofan community of Upirito lies close to the Aguarico River in the Ecuadorian Amazon. Composed of 26 families, Upirito works with ClearWater and the Ceibo Alliance on one program",
+          "Agua": 26,
+          "Agua Familias": 26,
+          "Agua Usuarios": 77,
+          "Most recent": "2016-11-25",
+          "First": "2012-01-01"
         },
         "geometry": {
           "type": "Point",
@@ -2921,9 +2921,6 @@
         "id": "recRfatd3eaTyBXL0",
         "properties": {
           "Comunidad": "Keweriuno",
-          "Nacionalidad": [
-            "rec7nhastozSVnJax"
-          ],
           "Lon": -77.16446,
           "Lat": -1.02046,
           "Programas": [
@@ -3152,11 +3149,6 @@
             "Sistemas de agua",
             "Mujer y familia"
           ],
-          "Agua": 6,
-          "Agua Familias": 6,
-          "Agua Usuarios": 0,
-          "Most recent": "2015-08-20",
-          "First": "2015-08-20",
           "Foto": [
             {
               "id": "att2c6qbbJwTUv6f8",
@@ -3177,7 +3169,12 @@
                 }
               }
             }
-          ]
+          ],
+          "Agua": 6,
+          "Agua Familias": 6,
+          "Agua Usuarios": 0,
+          "Most recent": "2015-08-20",
+          "First": "2015-08-20"
         },
         "geometry": {
           "type": "Point",
@@ -3223,11 +3220,6 @@
             "Defensores y defensoras",
             "Mapeo territorial"
           ],
-          "Agua": 19,
-          "Agua Familias": 19,
-          "Agua Usuarios": 94,
-          "Most recent": "2014-12-20",
-          "First": "2014-01-30",
           "Foto": [
             {
               "id": "attUQVxCAOYcSfkKF",
@@ -3248,7 +3240,12 @@
                 }
               }
             }
-          ]
+          ],
+          "Agua": 19,
+          "Agua Familias": 19,
+          "Agua Usuarios": 94,
+          "Most recent": "2014-12-20",
+          "First": "2014-01-30"
         },
         "geometry": {
           "type": "Point",
@@ -3443,12 +3440,6 @@
           "Programas": [
             "Sistemas de agua"
           ],
-          "Descripción": "The A'I Kofan community of Pisorie Canqque lies close to the Aguarico River in the Ecuadorian Amazon. Composed of 12 families, Pisorie Canqque works with ClearWater and the Ceibo Alliance on one program",
-          "Agua": 11,
-          "Agua Familias": 12,
-          "Agua Usuarios": 67,
-          "Most recent": "2014-01-31",
-          "First": "2014-01-30",
           "Foto": [
             {
               "id": "attbTLyxuUC6Z5H2P",
@@ -3469,7 +3460,13 @@
                 }
               }
             }
-          ]
+          ],
+          "Descripción": "The A'I Kofan community of Pisorie Canqque lies close to the Aguarico River in the Ecuadorian Amazon. Composed of 12 families, Pisorie Canqque works with ClearWater and the Ceibo Alliance on one program",
+          "Agua": 11,
+          "Agua Familias": 12,
+          "Agua Usuarios": 67,
+          "Most recent": "2014-01-31",
+          "First": "2014-01-30"
         },
         "geometry": {
           "type": "Point",
@@ -4344,11 +4341,6 @@
           "Programas": [
             "Sistemas de agua"
           ],
-          "Agua": 3,
-          "Agua Familias": 3,
-          "Agua Usuarios": 37,
-          "Most recent": "2013-03-24",
-          "First": "2013-03-22",
           "Foto": [
             {
               "id": "att5RYVCKY3CLxJb7",
@@ -4369,7 +4361,12 @@
                 }
               }
             }
-          ]
+          ],
+          "Agua": 3,
+          "Agua Familias": 3,
+          "Agua Usuarios": 37,
+          "Most recent": "2013-03-24",
+          "First": "2013-03-22"
         },
         "geometry": {
           "type": "Point",
@@ -4393,9 +4390,6 @@
             "Sistemas de agua",
             "Mujer y familia"
           ],
-          "Agua": 0,
-          "Agua Familias": 0,
-          "Agua Usuarios": 0,
           "Foto": [
             {
               "id": "atthlei6YxE8gZtZ2",
@@ -4404,7 +4398,10 @@
               "size": 978163,
               "type": "image/jpeg"
             }
-          ]
+          ],
+          "Agua": 0,
+          "Agua Familias": 0,
+          "Agua Usuarios": 0
         },
         "geometry": {
           "type": "Point",
@@ -5335,7 +5332,6 @@
             "rec3gtwYX0ot5HrdH",
             "rec996gRhguwjouTe",
             "rec8WEq2gHmNrrR0I",
-            "recRfatd3eaTyBXL0",
             "recUfHK2OgfET001H",
             "reccUjavRdDz5hNAu",
             "rec28YhIokWprxude",
