@@ -1380,27 +1380,6 @@
           "Programas": [
             "Sistemas de agua"
           ],
-          "Foto": [
-            {
-              "id": "attguA4X1dopDW61o",
-              "url": "https://dl.airtable.com/s85PPVFcSRSjmA1PuUzE_o-NEW-ENGLAND-AUTUMN-570.jpg",
-              "filename": "o-NEW-ENGLAND-AUTUMN-570.jpg",
-              "size": 550050,
-              "type": "image/jpeg",
-              "thumbnails": {
-                "small": {
-                  "url": "https://dl.airtable.com/dYsC3xYGRHetfYr9H1T3_small_o-NEW-ENGLAND-AUTUMN-570.jpg",
-                  "width": 54,
-                  "height": 36
-                },
-                "large": {
-                  "url": "https://dl.airtable.com/lSidcdFuQsqxVEEzshYS_large_o-NEW-ENGLAND-AUTUMN-570.jpg",
-                  "width": 512,
-                  "height": 380
-                }
-              }
-            }
-          ],
           "Agua": 8,
           "Agua Familias": 9,
           "Agua Usuarios": 48,
@@ -1761,27 +1740,6 @@
           "Programas": [
             "Sistemas de agua",
             "Mujer y familia"
-          ],
-          "Foto": [
-            {
-              "id": "attguA4X1dopDW61o",
-              "url": "https://dl.airtable.com/s85PPVFcSRSjmA1PuUzE_o-NEW-ENGLAND-AUTUMN-570.jpg",
-              "filename": "o-NEW-ENGLAND-AUTUMN-570.jpg",
-              "size": 550050,
-              "type": "image/jpeg",
-              "thumbnails": {
-                "small": {
-                  "url": "https://dl.airtable.com/dYsC3xYGRHetfYr9H1T3_small_o-NEW-ENGLAND-AUTUMN-570.jpg",
-                  "width": 54,
-                  "height": 36
-                },
-                "large": {
-                  "url": "https://dl.airtable.com/lSidcdFuQsqxVEEzshYS_large_o-NEW-ENGLAND-AUTUMN-570.jpg",
-                  "width": 512,
-                  "height": 380
-                }
-              }
-            }
           ],
           "Agua": 0,
           "Agua Familias": 4,
@@ -3648,27 +3606,6 @@
           "Programas": [
             "Mujer y familia"
           ],
-          "Foto": [
-            {
-              "id": "attguA4X1dopDW61o",
-              "url": "https://dl.airtable.com/s85PPVFcSRSjmA1PuUzE_o-NEW-ENGLAND-AUTUMN-570.jpg",
-              "filename": "o-NEW-ENGLAND-AUTUMN-570.jpg",
-              "size": 550050,
-              "type": "image/jpeg",
-              "thumbnails": {
-                "small": {
-                  "url": "https://dl.airtable.com/dYsC3xYGRHetfYr9H1T3_small_o-NEW-ENGLAND-AUTUMN-570.jpg",
-                  "width": 54,
-                  "height": 36
-                },
-                "large": {
-                  "url": "https://dl.airtable.com/lSidcdFuQsqxVEEzshYS_large_o-NEW-ENGLAND-AUTUMN-570.jpg",
-                  "width": 512,
-                  "height": 380
-                }
-              }
-            }
-          ],
           "Agua": 0,
           "Agua Familias": 0,
           "Agua Usuarios": 0
@@ -3718,32 +3655,32 @@
             "Sistemas de agua",
             "Mujer y familia"
           ],
-          "Foto": [
-            {
-              "id": "attiw9QQfgVxDDcMM",
-              "url": "https://dl.airtable.com/xZPoUzRwqQ7DQWgELnbA_GBR.jpg",
-              "filename": "GBR.jpg",
-              "size": 115627,
-              "type": "image/jpeg",
-              "thumbnails": {
-                "small": {
-                  "url": "https://dl.airtable.com/12XIYPpcS2WM9iApKIiC_small_GBR.jpg",
-                  "width": 48,
-                  "height": 36
-                },
-                "large": {
-                  "url": "https://dl.airtable.com/nX7E2ZKJRZGJx0fLYaJT_large_GBR.jpg",
-                  "width": 512,
-                  "height": 512
-                }
-              }
-            }
-          ],
           "Agua": 21,
           "Agua Familias": 21,
           "Agua Usuarios": 0,
           "Most recent": "2015-09-30",
-          "First": "2015-09-30"
+          "First": "2015-09-30",
+          "Foto": [
+            {
+              "id": "attSjoNIF0Vv1Ohbk",
+              "url": "https://dl.airtable.com/vGknijKEQv6EX61w1kzZ_tarabeaya.jpg",
+              "filename": "tarabeaya.jpg",
+              "size": 264244,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/6U7FvDdT9Oba4Wvk4Loj_small_tarabeaya.jpg",
+                  "width": 54,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/kcfDETINQxakFH1QNeYX_large_tarabeaya.jpg",
+                  "width": 768,
+                  "height": 512
+                }
+              }
+            }
+          ]
         },
         "geometry": {
           "type": "Point",
@@ -4166,27 +4103,6 @@
           "Lat": -1.12921,
           "Programas": [
             "Mujer y familia"
-          ],
-          "Foto": [
-            {
-              "id": "attguA4X1dopDW61o",
-              "url": "https://dl.airtable.com/s85PPVFcSRSjmA1PuUzE_o-NEW-ENGLAND-AUTUMN-570.jpg",
-              "filename": "o-NEW-ENGLAND-AUTUMN-570.jpg",
-              "size": 550050,
-              "type": "image/jpeg",
-              "thumbnails": {
-                "small": {
-                  "url": "https://dl.airtable.com/dYsC3xYGRHetfYr9H1T3_small_o-NEW-ENGLAND-AUTUMN-570.jpg",
-                  "width": 54,
-                  "height": 36
-                },
-                "large": {
-                  "url": "https://dl.airtable.com/lSidcdFuQsqxVEEzshYS_large_o-NEW-ENGLAND-AUTUMN-570.jpg",
-                  "width": 512,
-                  "height": 380
-                }
-              }
-            }
           ],
           "Agua": 0,
           "Agua Familias": 0,
