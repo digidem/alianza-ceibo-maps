@@ -715,27 +715,6 @@
           "Programas": [
             "Mujer y familia"
           ],
-          "Foto": [
-            {
-              "id": "attguA4X1dopDW61o",
-              "url": "https://dl.airtable.com/s85PPVFcSRSjmA1PuUzE_o-NEW-ENGLAND-AUTUMN-570.jpg",
-              "filename": "o-NEW-ENGLAND-AUTUMN-570.jpg",
-              "size": 550050,
-              "type": "image/jpeg",
-              "thumbnails": {
-                "small": {
-                  "url": "https://dl.airtable.com/dYsC3xYGRHetfYr9H1T3_small_o-NEW-ENGLAND-AUTUMN-570.jpg",
-                  "width": 54,
-                  "height": 36
-                },
-                "large": {
-                  "url": "https://dl.airtable.com/lSidcdFuQsqxVEEzshYS_large_o-NEW-ENGLAND-AUTUMN-570.jpg",
-                  "width": 512,
-                  "height": 380
-                }
-              }
-            }
-          ],
           "Agua": 0,
           "Agua Familias": 0,
           "Agua Usuarios": 0
@@ -809,27 +788,6 @@
           "Programas": [
             "Sistemas de agua",
             "Sistemas solares"
-          ],
-          "Foto": [
-            {
-              "id": "attguA4X1dopDW61o",
-              "url": "https://dl.airtable.com/s85PPVFcSRSjmA1PuUzE_o-NEW-ENGLAND-AUTUMN-570.jpg",
-              "filename": "o-NEW-ENGLAND-AUTUMN-570.jpg",
-              "size": 550050,
-              "type": "image/jpeg",
-              "thumbnails": {
-                "small": {
-                  "url": "https://dl.airtable.com/dYsC3xYGRHetfYr9H1T3_small_o-NEW-ENGLAND-AUTUMN-570.jpg",
-                  "width": 54,
-                  "height": 36
-                },
-                "large": {
-                  "url": "https://dl.airtable.com/lSidcdFuQsqxVEEzshYS_large_o-NEW-ENGLAND-AUTUMN-570.jpg",
-                  "width": 512,
-                  "height": 380
-                }
-              }
-            }
           ],
           "Agua": 2,
           "Agua Familias": 2,
@@ -1205,27 +1163,6 @@
           "Programas": [
             "Sistemas de agua"
           ],
-          "Foto": [
-            {
-              "id": "attguA4X1dopDW61o",
-              "url": "https://dl.airtable.com/s85PPVFcSRSjmA1PuUzE_o-NEW-ENGLAND-AUTUMN-570.jpg",
-              "filename": "o-NEW-ENGLAND-AUTUMN-570.jpg",
-              "size": 550050,
-              "type": "image/jpeg",
-              "thumbnails": {
-                "small": {
-                  "url": "https://dl.airtable.com/dYsC3xYGRHetfYr9H1T3_small_o-NEW-ENGLAND-AUTUMN-570.jpg",
-                  "width": 54,
-                  "height": 36
-                },
-                "large": {
-                  "url": "https://dl.airtable.com/lSidcdFuQsqxVEEzshYS_large_o-NEW-ENGLAND-AUTUMN-570.jpg",
-                  "width": 512,
-                  "height": 380
-                }
-              }
-            }
-          ],
           "Agua": 0,
           "Agua Familias": 0,
           "Agua Usuarios": 0
@@ -1423,32 +1360,32 @@
             "recVo2vWGN2wEjMnO",
             "recLCmdPyND821xHQ"
           ],
-          "Foto": [
-            {
-              "id": "attguA4X1dopDW61o",
-              "url": "https://dl.airtable.com/s85PPVFcSRSjmA1PuUzE_o-NEW-ENGLAND-AUTUMN-570.jpg",
-              "filename": "o-NEW-ENGLAND-AUTUMN-570.jpg",
-              "size": 550050,
-              "type": "image/jpeg",
-              "thumbnails": {
-                "small": {
-                  "url": "https://dl.airtable.com/dYsC3xYGRHetfYr9H1T3_small_o-NEW-ENGLAND-AUTUMN-570.jpg",
-                  "width": 54,
-                  "height": 36
-                },
-                "large": {
-                  "url": "https://dl.airtable.com/lSidcdFuQsqxVEEzshYS_large_o-NEW-ENGLAND-AUTUMN-570.jpg",
-                  "width": 512,
-                  "height": 380
-                }
-              }
-            }
-          ],
           "Agua": 10,
           "Agua Familias": 10,
           "Agua Usuarios": 123,
           "Most recent": "2013-03-22",
-          "First": "2013-03-17"
+          "First": "2013-03-17",
+          "Foto": [
+            {
+              "id": "attFWZP2yxHnr00tm",
+              "url": "https://dl.airtable.com/uIP7wqBQRrW5SEZXd5U7_yawepare.jpg",
+              "filename": "yawepare.jpg",
+              "size": 135920,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/CzCFiX7lSECHNeNrSXtV_small_yawepare.jpg",
+                  "width": 54,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/yBioFYjlRo2tbmUVbyxs_large_yawepare.jpg",
+                  "width": 768,
+                  "height": 512
+                }
+              }
+            }
+          ]
         },
         "geometry": {
           "type": "Point",
@@ -2447,27 +2384,6 @@
           "Programas": [
             "Sistemas de agua",
             "Mujer y familia"
-          ],
-          "Foto": [
-            {
-              "id": "attguA4X1dopDW61o",
-              "url": "https://dl.airtable.com/s85PPVFcSRSjmA1PuUzE_o-NEW-ENGLAND-AUTUMN-570.jpg",
-              "filename": "o-NEW-ENGLAND-AUTUMN-570.jpg",
-              "size": 550050,
-              "type": "image/jpeg",
-              "thumbnails": {
-                "small": {
-                  "url": "https://dl.airtable.com/dYsC3xYGRHetfYr9H1T3_small_o-NEW-ENGLAND-AUTUMN-570.jpg",
-                  "width": 54,
-                  "height": 36
-                },
-                "large": {
-                  "url": "https://dl.airtable.com/lSidcdFuQsqxVEEzshYS_large_o-NEW-ENGLAND-AUTUMN-570.jpg",
-                  "width": 512,
-                  "height": 380
-                }
-              }
-            }
           ],
           "Agua": 0,
           "Agua Familias": 0,
@@ -3517,27 +3433,6 @@
             "Practicas propias",
             "Mujer y familia",
             "Monitoreo ambiental"
-          ],
-          "Foto": [
-            {
-              "id": "att8myDMfecw5dDtG",
-              "url": "https://dl.airtable.com/89uZq9QjR26WKRzHWE60_sahara-desert.jpg",
-              "filename": "sahara-desert.jpg",
-              "size": 169005,
-              "type": "image/jpeg",
-              "thumbnails": {
-                "small": {
-                  "url": "https://dl.airtable.com/ZdcUI0O5TeeZGuSRqwXl_small_sahara-desert.jpg",
-                  "width": 54,
-                  "height": 36
-                },
-                "large": {
-                  "url": "https://dl.airtable.com/z0FfPlbTQmIPrXngig8g_large_sahara-desert.jpg",
-                  "width": 512,
-                  "height": 512
-                }
-              }
-            }
           ],
           "Agua": 0,
           "Agua Familias": 0,
