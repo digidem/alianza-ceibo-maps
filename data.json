@@ -934,27 +934,6 @@
           "Historias": [
             "recyfzSvVYwYuP2xW"
           ],
-          "Foto": [
-            {
-              "id": "atteU8amfOJyujtaU",
-              "url": "https://dl.airtable.com/3lDQkVNBSw257hkVkJMf_iceberg3.jpg",
-              "filename": "iceberg3.jpg",
-              "size": 86257,
-              "type": "image/jpeg",
-              "thumbnails": {
-                "small": {
-                  "url": "https://dl.airtable.com/CoMdUrFmTbSRl6UA1Vzj_small_iceberg3.jpg",
-                  "width": 54,
-                  "height": 36
-                },
-                "large": {
-                  "url": "https://dl.airtable.com/JXWfiec6QQKpg7CDyiLE_large_iceberg3.jpg",
-                  "width": 512,
-                  "height": 512
-                }
-              }
-            }
-          ],
           "Descripción": "The A'I Kofan community of Ukavati lies close to the Aguarico River in the Ecuadorian Amazon. Composed of 9 families, Ukavati works with ClearWater and the Ceibo Alliance on two programs",
           "Agua": 8,
           "Agua Familias": 9,
@@ -1384,7 +1363,28 @@
           "Agua Familias": 9,
           "Agua Usuarios": 48,
           "Most recent": "2014-04-27",
-          "First": "2014-04-24"
+          "First": "2014-04-24",
+          "Foto": [
+            {
+              "id": "attum6EKee7V7VBuo",
+              "url": "https://dl.airtable.com/4jjB3kn0QEeMtuASuVCg_tobeta.jpg",
+              "filename": "tobeta.jpg",
+              "size": 298181,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/F2abldXBQi8jwq9odRfJ_small_tobeta.jpg",
+                  "width": 54,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/I6s53ZdYQJSsOE9giLfH_large_tobeta.jpg",
+                  "width": 773,
+                  "height": 512
+                }
+              }
+            }
+          ]
         },
         "geometry": {
           "type": "Point",
@@ -2098,27 +2098,6 @@
           "Programas": [
             "Sistemas de agua"
           ],
-          "Foto": [
-            {
-              "id": "atteU8amfOJyujtaU",
-              "url": "https://dl.airtable.com/3lDQkVNBSw257hkVkJMf_iceberg3.jpg",
-              "filename": "iceberg3.jpg",
-              "size": 86257,
-              "type": "image/jpeg",
-              "thumbnails": {
-                "small": {
-                  "url": "https://dl.airtable.com/CoMdUrFmTbSRl6UA1Vzj_small_iceberg3.jpg",
-                  "width": 54,
-                  "height": 36
-                },
-                "large": {
-                  "url": "https://dl.airtable.com/JXWfiec6QQKpg7CDyiLE_large_iceberg3.jpg",
-                  "width": 512,
-                  "height": 512
-                }
-              }
-            }
-          ],
           "Descripción": "The A'I Kofan community of Uperito lies close to the Aguarico River in the Ecuadorian Amazon. Composed of 22 families, Uperito works with ClearWater and the Ceibo Alliance on one program",
           "Agua": 22,
           "Agua Familias": 22,
@@ -2774,27 +2753,6 @@
             "Sistemas solares",
             "Mujer y familia"
           ],
-          "Foto": [
-            {
-              "id": "attguA4X1dopDW61o",
-              "url": "https://dl.airtable.com/s85PPVFcSRSjmA1PuUzE_o-NEW-ENGLAND-AUTUMN-570.jpg",
-              "filename": "o-NEW-ENGLAND-AUTUMN-570.jpg",
-              "size": 550050,
-              "type": "image/jpeg",
-              "thumbnails": {
-                "small": {
-                  "url": "https://dl.airtable.com/dYsC3xYGRHetfYr9H1T3_small_o-NEW-ENGLAND-AUTUMN-570.jpg",
-                  "width": 54,
-                  "height": 36
-                },
-                "large": {
-                  "url": "https://dl.airtable.com/lSidcdFuQsqxVEEzshYS_large_o-NEW-ENGLAND-AUTUMN-570.jpg",
-                  "width": 512,
-                  "height": 380
-                }
-              }
-            }
-          ],
           "Agua": 7,
           "Agua Familias": 7,
           "Agua Usuarios": 0,
@@ -3223,32 +3181,32 @@
             "Sistemas de agua",
             "Mujer y familia"
           ],
-          "Foto": [
-            {
-              "id": "attguA4X1dopDW61o",
-              "url": "https://dl.airtable.com/s85PPVFcSRSjmA1PuUzE_o-NEW-ENGLAND-AUTUMN-570.jpg",
-              "filename": "o-NEW-ENGLAND-AUTUMN-570.jpg",
-              "size": 550050,
-              "type": "image/jpeg",
-              "thumbnails": {
-                "small": {
-                  "url": "https://dl.airtable.com/dYsC3xYGRHetfYr9H1T3_small_o-NEW-ENGLAND-AUTUMN-570.jpg",
-                  "width": 54,
-                  "height": 36
-                },
-                "large": {
-                  "url": "https://dl.airtable.com/lSidcdFuQsqxVEEzshYS_large_o-NEW-ENGLAND-AUTUMN-570.jpg",
-                  "width": 512,
-                  "height": 380
-                }
-              }
-            }
-          ],
           "Agua": 4,
           "Agua Familias": 4,
           "Agua Usuarios": 0,
           "Most recent": "2015-08-20",
-          "First": "2015-08-20"
+          "First": "2015-08-20",
+          "Foto": [
+            {
+              "id": "attVTgdXHRoN5TJjE",
+              "url": "https://dl.airtable.com/46qKqOjYQJeZ9dhCmXZ4_tepapare.jpg",
+              "filename": "tepapare.jpg",
+              "size": 281070,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/AZF3d8jhSxSJE6bCyULf_small_tepapare.jpg",
+                  "width": 54,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/RKUHAVl3SIqZKfJseto1_large_tepapare.jpg",
+                  "width": 773,
+                  "height": 512
+                }
+              }
+            }
+          ]
         },
         "geometry": {
           "type": "Point",
