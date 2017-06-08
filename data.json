@@ -2426,7 +2426,28 @@
           "Agua Familias": 30,
           "Agua Usuarios": 155,
           "Most recent": "2014-04-23",
-          "First": "2014-04-12"
+          "First": "2014-04-12",
+          "Foto": [
+            {
+              "id": "attUw7MNMHp4R0PTm",
+              "url": "https://dl.airtable.com/CnQWZtWVS2mZVh8Wg4qQ_miwaguno.jpg",
+              "filename": "miwaguno.jpg",
+              "size": 267979,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/bT8oRHgeS4e6r4UbMFaG_small_miwaguno.jpg",
+                  "width": 54,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/Hisq3FqJSkiBcSGXEOGL_large_miwaguno.jpg",
+                  "width": 773,
+                  "height": 512
+                }
+              }
+            }
+          ]
         },
         "geometry": {
           "type": "Point",
@@ -4079,7 +4100,7 @@
         "type": "Feature",
         "id": "recujzxpakMNxhjAW",
         "properties": {
-          "Comunidad": "Sinangue",
+          "Comunidad": "Sinangoé",
           "Installations": [
             "recq9sEO6AFLKkVee",
             "recmfrLtW1FTDOFBZ",
@@ -4117,27 +4138,6 @@
           "Historias": [
             "rec6YpDsuobq5BZFF",
             "recl0OJmqrktVrvw2"
-          ],
-          "Foto": [
-            {
-              "id": "atteU8amfOJyujtaU",
-              "url": "https://dl.airtable.com/3lDQkVNBSw257hkVkJMf_iceberg3.jpg",
-              "filename": "iceberg3.jpg",
-              "size": 86257,
-              "type": "image/jpeg",
-              "thumbnails": {
-                "small": {
-                  "url": "https://dl.airtable.com/CoMdUrFmTbSRl6UA1Vzj_small_iceberg3.jpg",
-                  "width": 54,
-                  "height": 36
-                },
-                "large": {
-                  "url": "https://dl.airtable.com/JXWfiec6QQKpg7CDyiLE_large_iceberg3.jpg",
-                  "width": 512,
-                  "height": 512
-                }
-              }
-            }
           ],
           "Descripción": "The A'I Kofan community of Sinangoé lies close to the Upper Aguarico River in the Ecuadorian Amazon. Composed of 22 families, Sinangoé works with ClearWater and the Ceibo Alliance on four programs",
           "Agua": 21,
@@ -4228,27 +4228,6 @@
           "Programas": [
             "Sistemas de agua",
             "Mujer y familia"
-          ],
-          "Foto": [
-            {
-              "id": "attiw9QQfgVxDDcMM",
-              "url": "https://dl.airtable.com/xZPoUzRwqQ7DQWgELnbA_GBR.jpg",
-              "filename": "GBR.jpg",
-              "size": 115627,
-              "type": "image/jpeg",
-              "thumbnails": {
-                "small": {
-                  "url": "https://dl.airtable.com/12XIYPpcS2WM9iApKIiC_small_GBR.jpg",
-                  "width": 48,
-                  "height": 36
-                },
-                "large": {
-                  "url": "https://dl.airtable.com/nX7E2ZKJRZGJx0fLYaJT_large_GBR.jpg",
-                  "width": 512,
-                  "height": 512
-                }
-              }
-            }
           ],
           "Agua": 13,
           "Agua Familias": 13,
@@ -4489,27 +4468,6 @@
           "Lat": -0.189487,
           "Programas": [
             "Sistemas de agua"
-          ],
-          "Foto": [
-            {
-              "id": "att8myDMfecw5dDtG",
-              "url": "https://dl.airtable.com/89uZq9QjR26WKRzHWE60_sahara-desert.jpg",
-              "filename": "sahara-desert.jpg",
-              "size": 169005,
-              "type": "image/jpeg",
-              "thumbnails": {
-                "small": {
-                  "url": "https://dl.airtable.com/ZdcUI0O5TeeZGuSRqwXl_small_sahara-desert.jpg",
-                  "width": 54,
-                  "height": 36
-                },
-                "large": {
-                  "url": "https://dl.airtable.com/z0FfPlbTQmIPrXngig8g_large_sahara-desert.jpg",
-                  "width": 512,
-                  "height": 512
-                }
-              }
-            }
           ],
           "Agua": 30,
           "Agua Familias": 30,
