@@ -320,7 +320,7 @@ function renderComunidadPopup (props) {
   var desc = props.Descripción || 'Description pending'
   var programas = props.Programas || []
   var html = `<div class='popup-wrapper'>
-    ${!fotoUrl ? `` : `<img src=${fotoUrl}>`}
+    ${!fotoUrl ? `` : `<div class='image16x9'><img src=${fotoUrl}></div>`}
     <div class='popup-inner'>
       <h1>${props.Comunidad}</h1>
       <p>${desc}</p>
