@@ -148,6 +148,8 @@ var map = new mapboxgl.Map({
   maxBounds: [-87, -9, -70, 6]
 }).on('load', onLoad)
 
+map.addControl(new mapboxgl.FullscreenControl(), 'top-left')
+
 d3.json('data.json', function (err, _data) {
   if (err) return console.error(err)
   data = _data
@@ -317,7 +319,6 @@ function renderComunidadPopup (props) {
   var fotoUrl = props.Foto && props.Foto[0] && props.Foto[0].thumbnails.large.url
   var desc = props.Descripción || 'Description pending'
   var programas = props.Programas || []
-  console.log(props)
   var html = `<div class='popup-wrapper'>
     ${!fotoUrl ? `` : `<img src=${fotoUrl}>`}
     <div class='popup-inner'>
