@@ -7,6 +7,7 @@
     "@mapbox/geojson-extent": "^0.3.2",
     "d3-request": "^1.0.5",
     "geojson-rewind": "^0.2.0",
+    "lodash": "^4.17.4",
     "mapbox-gl": "^0.38.0",
     "object-assign": "^4.1.1",
     "sheetify": "^6.1.0",

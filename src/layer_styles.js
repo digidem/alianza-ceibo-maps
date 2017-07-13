@@ -21,20 +21,20 @@ var areaHighlight = {
 
 var comunidadesDots = {
   'id': 'alianza-comunidades-dots',
-  'type': 'circle',
+  'type': 'symbol',
   'source': 'comunidades',
   'maxzoom': 10,
-  'layout': {},
-  'paint': {
-    'circle-color': '#5b310b',
-    'circle-radius': {
-      'base': 1.4,
+  'layout': {
+    'icon-image': '{icon}-dot',
+    'icon-size': {
+      'base': 1,
       'stops': [
-        [6, 1],
-        [10, 5]
+        [6, 0.3],
+        [10, 0.5]
       ]
     }
-  }
+  },
+  paint: {}
 }
 
 var comunidadesHouses = {
@@ -50,7 +50,7 @@ var comunidadesHouses = {
         [14, 12]
       ]
     },
-    'icon-image': 'comunidad',
+    'icon-image': '{icon}',
     'text-ignore-placement': true,
     'text-optional': true,
     'text-font': [
@@ -87,13 +87,13 @@ var comunidadesDotsHighlight = Object.assign({}, comunidadesDots, {
   id: 'alianza-comunidades-dots-highlight',
   source: 'comunidades',
   filter: ['==', '_id', ''],
-  layout: {},
-  paint: Object.assign({}, comunidadesDots.paint, {
-    'circle-radius': {
-      'base': 1.4,
+  paint: {},
+  layout: Object.assign({}, comunidadesDots.layout, {
+    'icon-size': {
+      'base': 1,
       'stops': [
-        [6, 1.1],
-        [10, 6]
+        [6, 0.4],
+        [10, 0.6]
       ]
     }
   })

@@ -2,6 +2,9 @@ const d3 = require('d3-request')
 const mapboxgl = require('mapbox-gl')
 const yo = require('yo-yo')
 const extent = require('@mapbox/geojson-extent')
+const compose = require('lodash/flowRight')
+const includes = require('lodash/includes')
+const assign = require('object-assign')
 
 var areas = require('../areas/areas.json')
 var layerStyles = require('./layer_styles')
@@ -43,6 +46,7 @@ d3.json('data.json', function (err, _data) {
       dataIndex[feature.id] = feature
     })
   })
+  console.log(dataIndex)
   onLoad()
 })
 
@@ -50,7 +54,8 @@ var areaLayers = generateAreaLayers(map, areas)
 
 function onLoad () {
   if (--pending > 0) return
-  var comunidades = addIds(unfurl(filterGeom(data['Comunidades']), dataIndex))
+
+  var comunidades = compose(addIconField, addIds, addNationalities(dataIndex), filterGeom)(data['Comunidades'])
 
   map.addSource('comunidades', {
     type: 'geojson',
@@ -142,30 +147,50 @@ function filterGeom (featureCollection) {
   return fc(featuresWithGeom)
 }
 
-function unfurl (featureCollection, index) {
-  var featuresWithRefs = featureCollection.features.map(function (f) {
-    var props = f.properties
-    var newProps = Object.assign({}, props)
-    for (var key in props) {
-      if (!Array.isArray(props[key])) continue
-      newProps[key] = props[key].map(function (d) {
-        if (index[d]) {
-          return index[d].properties[key]
-        } else return d
+function addNationalities (index) {
+  return function (featureCollection) {
+    var featuresWithNationalities = featureCollection.features.map(function (f) {
+      var nationalityId = f.properties.Nacionalidad && f.properties.Nacionalidad[0]
+      if (!nationalityId) return f
+      return assign({}, f, {
+        properties: assign({}, f.properties, {
+          Nacionalidad: index[nationalityId].properties.Nacionalidad
+        })
       })
-      if (newProps[key].length === 1) newProps[key] = newProps[key][0]
+    })
+    return fc(featuresWithNationalities)
+  }
+}
+
+var AGUA = 'Sistemas de agua'
+var SOLAR = 'Sistemas solares'
+
+function addIconField (featureCollection) {
+  var featuresWithIconField = featureCollection.features.map(function (f) {
+    var icon
+    var programas = f.properties.Programas || []
+    if (includes(programas, AGUA) && includes(programas, SOLAR)) {
+      icon = 'comunidad-agua-solar'
+    } else if (includes(programas, AGUA)) {
+      icon = 'comunidad-agua'
+    } else if (includes(programas, SOLAR)) {
+      icon = 'comunidad-solar'
+    } else {
+      icon = 'comunidad'
     }
-    return Object.assign({}, f, {
-      properties: newProps
+    return assign({}, f, {
+      properties: assign({}, f.properties, {
+        icon: icon
+      })
     })
   })
-  return fc(featuresWithRefs)
+  return fc(featuresWithIconField)
 }
 
 function addIds (featureCollection) {
   var featuresWithIds = featureCollection.features.map(function (f) {
-    return Object.assign({}, f, {
-      properties: Object.assign({}, f.properties, {_id: f.id})
+    return assign({}, f, {
+      properties: assign({}, f.properties, {_id: f.id})
     })
   })
   return fc(featuresWithIds)
@@ -179,7 +204,6 @@ function fc (features) {
 }
 
 function getArea (id, areas) {
-  console.log(areas)
   return areas.features.filter(function (f) {
     return f.properties._id === id
   })[0]
