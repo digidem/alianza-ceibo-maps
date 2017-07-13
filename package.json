@@ -27,7 +27,7 @@
     "test": "standard",
     "start": "budo src/index.js:bundle.js --live -d static",
     "build": "mkdirp dist && npm run build:js && npm run build:static",
-    "build:js": "browserify src/index.js -t sheetify/transform -t varify -t yo-yoify -g uglifyify > dist/bundle.js",
+    "build:js": "browserify src/index.js -t sheetify -t yo-yoify > dist/bundle.js",
     "build:static": "copyup 'static/**/*' dist && copyfiles data.json dist",
     "deploy": "npm run build && gh-pages -d dist"
   },
