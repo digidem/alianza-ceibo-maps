@@ -1,0 +1,43 @@
+{
+  "name": "alianza-ceibo-maps",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "dependencies": {
+    "@mapbox/geojson-extent": "^0.3.2",
+    "d3-request": "^1.0.5",
+    "geojson-rewind": "^0.2.0",
+    "mapbox-gl": "^0.38.0",
+    "object-assign": "^4.1.1",
+    "sheetify": "^6.1.0",
+    "yo-yo": "^1.4.1"
+  },
+  "devDependencies": {
+    "browserify": "^14.4.0",
+    "budo": "^10.0.3",
+    "copyfiles": "^1.2.0",
+    "mkdirp": "^0.5.1",
+    "standard": "^10.0.2",
+    "uglifyify": "^4.0.2",
+    "varify": "^0.2.0",
+    "yo-yoify": "^3.7.3"
+  },
+  "scripts": {
+    "test": "standard",
+    "start": "budo src/index.js:bundle.js --live -d static",
+    "build": "mkdirp dist && npm run build:js && npm run build:static",
+    "build:js": "browserify src/index.js -t sheetify/transform -t varify -t yo-yoify -g uglifyify > dist/bundle.js",
+    "build:static": "copyup 'static/**/*' dist && copyfiles data.json dist",
+    "deploy": "npm run build && gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/digidem/alianza-ceibo-maps.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/digidem/alianza-ceibo-maps/issues"
+  },
+  "homepage": "https://github.com/digidem/alianza-ceibo-maps#readme"
+}

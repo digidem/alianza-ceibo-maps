@@ -57,7 +57,7 @@ simplify(all, (err, geojson) => {
 })
 
 function save () {
-  fs.writeFileSync('areas.geojson', JSON.stringify(all, null, 2))
+  fs.writeFileSync('areas.json', JSON.stringify(all, null, 2))
 }
 
 function round (f) {
