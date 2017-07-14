@@ -17,6 +17,7 @@
     "browserify": "^14.4.0",
     "budo": "^10.0.3",
     "copyfiles": "^1.2.0",
+    "gh-pages": "^1.0.0",
     "mkdirp": "^0.5.1",
     "standard": "^10.0.2",
     "uglifyify": "^4.0.2",
