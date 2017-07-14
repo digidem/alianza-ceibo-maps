@@ -27,7 +27,7 @@ var pending = 2
 
 var map = new mapboxgl.Map({
   container: 'map', // container id
-  style: 'mapbox://styles/gmaclennan/cj1vbt7t3000c2roecku5yaae', // stylesheet location
+  style: 'style.json', // stylesheet location
   center: [-78.415, -1.639], // starting position
   zoom: 5.5, // starting zoom
   hash: true,
