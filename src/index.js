@@ -17,6 +17,16 @@ mapboxgl.accessToken = require('../config.json').mapbox_token
 var data
 var dataIndex = {}
 
+// Clear previous IMG before updating to new image
+// Avoids initial load of previous popup image before new image loads
+var yoOptions = {
+  onBeforeElUpdated: function (fromEl) {
+    if (fromEl.tagName.toUpperCase() === 'IMG') {
+      fromEl.src = ''
+    }
+  }
+}
+
 var comunidadesInteractiveLayers = [
   'alianza-comunidades-dots',
   'alianza-comunidades-houses',
@@ -130,7 +140,7 @@ function onLoad () {
 
     if (communityClicked) {
       var feature = dataIndex[communityClicked.properties._id]
-      yo.update(popupNode, comunidadPopup(feature.properties, dataIndex))
+      yo.update(popupNode, comunidadPopup(feature.properties, dataIndex), yoOptions)
       popup.setLngLat(feature.geometry.coordinates)
         .addTo(map)
     } else {
