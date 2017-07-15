@@ -23,18 +23,27 @@ var comunidadesDots = {
   'id': 'alianza-comunidades-dots',
   'type': 'symbol',
   'source': 'comunidades',
-  'maxzoom': 10,
+  'maxzoom': 10.5,
   'layout': {
+    'icon-allow-overlap': true,
     'icon-image': '{icon}-dot',
     'icon-size': {
-      'base': 1,
+      'base': 1.8,
       'stops': [
-        [6, 0.3],
+        [6, 0.15],
         [10, 0.5]
       ]
     }
   },
-  paint: {}
+  paint: {
+    'icon-opacity': {
+      'base': 1,
+      'stops': [
+        [10, 1],
+        [10.5, 0]
+      ]
+    }
+  }
 }
 
 var comunidadesHouses = {
@@ -58,18 +67,12 @@ var comunidadesHouses = {
       'Arial Unicode MS Regular'
     ],
     'visibility': 'visible',
-    'text-offset': {
-      'base': 1.2,
-      'stops': [
-        [10, [0, 0.7]],
-        [13, [0, 1.1]]
-      ]
-    },
+    'text-offset': [0, 0.7],
     'icon-size': {
-      'base': 1.2,
+      'base': 1.4,
       'stops': [
-        [10, 0.6],
-        [13, 1]
+        [10, 0.2],
+        [15, 0.7]
       ]
     },
     'text-anchor': 'top',
@@ -77,6 +80,13 @@ var comunidadesHouses = {
     'text-max-width': 6
   },
   'paint': {
+    'icon-opacity': {
+      'base': 1,
+      'stops': [
+        [10, 0],
+        [10.5, 1]
+      ]
+    },
     'text-halo-color': 'hsla(0, 0%, 100%, 0.5)',
     'text-halo-blur': 0,
     'text-halo-width': 1
@@ -90,9 +100,9 @@ var comunidadesDotsHighlight = Object.assign({}, comunidadesDots, {
   paint: {},
   layout: Object.assign({}, comunidadesDots.layout, {
     'icon-size': {
-      'base': 1,
+      'base': 1.8,
       'stops': [
-        [6, 0.4],
+        [6, 0.15],
         [10, 0.6]
       ]
     }
@@ -104,11 +114,12 @@ var comunidadesHousesHighlight = Object.assign({}, comunidadesHouses, {
   source: 'comunidades',
   filter: ['==', '_id', ''],
   layout: Object.assign({}, comunidadesHouses.layout, {
+    'icon-ignore-placement': true,
     'icon-size': {
-      'base': 1.2,
+      'base': 1.4,
       'stops': [
-        [10, 0.8],
-        [13, 1.2]
+        [10, 0.25],
+        [15, 0.75]
       ]
     }
   })
