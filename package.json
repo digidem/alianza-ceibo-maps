@@ -21,7 +21,7 @@
     "gh-pages": "^1.0.0",
     "mkdirp": "^0.5.1",
     "standard": "^10.0.2",
-    "uglify-es": "^3.0.24",
+    "uglify-js": "^3.0.24",
     "uglifyify": "kristoferjoseph/uglifyify#5881f398ec8b6b5cee2f65e0ee19480bd2db92b1",
     "yo-yoify": "^3.7.3"
   },
@@ -29,7 +29,7 @@
     "test": "standard",
     "start": "budo src/index.js:bundle.js --live -d static",
     "build": "mkdirp dist && npm run build:js && npm run build:static",
-    "build:js": "browserify src/index.js -t es2020 -t varify -t sheetify -t yo-yoify | uglifyjs -c -m > dist/bundle.js",
+    "build:js": "browserify src/index.js -t sheetify -t yo-yoify -t es2020 | uglifyjs -c comparisons=false -m > dist/bundle.js",
     "build:static": "copyup 'static/**/*' dist && copyfiles data.json dist",
     "deploy": "npm run build && gh-pages -d dist"
   },
