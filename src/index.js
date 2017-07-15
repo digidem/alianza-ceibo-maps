@@ -3,13 +3,14 @@ const mapboxgl = require('mapbox-gl')
 const yo = require('yo-yo')
 const extent = require('@mapbox/geojson-extent')
 const compose = require('lodash/flowRight')
-const includes = require('lodash/includes')
 const assign = require('object-assign')
 
 var areas = require('../areas/areas.json')
 var layerStyles = require('./layer_styles')
 var generateAreaLayers = require('./area_layers')
 var comunidadPopup = require('./comunidad_popup')
+var emptyStyle = require('./empty_style.json')
+var style = require('./style.json')
 
 mapboxgl.accessToken = require('../config.json').mapbox_token
 
@@ -30,7 +31,7 @@ style.sprite = loc.origin + loc.pathname + 'style/sprite'
 
 var map = new mapboxgl.Map({
   container: 'map', // container id
-  style: 'style.json', // stylesheet location
+  style: emptyStyle, // stylesheet location
   center: [-78.415, -1.639], // starting position
   zoom: 5.5, // starting zoom
   hash: true,
@@ -49,7 +50,6 @@ d3.json('data.json', function (err, _data) {
       dataIndex[feature.id] = feature
     })
   })
-  console.log(dataIndex)
   onLoad()
 })
 
@@ -57,28 +57,29 @@ var areaLayers = generateAreaLayers(map, areas)
 
 function onLoad () {
   if (--pending > 0) return
-
   var comunidades = compose(addIconField, addIds, addNationalities(dataIndex), filterGeom)(data['Comunidades'])
 
-  map.addSource('comunidades', {
+  style.sources.comunidades = {
     type: 'geojson',
     data: comunidades
-  })
+  }
 
-  map.addSource('areas', {
+  style.sources.areas = {
     type: 'geojson',
     data: areas
-  })
+  }
 
   Object.keys(areaLayers).forEach(function (id) {
-    map.addLayer(areaLayers[id])
+    style.layers.push(areaLayers[id])
   })
 
-  map.addLayer(layerStyles.areaHighlight)
-  map.addLayer(layerStyles.comunidadesDots)
-  map.addLayer(layerStyles.comunidadesHouses)
-  map.addLayer(layerStyles.comunidadesDotsHighlight)
-  map.addLayer(layerStyles.comunidadesHousesHighlight)
+  style.layers.push(layerStyles.areaHighlight)
+  style.layers.push(layerStyles.comunidadesDots)
+  style.layers.push(layerStyles.comunidadesHouses)
+  style.layers.push(layerStyles.comunidadesDotsHighlight)
+  style.layers.push(layerStyles.comunidadesHousesHighlight)
+
+  map.setStyle(style, {diff: false})
 
   var nav = new mapboxgl.NavigationControl()
   map.addControl(nav, 'top-left')
@@ -188,6 +189,10 @@ function addIconField (featureCollection) {
     })
   })
   return fc(featuresWithIconField)
+}
+
+function includes (arr, value) {
+  return arr.indexOf(value) > -1
 }
 
 function addIds (featureCollection) {
