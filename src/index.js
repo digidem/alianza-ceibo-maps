@@ -25,6 +25,9 @@ var comunidadesInteractiveLayers = [
 
 var pending = 2
 
+var loc = window.location
+style.sprite = loc.origin + loc.pathname + 'style/sprite'
+
 var map = new mapboxgl.Map({
   container: 'map', // container id
   style: 'style.json', // stylesheet location
