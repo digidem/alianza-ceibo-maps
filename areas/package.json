@@ -28,7 +28,8 @@
     "round-to": "^2.0.0"
   },
   "dependencies": {
-    "@mapbox/geojson-merge": "^1.0.2",
-    "mapshaper": "^0.4.31"
+    "mapshaper": "^0.4.31",
+    "ndjson-cli": "^0.3.1",
+    "shapefile": "^0.6.2"
   }
 }
