@@ -63,6 +63,7 @@ d3.json('data.json', function (err, _data) {
   onLoad()
 })
 
+areas = addIds(areas)
 var areaLayers = generateAreaLayers(map, areas)
 
 function onLoad () {
@@ -206,9 +207,10 @@ function includes (arr, value) {
 }
 
 function addIds (featureCollection) {
-  var featuresWithIds = featureCollection.features.map(function (f) {
+  var featuresWithIds = featureCollection.features.map(function (f, i) {
     return assign({}, f, {
-      properties: assign({}, f.properties, {_id: f.id})
+      id: f.id || i + Date.now() + '',
+      properties: assign({}, f.properties, {_id: f.id || i + Date.now() + ''})
     })
   })
   return fc(featuresWithIds)

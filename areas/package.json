@@ -26,5 +26,9 @@
     "minimist": "^1.2.0",
     "progress": "^2.0.0",
     "round-to": "^2.0.0"
+  },
+  "dependencies": {
+    "@mapbox/geojson-merge": "^1.0.2",
+    "mapshaper": "^0.4.31"
   }
 }
