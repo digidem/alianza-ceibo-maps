@@ -27,6 +27,29 @@ function generateAreaLayers (map, areas) {
         }
       }
     }
+    layers[id + '-outline'] = {
+      id: id + '-outline',
+      type: 'line',
+      source: 'areas',
+      minzoom: zoom - 1,
+      layout: {},
+      paint: {
+        'line-opacity': {
+          stops: [
+            [zoom - 1, 0],
+            [zoom, 0.8]
+          ]
+        },
+        'line-color': {
+          property: 'nacionalidad',
+          type: 'categorical',
+          stops: Object.keys(COLORS).map(function (key) {
+            return [key, COLORS[key]]
+          })
+        },
+        'line-width': 3
+      }
+    }
   })
   return layers
 }
