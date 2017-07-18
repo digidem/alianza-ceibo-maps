@@ -68,7 +68,7 @@ var areaLayers = generateAreaLayers(map, areas)
 
 function onLoad () {
   if (--pending > 0) return
-  var comunidades = compose(addIconField, addIds, addNationalities(dataIndex), filterGeom)(data['Comunidades'])
+  var comunidades = compose(addIconFieldAndFilter, addIds, addNationalities(dataIndex), filterGeom)(data['Comunidades'])
 
   style.sources.comunidades = {
     type: 'geojson',
@@ -180,7 +180,7 @@ function addNationalities (index) {
 var AGUA = 'Sistemas de agua'
 var SOLAR = 'Sistemas solares'
 
-function addIconField (featureCollection) {
+function addIconFieldAndFilter (featureCollection) {
   var featuresWithIconField = featureCollection.features.map(function (f) {
     var icon
     var programas = f.properties.Programas || []
@@ -198,6 +198,9 @@ function addIconField (featureCollection) {
         icon: icon
       })
     })
+  }).filter(function (f) {
+    // Remove communities with no agua or solar program
+    return f.properties.icon !== 'comunidad'
   })
   return fc(featuresWithIconField)
 }
