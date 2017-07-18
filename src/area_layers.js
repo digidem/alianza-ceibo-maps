@@ -50,6 +50,31 @@ function generateAreaLayers (map, areas) {
         'line-width': 3
       }
     }
+    layers[id + '-label'] = {
+      id: id + '-label',
+      source: 'areas',
+      'type': 'symbol',
+      'minzoom': zoom - 1,
+      'layout': {
+        'text-field': '{name}',
+        'text-size': 16,
+        'text-font': [
+          'Open Sans Extrabold',
+          'Arial Unicode MS Regular'
+        ],
+        'symbol-avoid-edges': true,
+        'visibility': 'visible'
+      },
+      'paint': {
+        'text-color': 'hsl(151, 87%, 14%)',
+        'text-opacity': {
+          stops: [
+            [zoom - 1, 0],
+            [zoom, 0.4]
+          ]
+        }
+      }
+    }
   })
   return layers
 }
