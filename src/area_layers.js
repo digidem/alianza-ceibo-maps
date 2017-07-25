@@ -75,6 +75,16 @@ function generateAreaLayers (map, areas) {
         }
       }
     }
+    layers[id + '-unlegalized'] = {
+      'id': id + '-unlegalized',
+      'type': 'fill',
+      'source': 'areas',
+      'filter': ['==', 'Legalizado', 0],
+      'paint': {
+        'fill-opacity': 0.2,
+        'fill-pattern': 'cross-hatch'
+      }
+    }
   })
   return layers
 }

@@ -106,8 +106,10 @@ function onLoad () {
   var popupNode = yo`<div></div>`
   popup.setDOMContent(popupNode)
 
+  var areaFillIds = areas.features.map(function (f) { return f.properties._id })
+
   map.on('mousemove', function (e) {
-    var areas = map.queryRenderedFeatures(e.point, { layers: Object.keys(areaLayers) })
+    var areas = map.queryRenderedFeatures(e.point, { layers: areaFillIds })
     var comunidades = map.queryRenderedFeatures(e.point, { layers: comunidadesInteractiveLayers })
     var areaHovered = areas && areas[0] && map.getZoom() < areas[0].layer.maxzoom && areas[0]
     var communityHovered = comunidades && comunidades[0]
@@ -134,7 +136,7 @@ function onLoad () {
   })
 
   map.on('click', function (e) {
-    var queryAreas = map.queryRenderedFeatures(e.point, { layers: Object.keys(areaLayers) })
+    var queryAreas = map.queryRenderedFeatures(e.point, { layers: areaFillIds })
     var queryCommunidades = map.queryRenderedFeatures(e.point, { layers: comunidadesInteractiveLayers })
     var areaClicked = queryAreas && queryAreas[0] && map.getZoom() < queryAreas[0].layer.maxzoom && queryAreas[0]
     var communityClicked = queryCommunidades && queryCommunidades[0]
