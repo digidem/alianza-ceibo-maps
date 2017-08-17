@@ -7,10 +7,12 @@
     "@mapbox/geojson-extent": "^0.3.2",
     "d3-request": "^1.0.5",
     "geojson-rewind": "^0.2.0",
+    "hex-rgb": "^1.0.0",
     "lodash": "^4.17.4",
     "mapbox-gl": "^0.38.0",
     "mapbox-gl-toggle-control": "^1.0.0",
     "object-assign": "^4.1.1",
+    "which-polygon": "^2.1.0",
     "yo-yo": "^1.4.1"
   },
   "devDependencies": {
