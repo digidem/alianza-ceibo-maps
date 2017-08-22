@@ -9,8 +9,8 @@
     "geojson-rewind": "^0.2.0",
     "lodash": "^4.17.4",
     "mapbox-gl": "^0.38.0",
+    "mapbox-gl-toggle-control": "^1.0.0",
     "object-assign": "^4.1.1",
-    "sheetify": "^6.1.0",
     "yo-yo": "^1.4.1"
   },
   "devDependencies": {
@@ -20,6 +20,8 @@
     "es2020": "^1.1.9",
     "gh-pages": "^1.0.0",
     "mkdirp": "^0.5.1",
+    "sheetify": "^6.1.1",
+    "sheetify-nested": "^1.0.2",
     "standard": "^10.0.2",
     "uglify-js": "^3.0.24",
     "uglifyify": "kristoferjoseph/uglifyify#5881f398ec8b6b5cee2f65e0ee19480bd2db92b1",
@@ -27,9 +29,9 @@
   },
   "scripts": {
     "test": "standard",
-    "start": "budo src/index.js:bundle.js --live -d static",
+    "start": "budo src/index.js:bundle.js  --live -d static -- -t [ sheetify/transform -u sheetify-nested ]",
     "build": "mkdirp dist && npm run build:js && npm run build:static",
-    "build:js": "browserify src/index.js -t sheetify -t yo-yoify -t es2020 | uglifyjs -c comparisons=false -m > dist/bundle.js",
+    "build:js": "browserify src/index.js -t [ sheetify/transform -u sheetify-nested ] -t yo-yoify -t es2020 | uglifyjs -c comparisons=false -m > dist/bundle.js",
     "build:static": "copyup 'static/**/*' dist && copyfiles data.json dist",
     "deploy": "npm run build && gh-pages -d dist"
   },
