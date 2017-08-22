@@ -5,6 +5,7 @@ const extent = require('@mapbox/geojson-extent')
 const compose = require('lodash/flowRight')
 const assign = require('object-assign')
 
+var minimap = require('./mapboxgl-control-minimap')
 var areas = require('../areas/areas.json')
 var layerStyles = require('./layer_styles')
 var generateAreaLayers = require('./area_layers')
@@ -69,6 +70,10 @@ var areaLayers = generateAreaLayers(map, areas)
 function onLoad () {
   if (--pending > 0) return
   var comunidades = compose(addIconFieldAndFilter, addIds, addNationalities(dataIndex), filterGeom)(data['Comunidades'])
+
+  map.on('style.load', function () {
+    map.addControl(new Minimap())
+  })
 
   style.sources.comunidades = {
     type: 'geojson',
