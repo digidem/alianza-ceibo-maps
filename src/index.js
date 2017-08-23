@@ -1,33 +1,29 @@
 const d3 = require('d3-request')
 const mapboxgl = require('mapbox-gl')
 const ToggleControl = require('mapbox-gl-toggle-control')
-const yo = require('yo-yo')
 const extent = require('@mapbox/geojson-extent')
 const compose = require('lodash/flowRight')
 const assign = require('object-assign')
+const which = require('which-polygon')
 
+var getAreaZoom = require('./lib/area_zoom')
 var areas = require('../areas/areas.json')
 var Legend = require('./legend')
 var layerStyles = require('./layer_styles')
 var generateAreaLayers = require('./area_layers')
-var comunidadPopup = require('./comunidad_popup')
+var Popup = require('./lib/yo-popup')
+var button = require('./back_button')
+var comunidadPopupDOM = require('./comunidad_popup')
+var areaPopupDOM = require('./area_popup')
 var emptyStyle = require('./empty_style.json')
 var style = require('./style.json')
 
 mapboxgl.accessToken = require('../config.json').mapbox_token
 
 var data
+var areaPointIndex
 var dataIndex = {}
-
-// Clear previous IMG before updating to new image
-// Avoids initial load of previous popup image before new image loads
-var yoOptions = {
-  onBeforeElUpdated: function (fromEl) {
-    if (fromEl.tagName.toUpperCase() === 'IMG') {
-      fromEl.src = ''
-    }
-  }
-}
+var areasByName = {} // this is needed to match data.json to area.json
 
 var comunidadesInteractiveLayers = [
   'alianza-comunidades-dots',
@@ -60,12 +56,14 @@ d3.json('data.json', function (err, _data) {
   Object.keys(data).forEach(function (key) {
     data[key].features.forEach(function (feature) {
       dataIndex[feature.id] = feature
+      if (key === 'Areas') areasByName[feature.properties['Area nombre']] = feature
     })
   })
   onLoad()
 })
 
 areas = addIds(areas)
+areaPointIndex = which(areas)
 var areaLayers = generateAreaLayers(map, areas)
 
 function onLoad () {
@@ -106,21 +104,29 @@ function onLoad () {
   map.fitBounds(extent(areas), {padding: 20})
 
   // Create a popup, but don't add it to the map yet.
-  var popup = new mapboxgl.Popup({
-    closeButton: true,
-    closeOnClick: false
+  var areaPopup = new Popup(map)
+  var comunidadPopup = new Popup(map)
+
+  var backButton = button(function () {
+    map.fitBounds(extent(areas), {padding: 20})
+    areaPopup.remove()
+    comunidadPopup.remove()
   })
 
-  var popupNode = yo`<div></div>`
-  popup.setDOMContent(popupNode)
+  document.body.appendChild(backButton)
+  map.on('zoom', function (e) {
+    if (map.getZoom() > 8.5) backButton.style.display = ''
+    else backButton.style.display = 'none'
+  })
 
   var areaFillIds = areas.features.map(function (f) { return f.properties._id })
 
   map.on('mousemove', function (e) {
-    var areas = map.queryRenderedFeatures(e.point, { layers: areaFillIds })
-    var comunidades = map.queryRenderedFeatures(e.point, { layers: comunidadesInteractiveLayers })
-    var areaHovered = areas && areas[0] && map.getZoom() < areas[0].layer.maxzoom && areas[0]
-    var communityHovered = comunidades && comunidades[0]
+    var _areas = map.queryRenderedFeatures(e.point, { layers: areaFillIds })
+    var _comunidades = map.queryRenderedFeatures(e.point, { layers: comunidadesInteractiveLayers })
+    var areaHovered = _areas && _areas[0]
+    var communityHovered = _comunidades && _comunidades[0]
+    if (areaHovered && map.getZoom() > getAreaZoom(map, _areas[0]) - 1) areaHovered = false
 
     if (areaHovered || communityHovered) {
       map.getCanvas().style.cursor = 'pointer'
@@ -129,40 +135,65 @@ function onLoad () {
       map.setFilter('alianza-areas-highlight', ['==', '_id', ''])
       map.setFilter('alianza-comunidades-houses-highlight', ['==', '_id', ''])
       map.setFilter('alianza-comunidades-dots-highlight', ['==', '_id', ''])
-      return
     }
 
     if (communityHovered) {
-      var id = comunidades[0].properties._id
+      var id = _comunidades[0].properties._id
       map.getSource('')
       map.setFilter('alianza-areas-highlight', ['==', '_id', ''])
       map.setFilter('alianza-comunidades-houses-highlight', ['==', '_id', id])
       map.setFilter('alianza-comunidades-dots-highlight', ['==', '_id', id])
-    } else if (areaHovered) {
-      map.setFilter('alianza-areas-highlight', ['==', '_id', areas[0].properties._id])
     }
+
+    if (areaHovered) {
+      var area = _areas[0].properties._id
+      map.setFilter('alianza-areas-highlight', ['==', '_id', area])
+
+      // for some reason we are seeing many duplicate comunidades when querying features
+      var areaCommunities = comunidades.features.filter(function (f) {
+        var area = areaPointIndex(f.geometry.coordinates)
+        return area && area.name === areaHovered.properties.name
+      })
+
+      // some of them don't have a feature row in airtable, so we use what we have
+      var feature = areasByName[areaHovered.properties.name]
+      var props = feature ? feature.properties : getAreaFeatureProps(areaHovered)
+
+      areaPopup.update(areaPopupDOM(props, areaCommunities))
+      areaPopup.setLngLat(e.lngLat)
+    } else areaPopup.remove()
   })
+
+  /**
+   * Converts the given area feature from area.json into the format
+   * needed by area_popup.js, which is represented in the data.json file.
+   * @param  {Object} area GeoJSON feature for Area.json
+   * @return {Object}      GeoJSOn feature for data.json
+   */
+  function getAreaFeatureProps (area) {
+    return {
+      'Area nombre': area.properties.name,
+      Color: [area.layer.paint['fill-color']]
+    }
+  }
 
   map.on('click', function (e) {
     var queryAreas = map.queryRenderedFeatures(e.point, { layers: areaFillIds })
     var queryCommunidades = map.queryRenderedFeatures(e.point, { layers: comunidadesInteractiveLayers })
-    var areaClicked = queryAreas && queryAreas[0] && map.getZoom() < queryAreas[0].layer.maxzoom && queryAreas[0]
+    var areaClicked = queryAreas && queryAreas[0]
     var communityClicked = queryCommunidades && queryCommunidades[0]
 
     if (communityClicked) {
       var feature = dataIndex[communityClicked.properties._id]
-      yo.update(popupNode, comunidadPopup(feature.properties, dataIndex), yoOptions)
-      popup.setLngLat(feature.geometry.coordinates)
-        .addTo(map)
-    } else {
-      popup.remove()
-    }
+      comunidadPopup.update(comunidadPopupDOM(feature.properties, dataIndex))
+      comunidadPopup.setLngLat(feature.geometry.coordinates)
+    } else comunidadPopup.remove()
 
     if (areaClicked) {
       var area = getArea(areaClicked.properties._id, areas)
       map.fitBounds(extent(area), {padding: 20})
       map.setFilter('alianza-areas-highlight', ['==', '_id', ''])
-    }
+    } else areaPopup.remove()
   })
 }
 
