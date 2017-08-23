@@ -122,11 +122,11 @@ function onLoad () {
   var areaFillIds = areas.features.map(function (f) { return f.properties._id })
 
   map.on('mousemove', function (e) {
-    var areas = map.queryRenderedFeatures(e.point, { layers: areaFillIds })
-    var comunidades = map.queryRenderedFeatures(e.point, { layers: comunidadesInteractiveLayers })
-    var areaHovered = areas && areas[0]
-    var communityHovered = comunidades && comunidades[0]
-    if (areaHovered && map.getZoom() > getAreaZoom(map, areas[0]) - 1) areaHovered = false
+    var _areas = map.queryRenderedFeatures(e.point, { layers: areaFillIds })
+    var _comunidades = map.queryRenderedFeatures(e.point, { layers: comunidadesInteractiveLayers })
+    var areaHovered = _areas && _areas[0]
+    var communityHovered = _comunidades && _comunidades[0]
+    if (areaHovered && map.getZoom() > getAreaZoom(map, _areas[0]) - 1) areaHovered = false
 
     if (areaHovered || communityHovered) {
       map.getCanvas().style.cursor = 'pointer'
@@ -138,7 +138,7 @@ function onLoad () {
     }
 
     if (communityHovered) {
-      var id = comunidades[0].properties._id
+      var id = _comunidades[0].properties._id
       map.getSource('')
       map.setFilter('alianza-areas-highlight', ['==', '_id', ''])
       map.setFilter('alianza-comunidades-houses-highlight', ['==', '_id', id])
@@ -146,20 +146,19 @@ function onLoad () {
     }
 
     if (areaHovered) {
+      var area = _areas[0].properties._id
+      map.setFilter('alianza-areas-highlight', ['==', '_id', area])
+
       // for some reason we are seeing many duplicate comunidades when querying features
-      var seen = {}
-      var areaCommunities = map.querySourceFeatures('comunidades').filter(function (f) {
-        if (seen.hasOwnProperty(f.properties.Comunidad)) return false
-        else seen[f.properties.Comunidad] = true
+      var areaCommunities = comunidades.features.filter(function (f) {
         var area = areaPointIndex(f.geometry.coordinates)
         return area && area.name === areaHovered.properties.name
       })
-      var area = areas[0].properties._id
-      map.setFilter('alianza-areas-highlight', ['==', '_id', area])
-      var feature = areasByName[areaHovered.properties.name]
 
       // some of them don't have a feature row in airtable, so we use what we have
+      var feature = areasByName[areaHovered.properties.name]
       var props = feature ? feature.properties : getAreaFeatureProps(areaHovered)
+
       areaPopup.update(areaPopupDOM(props, areaCommunities))
       areaPopup.setLngLat(e.lngLat)
     } else areaPopup.remove()
