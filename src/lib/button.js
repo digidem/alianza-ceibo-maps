@@ -7,13 +7,13 @@ module.exports = function (props) {
       z-index: 1;
       padding: 15px;
       border: 1px solid black;
-      background: white;
+      background: transparent;
       font-weight: bold;
       font-size: 14px;
     }
     :host:hover {
       cursor: pointer;
-      background-color: #ddd;
+      background-color: rgba(255,255,255,0.8);
     }
     :host:active, :host:focus {
       outline: 0;

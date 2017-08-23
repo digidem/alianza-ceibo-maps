@@ -5,7 +5,7 @@ module.exports = function (onclick) {
     title: 'VER MAPA COMPLETO',
     onclick: onclick
   })
-  backButton.style.background = 'rgba(255, 255, 255, 0.8)'
+  backButton.style.filter = 'alpha(opacity=0.8)'
   backButton.style.display = 'none'
   backButton.style.position = 'absolute'
   backButton.style.right = 0
