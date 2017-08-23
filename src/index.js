@@ -1,11 +1,13 @@
 const d3 = require('d3-request')
 const mapboxgl = require('mapbox-gl')
+const ToggleControl = require('mapbox-gl-toggle-control')
 const yo = require('yo-yo')
 const extent = require('@mapbox/geojson-extent')
 const compose = require('lodash/flowRight')
 const assign = require('object-assign')
 
 var areas = require('../areas/areas.json')
+var Legend = require('./legend')
 var layerStyles = require('./layer_styles')
 var generateAreaLayers = require('./area_layers')
 var comunidadPopup = require('./comunidad_popup')
@@ -94,6 +96,12 @@ function onLoad () {
 
   var nav = new mapboxgl.NavigationControl()
   map.addControl(nav, 'top-left')
+  var legend = Legend(data)
+  document.body.appendChild(legend)
+
+  var legendCtrl = new ToggleControl(legend)
+  map.addControl(legendCtrl, 'top-left')
+  legendCtrl._toggleButton.setAttribute('aria-label', 'Toggle Legend')
 
   map.fitBounds(extent(areas), {padding: 20})
 
