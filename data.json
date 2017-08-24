@@ -1914,7 +1914,7 @@
         "type": "Feature",
         "id": "recK4rEeMtxayhBXN",
         "properties": {
-          "Comunidad": "Chandiana’e",
+          "Comunidad": "Chandia Na´e",
           "Installations": [
             "rec2dEbYNGAsJtuaN",
             "recbd3Jks4Ofrxefi",
@@ -2067,7 +2067,8 @@
           "Lon": -75.76493,
           "Lat": -0.31765,
           "Programas": [
-            "Sistemas de agua"
+            "Sistemas de agua",
+            "Sistemas solares"
           ],
           "Foto": [
             {
