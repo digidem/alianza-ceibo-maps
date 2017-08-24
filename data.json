@@ -2690,7 +2690,28 @@
           "Agua Usuarios": 0,
           "Most recent": "2016-12-30",
           "First": "2016-12-30",
-          "Descripción": "Ubicada en la provincia de Pastaza, la comunidad de Tzapino (nombre kowore) o Keremeno (nombre Wao Terero), significa “río de bacachico” y, está caracterizada por la variedad de su fauna y de su flora. Las siete familias que viven en Tzapino beneficiaron todas de la instalación de sistemas de agua y de paneles solares."
+          "Descripción": "Ubicada en la provincia de Pastaza, la comunidad de Tzapino (nombre kowore) o Keremeno (nombre Wao Terero), significa “río de bacachico” y, está caracterizada por la variedad de su fauna y de su flora. Las siete familias que viven en Tzapino beneficiaron todas de la instalación de sistemas de agua y de paneles solares.",
+          "Foto": [
+            {
+              "id": "attV0nigoUU1svztG",
+              "url": "https://dl.airtable.com/yhjRbPkJQk2AnetS6UkZ_Tzapino-bing.jpg",
+              "filename": "Tzapino-bing.jpg",
+              "size": 515079,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/oEnn8SODTje6f3S0mnwm_small_Tzapino-bing.jpg",
+                  "width": 48,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/tX1J9nrS2uBAIQF3Jye0_large_Tzapino-bing.jpg",
+                  "width": 683,
+                  "height": 512
+                }
+              }
+            }
+          ]
         },
         "geometry": {
           "type": "Point",
