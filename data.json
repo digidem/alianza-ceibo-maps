@@ -1157,7 +1157,7 @@
         "type": "Feature",
         "id": "rec9OlycuOUlTjFAh",
         "properties": {
-          "Comunidad": "Yaretaro",
+          "Comunidad": "Yarentaro",
           "Nacionalidad": [
             "rec7nhastozSVnJax"
           ],
@@ -1168,7 +1168,8 @@
           ],
           "Agua": 0,
           "Agua Familias": 0,
-          "Agua Usuarios": 0
+          "Agua Usuarios": 0,
+          "Descripción": "Yarentaro está ubicada en la Provincia de Orellana, a la orilla del río del mismo nombre donde se encuentra unas hojas finas, las cuales sirven a la elaboración de bodoquera y lanzas de cacería. Con el apoyo de la Asociación de Mujeres Waorani (AMWAE), Yarentaro tiene una producción de cacao destinado a la venta."
         },
         "geometry": {
           "type": "Point",
@@ -3873,7 +3874,8 @@
           ],
           "Agua": 0,
           "Agua Familias": 0,
-          "Agua Usuarios": 0
+          "Agua Usuarios": 0,
+          "Descripción": "Dicaro significa “río de piedras” en idioma Waorani. Ubicada dentro del parque nacional Yasuní, al kilómetro noventa y ocho de la vía Maxus, las familias en Dicaro se dedican a la caza y a la pesca para alimentar a sus familia. Con el apoyo de la Asociación de Mujeres Waorani (AMWAE), Dicaro tiene una producción de cacao destinado a la venta."
         },
         "geometry": {
           "type": "Point",
