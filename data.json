@@ -718,7 +718,8 @@
           ],
           "Agua": 0,
           "Agua Familias": 0,
-          "Agua Usuarios": 0
+          "Agua Usuarios": 0,
+          "Descripción": "La comunidad de Wentaro, cuyo nombre significa “río oscuro” en idioma Waorani, está ubicada en la provincia de Pastaza. Ocho familias viven en esta comunidad remota y rodeada por varios bosques tropicales. Disponen de un pequeño panel solar que les permite conectar un radio, único medio de comunicación con el exterior."
         },
         "geometry": {
           "type": "Point",
@@ -762,7 +763,8 @@
           "Agua Familias": 14,
           "Agua Usuarios": 0,
           "Most recent": "2014-12-30",
-          "First": "2014-12-30"
+          "First": "2014-12-30",
+          "Descripción": "La comunidad de Guiyero se encuentra dentro del parque nacional Yasuní, al borde de la Vía Maxus y a la orilla del río Tiputini. Guiyero, cuyo nombre significa “río de los zancudos” en idioma Waorani. Las familias en Guiyero se dedican a la pesca, la caza y la agricultura. "
         },
         "geometry": {
           "type": "Point",
@@ -1195,7 +1197,8 @@
           ],
           "Agua": 0,
           "Agua Familias": 0,
-          "Agua Usuarios": 0
+          "Agua Usuarios": 0,
+          "Descripción": "La comunidad de Apaika, cuyo nombre significa “luna” en idioma Waorani, está ubicada por la vía Auca en la provincia de Pastaza. En la comunidad viven seis familias, las cuales no tienen acceso a electricidad y se demoran tres horas para llegar a la ciudad más cerca para comprar víveres."
         },
         "geometry": {
           "type": "Point",
@@ -1687,7 +1690,8 @@
           "Agua Familias": 4,
           "Agua Usuarios": 0,
           "Most recent": "2014-12-30",
-          "First": "2014-12-30"
+          "First": "2014-12-30",
+          "Descripción": "La comunidad de Timpoca se encuentra al borde de la vía Maxus en el parque nacional Yasuní y a la orilla del río Tiputini."
         },
         "geometry": {
           "type": "Point",
@@ -1994,7 +1998,8 @@
           ],
           "Agua": 0,
           "Agua Familias": 0,
-          "Agua Usuarios": 0
+          "Agua Usuarios": 0,
+          "Descripción": "Nenquipare significa “estero de sol” en idioma Waorani y, se encuentra por la vía Auca en la provincia de Pastaza. En la comunidad viven ocho familias, las cuales no tienen acceso a electricidad y se demoran tres horas para llegar a la ciudad más cerca para comprar víveres."
         },
         "geometry": {
           "type": "Point",
@@ -2116,7 +2121,7 @@
         "type": "Feature",
         "id": "recLaodqR3XmtYlQD",
         "properties": {
-          "Comunidad": "Ganqueta",
+          "Comunidad": "Ganketa",
           "Installations": [
             "recAaag4V5qci3FZZ",
             "recmSgLnzODXbD5cP",
@@ -2140,7 +2145,7 @@
           "Agua Usuarios": 0,
           "Most recent": "2014-12-30",
           "First": "2014-12-30",
-          "Descripción": " "
+          "Descripción": "La comunidad de Ganketa se encuentra dentro del parque nacional Yasuní al kilómetro treinta y seis de la vía Maxus. Su nombre proviene de un árbol grandioso que se encuentra en la región. Por la resistencia de sus raíces, es muy frecuente observar monos chorongos descansando en las ramas de este árbol. Los hombres de la comunidad de Ganketa tuvieron que dedicarse a la venta de carne para atender a las necesidades de sus familias ya que las compañías petroleros tuvieron un impacto fuerte sobre las dinámicas tradicionales de usos y costumbres de la comunidad."
         },
         "geometry": {
           "type": "Point",
@@ -2709,7 +2714,8 @@
           ],
           "Agua": 0,
           "Agua Familias": 0,
-          "Agua Usuarios": 0
+          "Agua Usuarios": 0,
+          "Descripción": "Ñoneno es una comunidad que se ubica por la vía Auca en la provincia de Orellana y, cuyo nombre significa “río de los guaduales” en idioma Waorani. Las cuatro familias que viven en la comunidad no tienen acceso a la electricidad y se demoran unas dos horas para llegar a la ciudad más cerca para comprar víveres.   "
         },
         "geometry": {
           "type": "Point",
@@ -3364,7 +3370,8 @@
           ],
           "Agua": 0,
           "Agua Familias": 0,
-          "Agua Usuarios": 0
+          "Agua Usuarios": 0,
+          "Descripción": "Gemeneweno es una comunidad rodeada por bosques tropicales ubicada en la provincia de Orellana, a la orilla del río Shiripuno. En idioma Waorani, Gemeneweno significa “río de los ceibos”. Su lejanía con la ciudad hace que la comunidad dispone de una gran riqueza ecosistémica. Las familias que viven en Gemeneweno disponen de un pequeño panel solar que les permite conectar un radio, único medio de comunicación con el exterior. Algunos miembros de la comunidad se dedican al turismo comunitario en la región, lo cual les permite tener una fuente de ingreso.   "
         },
         "geometry": {
           "type": "Point",
