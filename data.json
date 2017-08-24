@@ -776,7 +776,7 @@
         "type": "Feature",
         "id": "rec3l0Q38OQEsxqg6",
         "properties": {
-          "Comunidad": "Wewonpare",
+          "Comunidad": "Wewanpare",
           "Installations": [
             "rec0ITpeMQVFgVZbX",
             "recomq0pyLpLUxLg2"
@@ -794,7 +794,8 @@
           "Agua Familias": 2,
           "Agua Usuarios": 0,
           "Most recent": "2016-12-30",
-          "First": "2016-12-30"
+          "First": "2016-12-30",
+          "Descripción": "Wewanpare es una pequeña comunidad que cuenta con dos familias y cuyo nombre se refiere a una mujer Waorani llamada Wewa. Actualmente, con el apoyo de la Alianza Ceibo, Wewanpare cuenta con dos sistemas de agua y dos sistemas solares."
         },
         "geometry": {
           "type": "Point",
@@ -1323,7 +1324,8 @@
           "Agua Familias": 9,
           "Agua Usuarios": 48,
           "Most recent": "2014-04-27",
-          "First": "2014-04-24"
+          "First": "2014-04-24",
+          "Descripción": "Tobeta, cuyo nombre significa “palmas tropicales” en idioma Waorani, está ubicada en la carretera abierta por la empresa Petro Oriental y Petro Andes, dentro del parque nacional Yasuní. Diez familias viven en la comunidad ancestral, las cuales están luchando por el respeto de sus derechos desde hace varios años. Si bien Tobeta está lejos de otras ciudades del país, su cercanía a las plantas petroleras afectó directamente a las familias y sus modos de vida, ya que el río Tiputuni está altamente contaminado por los derrames de petróleo y que el ruido constante de las máquinas no permiten el descanso. Hace unos años, la comunidad de Tobeta observaron el ingreso de invasores que practican actividades ilegales dentro del territorio, sobre todo actividades de pesca con uso de químicos. Actualmente, las familias de Tobeta cuentan cada una con un sistema de agua que les permiten tener acceso a una fuente de agua libre de contaminación de manera sostenible y duradera. "
         },
         "geometry": {
           "type": "Point",
@@ -1387,7 +1389,8 @@
           "Agua Familias": 10,
           "Agua Usuarios": 123,
           "Most recent": "2013-03-22",
-          "First": "2013-03-17"
+          "First": "2013-03-17",
+          "Descripción": "Yawepare, cuyo nombre significa “quebrada de los tucanes” en idioma Waorani, se encuentra en la provincia de Orellana y está rodeada por varios bosques tropicales. La comunidad esta ubicada al borde de la carretera abierta por la empresa Petro Oriental y Petro Andes dentro del parque nacional Yasuni. "
         },
         "geometry": {
           "type": "Point",
@@ -2304,7 +2307,8 @@
           "Agua Familias": 30,
           "Agua Usuarios": 155,
           "Most recent": "2014-04-23",
-          "First": "2014-04-12"
+          "First": "2014-04-12",
+          "Descripción": "La comunidad de Miwaguno se encuentra en la provincia de Orellana y se caracteriza por la gran diversidad de su fauna y de su flora dentro de los bosques tropicales que la rodean. También conocida como “río de los chiparros” en idioma Waorani, Miwaguno fue dejada de lado durante muchos años por las autoridades provinciales. Por esta razón, muchas de las familias se fueron a trabajar para las compañías petroleras, recibiendo un sueldo, aunque sea mínimo. "
         },
         "geometry": {
           "type": "Point",
@@ -2678,7 +2682,8 @@
           "Agua Familias": 7,
           "Agua Usuarios": 0,
           "Most recent": "2016-12-30",
-          "First": "2016-12-30"
+          "First": "2016-12-30",
+          "Descripción": "Ubicada en la provincia de Pastaza, la comunidad de Tzapino (nombre kowore) o Keremeno (nombre Wao Terero), significa “río de bacachico” y, está caracterizada por la variedad de su fauna y de su flora. Las siete familias que viven en Tzapino beneficiaron todas de la instalación de sistemas de agua y de paneles solares."
         },
         "geometry": {
           "type": "Point",
@@ -2824,7 +2829,7 @@
           "Agua Usuarios": 0,
           "Most recent": "2015-08-20",
           "First": "2015-08-20",
-          "Descripción": " "
+          "Descripción": "Dayuno, cuyo nombre significa “algodón” en idioma Waorani, se encuentra en la orilla del río Noshino donde se observan muchos pescados bocachico y carachamo. Por la riqueza de su fauna marina, la comunidad está confrontada al ingreso de varios pescadores ilegales usando dinamita y químicos que contaminan el río de manera irreversible. Con el apoyo de la Alianza Ceibo, Dayuno cuenta hoy en día con cuatro sistemas de agua."
         },
         "geometry": {
           "type": "Point",
@@ -3129,7 +3134,8 @@
           "Agua Familias": 4,
           "Agua Usuarios": 0,
           "Most recent": "2015-08-20",
-          "First": "2015-08-20"
+          "First": "2015-08-20",
+          "Descripción": "Las familias de la comunidad de Tepapare viven a lado del río Noshino. Debido a la presencia de muchas palmas pambil cuyas hojas se utilizan en la construcción de las casas típicas Waorani, la comunidad también se conoce como “quebrada de pambil”.En la comunidad, mucho cacao fue sembrado gracias al trabajo de la Asociación de Mujeres Waorani (AMWAE).Actualmente, con el apoyo de la Alianza Ceibo, Tepapare cuenta con cinco sistemas de agua."
         },
         "geometry": {
           "type": "Point",
@@ -3155,7 +3161,8 @@
           ],
           "Agua": 0,
           "Agua Familias": 0,
-          "Agua Usuarios": 0
+          "Agua Usuarios": 0,
+          "Descripción": "En idioma Waorani, Peneno significa “río de los plátanos” debido a que antiguamente las familias solían sembrar plátanos a la orilla del río Tivacuno, el cual bordea la comunidad. La comunidad se encuentra en la vía Maxus dentro del parque nacional Yasuní y sus familias se dedican a la caza, la pesca."
         },
         "geometry": {
           "type": "Point",
@@ -3254,7 +3261,8 @@
           "Agua Familias": 47,
           "Agua Usuarios": 0,
           "Most recent": "2016-11-30",
-          "First": "2016-11-30"
+          "First": "2016-11-30",
+          "Descripción": "Toñampare, cuyo nombre significa “quebrada de Toña” en idioma Waorani, se encuentra a treinta minutos de vuelo desde el aeropuerto de la ciudad de Shell en la región de Pastaza. Según los relatos de los pikenani, Toña era el primero profesor de alfabetización Waorani en los años 1960 y un día mientras andaba por el río pescando, inspiró a la gente de la comunidad quienes pusieron el nombre en su honor. Ahí viven cuarenta y cinco familias de la comunidad que cuenta con la Unidad Educativa Waorani. Actualmente, con el apoyo de la Alianza Ceibo, Toñampari cuenta con cuarenta y cinco sistemas de agua. Mediante el programa de Mapeo Territorial, los miembros de la comunidad participaron a la elaboración de un mapa de su territorio ancestral. "
         },
         "geometry": {
           "type": "Point",
@@ -3329,7 +3337,8 @@
           "Agua Familias": 2,
           "Agua Usuarios": 0,
           "Most recent": "2015-12-30",
-          "First": "2015-12-30"
+          "First": "2015-12-30",
+          "Descripción": "Geyepare, se encuentra a la orilla del río Curaray (Ëwëno) y cuyo nombre significa “quebrada de pez sardina” en idioma Waorani. La comunidad es famosa por sus aves y principalmente por la presencia de animales como el tapir y guanganas. Actualmente con el apoyo de la Alianza Ceibo, Geyepare cuenta con un sistema de agua y dos sistemas solares."
         },
         "geometry": {
           "type": "Point",
@@ -3789,7 +3798,7 @@
         "type": "Feature",
         "id": "recuUbO75IrI3wH40",
         "properties": {
-          "Comunidad": "Nampo Eno",
+          "Comunidad": "Nampaweno",
           "Installations": [
             "recn2tvj1IZp7URAg",
             "recAZp7V5nfWasBzv",
@@ -3828,7 +3837,8 @@
           "Agua Familias": 3,
           "Agua Usuarios": 37,
           "Most recent": "2013-03-24",
-          "First": "2013-03-22"
+          "First": "2013-03-22",
+          "Descripción": "Por la carretera vía Pindo en la provincia de Orellana, se encuentra la comunidad de Nampaweno cuyo nombre significa “río de las palmas artesanales” en idioma Waorani. Rodeada por varios bosques tropicales, la comunidad de Nampaweno cuenta con ocho familias, las cuales tienen que hacer frente a la invasión de su territorio ancestral por parte de las compañías petroleras y colonos que realizan actividades ilegales de tala de árboles centenarios. "
         },
         "geometry": {
           "type": "Point",
