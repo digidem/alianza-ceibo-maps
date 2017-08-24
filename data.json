@@ -644,12 +644,12 @@
               }
             }
           ],
-          "Descripción": "The A'I Kofan community of Bavoroe lies close to the Aguarico River in the Ecuadorian Amazon. Composed of eight families, Bavoroe works with ClearWater and the Ceibo Alliance on two programs",
           "Agua": 8,
           "Agua Familias": 8,
           "Agua Usuarios": 41,
           "Most recent": "2014-12-22",
-          "First": "2013-12-17"
+          "First": "2013-12-17",
+          "Description English": "The A'I Kofan community of Bavoroe lies close to the Aguarico River in the Ecuadorian Amazon. Composed of eight families, Bavoroe works with ClearWater and the Ceibo Alliance on two programs"
         },
         "geometry": {
           "type": "Point",
@@ -896,12 +896,12 @@
           "Historias": [
             "recyfzSvVYwYuP2xW"
           ],
-          "Descripción": "The A'I Kofan community of Ukavati lies close to the Aguarico River in the Ecuadorian Amazon. Composed of 9 families, Ukavati works with ClearWater and the Ceibo Alliance on two programs",
           "Agua": 8,
           "Agua Familias": 9,
           "Agua Usuarios": 46,
           "Most recent": "2014-01-23",
-          "First": "2014-01-15"
+          "First": "2014-01-15",
+          "Description English": "The A'I Kofan community of Ukavati lies close to the Aguarico River in the Ecuadorian Amazon. Composed of 9 families, Ukavati works with ClearWater and the Ceibo Alliance on two programs"
         },
         "geometry": {
           "type": "Point",
@@ -1120,7 +1120,8 @@
           "Agua Usuarios": 0,
           "Most recent": "2016-11-30",
           "First": "2016-11-30",
-          "Descripción": "El nombre de Kenaweno, proviene de un árbol blanco que se encuentra en la orilla del río Kenaweno, La comunidad está a tres horas de viaje de la ciudad más cercana, Arajuno. Las casas se concentran en el centro comunitario donde las diez familias de Kenaweno se dedican a la pesca, la agricultura, o al servicio de transporte fluvial. Si algunas familias de la comunidad tienen un generador el cual les permite usar equipos electrodomésticos, ninguna tiene acceso a un servicio de electricidad pública. Kenaweno es la comunidad más cercana a Toñampare, considerada como la capital del territorio Waorani. \nActualmente con el apoyo de la Alianza Ceibo, Kenaweno cuenta con diez sistemas de agua. Mediante el programa de Mapeo Territorial, los miembros de la comunidad participaron a la elaboración de un mapa de su territorio ancestral. "
+          "Descripción": "El nombre de Kenaweno, proviene de un árbol blanco que se encuentra en la orilla del río Kenaweno, La comunidad está a tres horas de viaje de la ciudad más cercana, Arajuno. Las casas se concentran en el centro comunitario donde las diez familias de Kenaweno se dedican a la pesca, la agricultura, o al servicio de transporte fluvial. Si algunas familias de la comunidad tienen un generador el cual les permite usar equipos electrodomésticos, ninguna tiene acceso a un servicio de electricidad pública. Kenaweno es la comunidad más cercana a Toñampare, considerada como la capital del territorio Waorani. \nActualmente con el apoyo de la Alianza Ceibo, Kenaweno cuenta con diez sistemas de agua. Mediante el programa de Mapeo Territorial, los miembros de la comunidad participaron a la elaboración de un mapa de su territorio ancestral. ",
+          "Description English": "Kenaweno, a name that comes from a white tree on the banks of the River Kenaweno, is a community that is located between the Curaray and Kenaweno rivers and is about a three hours journey by road and river from the closest city, Arajuno. The houses are concentrated in the community center and the community is dedicated to fishing and agriculture, while a few people also provide river transport services. Some of the ten families who live in Kenaweno have a generator and a few electrical appliances, but none have access to public electricity. It is the closest community to Toñampare, the community that is widely considered to be the capital of the Waorani territory."
         },
         "geometry": {
           "type": "Point",
@@ -1843,12 +1844,12 @@
               }
             }
           ],
-          "Descripción": "The A'I Kofan community of Dureno lies close to the Aguarico River in the Ecuadorian Amazon. Composed of 42 families, Dureno works with ClearWater and the Ceibo Alliance on two programs",
           "Agua": 39,
           "Agua Familias": 42,
           "Agua Usuarios": 248,
           "Most recent": "2011-11-01",
-          "First": "2011-01-01"
+          "First": "2011-01-01",
+          "Description English": "The A'I Kofan community of Dureno lies close to the Aguarico River in the Ecuadorian Amazon. Composed of 42 families, Dureno works with ClearWater and the Ceibo Alliance on two programs"
         },
         "geometry": {
           "type": "Point",
@@ -1967,12 +1968,12 @@
               }
             }
           ],
-          "Descripción": "The A'I Kofan community of Chandiana'e lies close to the Bermejo River in the Ecuadorian Amazon. Composed of nine families, Chandiana'e works with ClearWater and the Ceibo Alliance on three programs",
           "Agua": 9,
           "Agua Familias": 9,
           "Agua Usuarios": 0,
           "Most recent": "2016-03-08",
-          "First": "2016-03-08"
+          "First": "2016-03-08",
+          "Description English": "The A'I Kofan community of Chandiana'e lies close to the Bermejo River in the Ecuadorian Amazon. Composed of nine families, Chandiana'e works with ClearWater and the Ceibo Alliance on three programs"
         },
         "geometry": {
           "type": "Point",
@@ -2046,12 +2047,12 @@
           "Programas": [
             "Sistemas de agua"
           ],
-          "Descripción": "The A'I Kofan community of Uperito lies close to the Aguarico River in the Ecuadorian Amazon. Composed of 22 families, Uperito works with ClearWater and the Ceibo Alliance on one program",
           "Agua": 22,
           "Agua Familias": 22,
           "Agua Usuarios": 0,
           "Most recent": "2017-02-28",
-          "First": "2017-02-28"
+          "First": "2017-02-28",
+          "Description English": "The A'I Kofan community of Uperito lies close to the Aguarico River in the Ecuadorian Amazon. Composed of 22 families, Uperito works with ClearWater and the Ceibo Alliance on one program"
         },
         "geometry": {
           "type": "Point",
@@ -2102,12 +2103,12 @@
               }
             }
           ],
-          "Descripción": "The A'I Kofan community of Paccoya lies close to the Paccoya River in the Ecuadorian Amazon. Composed of four families, Paccoya works with ClearWater and the Ceibo Alliance on one program",
           "Agua": 4,
           "Agua Familias": 4,
           "Agua Usuarios": 24,
           "Most recent": "2014-10-12",
-          "First": "2014-10-11"
+          "First": "2014-10-11",
+          "Description English": "The A'I Kofan community of Paccoya lies close to the Paccoya River in the Ecuadorian Amazon. Composed of four families, Paccoya works with ClearWater and the Ceibo Alliance on one program"
         },
         "geometry": {
           "type": "Point",
@@ -2477,12 +2478,12 @@
               }
             }
           ],
-          "Descripción": "The A'I Kofan community of Sábalo lies close to the Aguarico River in the Ecuadorian Amazon. Composed of 28 families, Sábalo works with ClearWater and the Ceibo Alliance on three program",
           "Agua": 28,
           "Agua Familias": 28,
           "Agua Usuarios": 148,
           "Most recent": "2015-10-09",
-          "First": "2014-10-01"
+          "First": "2014-10-01",
+          "Description English": "The A'I Kofan community of Sábalo lies close to the Aguarico River in the Ecuadorian Amazon. Composed of 28 families, Sábalo works with ClearWater and the Ceibo Alliance on three program"
         },
         "geometry": {
           "type": "Point",
@@ -2554,12 +2555,12 @@
               }
             }
           ],
-          "Descripción": "The A'I Kofan community of Upirito lies close to the Aguarico River in the Ecuadorian Amazon. Composed of 26 families, Upirito works with ClearWater and the Ceibo Alliance on one program",
           "Agua": 26,
           "Agua Familias": 26,
           "Agua Usuarios": 77,
           "Most recent": "2016-11-25",
-          "First": "2012-01-01"
+          "First": "2012-01-01",
+          "Description English": "The A'I Kofan community of Upirito lies close to the Aguarico River in the Ecuadorian Amazon. Composed of 26 families, Upirito works with ClearWater and the Ceibo Alliance on one program"
         },
         "geometry": {
           "type": "Point",
@@ -2994,12 +2995,12 @@
               }
             }
           ],
-          "Descripción": "The Siona community of Aboquehuira lies close to the Aguarico River in the Ecuadorian Amazon. Composed of nine families, Aboquehuira works with ClearWater and the Ceibo Alliance on five programs",
           "Agua": 9,
           "Agua Familias": 9,
           "Agua Usuarios": 59,
           "Most recent": "2014-01-25",
-          "First": "2014-01-20"
+          "First": "2014-01-20",
+          "Description English": "The Siona community of Aboquehuira lies close to the Aguarico River in the Ecuadorian Amazon. Composed of nine families, Aboquehuira works with ClearWater and the Ceibo Alliance on five programs"
         },
         "geometry": {
           "type": "Point",
@@ -3081,12 +3082,12 @@
               }
             }
           ],
-          "Descripción": "The A'I Kofan community of Pisorie Canqque lies close to the Aguarico River in the Ecuadorian Amazon. Composed of 12 families, Pisorie Canqque works with ClearWater and the Ceibo Alliance on one program",
           "Agua": 11,
           "Agua Familias": 12,
           "Agua Usuarios": 67,
           "Most recent": "2014-01-31",
-          "First": "2014-01-30"
+          "First": "2014-01-30",
+          "Description English": "The A'I Kofan community of Pisorie Canqque lies close to the Aguarico River in the Ecuadorian Amazon. Composed of 12 families, Pisorie Canqque works with ClearWater and the Ceibo Alliance on one program"
         },
         "geometry": {
           "type": "Point",
@@ -3426,12 +3427,12 @@
               }
             }
           ],
-          "Descripción": "The A'I Kofan community of Avie/Tayuscanqque lies close to the Bermejo and San Miguel Rivers in the Ecuadorian Amazon. Composed of eight families, Avie/Tayuscanqque works with ClearWater and the Ceibo Alliance on two programs",
           "Agua": 8,
           "Agua Familias": 8,
           "Agua Usuarios": 0,
           "Most recent": "2015-07-15",
-          "First": "2015-07-15"
+          "First": "2015-07-15",
+          "Description English": "The A'I Kofan community of Avie/Tayuscanqque lies close to the Bermejo and San Miguel Rivers in the Ecuadorian Amazon. Composed of eight families, Avie/Tayuscanqque works with ClearWater and the Ceibo Alliance on two programs"
         },
         "geometry": {
           "type": "Point",
@@ -3787,12 +3788,12 @@
               }
             }
           ],
-          "Descripción": "The A'I Kofan community of Dovuno lies close to the Aguarico River in the Ecuadorian Amazon. Composed of 32 families, Dovuno works with ClearWater and the Ceibo Alliance on two programs",
           "Agua": 34,
           "Agua Familias": 32,
           "Agua Usuarios": 16,
           "Most recent": "2015-03-30",
-          "First": "2015-03-11"
+          "First": "2015-03-11",
+          "Description English": "The A'I Kofan community of Dovuno lies close to the Aguarico River in the Ecuadorian Amazon. Composed of 32 families, Dovuno works with ClearWater and the Ceibo Alliance on two programs"
         },
         "geometry": {
           "type": "Point",
@@ -3956,12 +3957,12 @@
               }
             }
           ],
-          "Descripción": "The A'I Kofan community of Sinangoé lies close to the Upper Aguarico River in the Ecuadorian Amazon. Composed of 22 families, Sinangoé works with ClearWater and the Ceibo Alliance on four programs",
           "Agua": 21,
           "Agua Familias": 22,
           "Agua Usuarios": 152,
           "Most recent": "2014-01-18",
-          "First": "2014-01-18"
+          "First": "2014-01-18",
+          "Description English": "The A'I Kofan community of Sinangoé lies close to the Upper Aguarico River in the Ecuadorian Amazon. Composed of 22 families, Sinangoé works with ClearWater and the Ceibo Alliance on four programs"
         },
         "geometry": {
           "type": "Point",
@@ -4096,7 +4097,8 @@
           "Agua Usuarios": 0,
           "Most recent": "2016-12-30",
           "First": "2016-12-30",
-          "Descripción": "Damointaro, se encuentra entre los ríos Damointaro y Nenkiwipare, a dos días de viaje de la carretera más cercana. El nombre de la comunidad significa \"colina con una cueva\" y, las catorce familias que viven en la comunidad disfrutan de un valle de bosque primario compuesto de pequeñas colinas. Anteriormente, la comunidad estaba ocupada por los misioneros evangélicos quienes edificaron un centro de educación, el cual hoy en día ya no está funcionando. Las familias de Damointaro viven de la pesca y de la caza. Si algunas mujeres se dedican a la artesanía, ellas tienen dificultades para vender sus productos porque la comunidad está muy lejos de los principales centros turísticos. Debido a su ubicación extremadamente remota, Damointaro ha sido dejada de lado por el gobierno en cuanto a la implementación de proyectos sociales comunitarios. Ningún plan para suministrar electricidad en la comunidad está aún registrado a nivel gubernamental.\nActualmente, con el apoyo de la Alianza Ceibo, Damointaro cuenta con catorce sistemas de agua y trece sistemas solares. Mediante el programa de Mapeo Territorial, los miembros de la comunidad participaron a la elaboración de un mapa de su territorio ancestral. "
+          "Descripción": "Damointaro, se encuentra entre los ríos Damointaro y Nenkiwipare, a dos días de viaje de la carretera más cercana. El nombre de la comunidad significa \"colina con una cueva\" y, las catorce familias que viven en la comunidad disfrutan de un valle de bosque primario compuesto de pequeñas colinas. Anteriormente, la comunidad estaba ocupada por los misioneros evangélicos quienes edificaron un centro de educación, el cual hoy en día ya no está funcionando. Las familias de Damointaro viven de la pesca y de la caza. Si algunas mujeres se dedican a la artesanía, ellas tienen dificultades para vender sus productos porque la comunidad está muy lejos de los principales centros turísticos. Debido a su ubicación extremadamente remota, Damointaro ha sido dejada de lado por el gobierno en cuanto a la implementación de proyectos sociales comunitarios. Ningún plan para suministrar electricidad en la comunidad está aún registrado a nivel gubernamental.\nActualmente, con el apoyo de la Alianza Ceibo, Damointaro cuenta con catorce sistemas de agua y trece sistemas solares. Mediante el programa de Mapeo Territorial, los miembros de la comunidad participaron a la elaboración de un mapa de su territorio ancestral. ",
+          "Description English": "Damointaro, which means “hill with a cave,” is located between the Rivers Acaro and Damointaro. Here, 14 families live in a clustered community surrounded by a valley of primary forest and small rounded hills. The community was formerly used by evangelical missionaries as an education center but the center is no longer in operation. People here live off fishing, hunting and smallholdings. Some women are devoted to crafts but face difficulties selling their products because they are so far from major tourist centers. Due to its extremely remote location (two day’s travel from the nearest road) Damointaro has been overlooked by government projects, and no plans to supply electricity to this community are on record."
         },
         "geometry": {
           "type": "Point",
@@ -4156,7 +4158,8 @@
           "Agua Familias": 6,
           "Agua Usuarios": 0,
           "Most recent": "2016-12-30",
-          "First": "2016-12-30"
+          "First": "2016-12-30",
+          "Description English": "Akaro is located on the banks of the river from which it takes its name, the Akaro River, in the province of Pastaza. The community is surrounded by forest and its remoteness from everything else grants a great diversity of flora and fauna. Six families, who do not have access to electricity, live scattered across the territory and are engaged in fishing, hunting and small-scale agriculture. The community has a small solar panel to operate a radio, which is the only means of communication they have."
         },
         "geometry": {
           "type": "Point",
