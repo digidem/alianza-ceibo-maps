@@ -6,6 +6,7 @@ const compose = require('lodash/flowRight')
 const assign = require('object-assign')
 const which = require('which-polygon')
 const elements = require('alianza-elements')
+const css = require('sheetify')
 
 var getAreaZoom = require('./lib/area_zoom')
 var areas = require('../areas/areas.json')
@@ -16,6 +17,9 @@ var comunidadPopupDOM = require('./comunidad_popup')
 var areaPopupDOM = require('./area_popup')
 var emptyStyle = require('./empty_style.json')
 var style = require('./style.json')
+
+css('mapbox-gl/dist/mapbox-gl.css')
+css('alianza-elements/style.css')
 
 mapboxgl.accessToken = require('../config.json').mapbox_token
 
@@ -103,7 +107,7 @@ function onLoad () {
   map.fitBounds(extent(areas), {padding: 20})
 
   // Create a popup, but don't add it to the map yet.
-  var areaPopup = elements.popup(map)
+  var areaPopup = elements.popup(map, {closeButton: false})
   var comunidadPopup = elements.popup(map)
 
   var backButton = elements.backButton(function () {
