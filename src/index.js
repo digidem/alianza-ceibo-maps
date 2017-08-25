@@ -5,14 +5,13 @@ const extent = require('@mapbox/geojson-extent')
 const compose = require('lodash/flowRight')
 const assign = require('object-assign')
 const which = require('which-polygon')
+const elements = require('alianza-elements')
 
 var getAreaZoom = require('./lib/area_zoom')
 var areas = require('../areas/areas.json')
 var Legend = require('./legend')
 var layerStyles = require('./layer_styles')
 var generateAreaLayers = require('./area_layers')
-var Popup = require('./lib/yo-popup')
-var button = require('./back_button')
 var comunidadPopupDOM = require('./comunidad_popup')
 var areaPopupDOM = require('./area_popup')
 var emptyStyle = require('./empty_style.json')
@@ -104,10 +103,10 @@ function onLoad () {
   map.fitBounds(extent(areas), {padding: 20})
 
   // Create a popup, but don't add it to the map yet.
-  var areaPopup = new Popup(map)
-  var comunidadPopup = new Popup(map)
+  var areaPopup = elements.popup(map)
+  var comunidadPopup = elements.popup(map)
 
-  var backButton = button(function () {
+  var backButton = elements.backButton(function () {
     map.fitBounds(extent(areas), {padding: 20})
     areaPopup.remove()
     comunidadPopup.remove()
