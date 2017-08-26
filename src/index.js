@@ -1,4 +1,5 @@
 const d3 = require('d3-request')
+const qs = require('querystring')
 const mapboxgl = require('mapbox-gl')
 const ToggleControl = require('mapbox-gl-toggle-control')
 const extent = require('@mapbox/geojson-extent')
@@ -23,7 +24,7 @@ css('alianza-elements/style.css')
 
 mapboxgl.accessToken = require('../config.json').mapbox_token
 
-var lang = 'es'
+var lang = qs.parse(window.location.search.replace('?', '')).lang || 'es'
 var data
 var areaPointIndex
 var dataIndex = {}
