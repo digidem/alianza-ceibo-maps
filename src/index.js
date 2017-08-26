@@ -99,10 +99,9 @@ function onLoad () {
 
   var nav = new mapboxgl.NavigationControl()
   map.addControl(nav, 'top-left')
-  var legend = Legend(data)
-  document.body.appendChild(legend)
-
-  var legendCtrl = new ToggleControl(legend)
+  var legend = Legend(data, {lang: lang})
+  var legendCtrl = new ToggleControl(legend.el)
+  legendCtrl.show()
   map.addControl(legendCtrl, 'top-left')
   legendCtrl._toggleButton.setAttribute('aria-label', 'Toggle Legend')
 
@@ -124,6 +123,7 @@ function onLoad () {
   function updateLang (_) {
     lang = _
     backButton.updateLang(lang)
+    legend.updateLang(lang)
   }
 
   var areaFillIds = areas.features.map(function (f) { return f.properties._id })

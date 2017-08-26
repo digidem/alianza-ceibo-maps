@@ -1,7 +1,60 @@
 const yo = require('yo-yo')
 const css = require('sheetify')
 
-module.exports = function (data) {
+const translations = {
+  'header': {
+    es: 'Instalaciones de agua y solar',
+    en: 'Water and Solar Installations'
+  },
+  'agua': {
+    es: 'Instalaciones de agua',
+    en: 'Water Installations '
+  },
+  'solar': {
+    es: 'Instalaciones de solar',
+    en: 'Solar Installations '
+  },
+  'agua-solar': {
+    es: 'Instalaciones de agua y solar',
+    en: 'Water and Solar Installations '
+  },
+  'agua-solar-story': {
+    es: 'Instalaciones de agua y solar con historias',
+    en: 'Water and Solar Installations with stories'
+  },
+  'legal-process': {
+    es: 'En proceso de reclamacíon legal',
+    en: 'In process of legal claim'
+  },
+  'explore': {
+    es: 'EXPLORAR',
+    en: 'EXPLORE'
+  },
+  'territory': {
+    es: 'territorio',
+    en: 'territory'
+  }
+}
+
+module.exports = Legend
+
+function Legend (data, opts) {
+  if (!(this instanceof Legend)) return new Legend(data, opts)
+  if (!opts) opts = {}
+  this.data = data
+  this.lang = opts.lang || 'es'
+  this.el = this._getElement()
+  document.body.append(this.el)
+}
+
+Legend.prototype.updateLang = function (lang) {
+  this.lang = lang
+  yo.update(this.el, this._getElement())
+}
+
+Legend.prototype._getElement = function () {
+  var lang = this.lang
+  var data = this.data
   var legendStyles = css`
     :host {
       position: absolute;
@@ -73,34 +126,37 @@ module.exports = function (data) {
         background-image: url("/icons/cross-hatch.svg");
         border: 1px solid black;
       }
+      h1 {
+        text-transform: uppercase;
+      }
     }
   `
 
-  var el = yo`
+  var el = yo`<div style="display: none;">
     <div class="map-overlay ${legendStyles}">
       <div class="legend">
-      <h1>LAS INSTALACIONES DE AGUA Y SOLAR</h1>
+      <h1>${translations['header'][lang]}</h1>
       <div class="legend-inner">
         <ul>
           <li>
             <img src="/icons/comunidad-agua-dot.svg" />
             <img src="/icons/comunidad-agua.svg" />
-            <span class="legend-text">Instalaciones de agua</span>
+            <span class="legend-text">${translations['agua'][lang]}</span>
           </li>
           <li>
             <img src="/icons/comunidad-solar-dot.svg" />
             <img src="/icons/comunidad-solar.svg" />
-            <span class="legend-text"> Instalaciones de solar</span>
+            <span class="legend-text">${translations['solar'][lang]}</span>
           </li>
           <li>
             <img src="/icons/comunidad-agua-solar-dot.svg" />
             <img src="/icons/comunidad-agua-solar.svg" />
-            <span class="legend-text">Instalaciones de agua y solar</span>
+            <span class="legend-text">${translations['agua-solar'][lang]}</span>
           </li>
           <li>
             <img src="/icons/comunidad-agua-story.svg" />
             <img src="/icons/comunidad-agua-solar-story.svg" />
-            <span class="legend-text">Instalaciones con historias</span>
+            <span class="legend-text">${translations['agua-solar-story'][lang]}</span>
           </li>
         </ul>
         <ul>
@@ -112,19 +168,20 @@ module.exports = function (data) {
               <li>
                 <div class="legend-territory"
                      style="background-color:${color}; border-color: ${props.Color}"></div>
-                <span class="legend-text"> ${props.Nacionalidad} territorio</span>
+                <span class="legend-text"> ${props.Nacionalidad} ${translations['territory'][lang]}</span>
               </li>
             `
           })}
           <li>
             <div class="legend-territory cross-hatched"></div>
-            <span class="legend-text">En proceso de reclamacíon legal</span>
+            <span class="legend-text">${translations['legal-process'][lang]}</span>
           </li>
         </ul>
       </div>
-      <button onclick=${close}>EXPLORAR</button>
+      <button onclick=${close}>${translations['explore'][lang]}</button>
       </div>
     </div>
+  </div>
   `
   function close () {
     el.style.display = 'none'
