@@ -110,16 +110,10 @@ function onLoad () {
   var areaPopup = elements.popup(map, {closeButton: false})
   var comunidadPopup = elements.popup(map)
 
-  var backButton = elements.backButton(function () {
+  var backButton = elements.backButton(map, {stop: 8.5, lang: 'en'}, function () {
     map.fitBounds(extent(areas), {padding: 20})
     areaPopup.remove()
     comunidadPopup.remove()
-  })
-
-  document.body.appendChild(backButton)
-  map.on('zoom', function (e) {
-    if (map.getZoom() > 8.5) backButton.style.display = ''
-    else backButton.style.display = 'none'
   })
 
   var areaFillIds = areas.features.map(function (f) { return f.properties._id })
