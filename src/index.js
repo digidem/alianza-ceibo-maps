@@ -23,6 +23,7 @@ css('alianza-elements/style.css')
 
 mapboxgl.accessToken = require('../config.json').mapbox_token
 
+var lang = 'es'
 var data
 var areaPointIndex
 var dataIndex = {}
@@ -110,11 +111,19 @@ function onLoad () {
   var areaPopup = elements.popup(map, {closeButton: false})
   var comunidadPopup = elements.popup(map)
 
-  var backButton = elements.backButton(map, {stop: 8.5, lang: 'en'}, function () {
+  var backButton = elements.backButton(map, {stop: 8.5, lang: lang}, function () {
     map.fitBounds(extent(areas), {padding: 20})
     areaPopup.remove()
     comunidadPopup.remove()
   })
+
+  var langSelector = elements.language(updateLang, lang)
+  document.body.appendChild(langSelector)
+
+  function updateLang (_) {
+    lang = _
+    backButton.updateLang(lang)
+  }
 
   var areaFillIds = areas.features.map(function (f) { return f.properties._id })
 
