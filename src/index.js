@@ -145,16 +145,17 @@ function onLoad () {
     }
 
     if (communityHovered) {
-      var id = _comunidades[0].properties._id
+      var cid = _comunidades[0].properties._id
       map.getSource('')
       map.setFilter('alianza-areas-highlight', ['==', '_id', ''])
-      map.setFilter('alianza-comunidades-houses-highlight', ['==', '_id', id])
-      map.setFilter('alianza-comunidades-dots-highlight', ['==', '_id', id])
+      map.setFilter('alianza-comunidades-houses-highlight', ['==', '_id', cid])
+      map.setFilter('alianza-comunidades-dots-highlight', ['==', '_id', cid])
     }
 
     if (areaHovered) {
-      var area = _areas[0].properties._id
-      map.setFilter('alianza-areas-highlight', ['==', '_id', area])
+      var id = _areas[0].properties._id
+      var area = getArea(id, areas)
+      map.setFilter('alianza-areas-highlight', ['==', '_id', id])
 
       // for some reason we are seeing many duplicate comunidades when querying features
       var areaCommunities = comunidades.features.filter(function (f) {
@@ -168,6 +169,9 @@ function onLoad () {
 
       areaPopup.update(areaPopupDOM(props, areaCommunities))
       areaPopup.setLngLat(e.lngLat)
+      areaPopup.popupNode.addEventListener('click', function (e) {
+        onAreaClicked(area)
+      })
     } else areaPopup.remove()
   })
 
@@ -184,7 +188,13 @@ function onLoad () {
     }
   }
 
-  map.on('click', function (e) {
+  function onAreaClicked (area) {
+    map.fitBounds(extent(area), {padding: 20})
+    map.setFilter('alianza-areas-highlight', ['==', '_id', ''])
+  }
+
+  map.on('click', onMapClick)
+  function onMapClick (e) {
     var queryAreas = map.queryRenderedFeatures(e.point, { layers: areaFillIds })
     var queryCommunidades = map.queryRenderedFeatures(e.point, { layers: comunidadesInteractiveLayers })
     var areaClicked = queryAreas && queryAreas[0]
@@ -198,10 +208,9 @@ function onLoad () {
 
     if (areaClicked) {
       var area = getArea(areaClicked.properties._id, areas)
-      map.fitBounds(extent(area), {padding: 20})
-      map.setFilter('alianza-areas-highlight', ['==', '_id', ''])
+      onAreaClicked(area)
     } else areaPopup.remove()
-  })
+  }
 }
 
 // Only return features with geometry
