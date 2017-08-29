@@ -52,13 +52,13 @@ module.exports = function areaPopup (props, comunidades) {
         <div class="area-popup-data" style='background-color:rgba(${color}, .4);'>
           ${agua.length ? yo`
             <div class="area-popup-data-item">
-              <img src="/icons/comunidad-agua-dot.svg" /> ${agua.length}
+              <img src="icons/comunidad-agua-dot.svg" /> ${agua.length}
             </div>
             ` : ''
           }
           ${solar.length ? yo`
             <div class="area-popup-data-item">
-              <img src="/icons/comunidad-agua-solar-dot.svg" /> ${solar.length}
+              <img src="icons/comunidad-agua-solar-dot.svg" /> ${solar.length}
             </div>
             ` : ''
           }
