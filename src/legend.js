@@ -123,7 +123,7 @@ Legend.prototype._getElement = function () {
       }
 
       .cross-hatched {
-        background-image: url("/icons/cross-hatch.svg");
+        background-image: url("icons/cross-hatch.svg");
         border: 1px solid black;
       }
       h1 {
@@ -139,23 +139,23 @@ Legend.prototype._getElement = function () {
       <div class="legend-inner">
         <ul>
           <li>
-            <img src="/icons/comunidad-agua-dot.svg" />
-            <img src="/icons/comunidad-agua.svg" />
+            <img src="icons/comunidad-agua-dot.svg" />
+            <img src="icons/comunidad-agua.svg" />
             <span class="legend-text">${translations['agua'][lang]}</span>
           </li>
           <li>
-            <img src="/icons/comunidad-solar-dot.svg" />
-            <img src="/icons/comunidad-solar.svg" />
+            <img src="icons/comunidad-solar-dot.svg" />
+            <img src="icons/comunidad-solar.svg" />
             <span class="legend-text">${translations['solar'][lang]}</span>
           </li>
           <li>
-            <img src="/icons/comunidad-agua-solar-dot.svg" />
-            <img src="/icons/comunidad-agua-solar.svg" />
+            <img src="icons/comunidad-agua-solar-dot.svg" />
+            <img src="icons/comunidad-agua-solar.svg" />
             <span class="legend-text">${translations['agua-solar'][lang]}</span>
           </li>
           <li>
-            <img src="/icons/comunidad-agua-story.svg" />
-            <img src="/icons/comunidad-agua-solar-story.svg" />
+            <img src="icons/comunidad-agua-story.svg" />
+            <img src="icons/comunidad-agua-solar-story.svg" />
             <span class="legend-text">${translations['agua-solar-story'][lang]}</span>
           </li>
         </ul>
