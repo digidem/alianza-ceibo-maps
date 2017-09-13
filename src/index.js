@@ -206,7 +206,7 @@ function onLoad () {
       comunidadPopup.setLngLat(feature.geometry.coordinates)
     } else comunidadPopup.remove()
 
-    if (areaClicked) {
+    if (areaClicked && !communityClicked) {
       var area = getArea(areaClicked.properties._id, areas)
       onAreaClicked(area)
     } else areaPopup.remove()
