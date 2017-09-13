@@ -53,6 +53,7 @@ Legend.prototype.updateLang = function (lang) {
 }
 
 Legend.prototype._getElement = function () {
+  var self = this
   var lang = this.lang
   var data = this.data
   var legendStyles = css`
@@ -184,7 +185,7 @@ Legend.prototype._getElement = function () {
   </div>
   `
   function close () {
-    el.style.display = 'none'
+    self.el.style.display = 'none'
   }
   return el
 }
