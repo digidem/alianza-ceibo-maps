@@ -202,7 +202,7 @@ function onLoad () {
 
     if (communityClicked) {
       var feature = dataIndex[communityClicked.properties._id]
-      comunidadPopup.update(comunidadPopupDOM(feature.properties, dataIndex))
+      comunidadPopup.update(comunidadPopupDOM(feature.properties, dataIndex, {lang: lang}))
       comunidadPopup.setLngLat(feature.geometry.coordinates)
     } else comunidadPopup.remove()
 

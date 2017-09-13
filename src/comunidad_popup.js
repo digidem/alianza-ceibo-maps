@@ -1,7 +1,8 @@
 const css = require('sheetify')
 const yo = require('yo-yo')
 
-module.exports = function comunidadPopup (props, dataIndex) {
+module.exports = function comunidadPopup (props, dataIndex, opts) {
+  if (!opts) opts = {}
   var fotoUrl = props.Foto && props.Foto[0] && props.Foto[0].thumbnails.large.url
   var desc = props.Descripción || 'Description pending'
   var programas = props.Programas || []
@@ -27,6 +28,10 @@ module.exports = function comunidadPopup (props, dataIndex) {
       width: 100%;
     }
 
+    :host a {
+      color: red;
+    }
+
     .popup-inner {
       padding: 0 10px 10px 10px;
     }
@@ -41,7 +46,12 @@ module.exports = function comunidadPopup (props, dataIndex) {
           return yo`<li>${p}</li>`
         })}
       </ul>
-      ${props.Stories && stories(props.Stories, dataIndex)}
+      ${props.Historias ? yo`
+        <div>
+          <h3>${opts.lang === 'en' ? 'Stories' : 'Historias'}</h3>
+          ${stories(props.Historias, dataIndex)}
+        </div>
+      ` : ``}
     </div>
   </div>`
 }
@@ -50,7 +60,7 @@ function stories (stories, dataIndex) {
   return yo`<ul>
     ${stories.map(function (id) {
       const storyProps = dataIndex[id].properties
-      return yo`<li><a href="${storyProps.Link}">${storyProps.Title}</a></li>`
+      return yo`<li><a href="${storyProps.Vinculo}">${storyProps.Titulo}</a></li>`
     })}
   </ul>`
 }
