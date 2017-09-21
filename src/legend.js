@@ -103,7 +103,6 @@ Legend.prototype._getElement = function () {
           height: 50px;
           border: 2px solid black;
           font-size: 16px;
-          font-family: 'EB Garamond';
           font-weight: bold;
           background: white;
           &:hover {
