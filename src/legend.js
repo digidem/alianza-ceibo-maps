@@ -168,7 +168,7 @@ Legend.prototype._getElement = function () {
               <li>
                 <div class="legend-territory"
                      style="background-color:${color}; border-color: ${props.Color}"></div>
-                <span class="legend-text"> ${props.Nacionalidad} ${translations['territory'][lang]}</span>
+                <div class="legend-text"> ${props.Nacionalidad} ${translations['territory'][lang]}</div>
               </li>
             `
           })}
