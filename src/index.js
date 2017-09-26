@@ -120,14 +120,19 @@ function onLoad () {
 
   var langSelector = elements.language(updateLang, lang)
   document.body.appendChild(langSelector)
+  switchFont(lang)
 
   function updateLang (_) {
     lang = _
+    switchFont(lang)
+    backButton.updateLang(lang)
+    legend.updateLang(lang)
+  }
+
+  function switchFont (lang) {
     var body = document.querySelector('body')
     if (lang === 'en') body.style = "font-family: 'Montserrat' !important;"
     else if (lang === 'es') body.style = "font-family: 'Helvetica' !important;"
-    backButton.updateLang(lang)
-    legend.updateLang(lang)
   }
 
   var areaFillIds = areas.features.map(function (f) { return f.properties._id })
