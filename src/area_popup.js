@@ -16,6 +16,8 @@ module.exports = function areaPopup (props, comunidades) {
       color: black;
       display: flex;
       box-shadow: 0 0 .5em black;
+      font-size: 12px;
+      font-family: 'Helvetica';
 
       .area-popup-name {
         padding: 5px 10px;

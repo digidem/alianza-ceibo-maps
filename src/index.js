@@ -124,8 +124,8 @@ function onLoad () {
   function updateLang (_) {
     lang = _
     var body = document.querySelector('body')
-    if (lang === 'en') body.style = "font-family: 'Montserrat', sans-serif;"
-    else if (lang === 'es') body.style = ''
+    if (lang === 'en') body.style = "font-family: 'Montserrat' !important;"
+    else if (lang === 'es') body.style = "font-family: 'Helvetica' !important;"
     backButton.updateLang(lang)
     legend.updateLang(lang)
   }
