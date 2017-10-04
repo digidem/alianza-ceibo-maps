@@ -10,8 +10,8 @@ const elements = require('alianza-elements')
 const css = require('sheetify')
 
 var getAreaZoom = require('./lib/area_zoom')
+var sidebar = require('./sidebar')
 var areas = require('../areas/areas.json')
-var Legend = require('./legend')
 var layerStyles = require('./layer_styles')
 var generateAreaLayers = require('./area_layers')
 var comunidadPopupDOM = require('./comunidad_popup')
@@ -100,12 +100,6 @@ function onLoad () {
 
   var nav = new mapboxgl.NavigationControl()
   map.addControl(nav, 'top-left')
-  var legend = Legend(data, {lang: lang})
-  var legendCtrl = new ToggleControl(legend.el)
-  legendCtrl.show()
-  map.addControl(legendCtrl, 'top-left')
-  legendCtrl._toggleButton.setAttribute('aria-label', 'Toggle Legend')
-
   map.fitBounds(startingBounds, {padding: 20})
 
   // Create a popup, but don't add it to the map yet.
@@ -119,6 +113,8 @@ function onLoad () {
   })
 
   switchFont(lang)
+  var sb = sidebar(lang)
+  document.body.appendChild(sb)
 
   function switchFont (lang) {
     var body = document.querySelector('body')
