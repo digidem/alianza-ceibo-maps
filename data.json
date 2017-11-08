@@ -901,7 +901,28 @@
           "Agua Familias": 9,
           "Agua Usuarios": 46,
           "Most recent": "2014-01-23",
-          "First": "2014-01-15"
+          "First": "2014-01-15",
+          "Foto": [
+            {
+              "id": "atty2dVBfMSujmiyN",
+              "url": "https://dl.airtable.com/SwkBZZf5TwSptKr2E7xP_ukavati.jpg",
+              "filename": "ukavati.jpg",
+              "size": 1016181,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/IC6hF49qRLW1OsayQEBk_small_ukavati.jpg",
+                  "width": 54,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/cC67z1jlQANCcqrlciKA_large_ukavati.jpg",
+                  "width": 768,
+                  "height": 512
+                }
+              }
+            }
+          ]
         },
         "geometry": {
           "type": "Point",
