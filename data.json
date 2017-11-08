@@ -3493,7 +3493,28 @@
           ],
           "Agua": 0,
           "Agua Familias": 0,
-          "Agua Usuarios": 0
+          "Agua Usuarios": 0,
+          "Foto": [
+            {
+              "id": "attBz35TWmP9rxuot",
+              "url": "https://dl.airtable.com/SngT1oRrSXJHacdubQ81_waiya.jpg",
+              "filename": "waiya.jpg",
+              "size": 1166770,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/8ZtdqwlNTnqNOkXVcUUW_small_waiya.jpg",
+                  "width": 54,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/uMsIHxTIQMehafjqEYzv_large_waiya.jpg",
+                  "width": 773,
+                  "height": 512
+                }
+              }
+            }
+          ]
         },
         "geometry": {
           "type": "Point",
