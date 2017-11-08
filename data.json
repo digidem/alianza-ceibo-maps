@@ -3803,7 +3803,28 @@
           "Agua Familias": 32,
           "Agua Usuarios": 16,
           "Most recent": "2015-03-30",
-          "First": "2015-03-11"
+          "First": "2015-03-11",
+          "Foto": [
+            {
+              "id": "attjUcr38pjYx3nD5",
+              "url": "https://dl.airtable.com/Wod9vj2lRmbhHJKTk4WK_dovuno.jpg",
+              "filename": "dovuno.jpg",
+              "size": 1497811,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/NDHgu3DLSqy1sASGMmCw_small_dovuno.jpg",
+                  "width": 48,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/aKtqSUCTTXCJaSvv2jHV_large_dovuno.jpg",
+                  "width": 683,
+                  "height": 512
+                }
+              }
+            }
+          ]
         },
         "geometry": {
           "type": "Point",
