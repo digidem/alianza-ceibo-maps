@@ -52,10 +52,9 @@ Sidebar.prototype.update = function () {
 
 Sidebar.prototype._getElement = function () {
   var data = this.data
-  console.log(data)
-  var total = data.total
   var totalWater = data.totalWater
   var totalSolar = data.totalSolar
+  var total = totalWater + totalSolar
   var comunidades = data.comunidades
 
   var styles = css`
@@ -149,13 +148,15 @@ Sidebar.prototype._getElement = function () {
       <h4 class="section-header">Communities in this Area</h4>
         <div class="content">
         ${comunidades.map(function (com) {
+          var props = com.properties
+          var fotoUrl = props.Foto && props.Foto[0] && props.Foto[0].thumbnails.large.url
           return yo`
           <div class="community-item">
             <div class="community-item-label">
-              <h3>${com['name']}</h3>
-              <h5>${com['count']} Installations </h5>
+              <h3>${props.Comunidad}</h3>
+              <h5>${props.Installations ? props.Installations.length : 0} Installations </h5>
             </div>
-            <img src="${com['image']}" />
+            <img src="${fotoUrl}" />
           </div>`
         })}
       </div>

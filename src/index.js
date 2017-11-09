@@ -24,7 +24,12 @@ css('alianza-elements/style.css')
 mapboxgl.accessToken = require('../config.json').mapbox_token
 
 var startingBounds = [-80.55, -2.1, -73.3, 1.06] // W, S, E, N
+
 var lang = qs.parse(window.location.search.replace('?', '')).lang || 'es'
+var body = document.querySelector('body')
+if (lang === 'en') body.style = "font-family: 'Montserrat' !important;"
+else if (lang === 'es') body.style = "font-family: 'Helvetica' !important;"
+
 var data
 var areaPointIndex
 var dataIndex = {}
@@ -105,30 +110,23 @@ function onLoad () {
   var areaPopup = elements.popup(map, {closeButton: false})
   var comunidadPopup = elements.popup(map)
 
+  function getTotals () {
+    // todo: get totals programmatically
+    return {
+      totalWater: 765,
+      totalSolar: 67,
+      comunidades: comunidades.features
+    }
+  }
+
+  var totals = getTotals()
+  var sb = sidebar(lang, totals)
+
   elements.backButton(map, {stop: 8.5, lang: lang}, function () {
     map.fitBounds(extent(areas), {padding: 20})
-    areaPopup.remove()
-    comunidadPopup.remove()
+    sb.data = totals
+    sb.update()
   })
-
-  switchFont(lang)
-  // todo: get totals programmatically
-  var sb = sidebar(lang, {
-    total: 0,
-    totalWater: 0,
-    totalSolar: 0,
-    comunidades: [{
-      name: 'Cofan',
-      count: 100,
-      image: 'sidebar.png'
-    }]
-  })
-
-  function switchFont (lang) {
-    var body = document.querySelector('body')
-    if (lang === 'en') body.style = "font-family: 'Montserrat' !important;"
-    else if (lang === 'es') body.style = "font-family: 'Helvetica' !important;"
-  }
 
   var areaFillIds = areas.features.map(function (f) { return f.properties._id })
 
