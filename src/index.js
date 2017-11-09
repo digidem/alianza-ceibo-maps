@@ -101,7 +101,7 @@ function onLoad () {
   map.addControl(nav, 'top-left')
   map.fitBounds(startingBounds, {padding: 20})
 
-  // Create a popup, but don't add it to the map yet.
+  // todo: replace popups with changing the sidebar data and calling .update()
   var areaPopup = elements.popup(map, {closeButton: false})
   var comunidadPopup = elements.popup(map)
 
@@ -112,8 +112,17 @@ function onLoad () {
   })
 
   switchFont(lang)
-  var sb = sidebar(lang)
-  document.body.appendChild(sb)
+  // todo: get totals programmatically
+  var sb = sidebar(lang, {
+    total: 0,
+    totalWater: 0,
+    totalSolar: 0,
+    comunidades: [{
+      name: 'Cofan',
+      count: 100,
+      image: 'sidebar.png'
+    }]
+  })
 
   function switchFont (lang) {
     var body = document.querySelector('body')
@@ -162,6 +171,7 @@ function onLoad () {
       var feature = areasByName[areaHovered.properties.name]
       var props = feature ? feature.properties : getAreaFeatureProps(areaHovered)
 
+      // todo: replace popups with changing the sidebar data and calling .update()
       areaPopup.update(areaPopupDOM(props, areaCommunities))
       areaPopup.setLngLat(e.lngLat)
       areaPopup.popupNode.addEventListener('click', function (e) {
@@ -197,10 +207,13 @@ function onLoad () {
 
     if (communityClicked) {
       var feature = dataIndex[communityClicked.properties._id]
+
+      // todo: replace popups with changing the sidebar data and calling .update()
       comunidadPopup.update(comunidadPopupDOM(feature.properties, dataIndex, {lang: lang}))
       comunidadPopup.setLngLat(feature.geometry.coordinates)
     } else comunidadPopup.remove()
 
+    // todo: replace popups with changing the sidebar data and calling .update()
     if (areaClicked && !communityClicked) {
       var area = getArea(areaClicked.properties._id, areas)
       onAreaClicked(area)

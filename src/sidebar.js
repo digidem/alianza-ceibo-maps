@@ -40,9 +40,9 @@ var translations = {
 
 function Sidebar (language, data) {
   if (!(this instanceof Sidebar)) return new Sidebar(language, data)
-  this.el = this._getElement(language)
   this.language = language
   this.data = data
+  this.el = this._getElement()
   document.body.appendChild(this.el)
 }
 
@@ -50,13 +50,13 @@ Sidebar.prototype.update = function () {
   yo.update(this.el, this._getElement())
 }
 
-Sidebar.prototype._getElement = function (lang) {
-  var total = 823 // TODO: get real total
-  var totalWater = 756
-  var totalSolar = 67
-  var comunidades = [
-    {name: 'Cofan', count: 218, image: 'sidebar.png'}
-  ]
+Sidebar.prototype._getElement = function () {
+  var data = this.data
+  console.log(data)
+  var total = data.total
+  var totalWater = data.totalWater
+  var totalSolar = data.totalSolar
+  var comunidades = data.comunidades
 
   var styles = css`
     :host {
