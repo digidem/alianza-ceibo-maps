@@ -1,21 +1,56 @@
 const yo = require('yo-yo')
 const css = require('sheetify')
 
-// TODO: move to transifex
+module.exports = Sidebar
+
 var translations = {
-  'en': {
-    header: 'Water & Solar Installations',
-    installations: 'installations'
-
+  'header': {
+    es: 'Instalaciones de agua y solar',
+    en: 'Water and Solar Installations'
   },
-  'es': {
-    header: 'Agua y Solar Instalaciones',
-    installations: 'instalaciones'
-
+  'agua': {
+    es: 'Instalaciones de agua',
+    en: 'Water Installations '
+  },
+  'solar': {
+    es: 'Instalaciones de solar',
+    en: 'Solar Installations '
+  },
+  'agua-solar': {
+    es: 'Instalaciones de agua y solar',
+    en: 'Water and Solar Installations '
+  },
+  'agua-solar-story': {
+    es: 'Instalaciones de agua y solar con historias',
+    en: 'Water and Solar Installations with stories'
+  },
+  'legal-process': {
+    es: 'En proceso de reclamacíon legal',
+    en: 'In process of legal claim'
+  },
+  'explore': {
+    es: 'EXPLORAR',
+    en: 'EXPLORE'
+  },
+  'territory': {
+    es: 'territorio',
+    en: 'territory'
   }
 }
 
-module.exports = function (lang) {
+function Sidebar (language, data) {
+  if (!(this instanceof Sidebar)) return new Sidebar(language, data)
+  this.el = this._getElement(language)
+  this.language = language
+  this.data = data
+  document.body.appendChild(this.el)
+}
+
+Sidebar.prototype.update = function () {
+  yo.update(this.el, this._getElement())
+}
+
+Sidebar.prototype._getElement = function (lang) {
   var total = 823 // TODO: get real total
   var totalWater = 756
   var totalSolar = 67
@@ -23,7 +58,6 @@ module.exports = function (lang) {
     {name: 'Cofan', count: 218, image: 'sidebar.png'}
   ]
 
-  var text = translations[lang]
   var styles = css`
     :host {
       width: 30%;
@@ -76,14 +110,15 @@ module.exports = function (lang) {
 
   return yo`<div class="${styles}">
     <div class="header">
-      <h1>${text['header']}</h1>
-      <h5>${total} ${text['installations']}</h5>
+      <h1>Water & Solar Installations</h1>
+      <h5>${total} total installations</h5>
     </div>
     <img src="sidebar.png" />
     <div class="content">
-      <p>Our focus on building solutions is not about quick technological fixes, nor the naïve belief in the power of "good intentions"
-      to resolve a deep human health, social and environmental crisis, but rather it is about working side-by-side
-      with indigenous peoples struggling to secure life’s basic necessities in a first imperiled by the industrial frontier.
+      <p>
+        Our focus on building solutions is not about quick technological fixes, nor the naïve belief in the power of "good intentions"
+        to resolve a deep human health, social and environmental crisis, but rather it is about working side-by-side
+        with indigenous peoples struggling to secure life’s basic necessities in a first imperiled by the industrial frontier.
       </p>
       <div class="list-items">
         <div class="item">
@@ -118,7 +153,7 @@ module.exports = function (lang) {
           <div class="community-item">
             <div class="community-item-label">
               <h3>${com['name']}</h3>
-              <h5>${com['count']} ${text['installations']}</h5>
+              <h5>${com['count']} Installations </h5>
             </div>
             <img src="${com['image']}" />
           </div>`

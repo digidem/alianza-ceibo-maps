@@ -1,7 +1,6 @@
 const d3 = require('d3-request')
 const qs = require('querystring')
 const mapboxgl = require('mapbox-gl')
-const ToggleControl = require('mapbox-gl-toggle-control')
 const extent = require('@mapbox/geojson-extent')
 const compose = require('lodash/flowRight')
 const assign = require('object-assign')

@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "dependencies": {
     "@mapbox/geojson-extent": "^0.3.2",
-    "alianza-elements": "^2.0.0",
+    "alianza-elements": "^3.0.0",
     "d3-request": "^1.0.5",
     "geojson-rewind": "^0.2.0",
     "hex-rgb": "^1.0.0",
