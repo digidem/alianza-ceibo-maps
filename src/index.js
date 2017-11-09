@@ -112,22 +112,13 @@ function onLoad () {
   var areaPopup = elements.popup(map, {closeButton: false})
   var comunidadPopup = elements.popup(map)
 
-  var backButton = elements.backButton(map, {stop: 8.5, lang: lang}, function () {
+  elements.backButton(map, {stop: 8.5, lang: lang}, function () {
     map.fitBounds(extent(areas), {padding: 20})
     areaPopup.remove()
     comunidadPopup.remove()
   })
 
-  var langSelector = elements.language(updateLang, lang)
-  document.body.appendChild(langSelector)
   switchFont(lang)
-
-  function updateLang (_) {
-    lang = _
-    switchFont(lang)
-    backButton.updateLang(lang)
-    legend.updateLang(lang)
-  }
 
   function switchFont (lang) {
     var body = document.querySelector('body')
