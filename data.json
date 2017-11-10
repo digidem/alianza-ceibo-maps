@@ -896,12 +896,6 @@
           "Historias": [
             "recyfzSvVYwYuP2xW"
           ],
-          "Description English": "The A'I Kofan community of Ukavati lies close to the Aguarico River in the Ecuadorian Amazon. Composed of 9 families, Ukavati works with ClearWater and the Ceibo Alliance on two programs",
-          "Agua": 8,
-          "Agua Familias": 9,
-          "Agua Usuarios": 46,
-          "Most recent": "2014-01-23",
-          "First": "2014-01-15",
           "Foto": [
             {
               "id": "atty2dVBfMSujmiyN",
@@ -922,7 +916,13 @@
                 }
               }
             }
-          ]
+          ],
+          "Description English": "The A'I Kofan community of Ukavati lies close to the Aguarico River in the Ecuadorian Amazon. Composed of 9 families, Ukavati works with ClearWater and the Ceibo Alliance on two programs",
+          "Agua": 8,
+          "Agua Familias": 9,
+          "Agua Usuarios": 46,
+          "Most recent": "2014-01-23",
+          "First": "2014-01-15"
         },
         "geometry": {
           "type": "Point",
@@ -2672,7 +2672,10 @@
           ],
           "Agua": 0,
           "Agua Familias": 0,
-          "Agua Usuarios": 0
+          "Agua Usuarios": 0,
+          "Nacionalidad": [
+            "rec7nhastozSVnJax"
+          ]
         },
         "geometry": {
           "type": "Point",
@@ -3512,9 +3515,6 @@
             "Mujer y familia",
             "Monitoreo ambiental"
           ],
-          "Agua": 0,
-          "Agua Familias": 0,
-          "Agua Usuarios": 0,
           "Foto": [
             {
               "id": "attBz35TWmP9rxuot",
@@ -3535,7 +3535,10 @@
                 }
               }
             }
-          ]
+          ],
+          "Agua": 0,
+          "Agua Familias": 0,
+          "Agua Usuarios": 0
         },
         "geometry": {
           "type": "Point",
@@ -3840,12 +3843,6 @@
             "Sistemas de agua",
             "Practicas propias"
           ],
-          "Description English": "The A'I Kofan community of Dovuno lies close to the Aguarico River in the Ecuadorian Amazon. Composed of 32 families, Dovuno works with ClearWater and the Ceibo Alliance on two programs",
-          "Agua": 34,
-          "Agua Familias": 32,
-          "Agua Usuarios": 16,
-          "Most recent": "2015-03-30",
-          "First": "2015-03-11",
           "Foto": [
             {
               "id": "attjUcr38pjYx3nD5",
@@ -3866,7 +3863,13 @@
                 }
               }
             }
-          ]
+          ],
+          "Description English": "The A'I Kofan community of Dovuno lies close to the Aguarico River in the Ecuadorian Amazon. Composed of 32 families, Dovuno works with ClearWater and the Ceibo Alliance on two programs",
+          "Agua": 34,
+          "Agua Familias": 32,
+          "Agua Usuarios": 16,
+          "Most recent": "2015-03-30",
+          "First": "2015-03-11"
         },
         "geometry": {
           "type": "Point",
@@ -4795,7 +4798,8 @@
             "rec2tTzVungo7ktGn",
             "rec3l0Q38OQEsxqg6",
             "rec9OlycuOUlTjFAh",
-            "recOI0PqgXb84snJR"
+            "recOI0PqgXb84snJR",
+            "recRfatd3eaTyBXL0"
           ]
         },
         "geometry": null
