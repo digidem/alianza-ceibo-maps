@@ -1,5 +1,7 @@
 const yo = require('yo-yo')
 const css = require('sheetify')
+const inherits = require('inherits')
+const events = require('events')
 
 module.exports = Sidebar
 
@@ -44,18 +46,43 @@ function Sidebar (language, data) {
   this.data = data
   this.el = this._getElement()
   document.body.appendChild(this.el)
+  events.EventEmitter.call(this)
 }
+
+inherits(Sidebar, events.EventEmitter)
 
 Sidebar.prototype.update = function () {
   yo.update(this.el, this._getElement())
 }
 
+Sidebar.prototype.chooseArea = function (area) {
+  var props = area.properties
+  this.data = {
+    totalWater: props.Installations.length,
+    totalSolar: 1,
+    comunidades: area.communidades
+  }
+  this.update()
+}
+
+Sidebar.prototype.chooseCommunity = function (community) {
+  var props = community.properties
+  this.data = {
+    totalWater: props.Installations.length,
+    totalSolar: 1
+  }
+  this.update()
+}
+
 Sidebar.prototype._getElement = function () {
+  var self = this
   var data = this.data
   var totalWater = data.totalWater
   var totalSolar = data.totalSolar
   var total = totalWater + totalSolar
   var comunidades = data.comunidades
+  var areas = data.areas
+
 
   var styles = css`
     :host {
@@ -93,8 +120,13 @@ Sidebar.prototype._getElement = function () {
       }
       .community-item {
         display: flex;
-        padding: 30px 0px;
+        padding: 15px 30px;
+        height: 60px;
         justify-content: space-between;
+      }
+      .community-item:hover {
+        background-color: rgba(243, 221, 152, 0.29);
+        cursor: pointer;
       }
       .community-item img {
         max-height: 60px;
@@ -103,7 +135,6 @@ Sidebar.prototype._getElement = function () {
         flex-direction: column;
         justify-content: center;
       }
-
     }
   `
 
@@ -145,21 +176,60 @@ Sidebar.prototype._getElement = function () {
       </div>
     </div>
     <div class="continued-section">
-      <h4 class="section-header">Communities in this Area</h4>
-        <div class="content">
-        ${comunidades.map(function (com) {
-          var props = com.properties
-          var fotoUrl = props.Foto && props.Foto[0] && props.Foto[0].thumbnails.large.url
-          return yo`
-          <div class="community-item">
-            <div class="community-item-label">
-              <h3>${props.Comunidad}</h3>
-              <h5>${props.Installations ? props.Installations.length : 0} Installations </h5>
-            </div>
-            <img src="${fotoUrl}" />
-          </div>`
-        })}
-      </div>
+      ${areas ? self._areasList() : self._communitiesList()}
     </div>
   </div>`
+}
+Sidebar.prototype._areasList = function () {
+  var self = this
+  var areas = self.data.areas
+  function gotoArea (event) {
+    var i = parseInt(event.target.getAttribute('data-area'))
+    self.chooseArea(areas[i])
+  }
+  return yo`<div>
+    <h4 class="section-header">Who we Work With</h4>
+      <div class="community-item-list">
+      ${areas.map(function (com, i) {
+        var props = com.properties
+        var fotoUrl = props.Foto && props.Foto[0] && props.Foto[0].thumbnails.large.url
+        return yo`
+        <div class="community-item" data-area="${i}" onclick=${gotoArea}>
+          <div class="community-item-label">
+            <h3>${props['Area nombre']}</h3>
+            <h6>${props.Installations ? props.Installations.length : 0} Installations </h6>
+          </div>
+          <img src="${fotoUrl}" />
+        </div>`
+      })}
+    </div>
+  </div>`
+}
+
+Sidebar.prototype._communitiesList = function () {
+  var self = this
+  var comunidades = self.data.communities
+  function gotoCommunity (event) {
+    var i = parseInt(event.target.getAttribute('data-community'))
+    self.chooseCommunity(comunidades[i])
+  }
+  return yo`
+  <div>
+    <h4 class="section-header">Communities in this Area</h4>
+      <div class="community-item-list">
+      ${comunidades.map(function (com, i) {
+        var props = com.properties
+        var fotoUrl = props.Foto && props.Foto[0] && props.Foto[0].thumbnails.large.url
+        return yo`
+        <div class="community-item" data-community="${i}" onclick=${gotoCommunity}>
+          <div class="community-item-label">
+            <h3>${props.Comunidad}</h3>
+            <h6>${props.Installations ? props.Installations.length : 0} Installations </h6>
+          </div>
+          <img src="${fotoUrl}" />
+        </div>`
+      })}
+    </div>
+  </div>
+  `
 }

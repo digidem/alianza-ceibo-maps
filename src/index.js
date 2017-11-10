@@ -115,7 +115,7 @@ function onLoad () {
     return {
       totalWater: 765,
       totalSolar: 67,
-      comunidades: comunidades.features
+      areas: Object.values(areasByName)
     }
   }
 
