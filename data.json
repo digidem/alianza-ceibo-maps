@@ -3426,9 +3426,16 @@
             "Sistemas de agua"
           ],
           "Descripción": "Gemeneweno es una comunidad rodeada por bosques tropicales ubicada en la provincia de Orellana, a la orilla del río Shiripuno. En idioma Waorani, Gemeneweno significa “río de los ceibos”. Su lejanía con la ciudad hace que la comunidad dispone de una gran riqueza ecosistémica. Las familias que viven en Gemeneweno disponen de un pequeño panel solar que les permite conectar un radio, único medio de comunicación con el exterior. Algunos miembros de la comunidad se dedican al turismo comunitario en la región, lo cual les permite tener una fuente de ingreso.   ",
-          "Agua": 0,
-          "Agua Familias": 0,
-          "Agua Usuarios": 0
+          "Agua": 3,
+          "Agua Familias": 3,
+          "Agua Usuarios": 12,
+          "Installations": [
+            "rec59P33BtrzVwzhL",
+            "recWqe0bZkMXHrnKW",
+            "recIrRR9nNNduG8gi"
+          ],
+          "Most recent": "2017-08-08",
+          "First": "2017-08-08"
         },
         "geometry": {
           "type": "Point",
