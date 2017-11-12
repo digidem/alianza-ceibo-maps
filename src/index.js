@@ -10,10 +10,9 @@ const css = require('sheetify')
 
 var getAreaZoom = require('./lib/area_zoom')
 var sidebar = require('./sidebar')
-var areas = require('../areas/areas.json')
+var areasGeom = require('../areas/areas.json')
 var layerStyles = require('./layer_styles')
 var generateAreaLayers = require('./area_layers')
-var comunidadPopupDOM = require('./comunidad_popup')
 var areaPopupDOM = require('./area_popup')
 var emptyStyle = require('./empty_style.json')
 var style = require('./style.json')
@@ -72,13 +71,21 @@ d3.json('data.json', function (err, _data) {
   onLoad()
 })
 
-areas = addIds(areas)
+var areas = addIds(areasGeom)
 areaPointIndex = which(areas)
 var areaLayers = generateAreaLayers(map, areas)
 
 function onLoad () {
   if (--pending > 0) return
   var comunidades = compose(addIconFieldAndFilter, addIds, addNationalities(dataIndex), filterGeom)(data['Comunidades'])
+
+  var areasWithCommunities = Object.values(areasByName).map(function (area) {
+    area.comunidades = comunidades.features.filter(function (f) {
+      var indexed = areaPointIndex(f.geometry.coordinates)
+      return indexed && indexed.name === area.properties.name
+    })
+    return area
+  })
 
   style.sources.comunidades = {
     type: 'geojson',
@@ -106,26 +113,18 @@ function onLoad () {
   map.addControl(nav, 'top-left')
   map.fitBounds(startingBounds, {padding: 20})
 
-  // todo: replace popups with changing the sidebar data and calling .update()
   var areaPopup = elements.popup(map, {closeButton: false})
-  var comunidadPopup = elements.popup(map)
 
-  function getTotals () {
-    // todo: get totals programmatically
-    return {
-      totalWater: 765,
-      totalSolar: 67,
-      areas: Object.values(areasByName)
-    }
-  }
-
-  var totals = getTotals()
-  var sb = sidebar(lang, totals)
+  // todo: get totals programmatically
+  var sb = sidebar(lang, {
+    totalWater: 765,
+    totalSolar: 67,
+    areas: areasWithCommunities
+  })
 
   elements.backButton(map, {stop: 8.5, lang: lang}, function () {
     map.fitBounds(extent(areas), {padding: 20})
-    sb.data = totals
-    sb.update()
+    sb.reset()
   })
 
   var areaFillIds = areas.features.map(function (f) { return f.properties._id })
@@ -159,23 +158,20 @@ function onLoad () {
       var area = getArea(id, areas)
       map.setFilter('alianza-areas-highlight', ['==', '_id', id])
 
-      // for some reason we are seeing many duplicate comunidades when querying features
-      var areaCommunities = comunidades.features.filter(function (f) {
-        var area = areaPointIndex(f.geometry.coordinates)
-        return area && area.name === areaHovered.properties.name
-      })
-
       // some of them don't have a feature row in airtable, so we use what we have
       var feature = areasByName[areaHovered.properties.name]
       var props = feature ? feature.properties : getAreaFeatureProps(areaHovered)
+      sb.highlightArea(area)
 
       // todo: replace popups with changing the sidebar data and calling .update()
-      areaPopup.update(areaPopupDOM(props, areaCommunities))
+      areaPopup.update(areaPopupDOM(props, feature.comunidades))
       areaPopup.setLngLat(e.lngLat)
       areaPopup.popupNode.addEventListener('click', function (e) {
         onAreaClicked(area)
       })
-    } else areaPopup.remove()
+    } else {
+      sb.removeHighlights()
+    }
   })
 
   /**
@@ -184,6 +180,8 @@ function onLoad () {
    * @param  {Object} area GeoJSON feature for Area.json
    * @return {Object}      GeoJSOn feature for data.json
    */
+   // TODO: create an areas handler for everything to do with retrieving area data
+   // so we don't have to manage that in this file
   function getAreaFeatureProps (area) {
     return {
       'Area nombre': area.properties.name,
@@ -194,6 +192,7 @@ function onLoad () {
   function onAreaClicked (area) {
     map.fitBounds(extent(area), {padding: 20})
     map.setFilter('alianza-areas-highlight', ['==', '_id', ''])
+    sb.chooseArea(area)
   }
 
   map.on('click', onMapClick)
@@ -205,17 +204,13 @@ function onLoad () {
 
     if (communityClicked) {
       var feature = dataIndex[communityClicked.properties._id]
-
-      // todo: replace popups with changing the sidebar data and calling .update()
-      comunidadPopup.update(comunidadPopupDOM(feature.properties, dataIndex, {lang: lang}))
-      comunidadPopup.setLngLat(feature.geometry.coordinates)
-    } else comunidadPopup.remove()
-
-    // todo: replace popups with changing the sidebar data and calling .update()
-    if (areaClicked && !communityClicked) {
+      sb.showCommunity(feature)
+    } else if (areaClicked) {
       var area = getArea(areaClicked.properties._id, areas)
       onAreaClicked(area)
-    } else areaPopup.remove()
+    } else {
+      sb.reset()
+    }
   }
 }
 

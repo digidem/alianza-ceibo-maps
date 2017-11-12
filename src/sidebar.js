@@ -44,6 +44,7 @@ function Sidebar (language, data) {
   if (!(this instanceof Sidebar)) return new Sidebar(language, data)
   this.language = language
   this.data = data
+  this.initial = data
   this.el = this._getElement()
   document.body.appendChild(this.el)
   events.EventEmitter.call(this)
@@ -51,15 +52,25 @@ function Sidebar (language, data) {
 
 inherits(Sidebar, events.EventEmitter)
 
+Sidebar.prototype.reset = function () {
+  this.data = this.initial
+  this.update()
+}
+
 Sidebar.prototype.update = function () {
   yo.update(this.el, this._getElement())
 }
 
 Sidebar.prototype.chooseArea = function (area) {
-  var props = area.properties
+  var agua = area.comunidades.filter(function (f) {
+    return f.properties.icon === 'comunidad-agua'
+  })
+  var solar = area.comunidades.filter(function (f) {
+    return f.properties.icon === 'comunidad-agua-solar'
+  })
   this.data = {
-    totalWater: props.Installations.length,
-    totalSolar: 1,
+    totalWater: agua.length,
+    totalSolar: solar.length,
     comunidades: area.communidades
   }
   this.update()
@@ -67,6 +78,7 @@ Sidebar.prototype.chooseArea = function (area) {
 
 Sidebar.prototype.chooseCommunity = function (community) {
   var props = community.properties
+
   this.data = {
     totalWater: props.Installations.length,
     totalSolar: 1
@@ -80,9 +92,7 @@ Sidebar.prototype._getElement = function () {
   var totalWater = data.totalWater
   var totalSolar = data.totalSolar
   var total = totalWater + totalSolar
-  var comunidades = data.comunidades
   var areas = data.areas
-
 
   var styles = css`
     :host {
@@ -180,24 +190,43 @@ Sidebar.prototype._getElement = function () {
     </div>
   </div>`
 }
+
+Sidebar.prototype.highlightCommunity = function () {
+  // TODO
+}
+
+Sidebar.prototype.highlightArea = function () {
+  // TODO
+}
+
+Sidebar.prototype.removeHighlights = function () {
+  // TODO
+}
+
 Sidebar.prototype._areasList = function () {
   var self = this
   var areas = self.data.areas
-  function gotoArea (event) {
+  function areaClicked (event) {
     var i = parseInt(event.target.getAttribute('data-area'))
     self.chooseArea(areas[i])
   }
+
   return yo`<div>
     <h4 class="section-header">Who we Work With</h4>
       <div class="community-item-list">
-      ${areas.map(function (com, i) {
-        var props = com.properties
+      ${areas.map(function (area, i) {
+        var props = area.properties
+        console.log(area)
         var fotoUrl = props.Foto && props.Foto[0] && props.Foto[0].thumbnails.large.url
+        // var totalInstallations = area.comunidades.reduce(function (sum, com) {
+        //   return sum + (com.props.Installations ? com.props.Installations.length : 0)
+        // }, 0)
+        //             <h6>${totalInstallations} Installations </h6>
+
         return yo`
-        <div class="community-item" data-area="${i}" onclick=${gotoArea}>
+        <div class="community-item" data-area="${i}" onclick=${areaClicked}>
           <div class="community-item-label">
             <h3>${props['Area nombre']}</h3>
-            <h6>${props.Installations ? props.Installations.length : 0} Installations </h6>
           </div>
           <img src="${fotoUrl}" />
         </div>`
