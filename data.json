@@ -2664,6 +2664,9 @@
         "id": "recRfatd3eaTyBXL0",
         "properties": {
           "Comunidad": "Keweriuno",
+          "Nacionalidad": [
+            "rec7nhastozSVnJax"
+          ],
           "Lon": -77.16446,
           "Lat": -1.02046,
           "Programas": [
@@ -2672,10 +2675,7 @@
           ],
           "Agua": 0,
           "Agua Familias": 0,
-          "Agua Usuarios": 0,
-          "Nacionalidad": [
-            "rec7nhastozSVnJax"
-          ]
+          "Agua Usuarios": 0
         },
         "geometry": {
           "type": "Point",
@@ -3012,7 +3012,8 @@
             "reciV9v67qdPPRa7b",
             "recESIv0xylWvD3KC",
             "recn0wYNMx1IGykUm",
-            "recHMjrbMCZ9CQyTB"
+            "recHMjrbMCZ9CQyTB",
+            "recRmKltp7IaFvfbH"
           ],
           "Nacionalidad": [
             "rec7QOgAYxMln7nHN"
@@ -3052,7 +3053,7 @@
           ],
           "Description English": "The Siona community of Aboquehuira lies close to the Aguarico River in the Ecuadorian Amazon. Composed of nine families, Aboquehuira works with ClearWater and the Ceibo Alliance on five programs",
           "Agua": 9,
-          "Agua Familias": 9,
+          "Agua Familias": 10,
           "Agua Usuarios": 59,
           "Most recent": "2014-01-25",
           "First": "2014-01-20"
