@@ -1,7 +1,6 @@
-const d3 = require('d3-request')
+const xhr = require('xhr')
 const qs = require('querystring')
 const mapboxgl = require('mapbox-gl')
-const ToggleControl = require('mapbox-gl-toggle-control')
 const extent = require('@mapbox/geojson-extent')
 const compose = require('lodash/flowRight')
 const assign = require('object-assign')
@@ -10,11 +9,10 @@ const elements = require('alianza-elements')
 const css = require('sheetify')
 
 var getAreaZoom = require('./lib/area_zoom')
-var areas = require('../areas/areas.json')
-var Legend = require('./legend')
+var sidebar = require('./sidebar')
+var areasGeom = require('../areas/areas.json')
 var layerStyles = require('./layer_styles')
 var generateAreaLayers = require('./area_layers')
-var comunidadPopupDOM = require('./comunidad_popup')
 var areaPopupDOM = require('./area_popup')
 var emptyStyle = require('./empty_style.json')
 var style = require('./style.json')
@@ -25,11 +23,15 @@ css('alianza-elements/style.css')
 mapboxgl.accessToken = require('../config.json').mapbox_token
 
 var startingBounds = [-80.55, -2.1, -73.3, 1.06] // W, S, E, N
-var lang = qs.parse(window.location.search.replace('?', '')).lang || 'es'
+
+var lang = qs.parse(window.location.search.replace('?', '')).lang || 'en'
+var body = document.querySelector('body')
+if (lang === 'en') body.style = "font-family: 'Montserrat' !important;"
+else if (lang === 'es') body.style = "font-family: 'Helvetica' !important;"
+
 var data
-var areaPointIndex
-var dataIndex = {}
 var areasByName = {} // this is needed to match data.json to area.json
+var nacionalidadesByName = {}
 
 var comunidadesInteractiveLayers = [
   'alianza-comunidades-dots',
@@ -54,27 +56,35 @@ var map = new mapboxgl.Map({
   maxBounds: [-87, -9, -70, 6]
 }).on('load', onLoad)
 
-map.addControl(new mapboxgl.FullscreenControl(), 'top-left')
-
-d3.json('data.json', function (err, _data) {
+xhr.get('data.json', { headers: {
+  'Content-Type': 'application/json'
+}}, function (err, resp, body) {
   if (err) return console.error(err)
-  data = _data
+  data = JSON.parse(body)
+  data.Index = {}
   Object.keys(data).forEach(function (key) {
+    if (key === 'Index') return
     data[key].features.forEach(function (feature) {
-      dataIndex[feature.id] = feature
+      data.Index[feature.id] = feature
       if (key === 'Areas') areasByName[feature.properties['Area nombre']] = feature
+      else if (key === 'Nacionalidades') nacionalidadesByName[feature.properties.Nacionalidad] = feature
     })
   })
   onLoad()
 })
 
-areas = addIds(areas)
-areaPointIndex = which(areas)
+var areas = addIds(areasGeom)
+var areaPointIndex = which(areas)
 var areaLayers = generateAreaLayers(map, areas)
 
 function onLoad () {
   if (--pending > 0) return
-  var comunidades = compose(addIconFieldAndFilter, addIds, addNationalities(dataIndex), filterGeom)(data['Comunidades'])
+  var comunidades = compose(addIconFieldAndFilter, addIds, addNationalities(data.Index), filterGeom)(data.Comunidades)
+  areas.features.forEach(function (a) {
+    var nac = nacionalidadesByName[a.properties.nacionalidad]
+    if (!nac.geometry) nac.geometry = { type: 'Polygon', coordinates: [] }
+    nac.geometry.coordinates.push(a.geometry.coordinates)
+  })
 
   style.sources.comunidades = {
     type: 'geojson',
@@ -98,33 +108,19 @@ function onLoad () {
 
   map.setStyle(style, {diff: false})
 
-  var nav = new mapboxgl.NavigationControl()
-  map.addControl(nav, 'top-left')
-  var legend = Legend(data, {lang: lang})
-  var legendCtrl = new ToggleControl(legend.el)
-  legendCtrl.show()
-  map.addControl(legendCtrl, 'top-left')
-  legendCtrl._toggleButton.setAttribute('aria-label', 'Toggle Legend')
-
   map.fitBounds(startingBounds, {padding: 20})
 
-  // Create a popup, but don't add it to the map yet.
   var areaPopup = elements.popup(map, {closeButton: false})
-  var comunidadPopup = elements.popup(map)
 
-  elements.backButton(map, {stop: 8.5, lang: lang}, function () {
-    map.fitBounds(extent(areas), {padding: 20})
-    areaPopup.remove()
-    comunidadPopup.remove()
+  var sb = sidebar(lang, data)
+  sb.on('mapOverview', function () {
+    map.fitBounds(startingBounds, {padding: 20})
   })
 
-  switchFont(lang)
-
-  function switchFont (lang) {
-    var body = document.querySelector('body')
-    if (lang === 'en') body.style = "font-family: 'Montserrat' !important;"
-    else if (lang === 'es') body.style = "font-family: 'Helvetica' !important;"
-  }
+  sb.on('viewNationalidad', function (nacionalidad) {
+    var nac = nacionalidadesByName[nacionalidad.properties.Nacionalidad]
+    if (nac.geometry) zoomToArea(nac)
+  })
 
   var areaFillIds = areas.features.map(function (f) { return f.properties._id })
 
@@ -156,9 +152,8 @@ function onLoad () {
       var id = _areas[0].properties._id
       var area = getArea(id, areas)
       map.setFilter('alianza-areas-highlight', ['==', '_id', id])
-
       // for some reason we are seeing many duplicate comunidades when querying features
-      var areaCommunities = comunidades.features.filter(function (f) {
+      var areaComunidades = comunidades.features.filter(function (f) {
         var area = areaPointIndex(f.geometry.coordinates)
         return area && area.name === areaHovered.properties.name
       })
@@ -166,13 +161,17 @@ function onLoad () {
       // some of them don't have a feature row in airtable, so we use what we have
       var feature = areasByName[areaHovered.properties.name]
       var props = feature ? feature.properties : getAreaFeatureProps(areaHovered)
+      sb.highlightArea(area)
 
-      areaPopup.update(areaPopupDOM(props, areaCommunities))
+      // todo: replace popups with changing the sidebar data and calling .update()
+      areaPopup.update(areaPopupDOM(props, areaComunidades))
       areaPopup.setLngLat(e.lngLat)
       areaPopup.popupNode.addEventListener('click', function (e) {
-        onAreaClicked(area)
+        zoomToArea(area)
       })
-    } else areaPopup.remove()
+    } else {
+      sb.removeHighlights()
+    }
   })
 
   /**
@@ -181,6 +180,8 @@ function onLoad () {
    * @param  {Object} area GeoJSON feature for Area.json
    * @return {Object}      GeoJSOn feature for data.json
    */
+   // TODO: create an areas handler for everything to do with retrieving area data
+   // so we don't have to manage that in this file
   function getAreaFeatureProps (area) {
     return {
       'Area nombre': area.properties.name,
@@ -188,7 +189,7 @@ function onLoad () {
     }
   }
 
-  function onAreaClicked (area) {
+  function zoomToArea (area) {
     map.fitBounds(extent(area), {padding: 20})
     map.setFilter('alianza-areas-highlight', ['==', '_id', ''])
   }
@@ -201,15 +202,17 @@ function onLoad () {
     var communityClicked = queryCommunidades && queryCommunidades[0]
 
     if (communityClicked) {
-      var feature = dataIndex[communityClicked.properties._id]
-      comunidadPopup.update(comunidadPopupDOM(feature.properties, dataIndex, {lang: lang}))
-      comunidadPopup.setLngLat(feature.geometry.coordinates)
-    } else comunidadPopup.remove()
-
-    if (areaClicked && !communityClicked) {
+      var feature = data.Index[communityClicked.properties._id]
+      sb.viewCommunity(feature)
+    } else if (areaClicked) {
       var area = getArea(areaClicked.properties._id, areas)
-      onAreaClicked(area)
-    } else areaPopup.remove()
+      var nac = nacionalidadesByName[area.properties.nacionalidad]
+      sb.viewNationality(nac)
+      zoomToArea(area)
+    } else {
+      sb.viewNationalities()
+      sb.update()
+    }
   }
 }
 

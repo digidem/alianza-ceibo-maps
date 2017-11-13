@@ -47,8 +47,7 @@ function Legend (data, opts) {
   document.body.append(this.el)
 }
 
-Legend.prototype.updateLang = function (lang) {
-  this.lang = lang
+Legend.prototype.update = function () {
   yo.update(this.el, this._getElement())
 }
 
