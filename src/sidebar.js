@@ -126,6 +126,9 @@ Sidebar.prototype._getElement = function () {
 
   var styles = css`
   :host {
+    a {
+      text-decoration: none;
+    }
     .navbar {
       width: 100%;
       background-color: rgba(0,0,0,.6);
@@ -362,16 +365,15 @@ Sidebar.prototype._comunidadDOM = function () {
       var history = self.data.Index[id]
       var props = history.properties
 
-      function goToLink (event) {
-        window.open(props.Vinculo, '_blank')
-      }
-      return yo`<div class="shadow-item flex clickable" onclick=${goToLink}>
-        <img class="list-image" src="${getFotoUrl(props.Foto)}" />
-        <div class="community-history-info">
-          <h3>${props.Titulo}</h3>
-          <h6>${getShortUrl(props.Vinculo)}</h6>
+      return yo`<a href="${props.Vinculo}" target="_blank">
+        <div class="shadow-item flex clickable">
+          <img class="list-image" src="${getFotoUrl(props.Foto)}" />
+          <div class="community-history-info">
+            <h3>${props.Titulo}</h3>
+            <h6>${getShortUrl(props.Vinculo)}</h6>
+          </div>
         </div>
-      </div>
+      </a>
       `
     })}
   </div>
