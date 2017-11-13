@@ -1,7 +1,7 @@
 const yo = require('yo-yo')
-const css = require('sheetify')
 const inherits = require('inherits')
 const events = require('events')
+const css = require('sheetify')
 
 module.exports = Sidebar
 
@@ -40,11 +40,28 @@ var translations = {
   }
 }
 
+const VIEWS = {
+  NACIONALIDADES: 1,
+  AREA: 2,
+  COMUNIDAD: 3
+}
+
 function Sidebar (language, data) {
   if (!(this instanceof Sidebar)) return new Sidebar(language, data)
   this.language = language
   this.data = data
-  this.initial = data
+  // todo: get totals programmatically, once.
+  this.initial = {
+    totalWater: 765,
+    totalSolar: 67,
+    description: `Our focus on building solutions is not about quick technological fixes, nor the naïve belief in the power of "good intentions"
+      to resolve a deep human health, social and environmental crisis, but rather it is about working side-by-side
+      with indigenous peoples struggling to secure life’s basic necessities in a first imperiled by the industrial frontier.`,
+    foto: 'sidebar.png',
+    title: 'Where we Work'
+  }
+  this.viewData = this.initial
+  this.viewNationalities()
   this.el = this._getElement()
   document.body.appendChild(this.el)
   events.EventEmitter.call(this)
@@ -52,51 +69,69 @@ function Sidebar (language, data) {
 
 inherits(Sidebar, events.EventEmitter)
 
-Sidebar.prototype.reset = function () {
-  this.data = this.initial
-  this.update()
+Sidebar.prototype.viewNationalities = function () {
+  this.view = VIEWS.NACIONALIDADES
 }
 
 Sidebar.prototype.update = function () {
   yo.update(this.el, this._getElement())
+  window.scrollTo(0, 0)
 }
 
-Sidebar.prototype.chooseArea = function (area) {
-  var agua = area.comunidades.filter(function (f) {
-    return f.properties.icon === 'comunidad-agua'
-  })
-  var solar = area.comunidades.filter(function (f) {
-    return f.properties.icon === 'comunidad-agua-solar'
-  })
-  this.data = {
-    totalWater: agua.length,
-    totalSolar: solar.length,
-    comunidades: area.communidades
+Sidebar.prototype.viewNationality = function (nacionalidad) {
+  var self = this
+  var comunidades = nacionalidad.properties.Comunidades
+  var totalWater = comunidades.map(function (communityId) {
+    var com = self.data.Index[communityId]
+    return com.properties.Agua
+  }).reduce((sum, installs) => sum + installs, 0)
+
+  var totalSolar = comunidades.filter(function (communityId) {
+    var com = self.data.Index[communityId]
+    var programas = com.properties.Programas || []
+    return includes(programas, 'Sistemas solares')
+  }).length
+
+  this.view = VIEWS.AREA
+  this.viewData = {
+    totalWater: totalWater,
+    totalSolar: totalSolar,
+    comunidades: comunidades,
+    title: nacionalidad.properties.Nacionalidad,
+    description: nacionalidad.properties.Resumen,
+    foto: getFotoUrl(nacionalidad.properties.Foto)
   }
   this.update()
 }
 
-Sidebar.prototype.chooseCommunity = function (community) {
-  var props = community.properties
+Sidebar.prototype.viewComunidad = function (comunidad) {
+  var props = comunidad.properties
 
-  this.data = {
-    totalWater: props.Installations.length,
-    totalSolar: 1
+  this.view = VIEWS.COMUNIDAD
+  this.viewData = {
+    title: props.Comunidad,
+    foto: getFotoUrl(props.Foto),
+    description: props['Description English'],
+    totalWater: props.Agua,
+    totalSolar: includes(props.Programas || [], 'Sistemas solares') ? 1 : 0
   }
   this.update()
+}
+
+Sidebar.prototype._comunidadDOM = function (comunidad) {
+  // TODO: display videos and stories
+  return yo`<div>
+  </div>
+  `
 }
 
 Sidebar.prototype._getElement = function () {
   var self = this
-  var data = this.data
-  var totalWater = data.totalWater
-  var totalSolar = data.totalSolar
-  var total = totalWater + totalSolar
-  var areas = data.areas
+  var total = self.viewData.totalWater + self.viewData.totalSolar
 
   var styles = css`
     :host {
-      width: 30%;
+      width: 300px;
       .header {
         padding: 25px;
         background-color: #365973;
@@ -148,17 +183,21 @@ Sidebar.prototype._getElement = function () {
     }
   `
 
+  function getContinuedSection () {
+    if (self.view === VIEWS.AREA) return self._comunidadesListDOM()
+    else if (self.view === VIEWS.COMUNIDAD) return self._comunidadDOM()
+    else return self._areasListDOM()
+  }
+
   return yo`<div class="${styles}">
     <div class="header">
-      <h1>Water & Solar Installations</h1>
+      <h1>${self.viewData.title}</h1>
       <h5>${total} total installations</h5>
     </div>
-    <img src="sidebar.png" />
+    <img src="${self.viewData.foto}" />
     <div class="content">
       <p>
-        Our focus on building solutions is not about quick technological fixes, nor the naïve belief in the power of "good intentions"
-        to resolve a deep human health, social and environmental crisis, but rather it is about working side-by-side
-        with indigenous peoples struggling to secure life’s basic necessities in a first imperiled by the industrial frontier.
+        ${self.viewData.description}
       </p>
       <div class="list-items">
         <div class="item">
@@ -169,7 +208,7 @@ Sidebar.prototype._getElement = function () {
           </h4>
           </div>
           <h4 class="number">
-            ${totalWater}
+            ${self.viewData.totalWater}
           </h4>
         </div>
         <div class="item">
@@ -180,13 +219,13 @@ Sidebar.prototype._getElement = function () {
             </h4>
           </div>
           <h4 class="number">
-            ${totalSolar}
+            ${self.viewData.totalSolar}
           </h4>
         </div>
       </div>
     </div>
     <div class="continued-section">
-      ${areas ? self._areasList() : self._communitiesList()}
+      ${getContinuedSection()}
     </div>
   </div>`
 }
@@ -203,62 +242,72 @@ Sidebar.prototype.removeHighlights = function () {
   // TODO
 }
 
-Sidebar.prototype._areasList = function () {
+Sidebar.prototype._areasListDOM = function () {
   var self = this
-  var areas = self.data.areas
-  function areaClicked (event) {
-    var i = parseInt(event.target.getAttribute('data-area'))
-    self.chooseArea(areas[i])
-  }
+  var areas = self.data.Nacionalidades.features
 
   return yo`<div>
     <h4 class="section-header">Who we Work With</h4>
       <div class="community-item-list">
       ${areas.map(function (area, i) {
         var props = area.properties
-        console.log(area)
-        var fotoUrl = props.Foto && props.Foto[0] && props.Foto[0].thumbnails.large.url
-        // var totalInstallations = area.comunidades.reduce(function (sum, com) {
-        //   return sum + (com.props.Installations ? com.props.Installations.length : 0)
-        // }, 0)
-        //             <h6>${totalInstallations} Installations </h6>
+        var totalInstallations = props.Comunidades.reduce(function (sum, cid) {
+          var com = self.data.Index[cid]
+          var installations = com.properties.Installations
+          return sum + (installations ? installations.length : 0)
+        }, 0)
+
+        function areaClicked (event) {
+          self.viewNationality(area)
+        }
 
         return yo`
-        <div class="community-item" data-area="${i}" onclick=${areaClicked}>
+        <div class="community-item" onclick=${areaClicked}>
           <div class="community-item-label">
-            <h3>${props['Area nombre']}</h3>
+            <h3>${props['Nacionalidad']}</h3>
+            <h6>${totalInstallations} Installations </h6>
           </div>
-          <img src="${fotoUrl}" />
+          <img src="${getFotoUrl(props.Foto)}" />
         </div>`
       })}
     </div>
   </div>`
 }
 
-Sidebar.prototype._communitiesList = function () {
+Sidebar.prototype._comunidadesListDOM = function () {
   var self = this
-  var comunidades = self.data.communities
-  function gotoCommunity (event) {
-    var i = parseInt(event.target.getAttribute('data-community'))
-    self.chooseCommunity(comunidades[i])
-  }
+  var comunidades = self.viewData.comunidades
   return yo`
   <div>
     <h4 class="section-header">Communities in this Area</h4>
       <div class="community-item-list">
-      ${comunidades.map(function (com, i) {
+      ${comunidades.map(function (cid, i) {
+        var com = self.data.Index[cid]
         var props = com.properties
-        var fotoUrl = props.Foto && props.Foto[0] && props.Foto[0].thumbnails.large.url
+        function gotoCommunity (event) {
+          self.viewComunidad(com)
+        }
+        var totalInstallations = props.Installations ? props.Installations.length : 0
+        if (totalInstallations === 0) return
+
         return yo`
         <div class="community-item" data-community="${i}" onclick=${gotoCommunity}>
           <div class="community-item-label">
             <h3>${props.Comunidad}</h3>
-            <h6>${props.Installations ? props.Installations.length : 0} Installations </h6>
+            <h6>${totalInstallations} Installations</h6>
           </div>
-          <img src="${fotoUrl}" />
+          <img src="${getFotoUrl(props.Foto)}" />
         </div>`
       })}
     </div>
   </div>
   `
+}
+
+function includes (arr, value) {
+  return arr.indexOf(value) > -1
+}
+
+function getFotoUrl (Foto) {
+  return Foto && Foto[0] && Foto[0].thumbnails.large.url
 }

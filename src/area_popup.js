@@ -38,11 +38,11 @@ module.exports = function areaPopup (props, comunidades) {
       }
     }
   `
-  var agua = comunidades.filter(function (f) {
-    return f.properties.icon === 'comunidad-agua'
-  })
-  var solar = comunidades.filter(function (f) {
-    return f.properties.icon === 'comunidad-agua-solar'
+  var totalWater = comunidades.map((com) => com.properties.Agua).reduce((sum, installs) => sum + installs, 0)
+
+  var solar = comunidades.filter(function (com) {
+    var programs = com.properties.Programas || []
+    return programs.indexOf('Sistemas solares') > -1
   })
 
   return yo`<div class='${style}'>
@@ -52,9 +52,9 @@ module.exports = function areaPopup (props, comunidades) {
     ${!comunidades.length ? ''
       : yo`
         <div class="area-popup-data" style='background-color:rgba(${color}, .4);'>
-          ${agua.length ? yo`
+          ${totalWater ? yo`
             <div class="area-popup-data-item">
-              <img src="icons/comunidad-agua-dot.svg" /> ${agua.length}
+              <img src="icons/comunidad-agua-dot.svg" /> ${totalWater}
             </div>
             ` : ''
           }

@@ -30,9 +30,8 @@ if (lang === 'en') body.style = "font-family: 'Montserrat' !important;"
 else if (lang === 'es') body.style = "font-family: 'Helvetica' !important;"
 
 var data
-var areaPointIndex
-var dataIndex = {}
 var areasByName = {} // this is needed to match data.json to area.json
+var nacionalidadesByName = {}
 
 var comunidadesInteractiveLayers = [
   'alianza-comunidades-dots',
@@ -62,30 +61,25 @@ map.addControl(new mapboxgl.FullscreenControl(), 'top-left')
 d3.json('data.json', function (err, _data) {
   if (err) return console.error(err)
   data = _data
+  data.Index = {}
   Object.keys(data).forEach(function (key) {
+    if (key === 'Index') return
     data[key].features.forEach(function (feature) {
-      dataIndex[feature.id] = feature
+      data.Index[feature.id] = feature
       if (key === 'Areas') areasByName[feature.properties['Area nombre']] = feature
+      else if (key === 'Nacionalidades') nacionalidadesByName[feature.properties['Nacionalidad']] = feature
     })
   })
   onLoad()
 })
 
 var areas = addIds(areasGeom)
-areaPointIndex = which(areas)
+var areaPointIndex = which(areas)
 var areaLayers = generateAreaLayers(map, areas)
 
 function onLoad () {
   if (--pending > 0) return
-  var comunidades = compose(addIconFieldAndFilter, addIds, addNationalities(dataIndex), filterGeom)(data['Comunidades'])
-
-  var areasWithCommunities = Object.values(areasByName).map(function (area) {
-    area.comunidades = comunidades.features.filter(function (f) {
-      var indexed = areaPointIndex(f.geometry.coordinates)
-      return indexed && indexed.name === area.properties.name
-    })
-    return area
-  })
+  var comunidades = compose(addIconFieldAndFilter, addIds, addNationalities(data.Index), filterGeom)(data.Comunidades)
 
   style.sources.comunidades = {
     type: 'geojson',
@@ -115,12 +109,7 @@ function onLoad () {
 
   var areaPopup = elements.popup(map, {closeButton: false})
 
-  // todo: get totals programmatically
-  var sb = sidebar(lang, {
-    totalWater: 765,
-    totalSolar: 67,
-    areas: areasWithCommunities
-  })
+  var sb = sidebar(lang, data)
 
   elements.backButton(map, {stop: 8.5, lang: lang}, function () {
     map.fitBounds(extent(areas), {padding: 20})
@@ -157,6 +146,11 @@ function onLoad () {
       var id = _areas[0].properties._id
       var area = getArea(id, areas)
       map.setFilter('alianza-areas-highlight', ['==', '_id', id])
+      // for some reason we are seeing many duplicate comunidades when querying features
+      var areaComunidades = comunidades.features.filter(function (f) {
+        var area = areaPointIndex(f.geometry.coordinates)
+        return area && area.name === areaHovered.properties.name
+      })
 
       // some of them don't have a feature row in airtable, so we use what we have
       var feature = areasByName[areaHovered.properties.name]
@@ -164,7 +158,7 @@ function onLoad () {
       sb.highlightArea(area)
 
       // todo: replace popups with changing the sidebar data and calling .update()
-      areaPopup.update(areaPopupDOM(props, feature.comunidades))
+      areaPopup.update(areaPopupDOM(props, areaComunidades))
       areaPopup.setLngLat(e.lngLat)
       areaPopup.popupNode.addEventListener('click', function (e) {
         onAreaClicked(area)
@@ -192,7 +186,7 @@ function onLoad () {
   function onAreaClicked (area) {
     map.fitBounds(extent(area), {padding: 20})
     map.setFilter('alianza-areas-highlight', ['==', '_id', ''])
-    sb.chooseArea(area)
+    sb.viewNationality(nacionalidadesByName[area.properties.nacionalidad])
   }
 
   map.on('click', onMapClick)
@@ -203,13 +197,14 @@ function onLoad () {
     var communityClicked = queryCommunidades && queryCommunidades[0]
 
     if (communityClicked) {
-      var feature = dataIndex[communityClicked.properties._id]
-      sb.showCommunity(feature)
+      var feature = data.Index[communityClicked.properties._id]
+      sb.viewCommunity(feature)
     } else if (areaClicked) {
       var area = getArea(areaClicked.properties._id, areas)
       onAreaClicked(area)
     } else {
-      sb.reset()
+      sb.viewNationalities()
+      sb.update()
     }
   }
 }
