@@ -1,4 +1,4 @@
-const d3 = require('d3-request')
+const xhr = require('xhr')
 const qs = require('querystring')
 const mapboxgl = require('mapbox-gl')
 const extent = require('@mapbox/geojson-extent')
@@ -56,9 +56,11 @@ var map = new mapboxgl.Map({
   maxBounds: [-87, -9, -70, 6]
 }).on('load', onLoad)
 
-d3.json('data.json', function (err, _data) {
+xhr.get('data.json', { headers: {
+  'Content-Type': 'application/json'
+}}, function (err, resp, body) {
   if (err) return console.error(err)
-  data = _data
+  data = JSON.parse(body)
   data.Index = {}
   Object.keys(data).forEach(function (key) {
     if (key === 'Index') return
