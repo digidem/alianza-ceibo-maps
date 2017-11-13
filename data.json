@@ -479,9 +479,8 @@
         "type": "Feature",
         "id": "recxQNz0HRrsFCIKF",
         "properties": {
-          "Titulo": "Historia Ejemplo",
-          "Resumen": "Aqui pueden poner un resumen de ~50 palabras",
-          "Vinculo": "http://example.com/vinculo_a_blog_post",
+          "Titulo": "Giving Roots to Resistance",
+          "Vinculo": "https://www.amazonfrontlines.org/chronicles/roots-resistance/",
           "Foto": [
             {
               "id": "att7slAq4nETbctj8",
@@ -544,7 +543,8 @@
           "Comunidad": [
             "rec1e8A3YqHHWiUA4"
           ],
-          "Idioma": "ES"
+          "Idioma": "ES",
+          "Resumen": "This is the story of Emergildo Criollo, a Kofan who witnessed the influenc of religion on the "
         },
         "geometry": null
       },
