@@ -32,9 +32,6 @@
           ],
           "Lon": -76.29567,
           "Lat": -0.29208,
-          "Comunidad": [
-            "recMLdTFGSCuwXUeP"
-          ],
           "Idioma": "EN"
         },
         "geometry": {
@@ -75,9 +72,6 @@
           ],
           "Lon": -77.43051,
           "Lat": 0.12366,
-          "Comunidad": [
-            "recujzxpakMNxhjAW"
-          ],
           "Idioma": "EN"
         },
         "geometry": {
@@ -161,9 +155,6 @@
           ],
           "Lon": -76.89038,
           "Lat": -0.81232,
-          "Comunidad": [
-            "recF7FpWt0xnDhZzA"
-          ],
           "Idioma": "EN"
         },
         "geometry": {
@@ -247,9 +238,6 @@
           ],
           "Lon": -76.7032,
           "Lat": 0.04655,
-          "Comunidad": [
-            "recGWaTjgMQr60apG"
-          ],
           "Idioma": "EN"
         },
         "geometry": {
@@ -290,9 +278,6 @@
           ],
           "Lon": -76.43775,
           "Lat": -0.24031,
-          "Comunidad": [
-            "recsjnFvQFpCimzNn"
-          ],
           "Idioma": "EN"
         },
         "geometry": {
@@ -333,9 +318,6 @@
           ],
           "Lon": -76.88737,
           "Lat": -0.79563,
-          "Comunidad": [
-            "recF7FpWt0xnDhZzA"
-          ],
           "Idioma": "EN"
         },
         "geometry": {
@@ -376,9 +358,6 @@
           ],
           "Lon": -77.41278,
           "Lat": 0.10422,
-          "Comunidad": [
-            "recujzxpakMNxhjAW"
-          ],
           "Idioma": "EN"
         },
         "geometry": {
@@ -419,9 +398,6 @@
           ],
           "Lon": -76.48181,
           "Lat": -0.20619,
-          "Comunidad": [
-            "recYRj07a06XLUIBQ"
-          ],
           "Idioma": "EN"
         },
         "geometry": {
@@ -462,9 +438,6 @@
           ],
           "Lon": -76.47743,
           "Lat": -0.2902,
-          "Comunidad": [
-            "recF3dMxXgNs1qPPb"
-          ],
           "Idioma": "EN"
         },
         "geometry": {
@@ -578,9 +551,6 @@
           ],
           "Lon": -76.67872,
           "Lat": -0.01607,
-          "Comunidad": [
-            "rec5jyHt3zUgjovsn"
-          ],
           "Idioma": "EN"
         },
         "geometry": {
@@ -892,9 +862,6 @@
           "Programas": [
             "Sistemas de agua",
             "Sistemas solares"
-          ],
-          "Historias": [
-            "recyfzSvVYwYuP2xW"
           ],
           "Foto": [
             {
@@ -1545,9 +1512,6 @@
             "Mapeo territorial",
             "Practicas propias"
           ],
-          "Historias": [
-            "recm2wfWFGxLaQKKa"
-          ],
           "Foto": [
             {
               "id": "attF8KsmjtEv9wY5r",
@@ -1648,10 +1612,6 @@
           "Lat": -0.8153306443,
           "Programas": [
             "Sistemas de agua"
-          ],
-          "Historias": [
-            "reciXaH5Frx9Mhs1R",
-            "recTvITq4XclRcPZc"
           ],
           "Foto": [
             {
@@ -1840,9 +1800,6 @@
           "Programas": [
             "Sistemas de agua",
             "Monitoreo ambiental"
-          ],
-          "Historias": [
-            "reccgg6R9ww7jZ0yd"
           ],
           "Foto": [
             {
@@ -2232,9 +2189,6 @@
             "Monitoreo ambiental",
             "Mujer y familia",
             "Practicas propias"
-          ],
-          "Historias": [
-            "rec3Pu9WlBQZtbI7U"
           ],
           "Foto": [
             {
@@ -3027,9 +2981,6 @@
             "Sistemas solares",
             "Monitoreo ambiental"
           ],
-          "Historias": [
-            "recl1bfk9LC5j4HBX"
-          ],
           "Foto": [
             {
               "id": "attYWJ8hO8nBOI6et",
@@ -3763,9 +3714,6 @@
             "Mapeo territorial",
             "Practicas propias"
           ],
-          "Historias": [
-            "receOMazWSqCjZnnk"
-          ],
           "Foto": [
             {
               "id": "att5rDbZdUaINLMmn",
@@ -4006,10 +3954,6 @@
             "Defensores y defensoras",
             "Monitoreo ambiental",
             "Mapeo territorial"
-          ],
-          "Historias": [
-            "rec6YpDsuobq5BZFF",
-            "recl0OJmqrktVrvw2"
           ],
           "Foto": [
             {
