@@ -298,6 +298,7 @@ Sidebar.prototype._areasListDOM = function () {
       <div class="community-item-list">
       ${nacionalidades.map(function (nacionalidad, i) {
         var props = nacionalidad.properties
+        if (props.Nacionalidad === 'Kichwa') return
         var totalInstallations = props.Comunidades.reduce(function (sum, cid) {
           var com = self.data.Index[cid]
           var installations = com.properties.Installations
