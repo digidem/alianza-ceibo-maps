@@ -81,11 +81,9 @@ function onLoad () {
   if (--pending > 0) return
   var comunidades = compose(addIconFieldAndFilter, addIds, addNationalities(data.Index), filterGeom)(data.Comunidades)
   areas.features.forEach(function (a) {
-    var area = data.Areas.features.filter((area) => area.properties['Area nombre'].indexOf(a.properties.name) > -1)
-    console.log(area)
-    if (!area) console.error('could not find airtable entry for area', a.properties.name)
-    else area[0].geometry = a.geometry
-    data.Index[area.id] = area
+    var nac = nacionalidadesByName[a.properties.nacionalidad]
+    if (!nac.geometry) nac.geometry = { type: 'Polygon', coordinates: [] }
+    nac.geometry.coordinates.push(a.geometry.coordinates)
   })
 
   style.sources.comunidades = {
@@ -119,9 +117,8 @@ function onLoad () {
   var sb = sidebar(lang, data)
 
   sb.on('viewNationalidad', function (nacionalidad) {
-    var id = nacionalidad.properties.Area[0]
-    var area = data.Index[id]
-    zoomToArea(area)
+    var nac = nacionalidadesByName[nacionalidad.properties.Nacionalidad]
+    if (nac.geometry) zoomToArea(nac)
   })
 
   elements.backButton(map, {stop: 8.5, lang: lang}, function () {
@@ -213,7 +210,8 @@ function onLoad () {
       sb.viewCommunity(feature)
     } else if (areaClicked) {
       var area = getArea(areaClicked.properties._id, areas)
-      sb.viewNationality(nacionalidadesByName[area.properties.nacionalidad])
+      var nac = nacionalidadesByName[area.properties.nacionalidad]
+      sb.viewNationality(nac)
       zoomToArea(area)
     } else {
       sb.viewNationalities()

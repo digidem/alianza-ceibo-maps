@@ -1,4 +1,5 @@
 const yo = require('yo-yo')
+const url = require('url')
 const inherits = require('inherits')
 const events = require('events')
 const css = require('sheetify')
@@ -112,17 +113,11 @@ Sidebar.prototype.viewComunidad = function (comunidad) {
     title: props.Comunidad,
     foto: getFotoUrl(props.Foto),
     description: props['Description English'],
+    historias: props.Historias,
     totalWater: props.Agua,
     totalSolar: includes(props.Programas || [], 'Sistemas solares') ? 1 : 0
   }
   this.update()
-}
-
-Sidebar.prototype._comunidadDOM = function (comunidad) {
-  // TODO: display videos and stories
-  return yo`<div>
-  </div>
-  `
 }
 
 Sidebar.prototype._getElement = function () {
@@ -131,7 +126,7 @@ Sidebar.prototype._getElement = function () {
 
   var styles = css`
     :host {
-      width: 300px;
+      width: 350px;
       .header {
         padding: 25px;
         background-color: #365973;
@@ -146,7 +141,7 @@ Sidebar.prototype._getElement = function () {
       img {
         max-width: 100%;
       }
-      .list-items {
+      .shadow-item {
         margin: 30px 0px;
         box-shadow: 0px 0px 8px 0px #dedede;
       }
@@ -180,6 +175,9 @@ Sidebar.prototype._getElement = function () {
         flex-direction: column;
         justify-content: center;
       }
+      .community-history-info {
+        margin: 10px;
+      }
     }
   `
 
@@ -199,7 +197,7 @@ Sidebar.prototype._getElement = function () {
       <p>
         ${self.viewData.description}
       </p>
-      <div class="list-items">
+      <div class="shadow-item">
         <div class="item">
           <div class="flex">
           <img src="water.png" />
@@ -289,7 +287,7 @@ Sidebar.prototype._comunidadesListDOM = function () {
           self.viewComunidad(com)
         }
         var totalInstallations = props.Installations ? props.Installations.length : 0
-        if (totalInstallations === 0) return
+        if (!totalInstallations || !props.Historias) return
 
         return yo`
         <div class="community-item" data-community="${i}" onclick=${gotoCommunity}>
@@ -305,10 +303,40 @@ Sidebar.prototype._comunidadesListDOM = function () {
   `
 }
 
+Sidebar.prototype._comunidadDOM = function () {
+  var self = this
+
+  return yo`
+  <div class="content">
+    ${self.viewData.historias.map(function (id) {
+      var history = self.data.Index[id]
+      var props = history.properties
+
+      function goToLink (event) {
+        window.open(props.Vinculo, '_blank')
+      }
+      return yo`<div class="shadow-item flex" onclick=${goToLink}>
+        <img height="100px" src="${getFotoUrl(props.Foto)}" />
+        <div class="community-history-info">
+          <h3>${props.Titulo}</h3>
+          <h6>${getShortUrl(props.Vinculo)}</h6>
+        </div>
+      </div>
+      `
+    })}
+  </div>
+  `
+}
+
 function includes (arr, value) {
   return arr.indexOf(value) > -1
 }
 
 function getFotoUrl (Foto) {
   return Foto && Foto[0] && Foto[0].thumbnails.large.url
+}
+
+function getShortUrl (Vinculo) {
+  var u = url.parse(Vinculo)
+  return u.host
 }
