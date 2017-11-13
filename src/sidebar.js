@@ -244,13 +244,13 @@ Sidebar.prototype.removeHighlights = function () {
 
 Sidebar.prototype._areasListDOM = function () {
   var self = this
-  var areas = self.data.Nacionalidades.features
+  var nacionalidades = self.data.Nacionalidades.features
 
   return yo`<div>
     <h4 class="section-header">Who we Work With</h4>
       <div class="community-item-list">
-      ${areas.map(function (area, i) {
-        var props = area.properties
+      ${nacionalidades.map(function (nacionalidad, i) {
+        var props = nacionalidad.properties
         var totalInstallations = props.Comunidades.reduce(function (sum, cid) {
           var com = self.data.Index[cid]
           var installations = com.properties.Installations
@@ -258,7 +258,8 @@ Sidebar.prototype._areasListDOM = function () {
         }, 0)
 
         function areaClicked (event) {
-          self.viewNationality(area)
+          self.viewNationality(nacionalidad)
+          self.emit('viewNationalidad', nacionalidad)
         }
 
         return yo`

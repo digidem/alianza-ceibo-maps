@@ -67,7 +67,7 @@ d3.json('data.json', function (err, _data) {
     data[key].features.forEach(function (feature) {
       data.Index[feature.id] = feature
       if (key === 'Areas') areasByName[feature.properties['Area nombre']] = feature
-      else if (key === 'Nacionalidades') nacionalidadesByName[feature.properties['Nacionalidad']] = feature
+      else if (key === 'Nacionalidades') nacionalidadesByName[feature.properties.Nacionalidad] = feature
     })
   })
   onLoad()
@@ -80,6 +80,13 @@ var areaLayers = generateAreaLayers(map, areas)
 function onLoad () {
   if (--pending > 0) return
   var comunidades = compose(addIconFieldAndFilter, addIds, addNationalities(data.Index), filterGeom)(data.Comunidades)
+  areas.features.forEach(function (a) {
+    var area = data.Areas.features.filter((area) => area.properties['Area nombre'].indexOf(a.properties.name) > -1)
+    console.log(area)
+    if (!area) console.error('could not find airtable entry for area', a.properties.name)
+    else area[0].geometry = a.geometry
+    data.Index[area.id] = area
+  })
 
   style.sources.comunidades = {
     type: 'geojson',
@@ -110,6 +117,12 @@ function onLoad () {
   var areaPopup = elements.popup(map, {closeButton: false})
 
   var sb = sidebar(lang, data)
+
+  sb.on('viewNationalidad', function (nacionalidad) {
+    var id = nacionalidad.properties.Area[0]
+    var area = data.Index[id]
+    zoomToArea(area)
+  })
 
   elements.backButton(map, {stop: 8.5, lang: lang}, function () {
     map.fitBounds(extent(areas), {padding: 20})
@@ -161,7 +174,7 @@ function onLoad () {
       areaPopup.update(areaPopupDOM(props, areaComunidades))
       areaPopup.setLngLat(e.lngLat)
       areaPopup.popupNode.addEventListener('click', function (e) {
-        onAreaClicked(area)
+        zoomToArea(area)
       })
     } else {
       sb.removeHighlights()
@@ -183,10 +196,9 @@ function onLoad () {
     }
   }
 
-  function onAreaClicked (area) {
+  function zoomToArea (area) {
     map.fitBounds(extent(area), {padding: 20})
     map.setFilter('alianza-areas-highlight', ['==', '_id', ''])
-    sb.viewNationality(nacionalidadesByName[area.properties.nacionalidad])
   }
 
   map.on('click', onMapClick)
@@ -201,7 +213,8 @@ function onLoad () {
       sb.viewCommunity(feature)
     } else if (areaClicked) {
       var area = getArea(areaClicked.properties._id, areas)
-      onAreaClicked(area)
+      sb.viewNationality(nacionalidadesByName[area.properties.nacionalidad])
+      zoomToArea(area)
     } else {
       sb.viewNationalities()
       sb.update()
