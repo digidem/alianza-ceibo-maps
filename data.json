@@ -1543,7 +1543,6 @@
         "type": "Feature",
         "id": "recF7FpWt0xnDhZzA",
         "properties": {
-          "Comunidad": "Rumipamba",
           "Installations": [
             "rec9jx9j6N4subJXU",
             "recGjyeK0hUjR6CFm",
@@ -1597,48 +1596,13 @@
             "recbvjf5I26IZtxBw",
             "recOFgNawTuPKgHDg"
           ],
-          "Nacionalidad": [
-            "reczA7fT6xso1KoGY"
-          ],
-          "Lon": -76.89142263,
-          "Lat": -0.8153306443,
-          "Programas": [
-            "Sistemas de agua"
-          ],
-          "Foto": [
-            {
-              "id": "attzJMEsBb1cwn0sV",
-              "url": "https://dl.airtable.com/2vNyloHISeSL3n3tMs0x_BZkuJNwVSkW4GQNA5iVj_full_b05b517b90daefcd655a4c27367366a0a5d99074.jpg",
-              "filename": "BZkuJNwVSkW4GQNA5iVj_full_b05b517b90daefcd655a4c27367366a0a5d99074.jpg",
-              "size": 1667081,
-              "type": "image/jpeg",
-              "thumbnails": {
-                "small": {
-                  "url": "https://dl.airtable.com/FTnhtiqxT4aldfGn1yBN_small_BZkuJNwVSkW4GQNA5iVj_full_b05b517b90daefcd655a4c27367366a0a5d99074.jpg",
-                  "width": 54,
-                  "height": 36
-                },
-                "large": {
-                  "url": "https://dl.airtable.com/XRqGwE0S7OV0Ou0ADbdw_large_BZkuJNwVSkW4GQNA5iVj_full_b05b517b90daefcd655a4c27367366a0a5d99074.jpg",
-                  "width": 773,
-                  "height": 512
-                }
-              }
-            }
-          ],
           "Agua": 51,
           "Agua Familias": 3,
           "Agua Usuarios": 410,
           "Most recent": "2013-08-16",
           "First": "2012-08-14"
         },
-        "geometry": {
-          "type": "Point",
-          "coordinates": [
-            -76.89142263,
-            -0.8153306443
-          ]
-        }
+        "geometry": null
       },
       {
         "type": "Feature",
@@ -4872,10 +4836,7 @@
           "Area": [
             "recq7JCzDcDUz82Gx"
           ],
-          "Color": "#088",
-          "Comunidades": [
-            "recF7FpWt0xnDhZzA"
-          ]
+          "Color": "#088"
         },
         "geometry": null
       }
