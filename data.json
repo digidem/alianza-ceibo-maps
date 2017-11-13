@@ -112,9 +112,6 @@
           ],
           "Lon": -76.76534,
           "Lat": -0.76935,
-          "Comunidad": [
-            "recCvjMsbA7zmK1NJ"
-          ],
           "Idioma": "EN"
         },
         "geometry": {
@@ -195,9 +192,6 @@
           ],
           "Lon": -76.7652,
           "Lat": -0.76924,
-          "Comunidad": [
-            "recCvjMsbA7zmK1NJ"
-          ],
           "Idioma": "EN"
         },
         "geometry": {
@@ -1352,10 +1346,6 @@
           "Lat": -0.7689119198,
           "Programas": [
             "Sistemas de agua"
-          ],
-          "Historias": [
-            "recVo2vWGN2wEjMnO",
-            "recLCmdPyND821xHQ"
           ],
           "Foto": [
             {
