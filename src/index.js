@@ -24,7 +24,7 @@ mapboxgl.accessToken = require('../config.json').mapbox_token
 
 var startingBounds = [-80.55, -2.1, -73.3, 1.06] // W, S, E, N
 
-var lang = qs.parse(window.location.search.replace('?', '')).lang || 'es'
+var lang = qs.parse(window.location.search.replace('?', '')).lang || 'en'
 var body = document.querySelector('body')
 if (lang === 'en') body.style = "font-family: 'Montserrat' !important;"
 else if (lang === 'es') body.style = "font-family: 'Helvetica' !important;"
