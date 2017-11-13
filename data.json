@@ -3417,6 +3417,11 @@
         "id": "recgTpeb0yva3e5ew",
         "properties": {
           "Comunidad": "Gemeneweno",
+          "Installations": [
+            "rec59P33BtrzVwzhL",
+            "recWqe0bZkMXHrnKW",
+            "recIrRR9nNNduG8gi"
+          ],
           "Nacionalidad": [
             "rec7nhastozSVnJax"
           ],
@@ -3429,11 +3434,6 @@
           "Agua": 3,
           "Agua Familias": 3,
           "Agua Usuarios": 12,
-          "Installations": [
-            "rec59P33BtrzVwzhL",
-            "recWqe0bZkMXHrnKW",
-            "recIrRR9nNNduG8gi"
-          ],
           "Most recent": "2017-08-08",
           "First": "2017-08-08"
         },
@@ -4696,7 +4696,7 @@
         "id": "rec7QOgAYxMln7nHN",
         "properties": {
           "Nacionalidad": "Siona",
-          "Resumen": "Like the neighboring Secoya, the Siona currently suffer from the health and economic impacts of oil contamination, the industrial cultivation of African oil palm, deforestation, and expanding colonist settlement in their territory.",
+          "Resumen": "The Siona, or ZioBain, live in three fragmented regions in Ecuador and Colombia. Only about 600 people in total, the Siona speak main coca, from the same language family as the Siekopai language. Heavily affected by the rubber trade and currently by extensive oil drilling, the Siona are fighting to keep their culture alive and strong.",
           "Foto": [
             {
               "id": "attwwP8EMqDxoYnGg",
@@ -4742,7 +4742,7 @@
         "id": "rec7nhastozSVnJax",
         "properties": {
           "Nacionalidad": "Waorani",
-          "Resumen": "The Waorani are the most recently contacted of all Ecuadorian indigenous peoples. Since first contact in 1956, the Waorani have experienced a rapid and difficult assimilation into broader Ecuadorian society. Their territories have been greatly reduced, with remaining lands despoiled by industrial activities and settlement by colonists. Logging, oil drilling and related road-building have severely scarred Waorani lands.",
+          "Resumen": "The Waorani currently live in 54 communities over an expanse of 2.5 million acres in the heart of the Amazon. Renowned hunters and the last of the Ecuadorian nations to be contacted in the late 1950s, their territory is currently threatened by oil drilling and new access roads.",
           "Foto": [
             {
               "id": "attDvWe8ReLQNBgDf",
@@ -4817,7 +4817,7 @@
         "id": "recHGwwudtmODsfLg",
         "properties": {
           "Nacionalidad": "Secoya",
-          "Resumen": "The Secoya live along the Aguarico River. Though the name means “rich water” oil contamination has taken a heavy toll on the river as well as the streams, marshes, and groundwater in the area. Traditional subsistence activities such as hunting, fishing, and growing edible crops have also been harmed.",
+          "Resumen": "Meaning “People of Many Colors”, the Siekopai were mistakenly named Secoya by colonists. Originally habitants of areas of flooded forests and black water lagoons in Peru and Ecuador, the war between the two countries in 1941 caused a forced division that lasted until the Peace Accord of 1998.",
           "Foto": [
             {
               "id": "attgCYUYmyVWiS5ny",
@@ -4859,7 +4859,7 @@
         "id": "recmAG2tQi6scRRzZ",
         "properties": {
           "Nacionalidad": "Cofan",
-          "Resumen": "Centuries ago, the Cofan people migrated from the foothills of the Andes to inhabit a large territory in the northern Ecuadorian Amazon. The Cofan have been inspiring protagonists in efforts to hold oil companies accountable for devastating contamination in their communities. While they fight for their culture and territory, they continue to suffer from lack of clean water.",
+          "Resumen": "It is estimated that the A’i Kofán once numbered between 15,000 and 20,000 people before the arrival of the Spanish conquistadors. The approximately 2,000 A’i Kofán currently living in Ecuador and Colombia still speak their language, A’ingae, and occupy a fragmented and reduced territory bridging the Andean mountain range with the Amazon rainforest.",
           "Foto": [
             {
               "id": "att1JbnP5gMT0ESoH",
