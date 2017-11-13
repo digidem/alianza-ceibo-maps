@@ -7,37 +7,23 @@ const css = require('sheetify')
 module.exports = Sidebar
 
 var translations = {
-  'header': {
-    es: 'Instalaciones de agua y solar',
-    en: 'Water and Solar Installations'
+  es: {
+    header: 'Dónde Trabajamos',
+    water: 'Instalaciones de agua',
+    solar: 'Instalaciones de solar',
+    total: 'instalaciones en total',
+    areaHeader: 'Con Quién Trabajamos',
+    installations: 'instalaciones',
+    mapOverview: 'Ver Mapa Completo'
   },
-  'agua': {
-    es: 'Instalaciones de agua',
-    en: 'Water Installations '
-  },
-  'solar': {
-    es: 'Instalaciones de solar',
-    en: 'Solar Installations '
-  },
-  'agua-solar': {
-    es: 'Instalaciones de agua y solar',
-    en: 'Water and Solar Installations '
-  },
-  'agua-solar-story': {
-    es: 'Instalaciones de agua y solar con historias',
-    en: 'Water and Solar Installations with stories'
-  },
-  'legal-process': {
-    es: 'En proceso de reclamacíon legal',
-    en: 'In process of legal claim'
-  },
-  'explore': {
-    es: 'EXPLORAR',
-    en: 'EXPLORE'
-  },
-  'territory': {
-    es: 'territorio',
-    en: 'territory'
+  en: {
+    header: 'Where We Work',
+    water: 'Water Installations',
+    solar: 'Solar Installations',
+    total: 'total installations',
+    areaHeader: 'Who We Work With',
+    installations: 'installations',
+    mapOverview: 'Map Overview'
   }
 }
 
@@ -50,6 +36,7 @@ const VIEWS = {
 function Sidebar (language, data) {
   if (!(this instanceof Sidebar)) return new Sidebar(language, data)
   this.language = language
+  this.translated = translations[language]
   this.data = data
   // todo: get totals programmatically, once.
   this.initial = {
@@ -59,7 +46,7 @@ function Sidebar (language, data) {
       to resolve a deep human health, social and environmental crisis, but rather it is about working side-by-side
       with indigenous peoples struggling to secure life’s basic necessities in a first imperiled by the industrial frontier.`,
     foto: 'sidebar.png',
-    title: 'Where we Work'
+    title: this.translated['header']
   }
   this.viewNationalities()
   this.el = this._getElement()
@@ -131,14 +118,15 @@ Sidebar.prototype._getElement = function () {
     }
     .navbar {
       width: 100%;
-      background-color: rgba(0,0,0,.6);
       z-index: 0;
       position: fixed;
+      background-color: transparent;
       .clickable:hover {
         cursor: pointer;
         text-decoration: underline;
       }
       .navbar-inner {
+        background-color: rgba(0,0,0,.6);
         margin-left: 350px;
         font-size: 12px;
         line-height: 40px;
@@ -234,13 +222,13 @@ Sidebar.prototype._getElement = function () {
   return yo`<div class="${styles}">
     <div class="navbar">
       <div class="navbar-inner">
-        <span class="clickable" onclick=${mapOverviewClick}>Map Overview</span> ${breadCrumbs()}
+        <span class="clickable" onclick=${mapOverviewClick}>${self.translated['mapOverview']}</span> ${breadCrumbs()}
       </div>
     </div>
     <div class="sidebar">
       <div class="header">
         <h1>${self.viewData.title}</h1>
-        <h5>${total} total installations</h5>
+        <h5>${total} ${self.translated['total']}</h5>
       </div>
       <img src="${self.viewData.foto}" />
       <div class="content">
@@ -252,7 +240,7 @@ Sidebar.prototype._getElement = function () {
             <div class="flex">
             <img src="water.png" />
             <h4>
-              Water Installations
+              ${self.translated['water']}
             </h4>
             </div>
             <h4 class="number">
@@ -263,7 +251,7 @@ Sidebar.prototype._getElement = function () {
             <div class="flex">
               <img src="solar.png" />
               <h4>
-                Solar installations
+                ${self.translated['solar']}
               </h4>
             </div>
             <h4 class="number">
@@ -297,7 +285,7 @@ Sidebar.prototype._areasListDOM = function () {
   var nacionalidades = self.data.Nacionalidades.features
 
   return yo`<div>
-    <h4 class="section-header">Who we Work With</h4>
+    <h4 class="section-header">${self.translated['areaHeader']}</h4>
       <div class="community-item-list">
       ${nacionalidades.map(function (nacionalidad, i) {
         var props = nacionalidad.properties
@@ -317,7 +305,7 @@ Sidebar.prototype._areasListDOM = function () {
         <div class="community-item clickable" onclick=${areaClicked}>
           <div class="community-item-label">
             <h3>${props['Nacionalidad']}</h3>
-            <h6>${totalInstallations} Installations </h6>
+            <h6>${totalInstallations} ${self.translated['installations']} </h6>
           </div>
           <img src="${getFotoUrl(props.Foto)}" />
         </div>`
@@ -331,7 +319,6 @@ Sidebar.prototype._comunidadesListDOM = function () {
   var comunidades = self.viewData.comunidades
   return yo`
   <div>
-    <h4 class="section-header">Communities in this Area</h4>
       <div class="community-item-list">
       ${comunidades.map(function (cid, i) {
         var com = self.data.Index[cid]
@@ -346,7 +333,7 @@ Sidebar.prototype._comunidadesListDOM = function () {
         <div class="community-item clickable" data-community="${i}" onclick=${gotoCommunity}>
           <div class="community-item-label">
             <h3>${props.Comunidad}</h3>
-            <h6>${totalInstallations} Installations</h6>
+            <h6>${totalInstallations} ${self.translated['installations']}</h6>
           </div>
           <img src="${getFotoUrl(props.Foto)}" />
         </div>`
