@@ -61,7 +61,6 @@ function Sidebar (language, data) {
     foto: 'sidebar.png',
     title: 'Where we Work'
   }
-  this.viewData = this.initial
   this.viewNationalities()
   this.el = this._getElement()
   document.body.appendChild(this.el)
@@ -71,6 +70,7 @@ function Sidebar (language, data) {
 inherits(Sidebar, events.EventEmitter)
 
 Sidebar.prototype.viewNationalities = function () {
+  this.viewData = Object.assign({}, this.initial)
   this.view = VIEWS.NACIONALIDADES
 }
 
@@ -125,8 +125,34 @@ Sidebar.prototype._getElement = function () {
   var total = self.viewData.totalWater + self.viewData.totalSolar
 
   var styles = css`
-    :host {
+  :host {
+    .navbar {
+      width: 100%;
+      background-color: rgba(0,0,0,.6);
+      z-index: 0;
+      position: fixed;
+      .clickable:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+      .navbar-inner {
+        margin-left: 350px;
+        font-size: 12px;
+        line-height: 40px;
+        width: 100%;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding-left: 20px;
+        color: grey;
+        .breadcrumbs span:last-child {
+          color: white;
+        }
+      }
+    }
+    .sidebar {
       width: 350px;
+      z-index: 1;
+      position: absolute;
       .header {
         padding: 25px;
         background-color: #365973;
@@ -158,13 +184,15 @@ Sidebar.prototype._getElement = function () {
       .item:last-child {
         border-bottom: 1px solid #dedede;
       }
+      .list-image {
+        height: 100px;
+      }
       .community-item {
         display: flex;
         padding: 15px 30px;
-        height: 60px;
         justify-content: space-between;
       }
-      .community-item:hover {
+      .clickable:hover {
         background-color: rgba(243, 221, 152, 0.29);
         cursor: pointer;
       }
@@ -179,6 +207,7 @@ Sidebar.prototype._getElement = function () {
         margin: 10px;
       }
     }
+  }
   `
 
   function getContinuedSection () {
@@ -187,45 +216,65 @@ Sidebar.prototype._getElement = function () {
     else return self._areasListDOM()
   }
 
+  function mapOverviewClick () {
+    self.emit('mapOverview')
+    self.viewNationalities()
+    self.update()
+  }
+
+  function breadCrumbs () {
+    return self.view !== VIEWS.NACIONALIDADES
+      ? yo`<span class="breadcrumbs">/ <span>${self.viewData.title}</span></span>`
+      : ``
+  }
+
   return yo`<div class="${styles}">
-    <div class="header">
-      <h1>${self.viewData.title}</h1>
-      <h5>${total} total installations</h5>
-    </div>
-    <img src="${self.viewData.foto}" />
-    <div class="content">
-      <p>
-        ${self.viewData.description}
-      </p>
-      <div class="shadow-item">
-        <div class="item">
-          <div class="flex">
-          <img src="water.png" />
-          <h4>
-            Water Installations
-          </h4>
-          </div>
-          <h4 class="number">
-            ${self.viewData.totalWater}
-          </h4>
-        </div>
-        <div class="item">
-          <div class="flex">
-            <img src="solar.png" />
-            <h4>
-              Solar installations
-            </h4>
-          </div>
-          <h4 class="number">
-            ${self.viewData.totalSolar}
-          </h4>
-        </div>
+    <div class="navbar">
+      <div class="navbar-inner">
+        <span class="clickable" onclick=${mapOverviewClick}>Map Overview</span> ${breadCrumbs()}
       </div>
     </div>
-    <div class="continued-section">
-      ${getContinuedSection()}
+    <div class="sidebar">
+      <div class="header">
+        <h1>${self.viewData.title}</h1>
+        <h5>${total} total installations</h5>
+      </div>
+      <img src="${self.viewData.foto}" />
+      <div class="content">
+        <p>
+          ${self.viewData.description}
+        </p>
+        <div class="shadow-item">
+          <div class="item">
+            <div class="flex">
+            <img src="water.png" />
+            <h4>
+              Water Installations
+            </h4>
+            </div>
+            <h4 class="number">
+              ${self.viewData.totalWater}
+            </h4>
+          </div>
+          <div class="item">
+            <div class="flex">
+              <img src="solar.png" />
+              <h4>
+                Solar installations
+              </h4>
+            </div>
+            <h4 class="number">
+              ${self.viewData.totalSolar}
+            </h4>
+          </div>
+        </div>
+      </div>
+      <div class="continued-section">
+        ${getContinuedSection()}
+      </div>
     </div>
-  </div>`
+  </div>
+</div>`
 }
 
 Sidebar.prototype.highlightCommunity = function () {
@@ -261,7 +310,7 @@ Sidebar.prototype._areasListDOM = function () {
         }
 
         return yo`
-        <div class="community-item" onclick=${areaClicked}>
+        <div class="community-item clickable" onclick=${areaClicked}>
           <div class="community-item-label">
             <h3>${props['Nacionalidad']}</h3>
             <h6>${totalInstallations} Installations </h6>
@@ -290,7 +339,7 @@ Sidebar.prototype._comunidadesListDOM = function () {
         if (!totalInstallations || !props.Historias) return
 
         return yo`
-        <div class="community-item" data-community="${i}" onclick=${gotoCommunity}>
+        <div class="community-item clickable" data-community="${i}" onclick=${gotoCommunity}>
           <div class="community-item-label">
             <h3>${props.Comunidad}</h3>
             <h6>${totalInstallations} Installations</h6>
@@ -315,8 +364,8 @@ Sidebar.prototype._comunidadDOM = function () {
       function goToLink (event) {
         window.open(props.Vinculo, '_blank')
       }
-      return yo`<div class="shadow-item flex" onclick=${goToLink}>
-        <img height="100px" src="${getFotoUrl(props.Foto)}" />
+      return yo`<div class="shadow-item flex clickable" onclick=${goToLink}>
+        <img class="list-image" src="${getFotoUrl(props.Foto)}" />
         <div class="community-history-info">
           <h3>${props.Titulo}</h3>
           <h6>${getShortUrl(props.Vinculo)}</h6>

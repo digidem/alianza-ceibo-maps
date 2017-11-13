@@ -56,8 +56,6 @@ var map = new mapboxgl.Map({
   maxBounds: [-87, -9, -70, 6]
 }).on('load', onLoad)
 
-map.addControl(new mapboxgl.FullscreenControl(), 'top-left')
-
 d3.json('data.json', function (err, _data) {
   if (err) return console.error(err)
   data = _data
@@ -108,22 +106,18 @@ function onLoad () {
 
   map.setStyle(style, {diff: false})
 
-  var nav = new mapboxgl.NavigationControl()
-  map.addControl(nav, 'top-left')
   map.fitBounds(startingBounds, {padding: 20})
 
   var areaPopup = elements.popup(map, {closeButton: false})
 
   var sb = sidebar(lang, data)
+  sb.on('mapOverview', function () {
+    map.fitBounds(startingBounds, {padding: 20})
+  })
 
   sb.on('viewNationalidad', function (nacionalidad) {
     var nac = nacionalidadesByName[nacionalidad.properties.Nacionalidad]
     if (nac.geometry) zoomToArea(nac)
-  })
-
-  elements.backButton(map, {stop: 8.5, lang: lang}, function () {
-    map.fitBounds(extent(areas), {padding: 20})
-    sb.reset()
   })
 
   var areaFillIds = areas.features.map(function (f) { return f.properties._id })
