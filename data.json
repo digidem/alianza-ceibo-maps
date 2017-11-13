@@ -613,7 +613,9 @@
           "Agua Familias": 8,
           "Agua Usuarios": 41,
           "Most recent": "2014-12-22",
-          "First": "2013-12-17"
+          "First": "2013-12-17",
+          "Blog post link": "https://deploy-preview-23--digidem.netlify.com",
+          "Blog title": "Giving Roots to Resistance"
         },
         "geometry": {
           "type": "Point",
