@@ -526,7 +526,7 @@
         "type": "Feature",
         "id": "rec1e8A3YqHHWiUA4",
         "properties": {
-          "Comunidad": "Bavoroe",
+          "Comunidad": "Bavoroe ",
           "Installations": [
             "rec6cVfVwnvYoMGSK",
             "recOO7y9X7lGLechc",
@@ -4666,7 +4666,7 @@
         "id": "recmAG2tQi6scRRzZ",
         "properties": {
           "Nacionalidad": "Cofan",
-          "Resumen": "It is estimated that the A’i Kofán once numbered between 15,000 and 20,000 people before the arrival of the Spanish conquistadors. The approximately 2,000 A’i Kofán currently living in Ecuador and Colombia still speak their language, A’ingae, and occupy a fragmented and reduced territory bridging the Andean mountain range with the Amazon rainforest.",
+          "Resumen": "It is thought that the A’i Kofán once numbered between 15,000 and 20,000 people before the arrival of the Spanish conquistadors. The approximately 2,000 A’i Kofán currently living in Ecuador and Colombia still speak their language, A’ingae, and occupy a fragmented and reduced territory bridging the Andean mountain range with the Amazon rainforest.",
           "Foto": [
             {
               "id": "att1JbnP5gMT0ESoH",
@@ -4711,6 +4711,12 @@
             "recKwtunJ5On933T2"
           ]
         },
+        "geometry": null
+      },
+      {
+        "type": "Feature",
+        "id": "recrNrcE32aWvR0bP",
+        "properties": {},
         "geometry": null
       },
       {
