@@ -223,7 +223,7 @@ Sidebar.prototype._getElement = function () {
   return yo`<div class="${styles}">
     <div class="navbar">
       <div class="navbar-inner flex space-between">
-        <div class="clickable" onclick=${mapOverviewClick}>${self.translated['mapOverview']}</div> ${breadCrumbs()}
+        <div><span class="clickable" onclick=${mapOverviewClick}>${self.translated['mapOverview']}</span> ${breadCrumbs()}</div>
         ${legend(self.data.Nacionalidades.features, self.language)}
       </div>
     </div>

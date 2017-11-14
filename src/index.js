@@ -117,10 +117,11 @@ function onLoad () {
     map.fitBounds(startingBounds, {padding: 20})
   })
 
-  sb.on('viewNationalidad', function (nacionalidad) {
+  sb.on('viewNationalidad', viewNationalidad)
+  function viewNationalidad (nacionalidad) {
     var nac = nacionalidadesByName[nacionalidad.properties.Nacionalidad]
     if (nac.geometry) zoomToArea(nac)
-  })
+  }
 
   var areaFillIds = areas.features.map(function (f) { return f.properties._id })
 
@@ -167,6 +168,8 @@ function onLoad () {
       areaPopup.update(areaPopupDOM(props, areaComunidades))
       areaPopup.setLngLat(e.lngLat)
       areaPopup.popupNode.addEventListener('click', function (e) {
+        var nac = nacionalidadesByName[area.properties.nacionalidad]
+        sb.viewNationality(nac)
         zoomToArea(area)
       })
     } else {
