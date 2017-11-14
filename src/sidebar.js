@@ -118,7 +118,7 @@ Sidebar.prototype._getElement = function () {
       text-decoration: none;
     }
     .navbar {
-      width: 100%;
+      width: calc(100% - 350px);
       z-index: 0;
       position: fixed;
       background-color: transparent;
@@ -127,7 +127,7 @@ Sidebar.prototype._getElement = function () {
         text-decoration: underline;
       }
       .navbar-inner {
-        background-color: rgba(0,0,0,.6);
+        background-color: rgba(0,0,0,.4);
         margin-left: 350px;
         font-size: 12px;
         line-height: 40px;
@@ -223,8 +223,8 @@ Sidebar.prototype._getElement = function () {
   return yo`<div class="${styles}">
     <div class="navbar">
       <div class="navbar-inner flex space-between">
-        <span class="clickable" onclick=${mapOverviewClick}>${self.translated['mapOverview']}</span> ${breadCrumbs()}
-        ${legend(self.data.Nacionalidades.features)}
+        <div class="clickable" onclick=${mapOverviewClick}>${self.translated['mapOverview']}</div> ${breadCrumbs()}
+        ${legend(self.data.Nacionalidades.features, self.language)}
       </div>
     </div>
     <div class="sidebar">
