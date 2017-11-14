@@ -3,6 +3,7 @@ const url = require('url')
 const inherits = require('inherits')
 const events = require('events')
 const css = require('sheetify')
+const legend = require('./legend')
 
 module.exports = Sidebar
 
@@ -221,8 +222,9 @@ Sidebar.prototype._getElement = function () {
 
   return yo`<div class="${styles}">
     <div class="navbar">
-      <div class="navbar-inner">
+      <div class="navbar-inner flex space-between">
         <span class="clickable" onclick=${mapOverviewClick}>${self.translated['mapOverview']}</span> ${breadCrumbs()}
+        ${legend(self.data.Nacionalidades.features)}
       </div>
     </div>
     <div class="sidebar">
