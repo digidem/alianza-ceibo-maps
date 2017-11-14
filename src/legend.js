@@ -154,8 +154,8 @@ module.exports = function (data, opts) {
     </div>
   </div>
   `
-  function toggle () {
-    var cl = el.classList
+  function toggle (event) {
+    var cl = event.target.parentElement.classList
     cl.contains('open') ? cl.remove('open') : cl.add('open')
   }
   return el
