@@ -135,7 +135,7 @@ Sidebar.prototype._getElement = function () {
         text-transform: uppercase;
         font-weight: bold;
         padding-left: 20px;
-        color: grey;
+        color: rgba(255,255,255,.7);
         .breadcrumbs span:last-child {
           color: white;
         }
