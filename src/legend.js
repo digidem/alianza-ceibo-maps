@@ -3,8 +3,8 @@ const css = require('sheetify')
 
 const translations = {
   'header': {
-    es: 'Instalaciones de agua y solar',
-    en: 'Water and Solar Installations'
+    es: 'Leyendo del Mapa',
+    en: 'Map Legend'
   },
   'agua': {
     es: 'Instalaciones de agua',
@@ -26,66 +26,44 @@ const translations = {
     es: 'En proceso de reclamacíon legal',
     en: 'In process of legal claim'
   },
-  'explore': {
-    es: 'EXPLORAR',
-    en: 'EXPLORE'
-  },
   'territory': {
     es: 'territorio',
     en: 'territory'
   }
 }
 
-module.exports = Legend
-
-function Legend (data, opts) {
-  if (!(this instanceof Legend)) return new Legend(data, opts)
-  if (!opts) opts = {}
-  this.data = data
-  this.lang = opts.lang || 'es'
-  this.el = this._getElement()
-  document.body.append(this.el)
-}
-
-Legend.prototype.update = function () {
-  yo.update(this.el, this._getElement())
-}
-
-Legend.prototype._getElement = function () {
-  var self = this
-  var lang = this.lang
-  var data = this.data
+module.exports = function (data, opts) {
+  var lang = opts.language || 'es'
   var legendStyles = css`
     :host {
-      position: absolute;
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      width: 100%;
-      height: 100%;
-      z-index: 1;
-      overflow: auto;
+      padding-right: 20px;
+      &.open .legend {
+        display: block !important;
+      }
+      .clickable:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+      .legend-button {
+        padding: 0px 20px;
+      }
 
       .legend {
-        position: relative;
-        padding: 30px;
-        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-        line-height: 18px;
-        margin: 40px;
-        border-radius: 10px;
-        width: 50%;
-        min-width: 700px;
-        text-align: center;
-        background: rgb(255, 255, 255);
-        .legend-inner {
-          display: flex;
-          justify-content: center;
+        line-height: 20px;
+        right: 0;
+        color: #ccc;
+        font-weight: bold;
+        background-color: rgba(0,0,0,.7);
+        display: none;
+        position: fixed;
+        font-size: .5rem;
+        hr {
+          color: black;
+          border-style: solid;
         }
+
         ul {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          text-align: left;
+          padding: 0px 10px;
           list-style: none;
           li {
             display: flex;
@@ -94,7 +72,7 @@ Legend.prototype._getElement = function () {
           }
         }
         img {
-          width: 20px;
+          width: 10px;
         }
 
         button {
@@ -116,14 +94,13 @@ Legend.prototype._getElement = function () {
       }
 
       .legend-territory {
-        width: 30px;
-        height: 20px;
-        border: 1px solid;
+        width: 10px;
+        height: 10px;
       }
 
       .cross-hatched {
+        background-color: #EEA;
         background-image: url("icons/cross-hatch.svg");
-        border: 1px solid black;
       }
       h1 {
         text-transform: uppercase;
@@ -131,59 +108,55 @@ Legend.prototype._getElement = function () {
     }
   `
 
-  var el = yo`<div style="display: none;">
-    <div class="map-overlay ${legendStyles}">
-      <div class="legend">
-      <h1>${translations['header'][lang]}</h1>
-      <div class="legend-inner">
-        <ul>
-          <li>
-            <img src="icons/comunidad-agua-dot.svg" />
-            <img src="icons/comunidad-agua.svg" />
-            <span class="legend-text">${translations['agua'][lang]}</span>
-          </li>
-          <li>
-            <img src="icons/comunidad-solar-dot.svg" />
-            <img src="icons/comunidad-solar.svg" />
-            <span class="legend-text">${translations['solar'][lang]}</span>
-          </li>
-          <li>
-            <img src="icons/comunidad-agua-solar-dot.svg" />
-            <img src="icons/comunidad-agua-solar.svg" />
-            <span class="legend-text">${translations['agua-solar'][lang]}</span>
-          </li>
-          <li>
-            <img src="icons/comunidad-agua-story.svg" />
-            <img src="icons/comunidad-agua-solar-story.svg" />
-            <span class="legend-text">${translations['agua-solar-story'][lang]}</span>
-          </li>
-        </ul>
-        <ul>
-          ${data.Nacionalidades.features.map(function (feature) {
-            var props = feature.properties
-            var color = props.Color.replace('rgb', 'rgba').replace(')', ',.4)')
-            if (props.Nacionalidad === 'Kichwa') return
-            return yo`
-              <li>
-                <div class="legend-territory"
-                     style="background-color:${color}; border-color: ${props.Color}"></div>
-                <div class="legend-text"> ${props.Nacionalidad} ${translations['territory'][lang]}</div>
-              </li>
-            `
-          })}
-          <li>
-            <div class="legend-territory cross-hatched"></div>
-            <span class="legend-text">${translations['legal-process'][lang]}</span>
-          </li>
-        </ul>
-      </div>
-      <button onclick=${close}>${translations['explore'][lang]}</button>
-      </div>
+  var el = yo`<div class="${legendStyles}">
+  <div class="legend-button clickable" onclick=${toggle}>
+    ${translations['header'][lang]}
+  </div>
+  <div class="legend">
+    <div class="legend-inner">
+      <ul>
+        <li>
+          <img src="icons/comunidad-agua-dot.svg" />
+          <span class="legend-text">${translations['agua'][lang]}</span>
+        </li>
+        <li>
+          <img src="icons/comunidad-solar-dot.svg" />
+          <span class="legend-text">${translations['solar'][lang]}</span>
+        </li>
+        <li>
+          <img src="icons/comunidad-agua-solar-dot.svg" />
+          <span class="legend-text">${translations['agua-solar'][lang]}</span>
+        </li>
+        <li>
+          <img src="icons/comunidad-agua-story.svg" />
+          <span class="legend-text">${translations['agua-solar-story'][lang]}</span>
+        </li>
+      </ul>
+      <hr>
+      <ul>
+        ${data.map(function (feature) {
+          var props = feature.properties
+          if (!props.Nacionalidad) return
+          var color = props.Color.replace('rgb', 'rgba').replace(')', ',.4)')
+          return yo`
+            <li>
+              <div class="legend-territory"
+                   style="background-color:${color};"></div>
+              <div class="legend-text"> ${props.Nacionalidad} ${translations['territory'][lang]}</div>
+            </li>
+          `
+        })}
+        <li>
+          <div class="legend-territory cross-hatched"></div>
+          <span class="legend-text">${translations['legal-process'][lang]}</span>
+        </li>
+      </ul>
     </div>
   </div>
   `
-  function close () {
-    self.el.style.display = 'none'
+  function toggle () {
+    var cl = el.classList
+    cl.contains('open') ? cl.remove('open') : cl.add('open')
   }
   return el
 }
