@@ -10,17 +10,23 @@ module.exports = function areaPopup (props, comunidades) {
 
   var style = css`
     :host {
-      border-radius: 2px;
-      text-transform: uppercase;
+      border-radius: 5px;
       font-weight: bold;
       color: black;
       display: flex;
+      background-color: white;
       box-shadow: 0 0 .5em black;
       font-size: 12px;
       font-family: 'Helvetica';
 
+      .square {
+        margin: 7px 0px 0px 5px;
+        width: 10px;
+        height: 10px;
+      }
+
       .area-popup-name {
-        padding: 5px 10px;
+        padding: 5px;
         border-right: 1px solid black;
       }
 
@@ -46,12 +52,13 @@ module.exports = function areaPopup (props, comunidades) {
   })
 
   return yo`<div class='${style}'>
-    <div class="area-popup-name" style='background-color:rgba(${color}, .6);'>
+    <div class="square" style="background-color:rgba(${color}, 0.6);"></div>
+    <div class="area-popup-name">
       ${name}
     </div>
     ${!comunidades.length ? ''
       : yo`
-        <div class="area-popup-data" style='background-color:rgba(${color}, .4);'>
+        <div class="area-popup-data">
           ${totalWater ? yo`
             <div class="area-popup-data-item">
               <img src="icons/comunidad-agua-dot.svg" /> ${totalWater}

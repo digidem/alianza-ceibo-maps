@@ -305,7 +305,7 @@ Sidebar.prototype._areasListDOM = function () {
         <div class="community-item clickable" onclick=${areaClicked}>
           <div class="community-item-label">
             <h3>${props['Nacionalidad']}</h3>
-            <h6>${totalInstallations} ${self.translated['installations']} </h6>
+            <h6>${totalInstallations} <span>${self.translated['installations']}</span> </h6>
           </div>
           <img src="${getFotoUrl(props.Foto)}" />
         </div>`
