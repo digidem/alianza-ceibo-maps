@@ -447,62 +447,25 @@
         "id": "recxQNz0HRrsFCIKF",
         "properties": {
           "Titulo": "Giving Roots to Resistance",
+          "Resumen": "This is the story of Emergildo Criollo, a Kofan who witnessed the repercussions of western religion on the ancestral practices of medicine and spirituality of the Kofan.",
           "Vinculo": "https://www.amazonfrontlines.org/chronicles/roots-resistance/",
           "Foto": [
             {
-              "id": "att7slAq4nETbctj8",
-              "url": "https://dl.airtable.com/9hP10PhCTTu7ulntPrRe_tree.jpg",
-              "filename": "tree.jpg",
-              "size": 429194,
+              "id": "attV7GIC1SHDzSHFe",
+              "url": "https://dl.airtable.com/pYiGtq51QLKqMTzHW9X7_Emergildo.jpg",
+              "filename": "Emergildo.jpg",
+              "size": 277119,
               "type": "image/jpeg",
               "thumbnails": {
                 "small": {
-                  "url": "https://dl.airtable.com/X2n9CxB2QEOHhcKGWN9Z_small_tree.jpg",
-                  "width": 27,
+                  "url": "https://dl.airtable.com/yZ0ryHohTg6fU1yOtYgY_small_Emergildo.jpg",
+                  "width": 46,
                   "height": 36
                 },
                 "large": {
-                  "url": "https://dl.airtable.com/ySe7fOIlSqAZFLFdPXgS_large_tree.jpg",
-                  "width": 479,
+                  "url": "https://dl.airtable.com/Bq71x4DdQJy461g458Bx_large_Emergildo.jpg",
+                  "width": 658,
                   "height": 512
-                }
-              }
-            },
-            {
-              "id": "attrm5s9hEfJSkty9",
-              "url": "https://dl.airtable.com/64l1OMqQniN9xD6s5V7g_forest.jpg",
-              "filename": "forest.jpg",
-              "size": 2395129,
-              "type": "image/jpeg",
-              "thumbnails": {
-                "small": {
-                  "url": "https://dl.airtable.com/JLZp1j4TMyQzpl7tQ7aR_small_forest.jpg",
-                  "width": 54,
-                  "height": 36
-                },
-                "large": {
-                  "url": "https://dl.airtable.com/zc0IzHIDRrmxIDoWZTP7_large_forest.jpg",
-                  "width": 512,
-                  "height": 512
-                }
-              }
-            },
-            {
-              "id": "attkrBwSiJeA4Id8h",
-              "url": "https://dl.airtable.com/JjLDzXmKSsu9l0xMlzlX_river.jpg",
-              "filename": "river.jpg",
-              "size": 32758,
-              "type": "image/jpeg",
-              "thumbnails": {
-                "small": {
-                  "url": "https://dl.airtable.com/9C8Z393xRmeJJnURCvk8_small_river.jpg",
-                  "width": 58,
-                  "height": 36
-                },
-                "large": {
-                  "url": "https://dl.airtable.com/W97Bpn5SqyRtHkKzZn3M_large_river.jpg",
-                  "width": 512,
-                  "height": 400
                 }
               }
             }
@@ -510,8 +473,7 @@
           "Comunidad": [
             "rec1e8A3YqHHWiUA4"
           ],
-          "Idioma": "ES",
-          "Resumen": "This is the story of Emergildo Criollo, a Kofan who witnessed the repercussions of western religion on the ancestral practices of medicine and spirituality of the Kofan."
+          "Idioma": "ES"
         },
         "geometry": null
       },
@@ -609,13 +571,13 @@
             }
           ],
           "Description English": "The A'I Kofan community of Bavoroe lies close to the Aguarico River in the Ecuadorian Amazon. Composed of eight families, Bavoroe works with ClearWater and the Ceibo Alliance on two programs",
+          "Blog post link": "https://deploy-preview-23--digidem.netlify.com",
+          "Blog title": "Giving Roots to Resistance",
           "Agua": 8,
           "Agua Familias": 8,
           "Agua Usuarios": 41,
           "Most recent": "2014-12-22",
-          "First": "2013-12-17",
-          "Blog post link": "https://deploy-preview-23--digidem.netlify.com",
-          "Blog title": "Giving Roots to Resistance"
+          "First": "2013-12-17"
         },
         "geometry": {
           "type": "Point",
