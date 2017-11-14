@@ -36,6 +36,7 @@ module.exports = function areaPopup (props, comunidades) {
         align-items: center;
         justify-content: space-between;
         img {
+          margin-bottom: 2px;
           width: 10px;
         }
         .area-popup-data-item {
