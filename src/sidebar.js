@@ -147,7 +147,7 @@ Sidebar.prototype._getElement = function () {
       position: absolute;
       .header {
         padding: 25px;
-        background-color: #365973;
+        background-color: #2f604a;
         color: white;
       }
       .number {
