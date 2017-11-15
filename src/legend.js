@@ -3,7 +3,7 @@ const css = require('sheetify')
 
 const translations = {
   'header': {
-    es: 'Leyendo del Mapa',
+    es: 'Leyenda del Mapa',
     en: 'Map Legend'
   },
   'agua': {
