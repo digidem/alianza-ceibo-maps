@@ -924,7 +924,8 @@
           "Agua Familias": 29,
           "Agua Usuarios": 185,
           "Most recent": "2013-09-11",
-          "First": "2012-05-14"
+          "First": "2012-05-14",
+          "Solar": 1
         },
         "geometry": {
           "type": "Point",
@@ -1824,7 +1825,8 @@
           "Agua Familias": 9,
           "Agua Usuarios": 36,
           "Most recent": "2016-03-08",
-          "First": "2016-03-08"
+          "First": "2016-03-08",
+          "Solar": 9
         },
         "geometry": {
           "type": "Point",
@@ -2585,7 +2587,8 @@
           "Agua Familias": 7,
           "Agua Usuarios": 28,
           "Most recent": "2016-12-30",
-          "First": "2016-12-30"
+          "First": "2016-12-30",
+          "Solar": 6
         },
         "geometry": {
           "type": "Point",
@@ -4018,7 +4021,8 @@
           "Agua Familias": 14,
           "Agua Usuarios": 0,
           "Most recent": "2016-12-30",
-          "First": "2016-12-30"
+          "First": "2016-12-30",
+          "Solar": 13
         },
         "geometry": {
           "type": "Point",
