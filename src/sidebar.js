@@ -39,10 +39,32 @@ function Sidebar (language, data) {
   this.language = language
   this.translated = translations[language]
   this.data = data
+  const self = this
   // todo: get totals programmatically, once.
+  var nacionalidades = self.data.Nacionalidades.features
+  const totalWater = nacionalidades
+    .map(function (nacionalidad, i) {
+      var props = nacionalidad.properties
+      if (!props.Nacionalidad || props.Nacionalidad === 'Kichwa') return 0
+      return props.Comunidades.reduce(function (sum, cid) {
+        var com = self.data.Index[cid]
+        return sum + (com.properties.Agua || 0)
+      }, 0)
+    })
+    .reduce((sum, installs) => sum + installs, 0)
+  const totalSolar = nacionalidades
+    .map(function (nacionalidad, i) {
+      var props = nacionalidad.properties
+      if (!props.Nacionalidad || props.Nacionalidad === 'Kichwa') return 0
+      return props.Comunidades.reduce(function (sum, cid) {
+        var com = self.data.Index[cid]
+        return sum + (com.properties.Solar || 0)
+      }, 0)
+    })
+    .reduce((sum, installs) => sum + installs, 0)
   this.initial = {
-    totalWater: 970,
-    totalSolar: 122,
+    totalWater: totalWater,
+    totalSolar: totalSolar,
     description: `Our focus on building solutions is not about quick technological fixes, nor the naïve belief in the power of "good intentions"
       to resolve a deep human health, social and environmental crisis, but rather it is about working side-by-side
       with indigenous peoples struggling to secure life’s basic necessities in a first imperiled by the industrial frontier.`,
@@ -72,14 +94,13 @@ Sidebar.prototype.viewNationality = function (nacionalidad) {
   var comunidades = nacionalidad.properties.Comunidades
   var totalWater = comunidades.map(function (communityId) {
     var com = self.data.Index[communityId]
-    return com.properties.Agua
+    return com.properties.Agua || 0
   }).reduce((sum, installs) => sum + installs, 0)
 
-  var totalSolar = comunidades.filter(function (communityId) {
+  var totalSolar = comunidades.map(function (communityId) {
     var com = self.data.Index[communityId]
-    var programas = com.properties.Programas || []
-    return includes(programas, 'Sistemas solares')
-  }).length
+    return com.properties.Solar || 0
+  }).reduce((sum, installs) => sum + installs, 0)
 
   this.view = VIEWS.AREA
   this.viewData = {
@@ -102,8 +123,8 @@ Sidebar.prototype.viewComunidad = function (comunidad) {
     foto: getFotoUrl(props.Foto),
     description: props['Description English'],
     historias: props.Historias,
-    totalWater: props.Agua,
-    totalSolar: includes(props.Programas || [], 'Sistemas solares') ? 1 : 0
+    totalWater: props.Agua || 0,
+    totalSolar: props.Solar || 0
   }
   this.update()
 }
@@ -294,8 +315,9 @@ Sidebar.prototype._areasListDOM = function () {
         if (!props.Nacionalidad || props.Nacionalidad === 'Kichwa') return
         var totalInstallations = props.Comunidades.reduce(function (sum, cid) {
           var com = self.data.Index[cid]
-          var installations = com.properties.Installations
-          return sum + (installations ? installations.length : 0)
+          var agua = com.properties.Agua || 0
+          var solar = com.properties.Solar || 0
+          return sum + agua + solar
         }, 0)
 
         function areaClicked (event) {
