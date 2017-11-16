@@ -1152,11 +1152,16 @@
             "Mujer y familia"
           ],
           "Descripción": "La comunidad de Apaika, cuyo nombre significa “luna” en idioma Waorani, está ubicada por la vía Auca en la provincia de Pastaza. En la comunidad viven seis familias, las cuales no tienen acceso a electricidad y se demoran tres horas para llegar a la ciudad más cerca para comprar víveres.",
-          "Agua": 1,
-          "Agua Familias": 6,
-          "Agua Usuarios": 24,
+          "Agua": 6,
+          "Agua Familias": 36,
+          "Agua Usuarios": 144,
           "Installations": [
-            "recNBJHAbF0KJQ3cT"
+            "recNBJHAbF0KJQ3cT",
+            "recHppHp6HX2Vb56B",
+            "recJl75MGU3v9m423",
+            "rec7vRYQepnQixP1u",
+            "recm18CG5yKIc5CAe",
+            "recsEdPI3iYgli5g3"
           ],
           "Most recent": "2017-08-15",
           "First": "2017-08-15"
@@ -2184,7 +2189,15 @@
           "Agua Familias": 9,
           "Agua Usuarios": 36,
           "Installations": [
-            "recnNbs0zwi7FxzI6"
+            "recnNbs0zwi7FxzI6",
+            "recN3vHRmJvDjTWdq",
+            "recCM1mc0R6n4RU2c",
+            "recEN0fhZt0EaUaUx",
+            "recbIMoptigKqSSVF",
+            "reci8n6gtfvpc5yS2",
+            "recmvrTmb57ItYPu0",
+            "rec14RRCRpxDkeI6m",
+            "recMbJaAa16w2SdCh"
           ],
           "Nacionalidad": [
             "rec7nhastozSVnJax"
@@ -2616,7 +2629,9 @@
           "Agua Familias": 3,
           "Agua Usuarios": 12,
           "Installations": [
-            "recmUMEDIw4vfrOmU"
+            "recmUMEDIw4vfrOmU",
+            "rec90AcMsQw7qzAXl",
+            "recIaRtt9V9y5dpQv"
           ]
         },
         "geometry": {
