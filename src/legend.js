@@ -3,31 +3,31 @@ const css = require('sheetify')
 
 const translations = {
   'header': {
-    es: 'Map Legend',
+    es: 'Leyendo del Mapa',
     en: 'Map Legend'
   },
   'agua': {
-    es: 'Water Installations',
+    es: 'Instalaciones de agua',
     en: 'Water Installations '
   },
   'solar': {
-    es: 'Solar Installations',
+    es: 'Instalaciones de solar',
     en: 'Solar Installations '
   },
   'agua-solar': {
-    es: 'Water and Solar Installations',
+    es: 'Instalaciones de agua y solar',
     en: 'Water and Solar Installations '
   },
   'agua-solar-story': {
-    es: 'Water and Solar Installations with stories',
+    es: 'Instalaciones de agua y solar con historias',
     en: 'Water and Solar Installations with stories'
   },
   'legal-process': {
-    es: 'In process of legal claim',
+    es: 'En proceso de reclamacíon legal',
     en: 'In process of legal claim'
   },
   'territory': {
-    es: ' territory',
+    es: 'territorio',
     en: 'territory'
   }
 }
