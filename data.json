@@ -2577,8 +2577,14 @@
           ],
           "Descripción": "Ñoneno es una comunidad que se ubica por la vía Auca en la provincia de Orellana y, cuyo nombre significa “río de los guaduales” en idioma Waorani. Las cuatro familias que viven en la comunidad no tienen acceso a la electricidad y se demoran unas dos horas para llegar a la ciudad más cerca para comprar víveres.   ",
           "Agua": 0,
-          "Agua Familias": 0,
-          "Agua Usuarios": 0
+          "Agua Familias": 4,
+          "Agua Usuarios": 16,
+          "Installations": [
+            "recmUMEDIw4vfrOmU",
+            "recRksVx0i8Gy7AX3"
+          ],
+          "Most recent": "2017-08-01",
+          "First": "2017-08-01"
         },
         "geometry": {
           "type": "Point",
