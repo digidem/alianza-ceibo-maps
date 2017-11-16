@@ -4069,7 +4069,8 @@
           "Agua Familias": 6,
           "Agua Usuarios": 24,
           "Most recent": "2016-12-30",
-          "First": "2016-12-30"
+          "First": "2016-12-30",
+          "Solar": 6
         },
         "geometry": {
           "type": "Point",
