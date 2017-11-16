@@ -728,7 +728,7 @@
           "Descripción": "Wewanpare es una pequeña comunidad que cuenta con dos familias y cuyo nombre se refiere a una mujer Waorani llamada Wewa. Actualmente, con el apoyo de la Alianza Ceibo, Wewanpare cuenta con dos sistemas de agua y dos sistemas solares.",
           "Agua": 2,
           "Agua Familias": 2,
-          "Agua Usuarios": 0,
+          "Agua Usuarios": 8,
           "Most recent": "2016-12-30",
           "First": "2016-12-30"
         },
@@ -1006,7 +1006,7 @@
           ],
           "Agua": 35,
           "Agua Familias": 35,
-          "Agua Usuarios": 0,
+          "Agua Usuarios": 140,
           "Most recent": "2016-01-11",
           "First": "2016-01-11"
         },
@@ -1142,13 +1142,13 @@
             "rec7nhastozSVnJax"
           ],
           "Lon": -77.07712,
-          "Lat": -1.0121,
+          "Lat": 0,
           "Programas": [
             "Sistemas de agua",
             "Mujer y familia"
           ],
           "Descripción": "La comunidad de Apaika, cuyo nombre significa “luna” en idioma Waorani, está ubicada por la vía Auca en la provincia de Pastaza. En la comunidad viven seis familias, las cuales no tienen acceso a electricidad y se demoran tres horas para llegar a la ciudad más cerca para comprar víveres.",
-          "Agua": 0,
+          "Agua": 1,
           "Agua Familias": 6,
           "Agua Usuarios": 24,
           "Installations": [
@@ -1157,13 +1157,7 @@
           "Most recent": "2017-08-15",
           "First": "2017-08-15"
         },
-        "geometry": {
-          "type": "Point",
-          "coordinates": [
-            -77.07712,
-            -1.0121
-          ]
-        }
+        "geometry": null
       },
       {
         "type": "Feature",
@@ -1225,7 +1219,7 @@
           ],
           "Agua": 20,
           "Agua Familias": 20,
-          "Agua Usuarios": 0,
+          "Agua Usuarios": 80,
           "Most recent": "2016-01-11",
           "First": "2016-01-11"
         },
@@ -1822,7 +1816,7 @@
           "Description English": "The A'I Kofan community of Chandiana'e lies close to the Bermejo River in the Ecuadorian Amazon. Composed of nine families, Chandiana'e works with ClearWater and the Ceibo Alliance on three programs",
           "Agua": 9,
           "Agua Familias": 9,
-          "Agua Usuarios": 0,
+          "Agua Usuarios": 36,
           "Most recent": "2016-03-08",
           "First": "2016-03-08"
         },
@@ -1901,7 +1895,7 @@
           "Description English": "The A'I Kofan community of Uperito lies close to the Aguarico River in the Ecuadorian Amazon. Composed of 22 families, Uperito works with ClearWater and the Ceibo Alliance on one program",
           "Agua": 22,
           "Agua Familias": 22,
-          "Agua Usuarios": 0,
+          "Agua Usuarios": 88,
           "Most recent": "2017-02-28",
           "First": "2017-02-28"
         },
@@ -2244,7 +2238,7 @@
           ],
           "Agua": 9,
           "Agua Familias": 9,
-          "Agua Usuarios": 47,
+          "Agua Usuarios": 55,
           "Most recent": "2014-12-20",
           "First": "2014-01-20"
         },
@@ -2428,7 +2422,7 @@
           "Description English": "The A'I Kofan community of Upirito lies close to the Aguarico River in the Ecuadorian Amazon. Composed of 26 families, Upirito works with ClearWater and the Ceibo Alliance on one program",
           "Agua": 26,
           "Agua Familias": 26,
-          "Agua Usuarios": 77,
+          "Agua Usuarios": 133,
           "Most recent": "2016-11-25",
           "First": "2012-01-01"
         },
@@ -2864,8 +2858,7 @@
             "reciV9v67qdPPRa7b",
             "recESIv0xylWvD3KC",
             "recn0wYNMx1IGykUm",
-            "recHMjrbMCZ9CQyTB",
-            "recRmKltp7IaFvfbH"
+            "recHMjrbMCZ9CQyTB"
           ],
           "Nacionalidad": [
             "rec7QOgAYxMln7nHN"
@@ -2902,7 +2895,7 @@
           ],
           "Description English": "The Siona community of Aboquehuira lies close to the Aguarico River in the Ecuadorian Amazon. Composed of nine families, Aboquehuira works with ClearWater and the Ceibo Alliance on five programs",
           "Agua": 9,
-          "Agua Familias": 10,
+          "Agua Familias": 9,
           "Agua Usuarios": 59,
           "Most recent": "2014-01-25",
           "First": "2014-01-20"
@@ -4074,7 +4067,7 @@
           "Description English": "Akaro is located on the banks of the river from which it takes its name, the Akaro River, in the province of Pastaza. The community is surrounded by forest and its remoteness from everything else grants a great diversity of flora and fauna. Six families, who do not have access to electricity, live scattered across the territory and are engaged in fishing, hunting and small-scale agriculture. The community has a small solar panel to operate a radio, which is the only means of communication they have.",
           "Agua": 6,
           "Agua Familias": 6,
-          "Agua Usuarios": 0,
+          "Agua Usuarios": 24,
           "Most recent": "2016-12-30",
           "First": "2016-12-30"
         },
