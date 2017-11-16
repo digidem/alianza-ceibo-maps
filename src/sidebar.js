@@ -41,8 +41,8 @@ function Sidebar (language, data) {
   this.data = data
   // todo: get totals programmatically, once.
   this.initial = {
-    totalWater: 765,
-    totalSolar: 67,
+    totalWater: 970,
+    totalSolar: 122,
     description: `Our focus on building solutions is not about quick technological fixes, nor the naïve belief in the power of "good intentions"
       to resolve a deep human health, social and environmental crisis, but rather it is about working side-by-side
       with indigenous peoples struggling to secure life’s basic necessities in a first imperiled by the industrial frontier.`,
