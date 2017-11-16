@@ -21,9 +21,9 @@ var translations = {
     header: 'Where We Work',
     water: 'Water Installations',
     solar: 'Solar Installations',
-    total: 'total installations',
+    total: ' total installations',
     areaHeader: 'Who We Work With',
-    installations: 'installations',
+    installations: ' installations',
     mapOverview: 'Map Overview'
   }
 }
