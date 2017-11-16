@@ -63,7 +63,7 @@ function Sidebar (language, data) {
     })
     .reduce((sum, installs) => sum + installs, 0)
   this.initial = {
-    totalWater: totalWater,
+    totalWater: 970,
     totalSolar: totalSolar,
     description: `Our focus on building solutions is not about quick technological fixes, nor the naïve belief in the power of "good intentions"
       to resolve a deep human health, social and environmental crisis, but rather it is about working side-by-side
