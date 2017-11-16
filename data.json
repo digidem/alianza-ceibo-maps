@@ -2165,6 +2165,28 @@
       },
       {
         "type": "Feature",
+        "id": "recNxQCVGPUTdu5SL",
+        "properties": {
+          "Comunidad": "Ñenkepare",
+          "Agua": 0,
+          "Agua Familias": 9,
+          "Agua Usuarios": 36,
+          "Installations": [
+            "recnNbs0zwi7FxzI6"
+          ],
+          "Nacionalidad": [
+            "rec7nhastozSVnJax"
+          ],
+          "Programas": [
+            "Sistemas de agua"
+          ],
+          "Most recent": "2017-08-20",
+          "First": "2017-08-20"
+        },
+        "geometry": null
+      },
+      {
+        "type": "Feature",
         "id": "recOCt7b8Zorp0HvH",
         "properties": {
           "Comunidad": "Bi'aña",
@@ -2577,14 +2599,11 @@
           ],
           "Descripción": "Ñoneno es una comunidad que se ubica por la vía Auca en la provincia de Orellana y, cuyo nombre significa “río de los guaduales” en idioma Waorani. Las cuatro familias que viven en la comunidad no tienen acceso a la electricidad y se demoran unas dos horas para llegar a la ciudad más cerca para comprar víveres.   ",
           "Agua": 0,
-          "Agua Familias": 4,
-          "Agua Usuarios": 16,
+          "Agua Familias": 3,
+          "Agua Usuarios": 12,
           "Installations": [
-            "recmUMEDIw4vfrOmU",
-            "recRksVx0i8Gy7AX3"
-          ],
-          "Most recent": "2017-08-01",
-          "First": "2017-08-01"
+            "recmUMEDIw4vfrOmU"
+          ]
         },
         "geometry": {
           "type": "Point",
@@ -4620,7 +4639,8 @@
             "rec3l0Q38OQEsxqg6",
             "rec9OlycuOUlTjFAh",
             "recOI0PqgXb84snJR",
-            "recRfatd3eaTyBXL0"
+            "recRfatd3eaTyBXL0",
+            "recNxQCVGPUTdu5SL"
           ]
         },
         "geometry": null
