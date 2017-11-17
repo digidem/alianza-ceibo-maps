@@ -27,8 +27,8 @@ const translations = {
     en: 'In process of legal claim'
   },
   'territory': {
-    es: 'territorio',
-    en: 'territory'
+    es: ' territorio',
+    en: ' territory'
   }
 }
 
