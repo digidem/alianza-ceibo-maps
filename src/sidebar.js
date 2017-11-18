@@ -199,6 +199,7 @@ Sidebar.prototype._getElement = function () {
       }
       .list-image {
         height: 100px;
+        width: 35%;
       }
       .community-item {
         display: flex;
@@ -218,6 +219,10 @@ Sidebar.prototype._getElement = function () {
       }
       .community-history-info {
         margin: 10px;
+        flex: auto;
+      }
+      .community-history-info h6 {
+        font-size: 8px;
       }
     }
   }
