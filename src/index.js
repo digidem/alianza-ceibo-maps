@@ -22,7 +22,7 @@ css('alianza-elements/style.css')
 
 mapboxgl.accessToken = require('../config.json').mapbox_token
 
-var startingBounds = [-80.55, -2.1, -73.3, 1.06] // W, S, E, N
+var startingBounds = [-79, -1.75, -74, 0.85] // W, S, E, N
 
 var lang = qs.parse(window.location.search.replace('?', '')).lang || 'en'
 var body = document.querySelector('body')
