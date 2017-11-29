@@ -546,6 +546,7 @@
             "Sistemas de agua",
             "Sistemas solares"
           ],
+          "Solar": 11,
           "Historias": [
             "recxQNz0HRrsFCIKF"
           ],
@@ -577,8 +578,7 @@
           "Agua Familias": 8,
           "Agua Usuarios": 41,
           "Most recent": "2014-12-22",
-          "First": "2013-12-17",
-          "Solar": 11
+          "First": "2013-12-17"
         },
         "geometry": {
           "type": "Point",
@@ -637,6 +637,15 @@
         "id": "rec2tTzVungo7ktGn",
         "properties": {
           "Comunidad": "Wentaro",
+          "Installations": [
+            "reck1rItNUIQq9oHf",
+            "recV6r24XlmpvUys2",
+            "rec3x41miCJg2hNhZ",
+            "recpt6MAfeuJTqtVs",
+            "recGyp2329K0E7gua",
+            "recXMxohLnNJHJxX1",
+            "recESDd8Hsd9VCclX"
+          ],
           "Nacionalidad": [
             "rec7nhastozSVnJax"
           ],
@@ -649,15 +658,6 @@
           "Agua": 0,
           "Agua Familias": 7,
           "Agua Usuarios": 28,
-          "Installations": [
-            "reck1rItNUIQq9oHf",
-            "recV6r24XlmpvUys2",
-            "rec3x41miCJg2hNhZ",
-            "recpt6MAfeuJTqtVs",
-            "recGyp2329K0E7gua",
-            "recXMxohLnNJHJxX1",
-            "recESDd8Hsd9VCclX"
-          ],
           "Most recent": "2017-08-15",
           "First": "2017-08-15"
         },
@@ -732,13 +732,13 @@
             "Sistemas de agua",
             "Sistemas solares"
           ],
+          "Solar": 2,
           "Descripción": "Wewanpare es una pequeña comunidad que cuenta con dos familias y cuyo nombre se refiere a una mujer Waorani llamada Wewa. Actualmente, con el apoyo de la Alianza Ceibo, Wewanpare cuenta con dos sistemas de agua y dos sistemas solares.",
           "Agua": 2,
           "Agua Familias": 2,
           "Agua Usuarios": 8,
           "Most recent": "2016-12-30",
-          "First": "2016-12-30",
-          "Solar": 2
+          "First": "2016-12-30"
         },
         "geometry": {
           "type": "Point",
@@ -834,6 +834,7 @@
             "Sistemas de agua",
             "Sistemas solares"
           ],
+          "Solar": 8,
           "Foto": [
             {
               "id": "atty2dVBfMSujmiyN",
@@ -860,8 +861,7 @@
           "Agua Familias": 9,
           "Agua Usuarios": 46,
           "Most recent": "2014-01-23",
-          "First": "2014-01-15",
-          "Solar": 8
+          "First": "2014-01-15"
         },
         "geometry": {
           "type": "Point",
@@ -905,6 +905,7 @@
             "Defensores y defensoras",
             "Mapeo territorial"
           ],
+          "Solar": 1,
           "Foto": [
             {
               "id": "attH3SWk4KwvMw915",
@@ -930,8 +931,7 @@
           "Agua Familias": 29,
           "Agua Usuarios": 185,
           "Most recent": "2013-09-11",
-          "First": "2012-05-14",
-          "Solar": 1
+          "First": "2012-05-14"
         },
         "geometry": {
           "type": "Point",
@@ -1148,6 +1148,14 @@
         "id": "rec9VyegpMIfGS8qd",
         "properties": {
           "Comunidad": "Apaika",
+          "Installations": [
+            "recNBJHAbF0KJQ3cT",
+            "recHppHp6HX2Vb56B",
+            "recJl75MGU3v9m423",
+            "rec7vRYQepnQixP1u",
+            "recm18CG5yKIc5CAe",
+            "recsEdPI3iYgli5g3"
+          ],
           "Nacionalidad": [
             "rec7nhastozSVnJax"
           ],
@@ -1161,14 +1169,6 @@
           "Agua": 6,
           "Agua Familias": 6,
           "Agua Usuarios": 24,
-          "Installations": [
-            "recNBJHAbF0KJQ3cT",
-            "recHppHp6HX2Vb56B",
-            "recJl75MGU3v9m423",
-            "rec7vRYQepnQixP1u",
-            "recm18CG5yKIc5CAe",
-            "recsEdPI3iYgli5g3"
-          ],
           "Most recent": "2017-08-15",
           "First": "2017-08-15"
         },
@@ -1485,6 +1485,7 @@
             "Mapeo territorial",
             "Practicas propias"
           ],
+          "Solar": 9,
           "Foto": [
             {
               "id": "attF8KsmjtEv9wY5r",
@@ -1510,8 +1511,7 @@
           "Agua Familias": 80,
           "Agua Usuarios": 397,
           "Most recent": "2015-05-20",
-          "First": "2012-04-25",
-          "Solar": 9
+          "First": "2012-04-25"
         },
         "geometry": {
           "type": "Point",
@@ -1594,6 +1594,7 @@
             "Mapeo territorial",
             "Defensores y defensoras"
           ],
+          "Solar": 6,
           "Foto": [
             {
               "id": "attw2VF4dHXmI7zuU",
@@ -1619,8 +1620,7 @@
           "Agua Familias": 10,
           "Agua Usuarios": 40,
           "Most recent": "2016-04-30",
-          "First": "2016-04-30",
-          "Solar": 6
+          "First": "2016-04-30"
         },
         "geometry": {
           "type": "Point",
@@ -1747,6 +1747,7 @@
             "Mapeo territorial",
             "Mujer y familia"
           ],
+          "Solar": 7,
           "Foto": [
             {
               "id": "att8MeR7CF14yfJI5",
@@ -1773,8 +1774,7 @@
           "Agua Familias": 7,
           "Agua Usuarios": 28,
           "Most recent": "2015-08-20",
-          "First": "2015-08-20",
-          "Solar": 7
+          "First": "2015-08-20"
         },
         "geometry": {
           "type": "Point",
@@ -1810,6 +1810,7 @@
             "Sistemas solares",
             "Practicas propias"
           ],
+          "Solar": 9,
           "Foto": [
             {
               "id": "attUaA07QOwCjwmfE",
@@ -1836,8 +1837,7 @@
           "Agua Familias": 9,
           "Agua Usuarios": 36,
           "Most recent": "2016-03-08",
-          "First": "2016-03-08",
-          "Solar": 9
+          "First": "2016-03-08"
         },
         "geometry": {
           "type": "Point",
@@ -2191,9 +2191,6 @@
         "id": "recNxQCVGPUTdu5SL",
         "properties": {
           "Comunidad": "Ñenkepare",
-          "Agua": 0,
-          "Agua Familias": 9,
-          "Agua Usuarios": 36,
           "Installations": [
             "recnNbs0zwi7FxzI6",
             "recN3vHRmJvDjTWdq",
@@ -2211,6 +2208,9 @@
           "Programas": [
             "Sistemas de agua"
           ],
+          "Agua": 0,
+          "Agua Familias": 9,
+          "Agua Usuarios": 36,
           "Most recent": "2017-08-20",
           "First": "2017-08-20"
         },
@@ -2348,6 +2348,7 @@
             "Sistemas solares",
             "Practicas propias"
           ],
+          "Solar": 19,
           "Foto": [
             {
               "id": "attVPKpD9eTIkXDLm",
@@ -2374,8 +2375,7 @@
           "Agua Familias": 28,
           "Agua Usuarios": 148,
           "Most recent": "2015-10-09",
-          "First": "2014-10-01",
-          "Solar": 19
+          "First": "2014-10-01"
         },
         "geometry": {
           "type": "Point",
@@ -2580,6 +2580,7 @@
             "Sistemas solares",
             "Mujer y familia"
           ],
+          "Solar": 6,
           "Foto": [
             {
               "id": "attV0nigoUU1svztG",
@@ -2606,8 +2607,7 @@
           "Agua Familias": 7,
           "Agua Usuarios": 28,
           "Most recent": "2016-12-30",
-          "First": "2016-12-30",
-          "Solar": 6
+          "First": "2016-12-30"
         },
         "geometry": {
           "type": "Point",
@@ -2622,6 +2622,11 @@
         "id": "recUMxvA22x5k7lT4",
         "properties": {
           "Comunidad": "Ñoneno",
+          "Installations": [
+            "recmUMEDIw4vfrOmU",
+            "rec90AcMsQw7qzAXl",
+            "recIaRtt9V9y5dpQv"
+          ],
           "Nacionalidad": [
             "rec7nhastozSVnJax"
           ],
@@ -2633,12 +2638,7 @@
           "Descripción": "Ñoneno es una comunidad que se ubica por la vía Auca en la provincia de Orellana y, cuyo nombre significa “río de los guaduales” en idioma Waorani. Las cuatro familias que viven en la comunidad no tienen acceso a la electricidad y se demoran unas dos horas para llegar a la ciudad más cerca para comprar víveres.   ",
           "Agua": 0,
           "Agua Familias": 3,
-          "Agua Usuarios": 12,
-          "Installations": [
-            "recmUMEDIw4vfrOmU",
-            "rec90AcMsQw7qzAXl",
-            "recIaRtt9V9y5dpQv"
-          ]
+          "Agua Usuarios": 12
         },
         "geometry": {
           "type": "Point",
@@ -2675,6 +2675,7 @@
             "Sistemas solares",
             "Defensores y defensoras"
           ],
+          "Solar": 8,
           "Foto": [
             {
               "id": "att3QiWuXeAIJaZJY",
@@ -2701,8 +2702,7 @@
           "Agua Familias": 8,
           "Agua Usuarios": 32,
           "Most recent": "2015-08-20",
-          "First": "2015-08-20",
-          "Solar": 8
+          "First": "2015-08-20"
         },
         "geometry": {
           "type": "Point",
@@ -2904,6 +2904,7 @@
             "Sistemas solares",
             "Monitoreo ambiental"
           ],
+          "Solar": 11,
           "Foto": [
             {
               "id": "attYWJ8hO8nBOI6et",
@@ -2930,8 +2931,7 @@
           "Agua Familias": 9,
           "Agua Usuarios": 59,
           "Most recent": "2014-01-25",
-          "First": "2014-01-20",
-          "Solar": 11
+          "First": "2014-01-20"
         },
         "geometry": {
           "type": "Point",
@@ -3272,13 +3272,13 @@
             "Sistemas solares",
             "Mujer y familia"
           ],
+          "Solar": 2,
           "Descripción": "Geyepare, se encuentra a la orilla del río Curaray (Ëwëno) y cuyo nombre significa “quebrada de pez sardina” en idioma Waorani. La comunidad es famosa por sus aves y principalmente por la presencia de animales como el tapir y guanganas. Actualmente con el apoyo de la Alianza Ceibo, Geyepare cuenta con un sistema de agua y dos sistemas solares.",
           "Agua": 2,
           "Agua Familias": 2,
           "Agua Usuarios": 8,
           "Most recent": "2015-12-30",
-          "First": "2015-12-30",
-          "Solar": 2
+          "First": "2015-12-30"
         },
         "geometry": {
           "type": "Point",
@@ -4015,6 +4015,7 @@
             "Mapeo territorial",
             "Mujer y familia"
           ],
+          "Solar": 13,
           "Foto": [
             {
               "id": "attidl5nPzmPhmTsf",
@@ -4042,8 +4043,7 @@
           "Agua Familias": 14,
           "Agua Usuarios": 0,
           "Most recent": "2016-12-30",
-          "First": "2016-12-30",
-          "Solar": 13
+          "First": "2016-12-30"
         },
         "geometry": {
           "type": "Point",
@@ -4077,6 +4077,7 @@
             "Sistemas solares",
             "Mujer y familia"
           ],
+          "Solar": 6,
           "Foto": [
             {
               "id": "attHbvN56JhHBdn9S",
@@ -4104,8 +4105,7 @@
           "Agua Familias": 6,
           "Agua Usuarios": 24,
           "Most recent": "2016-12-30",
-          "First": "2016-12-30",
-          "Solar": 6
+          "First": "2016-12-30"
         },
         "geometry": {
           "type": "Point",
@@ -4177,9 +4177,6 @@
         "id": "recxrXI0IWoHwJ1EO",
         "properties": {
           "Comunidad": "Keweriono",
-          "Agua": 0,
-          "Agua Familias": 20,
-          "Agua Usuarios": 80,
           "Installations": [
             "reczX8rbTDdOfMUd7",
             "recF7IRAQL0we3yeL",
@@ -4205,6 +4202,9 @@
           "Nacionalidad": [
             "rec7nhastozSVnJax"
           ],
+          "Agua": 0,
+          "Agua Familias": 20,
+          "Agua Usuarios": 80,
           "Most recent": "2017-08-15",
           "First": "2017-08-15"
         },
@@ -4287,12 +4287,12 @@
             "Sistemas solares",
             "Mujer y familia"
           ],
+          "Solar": 3,
           "Agua": 1,
           "Agua Familias": 1,
           "Agua Usuarios": 4,
           "Most recent": "2015-08-20",
-          "First": "2015-08-20",
-          "Solar": 3
+          "First": "2015-08-20"
         },
         "geometry": {
           "type": "Point",
@@ -4605,7 +4605,7 @@
         "type": "Feature",
         "id": "rec7QOgAYxMln7nHN",
         "properties": {
-          "Nacionalidad": "Siona",
+          "id": "siona",
           "Resumen": "The Siona, or ZioBain, live in three fragmented regions in Ecuador and Colombia. Only about 600 people in total, the Siona speak main coca, from the same language family as the Siekopai language. Heavily affected by the rubber trade and currently by extensive oil drilling, the Siona are fighting to keep their culture alive and strong.",
           "Foto": [
             {
@@ -4643,7 +4643,8 @@
             "recooJ7fODKE1aOl1",
             "recA8QrdxGKZVhRDP",
             "rec4X0dGmSNKz17xb"
-          ]
+          ],
+          "Nacionalidad": "Siona"
         },
         "geometry": null
       },
@@ -4651,7 +4652,7 @@
         "type": "Feature",
         "id": "rec7nhastozSVnJax",
         "properties": {
-          "Nacionalidad": "Waorani",
+          "id": "waorani",
           "Resumen": "The Waorani currently live in 54 communities over an expanse of 2.5 million acres in the heart of the Amazon. Renowned hunters and the last of the Ecuadorian nations to be contacted in the late 1950s, their territory is currently threatened by oil drilling and new access roads.",
           "Foto": [
             {
@@ -4720,7 +4721,8 @@
             "recRfatd3eaTyBXL0",
             "recNxQCVGPUTdu5SL",
             "recxrXI0IWoHwJ1EO"
-          ]
+          ],
+          "Nacionalidad": "Waorani"
         },
         "geometry": null
       },
@@ -4728,7 +4730,7 @@
         "type": "Feature",
         "id": "recHGwwudtmODsfLg",
         "properties": {
-          "Nacionalidad": "Secoya",
+          "id": "secoya",
           "Resumen": "Meaning “People of Many Colors”, the Siekopai were mistakenly named Secoya by colonists. Originally habitants of areas of flooded forests and black water lagoons in Peru and Ecuador, the war between the two countries in 1941 caused a forced division that lasted until the Peace Accord of 1998.",
           "Foto": [
             {
@@ -4762,7 +4764,8 @@
             "recFyPGB7xbR0J8c9",
             "recy3BZ5TP6lwZEwt",
             "reck5JuhF5oB2WDyM"
-          ]
+          ],
+          "Nacionalidad": "Secoya"
         },
         "geometry": null
       },
@@ -4770,7 +4773,7 @@
         "type": "Feature",
         "id": "recmAG2tQi6scRRzZ",
         "properties": {
-          "Nacionalidad": "Cofan",
+          "id": "kofan",
           "Resumen": "It is thought that the A’i Kofán once numbered between 15,000 and 20,000 people before the arrival of the Spanish conquistadors. The approximately 2,000 A’i Kofán currently living in Ecuador and Colombia still speak their language, A’ingae, and occupy a fragmented and reduced territory bridging the Andean mountain range with the Amazon rainforest.",
           "Foto": [
             {
@@ -4814,21 +4817,16 @@
             "recK4rEeMtxayhBXN",
             "rech4VGeqCBohUak8",
             "recKwtunJ5On933T2"
-          ]
+          ],
+          "Nacionalidad": "Cofan"
         },
-        "geometry": null
-      },
-      {
-        "type": "Feature",
-        "id": "recrNrcE32aWvR0bP",
-        "properties": {},
         "geometry": null
       },
       {
         "type": "Feature",
         "id": "reczA7fT6xso1KoGY",
         "properties": {
-          "Nacionalidad": "Kichwa",
+          "id": "kichwa",
           "Resumen": "The Kichwa of the Amazon are the most numerous of Ecuador’s indigenous Amazonian peoples. With a remediation ever on the horizon, they have taken up the painstaking process of cleaning up the mess that the oil companies have left behind.",
           "Foto": [
             {
@@ -4854,7 +4852,8 @@
           "Area": [
             "recq7JCzDcDUz82Gx"
           ],
-          "Color": "#088"
+          "Color": "#088",
+          "Nacionalidad": "Kichwa"
         },
         "geometry": null
       }
