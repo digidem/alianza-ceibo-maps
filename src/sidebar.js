@@ -68,7 +68,7 @@ function Sidebar (language, data) {
     description: `Our focus on building solutions is not about quick technological fixes, nor the naïve belief in the power of "good intentions"
       to resolve a deep human health, social and environmental crisis, but rather it is about working side-by-side
       with indigenous peoples struggling to secure life’s basic necessities in a first imperiled by the industrial frontier.`,
-    foto: 'sidebar.png',
+    foto: 'sidebar.jpg',
     title: this.translated['header']
   }
   this.viewNationalities()
