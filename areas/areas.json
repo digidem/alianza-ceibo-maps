@@ -309,11 +309,7 @@
           ]
         ]
       },
-      "properties": {
-        "Legalizado": 1,
-        "nacionalidad": "Cofan",
-        "name": "Sinangoe"
-      },
+      "properties": { "Legalizado": 1, "nacionalidad": "Kofan", "name": "Sinangoe" },
       "id": "0"
     },
     {
@@ -420,11 +416,7 @@
           ]
         ]
       },
-      "properties": {
-        "Legalizado": 1,
-        "nacionalidad": "Cofan",
-        "name": "Dovuno"
-      },
+      "properties": { "Legalizado": 1, "nacionalidad": "Kofan", "name": "Dovuno" },
       "id": "1"
     },
     {
@@ -877,11 +869,7 @@
           ]
         ]
       },
-      "properties": {
-        "Legalizado": 1,
-        "nacionalidad": "Cofan",
-        "name": "Sábalo"
-      },
+      "properties": { "Legalizado": 1, "nacionalidad": "Kofan", "name": "Sábalo" },
       "id": "2"
     },
     {
@@ -971,11 +959,7 @@
           ]
         ]
       },
-      "properties": {
-        "Legalizado": 1,
-        "nacionalidad": "Cofan",
-        "name": "Cofan Dureno"
-      },
+      "properties": { "Legalizado": 1, "nacionalidad": "Kofan", "name": "Kofan Dureno" },
       "id": "3"
     },
     {
@@ -1330,11 +1314,7 @@
           ]
         ]
       },
-      "properties": {
-        "Legalizado": 1,
-        "nacionalidad": "Cofan",
-        "name": "Cofan Bermejo"
-      },
+      "properties": { "Legalizado": 1, "nacionalidad": "Kofan", "name": "Kofan Bermejo" },
       "id": "4"
     },
     {
@@ -1857,11 +1837,7 @@
           ]
         ]
       },
-      "properties": {
-        "Legalizado": 1,
-        "nacionalidad": "Secoya",
-        "name": "Siekopai Ecuador"
-      },
+      "properties": { "Legalizado": 1, "nacionalidad": "Secoya", "name": "Siekopai Ecuador" },
       "id": "5"
     },
     {
@@ -1955,11 +1931,7 @@
           ]
         ]
       },
-      "properties": {
-        "Legalizado": 0,
-        "nacionalidad": "Secoya",
-        "name": "Guajoya"
-      },
+      "properties": { "Legalizado": 0, "nacionalidad": "Secoya", "name": "Guajoya" },
       "id": "6"
     },
     {
@@ -2092,11 +2064,7 @@
           ]
         ]
       },
-      "properties": {
-        "Legalizado": 0,
-        "nacionalidad": "Secoya",
-        "name": "San Martin"
-      },
+      "properties": { "Legalizado": 0, "nacionalidad": "Secoya", "name": "San Martin" },
       "id": "7"
     },
     {
@@ -2271,11 +2239,7 @@
           ]
         ]
       },
-      "properties": {
-        "Legalizado": 0,
-        "nacionalidad": "Secoya",
-        "name": "Mashunta"
-      },
+      "properties": { "Legalizado": 0, "nacionalidad": "Secoya", "name": "Mashunta" },
       "id": "8"
     },
     {
@@ -2309,11 +2273,7 @@
           ]
         ]
       },
-      "properties": {
-        "Legalizado": 1,
-        "nacionalidad": "Secoya",
-        "name": "Zambelin de Yaricaya"
-      },
+      "properties": { "Legalizado": 1, "nacionalidad": "Secoya", "name": "Zambelin de Yaricaya" },
       "id": "9"
     },
     {
@@ -2334,11 +2294,7 @@
           ]
         ]
       },
-      "properties": {
-        "Legalizado": 1,
-        "nacionalidad": "Secoya",
-        "name": "Mashunta"
-      },
+      "properties": { "Legalizado": 1, "nacionalidad": "Secoya", "name": "Mashunta" },
       "id": "10"
     },
     {
@@ -2360,11 +2316,7 @@
           ]
         ]
       },
-      "properties": {
-        "Legalizado": 1,
-        "nacionalidad": "Secoya",
-        "name": "San Martin de Porres"
-      },
+      "properties": { "Legalizado": 1, "nacionalidad": "Secoya", "name": "San Martin de Porres" },
       "id": "11"
     },
     {
@@ -2392,11 +2344,7 @@
           ]
         ]
       },
-      "properties": {
-        "Legalizado": 0,
-        "nacionalidad": "Secoya",
-        "name": "Siekopai – Lagarto Cocha"
-      },
+      "properties": { "Legalizado": 0, "nacionalidad": "Secoya", "name": "Siekopai – Lagarto Cocha" },
       "id": "12"
     },
     {
@@ -2588,11 +2536,7 @@
           ]
         ]
       },
-      "properties": {
-        "Legalizado": 1,
-        "nacionalidad": "Siona",
-        "name": "Siona – Aguarico"
-      },
+      "properties": { "Legalizado": 1, "nacionalidad": "Siona", "name": "Siona – Aguarico" },
       "id": "13"
     },
     {
@@ -2723,11 +2667,7 @@
           ]
         ]
       },
-      "properties": {
-        "Legalizado": 1,
-        "nacionalidad": "Siona",
-        "name": "Siona Cuyabeno"
-      },
+      "properties": { "Legalizado": 1, "nacionalidad": "Siona", "name": "Siona Cuyabeno" },
       "id": "14"
     },
     {
@@ -2769,11 +2709,7 @@
           ]
         ]
       },
-      "properties": {
-        "Legalizado": 1,
-        "nacionalidad": "Siona",
-        "name": "Buenvavista"
-      },
+      "properties": { "Legalizado": 1, "nacionalidad": "Siona", "name": "Buenvavista" },
       "id": "15"
     },
     {
@@ -3293,11 +3229,7 @@
           ]
         ]
       },
-      "properties": {
-        "Legalizado": 0,
-        "nacionalidad": "Siona",
-        "name": "Buenavista ampliacion"
-      },
+      "properties": { "Legalizado": 0, "nacionalidad": "Siona", "name": "Buenavista ampliacion" },
       "id": "16"
     },
     {
@@ -3337,11 +3269,7 @@
           ]
         ]
       },
-      "properties": {
-        "Legalizado": 1,
-        "nacionalidad": "Siona",
-        "name": "San Jose de Wisuya"
-      },
+      "properties": { "Legalizado": 1, "nacionalidad": "Siona", "name": "San Jose de Wisuya" },
       "id": "17"
     },
     {
@@ -5151,11 +5079,7 @@
           ]
         ]
       },
-      "properties": {
-        "Legalizado": 1,
-        "nacionalidad": "Waorani",
-        "name": "Waorani"
-      },
+      "properties": { "Legalizado": 1, "nacionalidad": "Waorani", "name": "Waorani" },
       "id": "18"
     }
   ]

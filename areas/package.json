@@ -30,6 +30,7 @@
   "dependencies": {
     "mapshaper": "^0.4.31",
     "ndjson-cli": "^0.3.1",
-    "shapefile": "^0.6.2"
+    "shapefile": "^0.6.2",
+    "underscore-cli": "^0.2.19"
   }
 }
