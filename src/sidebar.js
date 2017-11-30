@@ -65,7 +65,7 @@ function Sidebar (language, data) {
   this.initial = {
     totalWater: 970,
     totalSolar: totalSolar,
-    description: `Amazon Frontlines and the Ceibo Alliance work on concrete initiatives with over 60 communities from the Siona, Secoya, Kofan and Waorani indigenous nations in Ecuador, Peru and Colombia. Explore the *Where We Work* map to learn more about the past and present of these indigenous communities. Make sure to check out *Communities with Stories* to watch films or read first-hand accounts of our work with these communities, from clean water and solar energy, to territorial defense and cultural revival.`,
+    description: `Amazon Frontlines and the Ceibo Alliance work on concrete initiatives with over 60 communities from the Siona, Secoya, Kofan and Waorani indigenous nations in Ecuador, Peru and Colombia. Explore the Where We Work map to learn more about the past and present of these indigenous communities. Make sure to check out Communities with Stories to watch films or read first-hand accounts of our work with these communities, from clean water and solar energy, to territorial defense and cultural revival.`,
     foto: 'sidebar.jpg',
     title: this.translated['header']
   }
