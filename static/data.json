@@ -4564,9 +4564,6 @@
         "id": "recq7JCzDcDUz82Gx",
         "properties": {
           "Area nombre": "Rumipamba",
-          "Nacionalidad": [
-            "reczA7fT6xso1KoGY"
-          ],
           "Resumen": "In 2013, ClearWater built rainwater systems in the Kichwa village of Rumipamba, with more installations planned for additional Kichwa communities in the bear future.",
           "Historia": "Installation of 53 catchment systems has already begun in the Kichwa village of Rumipamba, starting in May of 2013, which will benefit approximately 350 people. ClearWater will also be working with other Kichwa communities in the near future, ensuring clean water for all oil-affected indigenous communities.",
           "Foto": [
@@ -4589,9 +4586,6 @@
                 }
               }
             }
-          ],
-          "Color": [
-            "#088"
           ]
         },
         "geometry": null
@@ -4815,40 +4809,6 @@
             "rech4VGeqCBohUak8",
             "recKwtunJ5On933T2"
           ]
-        },
-        "geometry": null
-      },
-      {
-        "type": "Feature",
-        "id": "reczA7fT6xso1KoGY",
-        "properties": {
-          "Nacionalidad": "Kichwa",
-          "Resumen": "The Kichwa of the Amazon are the most numerous of Ecuador’s indigenous Amazonian peoples. With a remediation ever on the horizon, they have taken up the painstaking process of cleaning up the mess that the oil companies have left behind.",
-          "Foto": [
-            {
-              "id": "attZp6dGGrhEAdRi1",
-              "url": "https://dl.airtable.com/yZlGktCjRjuOjRuuH5DL_8d39470d6636810c694e56118871e0a2ba38e0f2.jpg",
-              "filename": "8d39470d6636810c694e56118871e0a2ba38e0f2.jpg",
-              "size": 991341,
-              "type": "image/jpeg",
-              "thumbnails": {
-                "small": {
-                  "url": "https://dl.airtable.com/vb5wYEmQc628XWCGPu8K_small_8d39470d6636810c694e56118871e0a2ba38e0f2.jpg",
-                  "width": 54,
-                  "height": 36
-                },
-                "large": {
-                  "url": "https://dl.airtable.com/MatKaXMGTaBvcB6qzg95_large_8d39470d6636810c694e56118871e0a2ba38e0f2.jpg",
-                  "width": 512,
-                  "height": 512
-                }
-              }
-            }
-          ],
-          "Area": [
-            "recq7JCzDcDUz82Gx"
-          ],
-          "Color": "#088"
         },
         "geometry": null
       }
