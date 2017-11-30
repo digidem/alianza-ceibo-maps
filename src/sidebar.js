@@ -65,9 +65,7 @@ function Sidebar (language, data) {
   this.initial = {
     totalWater: 970,
     totalSolar: totalSolar,
-    description: `Our focus on building solutions is not about quick technological fixes, nor the naïve belief in the power of "good intentions"
-      to resolve a deep human health, social and environmental crisis, but rather it is about working side-by-side
-      with indigenous peoples struggling to secure life’s basic necessities in a first imperiled by the industrial frontier.`,
+    description: `Amazon Frontlines and the Ceibo Alliance work on concrete initiatives with over 60 communities from the Siona, Secoya, Kofan and Waorani indigenous nations in Ecuador, Peru and Colombia. Explore the Where We Work map to learn more about the past and present of these indigenous communities. Make sure to check out Communities with Stories to watch films or read first-hand accounts of our work with these communities, from clean water and solar energy, to territorial defense and cultural revival.`,
     foto: 'sidebar.jpg',
     title: this.translated['header']
   }
