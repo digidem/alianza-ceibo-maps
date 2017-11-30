@@ -1,4 +1,5 @@
 const React = require('react')
+const ReactDOM = require('react-dom')
 const PropTypes = require('prop-types')
 const injectSheet = require('react-jss').default
 const mapboxgl = require('mapbox-gl')
@@ -6,6 +7,8 @@ const extent = require('@mapbox/geojson-extent')
 const whichPolygon = require('which-polygon')
 
 const layerStyles = require('../lib/layer_styles')
+const getPopupData = require('../lib/get_popup_data')
+const Popup = require('./Popup')
 
 /* Mapbox [API access token](https://www.mapbox.com/help/create-api-access-token/) */
 mapboxgl.accessToken = 'pk.eyJ1IjoiZ21hY2xlbm5hbiIsImEiOiJSaWVtd2lRIn0.ASYMZE2HhwkAw4Vt7SavEg'
@@ -44,6 +47,14 @@ class MapView extends React.Component {
       dragRotate: false,
       container: this.mapContainer
     })
+
+    this.popup = new mapboxgl.Popup({
+      closeButton: false,
+      closeOnClick: false,
+      offset: 7
+    })
+    this.popupNode = window.document.createElement('div')
+    this.popup.setDOMContent(this.popupNode)
 
     // Starting view shows Ecuador and neighbouring countries
     map.fitBounds(INITIAL_BOUNDS, {duration: 0})
@@ -96,9 +107,16 @@ class MapView extends React.Component {
       this.zoomToData(data, nation, area, community)
     }
 
+    const hoverNation = hover && data.byId[hover].properties._type === 'nation'
+
     // Change the cursor to a pointer if a feature is hovered
     if (hover !== this.props.hover) {
-      map.getCanvas().style.cursor = typeof hover === 'undefined' ? '' : 'pointer'
+      map.getCanvas().style.cursor = typeof hover === 'undefined' ? '' : 'cursor'
+      if (typeof hover === 'undefined' || hoverNation) {
+        this.popup.remove()
+      } else {
+        this.popup.addTo(map)
+      }
     }
 
     // We want to highlight:
@@ -112,7 +130,7 @@ class MapView extends React.Component {
     // If a nation is selected (or hovered in the sidebar) then we highlight all
     // areas from the same nation
     const nationHighlight = (!area && !community && nation) ||
-      (hover && data.byId[hover].properties._type === 'nation' && data.byId[hover].properties._nationName)
+      (hoverNation && data.byId[hover].properties._nationName)
 
     const areaFilter = nationHighlight
       ? ['any', ['==', '_nationName', nationHighlight], communityFilter]
@@ -122,6 +140,8 @@ class MapView extends React.Component {
       map.setFilter('alianza-communities-highlight', communityFilter)
       map.setFilter('alianza-areas-highlight', areaFilter)
     })
+
+    ReactDOM.render(<Popup {...getPopupData(data, hover)} />, this.popupNode)
   }
 
   // We don't use React to update this component. All update logic and diffing
@@ -142,6 +162,7 @@ class MapView extends React.Component {
   }
 
   handleMouseMove = (e) => {
+    this.popup.setLngLat(e.lngLat)
     // Check if the mouse is over a community
     const communities = this.map.queryRenderedFeatures(e.point, {
       layers: [

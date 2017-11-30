@@ -13,6 +13,7 @@ import SidebarStoryItem from '../components/SidebarStoryItem'
 import Typography from '../components/Typography'
 import Image from '../components/Image'
 import Topbar from '../components/Topbar'
+import Popup from '../components/Popup'
 
 const sizesDecorator = story => (
   <div>
@@ -167,4 +168,9 @@ storiesOf('Image', module)
     <div style={{width: 300}}>
       <Image src='https://placeimg.com/500/500/nature' ratio='16x9' />
     </div>
+  ))
+
+storiesOf('Popup', module)
+  .add('default', () => (
+    <Popup name='Kofan' water={15} solar={9} />
   ))
