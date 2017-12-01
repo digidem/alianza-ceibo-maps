@@ -10,7 +10,7 @@ const css = require('sheetify')
 
 var getAreaZoom = require('./lib/area_zoom')
 var sidebar = require('./sidebar')
-var areasGeom = require('../areas/areas.json')
+var areasGeom = require('../static/areas.json')
 var layerStyles = require('./layer_styles')
 var generateAreaLayers = require('./area_layers')
 var areaPopupDOM = require('./area_popup')
@@ -81,7 +81,7 @@ function onLoad () {
   if (--pending > 0) return
   var comunidades = compose(addIconFieldAndFilter, addIds, addNationalities(data.Index), filterGeom)(data.Comunidades)
   areas.features.forEach(function (a) {
-    var nac = nacionalidadesByName[a.properties.nacionalidad]
+    var nac = nacionalidadesByName[a.properties.nacion]
     if (!nac.geometry) nac.geometry = { type: 'Polygon', coordinates: [] }
     nac.geometry.coordinates.push(a.geometry.coordinates)
   })

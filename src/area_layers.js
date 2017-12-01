@@ -14,7 +14,7 @@ function generateAreaLayers (map, areas) {
       source: 'areas',
       filter: ['==', '_id', id],
       paint: {
-        'fill-color': COLORS[f.properties.nacionalidad],
+        'fill-color': COLORS[f.properties.nacion],
         'fill-opacity': {
           stops: [
             [0, 0.5],
@@ -38,7 +38,7 @@ function generateAreaLayers (map, areas) {
           ]
         },
         'line-color': {
-          property: 'nacionalidad',
+          property: 'nacion',
           type: 'categorical',
           stops: Object.keys(COLORS).map(function (key) {
             return [key, COLORS[key]]
