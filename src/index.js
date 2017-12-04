@@ -168,7 +168,7 @@ function onLoad () {
       areaPopup.update(areaPopupDOM(props, areaComunidades))
       areaPopup.setLngLat(e.lngLat)
       areaPopup.popupNode.addEventListener('click', function (e) {
-        var nac = nacionalidadesByName[area.properties.nacionalidad]
+        var nac = nacionalidadesByName[area.properties.nacion]
         sb.viewNationality(nac)
         zoomToArea(area)
       })
@@ -209,7 +209,7 @@ function onLoad () {
       sb.viewCommunity(feature)
     } else if (areaClicked) {
       var area = getArea(areaClicked.properties._id, areas)
-      var nac = nacionalidadesByName[area.properties.nacionalidad]
+      var nac = nacionalidadesByName[area.properties.nacion]
       sb.viewNationality(nac)
       zoomToArea(area)
     } else {
