@@ -3,7 +3,7 @@ const PropTypes = require('prop-types')
 const injectSheet = require('react-jss').default
 const {Link} = require('react-router-dom')
 
-const gett = require('../util/get_translations')
+const gett = require('../lib/get_translations')
 const Typography = require('./Typography')
 const Image = require('./Image')
 
@@ -65,7 +65,7 @@ const styles = {
 
 const SidebarListItem = ({name, solar, water, color, featured, image, baseUrl, classes}) => (
   <li className={classes.root}>
-    <Link to={`${baseUrl}/${name}`} className={classes.link}>
+    <Link to={`${baseUrl}/${window.encodeURIComponent(name)}`} className={classes.link}>
       <div className={classes.wrapper}>
         <div className={classes.label}>
           <Typography type='listTitle'>{name}</Typography>
@@ -74,7 +74,7 @@ const SidebarListItem = ({name, solar, water, color, featured, image, baseUrl, c
           </Typography>
         </div>
         <div className={classes.image}>
-          <Image src={image} ratio='3x2' />
+          {image && <Image src={image} ratio='3x2' />}
         </div>
       </div>
       {featured && <img src='/icons/star.svg' className={classes.featuredIcon} />}

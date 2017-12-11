@@ -9,6 +9,7 @@ import SidebarCounts from '../components/SidebarCounts'
 import SidebarHeader from '../components/SidebarHeader'
 import SidebarList from '../components/SidebarList'
 import SidebarListItem from '../components/SidebarListItem'
+import SidebarStoryItem from '../components/SidebarStoryItem'
 import Typography from '../components/Typography'
 import Image from '../components/Image'
 import Topbar from '../components/Topbar'
@@ -77,6 +78,15 @@ storiesOf('Sidebar', module)
       )}
     </SidebarList>
   ))
+  .add('SidebarStoryList', () => (
+    <SidebarList>
+      {listFixture.map(item => <SidebarStoryItem
+        name='Giving Roots to Resistance'
+        image='https://placeimg.com/500/500/animals'
+        url='www.amazonfrontlines.org/blog/blog_post' />
+      )}
+    </SidebarList>
+  ))
   .add('Sidebar', () => (
     <div style={{maxHeight: 700, display: 'flex'}}>
       <Sidebar
@@ -107,8 +117,14 @@ storiesOf('Topbar', module)
   .add('area', () => (
     <Topbar nation='Kofan' area='Kofan Dureno' nationList={nationsFixture} />
   ))
+  .add('no area', () => (
+    <Topbar nation='Kofan' area='_' community='Bavore' nationList={nationsFixture} />
+  ))
   .add('community', () => (
     <Topbar nation='Kofan' area='Kofan Dureno' community='Bavore' nationList={nationsFixture} />
+  ))
+  .add('very long', () => (
+    <Topbar nation='Kofan Long' area='Kofan Dureno La La' community='Bavore long name' nationList={nationsFixture} />
   ))
 
 storiesOf('Typography', module)

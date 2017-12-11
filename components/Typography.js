@@ -42,10 +42,10 @@ const styles = {
     fontSize: '1.3rem',
     color: 'rgb(153, 51, 0)',
     fontWeight: 600,
-    lineHeight: 1.1,
+    lineHeight: 1.2,
     marginBottom: '0.15em',
     display: '-webkit-box',
-    maxHeight: 2 * 1.1 * 1.3 + 'rem',
+    maxHeight: 2 * 1.2 * 1.3 + 'rem',
     '-webkit-line-clamp': 2,
     '-webkit-box-orient': 'vertical',
     overflow: 'hidden'

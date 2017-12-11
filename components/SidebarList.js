@@ -13,7 +13,7 @@ const styles = {
 }
 
 const SidebarList = ({children, classes}) => (
-  <ul class={classes.root}>
+  <ul className={classes.root}>
     {children}
   </ul>
 )

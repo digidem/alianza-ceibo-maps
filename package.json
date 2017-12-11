@@ -19,6 +19,7 @@
     "react-markdown": "^3.1.0",
     "react-router-dom": "^4.2.2",
     "react-router-prop-types": "0.0.2",
+    "shallowequal": "^1.0.2",
     "which-polygon": "^2.1.0",
     "xhr": "^2.4.0",
     "yo-yo": "^1.4.1"

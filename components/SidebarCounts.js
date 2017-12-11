@@ -2,7 +2,7 @@ const React = require('react')
 const PropTypes = require('prop-types')
 const injectSheet = require('react-jss').default
 
-const gett = require('../util/get_translations')
+const gett = require('../lib/get_translations')
 const Typography = require('./Typography')
 
 const t = {

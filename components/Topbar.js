@@ -5,7 +5,7 @@ const { Link } = require('react-router-dom')
 const classNames = require('classnames')
 
 const Typography = require('./Typography')
-const gett = require('../util/get_translations')
+const gett = require('../lib/get_translations')
 
 const t = {
   en: {
@@ -37,6 +37,7 @@ const styles = {
     textDecoration: 'none',
     '&:hover': {
       textDecoration: 'underline',
+      color: '#cccccc',
       cursor: 'pointer'
     }
   },
@@ -115,6 +116,7 @@ const legendItemStyles = {
   },
   colorPatch: {
     marginRight: '0.75rem',
+    border: '1px solid #ffffff',
     width: '1rem',
     height: '1rem'
   }
@@ -134,19 +136,23 @@ class Topbar extends React.Component {
   }
 
   render () {
-    const {nation, area, community, nationList, classes} = this.props
+    const {nation, area, community, nationList, className, classes} = this.props
     const {legendOpen} = this.state
     const legendIconClassName = classNames(classes.legendIcon, {[classes.collapse]: legendOpen})
     const legendClassName = classNames(classes.legend, {[classes.open]: legendOpen})
-    return <div className={classes.root}>
+    return <div className={classes.root + ' ' + className}>
       <div>
         <Typography type='sectionTitle' color='#999999' className={classes.topbarItem}>
           <Link className={classNames(classes.link, {[classes.active]: !nation})} to='/'>
             Map Overview
           </Link>
-          {!!nation && <Breadcrumb last={!area} text={nation} to={`/${nation}`} classes={classes} />}
-          {!!nation && !!area && <Breadcrumb last={!community} text={area} to={`/${nation}/${area}`} classes={classes} />}
-          {!!nation && !!area && !!community && <Breadcrumb last text={community} classes={classes} />}
+          <span>
+            {!!nation && <Breadcrumb last={!area} text={nation} to={`/${nation}`} classes={classes} />}
+            {!!nation && !!area && area !== '_' &&
+              <Breadcrumb last={!community} text={area} to={`/${nation}/${area}`} classes={classes} />}
+            {!!nation && !!area && !!community &&
+              <Breadcrumb last text={community} classes={classes} />}
+          </span>
         </Typography>
       </div>
       <div>
@@ -154,18 +160,18 @@ class Topbar extends React.Component {
           <Typography type='sectionTitle' color='#999999' className={classes.topbarItem}>
             {gett(t).legend}
           </Typography>
-          <img className={legendIconClassName} src='icons/expand.svg' />
+          <img className={legendIconClassName} src='/icons/expand.svg' />
         </div>
         <div className={legendClassName}>
           <div className={classes.legendInner}>
             <ul className={classes.legendList}>
-              <LegendItem text={gett(t).water} icon='icons/comunidad-agua-dot.svg' />
-              <LegendItem text={gett(t).solar} icon='icons/comunidad-solar-dot.svg' />
-              <LegendItem text={gett(t).waterSolar} icon='icons/comunidad-agua-solar-dot.svg' />
-              <LegendItem text={gett(t).story} icon='icons/star.svg' />
+              <LegendItem text={gett(t).water} icon='/icons/comunidad-agua-dot.svg' />
+              <LegendItem text={gett(t).solar} icon='/icons/comunidad-solar-dot.svg' />
+              <LegendItem text={gett(t).waterSolar} icon='/icons/comunidad-agua-solar-dot.svg' />
+              <LegendItem text={gett(t).story} icon='/icons/star.svg' />
               <hr className={classes.legendDivider} />
               {nationList.map(nation => (
-                <LegendItem text={nation.name} color={nation.color} />
+                <LegendItem key={nation.name} text={nation.name} color={nation.color} />
               ))}
             </ul>
           </div>

@@ -9,6 +9,9 @@ const styles = {
     position: 'relative',
     width: '100%'
   },
+  ratio1x1: {
+    paddingBottom: '100%'
+  },
   ratio3x2: {
     paddingBottom: '66.666%'
   },
@@ -49,6 +52,7 @@ const Image = ({
 Image.propTypes = {
   src: PropTypes.string.isRequired,
   ratio: PropTypes.oneOf([
+    '1x1',
     '3x2',
     '4x3',
     '16x9'

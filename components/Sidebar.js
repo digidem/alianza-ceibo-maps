@@ -3,13 +3,15 @@ const PropTypes = require('prop-types')
 const injectSheet = require('react-jss').default
 const Markdown = require('react-markdown')
 const classNames = require('classnames')
+const shallowequal = require('shallowequal')
 
-const gett = require('../util/get_translations')
+const gett = require('../lib/get_translations')
 const Typography = require('./Typography')
 const SidebarHeader = require('./SidebarHeader')
 const SidebarCounts = require('./SidebarCounts')
 const SidebarList = require('./SidebarList')
 const SidebarListItem = require('./SidebarListItem')
+const SidebarStoryItem = require('./SidebarStoryItem')
 const Image = require('./Image')
 
 const styles = {
@@ -41,31 +43,56 @@ const t = {
   }
 }
 
-const Sidebar = ({image, title, solar, water, text, listTitle, list, className, classes}) => (
-  <div className={classNames(className, classes.root)}>
-    <SidebarHeader title={title} installationsCount={solar + water} />
-    <div className={classes.content}>
-      {image && <Image src={image} ratio='16x9' />}
-      {text && <div className={classes.padding}>
-        <Markdown source={text} renderers={{
-          paragraph: props => <Typography gutterBottom type='body'>{props.children}</Typography>
-        }} />
-      </div>}
-      {!!(solar + water) && <div className={classes.sectionTitle}>
-        <Typography type='sectionTitle'>{gett(t).installations}</Typography>
-      </div>}
-      {!!(solar + water) && <div className={classes.padding}>
-        <SidebarCounts water={water} solar={solar} />
-      </div>}
-      {listTitle && <div className={classes.sectionTitle}>
-        <Typography type='sectionTitle'>{listTitle}</Typography>
-      </div>}
-      {list && <SidebarList>
-        {list.map(item => <SidebarListItem {...item} />)}
-      </SidebarList>}
+class Sidebar extends React.Component {
+  componentWillReceiveProps (nextProps) {
+    if (shallowequal(this.props, nextProps) || !this.scrollContent) return
+    this.scrollContent.scrollTop = 0
+  }
+
+  render () {
+    const {
+      image,
+      title,
+      solar,
+      water,
+      text,
+      listTitle,
+      list,
+      className: classNameProp,
+      classes,
+      stories
+    } = this.props
+
+    const className = classNames(classNameProp, classes.root)
+
+    return <div className={className}>
+      <SidebarHeader title={title} installationsCount={solar + water} />
+      <div className={classes.content} ref={el => (this.scrollContent = el)}>
+        {image && <Image src={image} ratio='4x3' />}
+        {text && <div className={classes.padding}>
+          <Markdown source={text} parserOptions={{smart: true}} renderers={{
+            paragraph: props => <Typography gutterBottom type='body'>{props.children}</Typography>
+          }} />
+        </div>}
+        {!!(solar + water) && <div className={classes.sectionTitle}>
+          <Typography type='sectionTitle'>{gett(t).installations}</Typography>
+        </div>}
+        {!!(solar + water) && <div className={classes.padding}>
+          <SidebarCounts water={water} solar={solar} />
+        </div>}
+        {listTitle && list && !!list.length && <div className={classes.sectionTitle}>
+          <Typography type='sectionTitle'>{listTitle}</Typography>
+        </div>}
+        {list && <SidebarList>
+          {list.map(item => stories
+            ? <SidebarStoryItem key={item.name} {...item} />
+            : <SidebarListItem key={item.name} {...item} />
+          )}
+        </SidebarList>}
+      </div>
     </div>
-  </div>
-)
+  }
+}
 
 Sidebar.propTypes = {
   /* Sidebar title */
@@ -83,19 +110,15 @@ Sidebar.propTypes = {
   /* List of places to show */
   list: PropTypes.array,
   className: PropTypes.string,
-  classes: PropTypes.object.isRequired
+  classes: PropTypes.object.isRequired,
+  stories: PropTypes.bool
 }
 
 Sidebar.defaultProps = {
-  title: 'Where We Work',
+  title: 'Title Here',
   solar: 0,
   water: 0,
-  image: 'sidebar.jpg',
-  text: `Our focus on building solutions is not about quick technological fixes,
-    nor the naïve belief in the power of "good intentions" to resolve a deep
-    human health, social and environmental crisis, but rather it is about working
-    side-by-side with indigenous peoples struggling to secure life’s basic
-    necessities in a first imperiled by the industrial frontier.`
+  stories: false
 }
 
 module.exports = injectSheet(styles)(Sidebar)
