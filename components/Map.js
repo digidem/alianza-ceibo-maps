@@ -3,18 +3,16 @@ const PropTypes = require('prop-types')
 const injectSheet = require('react-jss').default
 const mapboxgl = require('mapbox-gl')
 const extent = require('@mapbox/geojson-extent')
+const whichPolygon = require('which-polygon')
 
 const layerStyles = require('../lib/layer_styles')
-
-// import deepEqual from 'deep-equal'
-// import assign from 'object-assign'
-// import featureFilter from 'feature-filter-geojson'
 
 /* Mapbox [API access token](https://www.mapbox.com/help/create-api-access-token/) */
 mapboxgl.accessToken = 'pk.eyJ1IjoiZ21hY2xlbm5hbiIsImEiOiJSaWVtd2lRIn0.ASYMZE2HhwkAw4Vt7SavEg'
 
 const MAP_STYLE = 'mapbox://styles/gmaclennan/cjb1e10ya5lwl2sr0hqbzo2l8'
 // const MAP_STYLE = 'http://localhost:8080/style.json'
+const INITIAL_BOUNDS = [-82.573242, -5.287887, -74.750977, 1.834403]
 
 const bingSource = {
   type: 'raster',
@@ -44,12 +42,11 @@ class MapView extends React.Component {
   componentDidMount () {
     const map = window.map = this.map = new mapboxgl.Map({
       style: MAP_STYLE,
-      hash: true,
-      bounds: [-82.573242, -5.287887, -74.750977, 1.834403],
+      hash: false,
       container: this.mapContainer
-      // center: [-78.415, -1.639],
-      // zoom: 6
     })
+
+    map.fitBounds(INITIAL_BOUNDS, {duration: 0})
 
     // Add zoom and rotation controls to the map.
     map.addControl(new mapboxgl.NavigationControl(), 'top-left')
@@ -57,17 +54,8 @@ class MapView extends React.Component {
     map.touchZoomRotate.disableRotation()
 
     map.on('click', 'alianza-areas-fill', this.handleClick)
-    map.on('mousemove', 'alianza-areas-fill', this.handleMouseEnter)
-    map.on('mouseleave', 'alianza-areas-fill', this.handleMouseLeave)
     map.on('click', 'alianza-communities-dots', this.handleClick)
-    map.on('mousemove', 'alianza-communities-dots', this.handleMouseEnter)
-    map.on('mouseleave', 'alianza-communities-dots', this.handleMouseLeave)
     map.on('click', 'alianza-communities-houses', this.handleClick)
-    map.on('mousemove', 'alianza-communities-houses', this.handleMouseEnter)
-    map.on('mouseleave', 'alianza-communities-houses', this.handleMouseLeave)
-    map.once('load', () => {
-      console.log('loaded')
-    })
   }
 
   componentWillReceiveProps ({data, nation, area, community, hover, location}) {
@@ -77,22 +65,26 @@ class MapView extends React.Component {
     if (!data) return
 
     if (data && data !== this.props.data) {
+      const areaGeoJSON = this.getAreaGeoJSON(data)
+      const communityGeoJSON = this.getCommunityGeoJSON(data)
+      this.polygonIndex = whichPolygon(areaGeoJSON)
       this.ready(() => {
-        map.addSource('areas', {
-          type: 'geojson',
-          data: this.getAreaGeoJSON(data)
-        })
-        map.addSource('communities', {
-          type: 'geojson',
-          data: this.getCommunityGeoJSON(data)
-        })
+        map.addSource('areas', {type: 'geojson', data: areaGeoJSON})
+        map.addSource('communities', {type: 'geojson', data: communityGeoJSON})
         map.addSource('bing', bingSource)
         map.addLayer(layerStyles.bingSatellite, 'aerialway')
+        map.addLayer(layerStyles.areasHighlight)
         map.addLayer(layerStyles.areasLine)
         map.addLayer(layerStyles.areasFill)
+        map.addLayer(layerStyles.communitiesHighlight)
         map.addLayer(layerStyles.communitiesHouses)
         map.addLayer(layerStyles.communitiesDots)
-        this.zoomToData(data, nation, area, community)
+        map.on('mousemove', this.handleMouseMove)
+        this.loaded = true
+        this.zoomTimerId = setTimeout(
+          () => this.zoomToData(data, nation, area, community),
+          2000
+        )
       })
     }
 
@@ -102,10 +94,25 @@ class MapView extends React.Component {
     }
 
     if (hover) {
-      map.getCanvas().parentNode.style.cursor = 'pointer'
+      map.getCanvas().style.cursor = 'pointer'
     } else {
-      map.getCanvas().parentNode.style.cursor = ''
+      map.getCanvas().style.cursor = ''
     }
+
+    const highlightIds = this.getHighlightIds(data, nation, area, community, hover)
+    const communityFilter = ['in', '_id'].concat(highlightIds)
+
+    const nationHighlight = (!area && !community && nation) ||
+      (hover && data.byId[hover].properties._type === 'nation' && data.byId[hover].properties._nationName)
+
+    const areaFilter = nationHighlight
+      ? ['any', ['==', '_nationName', nationHighlight], communityFilter]
+      : communityFilter
+
+    this.ready(() => {
+      map.setFilter('alianza-communities-highlight', communityFilter)
+      map.setFilter('alianza-areas-highlight', areaFilter)
+    })
   }
 
   shouldComponentUpdate () {
@@ -129,6 +136,27 @@ class MapView extends React.Component {
     this.props.onHover(id)
   }
 
+  handleMouseMove = (e) => {
+    const communities = this.map.queryRenderedFeatures(e.point, {
+      layers: [
+        'alianza-communities-houses',
+        'alianza-communities-dots',
+        'alianza-communities-highlight']
+    })
+    if (communities.length) {
+      if (communities[0].properties._id === this.props.hover) return
+      return this.props.onHover(communities[0].properties._id)
+    }
+    const area = this.polygonIndex([e.lngLat.lng, e.lngLat.lat])
+    if (area) {
+      if (area._id === this.props.hover) return
+      return this.props.onHover(area._id)
+    }
+    if (this.props.hover) {
+      return this.props.onHover()
+    }
+  }
+
   handleMouseLeave = (e) => {
     this.props.onHover()
   }
@@ -137,7 +165,7 @@ class MapView extends React.Component {
     const map = this.map
 
     if (!nation && !area && !community) {
-      return map.fitBounds(data.bbox, {padding: 20})
+      return map.fitBounds(data.bbox, {padding: 20, duration: 3000})
     }
 
     const nationFeature = data.nations[nation]
@@ -148,7 +176,7 @@ class MapView extends React.Component {
       if (!communityFeature) return
       return map.flyTo({
         center: communityFeature.geometry.coordinates,
-        zoom: 15
+        zoom: 14
       })
     }
 
@@ -208,11 +236,45 @@ class MapView extends React.Component {
     return Math.min(tr.scaleZoom(tr.scale * Math.min(scaleX, scaleY)), maxZoom)
   }
 
+  // Returns an array of ids of features which should be highlighted on the map,
+  // based on what is currently being hovered and which is selected
+  getHighlightIds (data, nation, area, community, hover) {
+    const highlight = []
+
+    const nationFeature = data.nations[nation]
+
+    const communityFeature = nationFeature && nationFeature.communities[community]
+    if (communityFeature) {
+      highlight.push(communityFeature.id)
+      const areaName = communityFeature.properties._areaName
+      if (areaName && data.areas[areaName]) {
+        highlight.push(data.areas[areaName].id)
+      }
+    }
+
+    const areaFeature = data.areas[area]
+    if (areaFeature) {
+      highlight.push(areaFeature.id)
+    }
+
+    if (typeof hover !== 'undefined') {
+      highlight.push(hover)
+      const areaName = data.byId[hover].properties._areaName
+      if (areaName && data.areas[areaName] && data.byId[hover].properties._type === 'community') {
+        highlight.push(data.areas[areaName].id)
+      }
+    } else {
+      highlight.push('')
+    }
+
+    return highlight
+  }
+
   ready (fn) {
-    if (this.map.loaded() && !this._styleDirty) {
+    if (this.map.isStyleLoaded() || this.loaded) {
       fn()
     } else {
-      this.map.once('load', () => fn.call(this))
+      this.map.once('styledata', () => fn.call(this))
     }
   }
 
