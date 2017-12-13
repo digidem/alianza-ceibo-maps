@@ -147,8 +147,13 @@ module.exports = injectSheet(styles)(Main)
 
 function getPath (nation, area, community) {
   let path = '/' + nation
-  if (area) path += '/' + area
+  if (area) path += '/' + enc(area)
   if (!area && community) path += '/_'
-  if (community) path += '/' + community
+  if (community) path += '/' + enc(community)
   return path
+}
+
+// Some names include a `/`, which needs to be encoded for route paths to work
+function enc (str) {
+  return str && window.encodeURIComponent(str)
 }
