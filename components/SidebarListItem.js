@@ -63,8 +63,8 @@ const styles = {
   }
 }
 
-const SidebarListItem = ({name, solar, water, color, featured, image, baseUrl, classes}) => (
-  <li className={classes.root}>
+const SidebarListItem = ({id, name, solar, water, color, featured, image, baseUrl, onHover, classes}) => (
+  <li className={classes.root} onMouseEnter={() => onHover(id)} onMouseLeave={() => onHover()}>
     <Link to={`${baseUrl}/${window.encodeURIComponent(name)}`} className={classes.link}>
       <div className={classes.wrapper}>
         <div className={classes.label}>
@@ -86,6 +86,7 @@ const SidebarListItem = ({name, solar, water, color, featured, image, baseUrl, c
 )
 
 SidebarListItem.propTypes = {
+  id: PropTypes.string,
   baseUrl: PropTypes.string,
   name: PropTypes.string.isRequired,
   solar: PropTypes.number,
@@ -93,6 +94,7 @@ SidebarListItem.propTypes = {
   color: PropTypes.string,
   featured: PropTypes.bool,
   image: PropTypes.string,
+  onHover: PropTypes.func.isRequired,
   classes: PropTypes.object.isRequired
 }
 

@@ -70,7 +70,7 @@ class Main extends React.Component {
     }
   }
 
-  handleMapHover = (id) => {
+  handleHover = (id) => {
     this.setState({hover: id})
   }
 
@@ -79,7 +79,6 @@ class Main extends React.Component {
     const {data} = this.state
     if (!data) return
     const fProps = data.byId[id] && data.byId[id].properties
-    console.log(fProps)
     if (!fProps) return
     history.push(getPath(fProps._nationName, fProps._areaName, fProps._communityName))
   }
@@ -91,7 +90,7 @@ class Main extends React.Component {
     if (!sidebarProps) return <Redirect to='/' />
 
     return <div className={classes.root}>
-      <Sidebar className={classes.sidebar} {...sidebarProps} />
+      <Sidebar className={classes.sidebar} {...sidebarProps} onHover={this.handleHover} />
       <div className={classes.main}>
         <Topbar
           className={classes.topbar}
@@ -107,7 +106,7 @@ class Main extends React.Component {
           location={location}
           hover={this.state.hover}
           onClick={this.handleMapClick}
-          onHover={this.handleMapHover} />
+          onHover={this.handleHover} />
       </div>
     </div>
   }

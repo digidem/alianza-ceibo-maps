@@ -44,8 +44,13 @@ const t = {
 }
 
 class Sidebar extends React.Component {
-  componentWillReceiveProps (nextProps) {
-    if (shallowequal(this.props, nextProps) || !this.scrollContent) return
+  componentWillReceiveProps ({title, image, solar, water, text}) {
+    const propsUnchanged = title === this.props.title &&
+      image === this.props.image &&
+      solar === this.props.solar &&
+      water === this.props.water &&
+      text === this.props.text
+    if (propsUnchanged || !this.scrollContent) return
     this.scrollContent.scrollTop = 0
   }
 
@@ -60,7 +65,8 @@ class Sidebar extends React.Component {
       list,
       className: classNameProp,
       classes,
-      stories
+      stories,
+      onHover
     } = this.props
 
     const className = classNames(classNameProp, classes.root)
@@ -86,7 +92,7 @@ class Sidebar extends React.Component {
         {list && <SidebarList>
           {list.map(item => stories
             ? <SidebarStoryItem key={item.name} {...item} />
-            : <SidebarListItem key={item.name} {...item} />
+            : <SidebarListItem key={item.name} {...item} onHover={onHover} />
           )}
         </SidebarList>}
       </div>
@@ -109,6 +115,8 @@ Sidebar.propTypes = {
   listTitle: PropTypes.string,
   /* List of places to show */
   list: PropTypes.array,
+  /* Called when an item is hovered with the id of the item */
+  onHover: PropTypes.func.isRequired,
   className: PropTypes.string,
   classes: PropTypes.object.isRequired,
   stories: PropTypes.bool
