@@ -1,6 +1,8 @@
 const React = require('react')
 const injectSheet = require('react-jss').default
 const {Redirect} = require('react-router-dom')
+const {TransitionGroup, Transition} = require('react-transition-group')
+
 const Sidebar = require('./Sidebar')
 const Topbar = require('./Topbar')
 const MapView = require('./Map')
@@ -17,7 +19,25 @@ const styles = {
   sidebar: {
     flex: 1,
     maxWidth: 400,
-    minWidth: 350
+    minWidth: 350,
+    position: 'relative'
+  },
+  'sidebarAnimationBase': {
+    position: 'absolute',
+    transition: 'opacity 200ms ease-in-out',
+    width: '100%',
+    top: 0,
+    bottom: 0
+  },
+  'sidebar-entering': {
+    opacity: 0,
+    transition: 'none'
+  },
+  'sidebar-exiting': {
+    opacity: 0
+  },
+  'sidebar-entered': {
+    opacity: 1
   },
   main: {
     flex: 2,
@@ -90,7 +110,18 @@ class Main extends React.Component {
     if (!sidebarProps) return <Redirect to='/' />
 
     return <div className={classes.root}>
-      <Sidebar className={classes.sidebar} {...sidebarProps} onHover={this.handleHover} />
+      <TransitionGroup className={classes.sidebar}>
+        <Transition
+          timeout={200}
+          key={location.key}>
+          {state => {
+            return <Sidebar
+              className={classes.sidebarAnimationBase + ' ' + classes['sidebar-' + state]}
+              {...sidebarProps}
+              onHover={this.handleHover} />
+          }}
+        </Transition>
+      </TransitionGroup>
       <div className={classes.main}>
         <Topbar
           className={classes.topbar}
