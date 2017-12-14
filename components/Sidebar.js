@@ -123,7 +123,7 @@ Sidebar.propTypes = {
 }
 
 Sidebar.defaultProps = {
-  title: 'Title Here',
+  title: 'Loading…',
   solar: 0,
   water: 0,
   stories: false
