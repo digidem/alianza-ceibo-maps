@@ -30,7 +30,11 @@ const styles = {
   },
   name: {
     padding: '5px 7px 5px 0',
-    borderRight: '1px solid black'
+    borderRight: '1px solid black',
+    '&:last-child': {
+      borderRight: 'none',
+      paddingRight: 0
+    }
   },
   dataItem: {
     marginLeft: 7,
