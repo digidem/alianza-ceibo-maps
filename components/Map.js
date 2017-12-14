@@ -86,9 +86,10 @@ class MapView extends React.Component {
         map.addSource('communities', {type: 'geojson', data: communityGeoJSON})
         map.addSource('bing', bingSource)
         map.addLayer(layerStyles.bingSatellite, 'aerialway')
-        map.addLayer(layerStyles.areasHighlight)
-        map.addLayer(layerStyles.areasLine)
         map.addLayer(layerStyles.areasFill)
+        map.addLayer(layerStyles.areasUnlegalized)
+        map.addLayer(layerStyles.areasLine)
+        map.addLayer(layerStyles.areasHighlight)
         map.addLayer(layerStyles.communitiesHighlight)
         map.addLayer(layerStyles.communitiesHouses)
         map.addLayer(layerStyles.communitiesDots)
@@ -129,6 +130,16 @@ class MapView extends React.Component {
     // 3. If the hovered feature is a community, we should also highlight the area
     //    that the community is in.
     const highlightIds = this.getHighlightIds(data, nation, area, community, hover)
+    highlightIds.forEach(id => {
+      const areaFeature = data.byId[id]
+      if (!areaFeature || areaFeature.properties._type !== 'area') return
+      if (data.areas[areaFeature.properties._areaName + '@@extension']) {
+        highlightIds.push(data.areas[areaFeature.properties._areaName + '@@extension'].id)
+      }
+      if (data.areas[areaFeature.properties._areaName.replace(/@@extension$/, '')]) {
+        highlightIds.push(data.areas[areaFeature.properties._areaName.replace(/@@extension$/, '')].id)
+      }
+    })
     const communityFilter = ['in', '_id'].concat(highlightIds)
 
     // If a nation is selected (or hovered in the sidebar) then we highlight all
