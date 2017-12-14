@@ -120,9 +120,8 @@ class MapView extends React.Component {
   }
 
   componentWillUnmount () {
-    // this.map.off('moveend', this.handleMapMoveOrZoom)
+    this.map.off('mousemove', this.handleMouseMove)
     this.map.off('click', this.handleClick)
-    // this.map.off('mousemove', this.handleMouseMove)
     this.map.remove()
   }
 
