@@ -9,7 +9,7 @@ var areaHighlight = {
   paint: {
     'line-opacity': 0.8,
     'line-color': {
-      property: 'nacionalidad',
+      property: 'nacion',
       type: 'categorical',
       stops: Object.keys(COLORS).map(function (key) {
         return [key, COLORS[key]]

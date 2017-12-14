@@ -1,0 +1,28 @@
+const path = require('path')
+const WatchExternalFilesPlugin = require('webpack-watch-files-plugin').default
+
+// load the default config generator.
+const genDefaultConfig = require('@storybook/react/dist/server/config/defaults/webpack.config.js')
+
+module.exports = (baseConfig, env) => {
+  const config = genDefaultConfig(baseConfig, env)
+
+  // Extend it as you need.
+
+  // For example, add typescript loader:
+  config.module.rules.unshift({
+    test: /Image\.js$/,
+    loaders: ['transform-loader?sheetify/transform'],
+    include: path.resolve(__dirname, '../'),
+    exclude: path.resolve(__dirname, '../node_modules')
+  })
+
+  // config.plugins.unshift(
+  //   new WatchExternalFilesPlugin({
+  //     verbose: true,
+  //     files: ['**/*.css', '!node_modules/**']
+  //   })
+  // )
+
+  return config
+}

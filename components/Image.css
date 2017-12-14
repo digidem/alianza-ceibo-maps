@@ -1,0 +1,27 @@
+:host {
+  height: 0;
+  position: relative;
+  width: 100%;
+}
+
+:host.ratio3x2 {
+  padding-bottom: 16.666%;
+}
+
+:host.ratio4x3 {
+  padding-bottom: 75%;
+}
+
+:host.ratio16x9 {
+  padding-bottom: 56.25%;
+}
+
+:host > .image {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}

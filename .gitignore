@@ -1,3 +1,4 @@
 /style
 /dist
 node_modules
+/storybook-static
