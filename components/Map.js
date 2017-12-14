@@ -35,23 +35,21 @@ const styles = {
 }
 
 class MapView extends React.Component {
-  state = {}
-
   // The first time our component mounts, render a new map into `mapContainer`
   // with settings from props.
   componentDidMount () {
     const map = window.map = this.map = new mapboxgl.Map({
       style: MAP_STYLE,
-      hash: false,
+      pitchWithRotate: false,
+      dragRotate: false,
       container: this.mapContainer
     })
 
+    // Starting view shows Ecuador and neighbouring countries
     map.fitBounds(INITIAL_BOUNDS, {duration: 0})
 
     // Add zoom and rotation controls to the map.
     map.addControl(new mapboxgl.NavigationControl(), 'top-left')
-    map.dragRotate.disable()
-    map.touchZoomRotate.disableRotation()
 
     map.on('click', 'alianza-areas-fill', this.handleClick)
     map.on('click', 'alianza-communities-dots', this.handleClick)
@@ -60,15 +58,19 @@ class MapView extends React.Component {
 
   componentWillReceiveProps ({data, nation, area, community, hover, location}) {
     const map = this.map
-    if (!map) return
+    if (!map || !data) return
 
-    if (!data) return
-
+    // If the data has loaded, add it to the map
+    // **NB**: Strange things will happen if the data prop changes, it will
+    // try to re-add the same layers to the map and probably break.
     if (data && data !== this.props.data) {
       const areaGeoJSON = this.getAreaGeoJSON(data)
       const communityGeoJSON = this.getCommunityGeoJSON(data)
+      // We build an index for interaction testing, because map.queryRenderedFeatures()
+      // is too slow for these large polygons
       this.polygonIndex = whichPolygon(areaGeoJSON)
       this.ready(() => {
+        // Wait until the map is ready and add all the custom layers
         map.addSource('areas', {type: 'geojson', data: areaGeoJSON})
         map.addSource('communities', {type: 'geojson', data: communityGeoJSON})
         map.addSource('bing', bingSource)
@@ -81,6 +83,7 @@ class MapView extends React.Component {
         map.addLayer(layerStyles.communitiesDots)
         map.on('mousemove', this.handleMouseMove)
         this.loaded = true
+        // Wait for 2 seconds then zoom into the data
         this.zoomTimerId = setTimeout(
           () => this.zoomToData(data, nation, area, community),
           2000
@@ -88,20 +91,26 @@ class MapView extends React.Component {
       })
     }
 
-    // Navigation event
+    // Navigation event (user had clicked a link to navigate the app)
     if (location !== this.props.location) {
       this.zoomToData(data, nation, area, community)
     }
 
-    if (hover) {
-      map.getCanvas().style.cursor = 'pointer'
-    } else {
-      map.getCanvas().style.cursor = ''
+    // Change the cursor to a pointer if a feature is hovered
+    if (hover !== this.props.hover) {
+      map.getCanvas().style.cursor = typeof hover === 'undefined' ? '' : 'pointer'
     }
 
+    // We want to highlight:
+    // 1. The currently selected feature (the feature that is shown in the sidebar)
+    // 2. The feature that is currently hovered by the mouse
+    // 3. If the hovered feature is a community, we should also highlight the area
+    //    that the community is in.
     const highlightIds = this.getHighlightIds(data, nation, area, community, hover)
     const communityFilter = ['in', '_id'].concat(highlightIds)
 
+    // If a nation is selected (or hovered in the sidebar) then we highlight all
+    // areas from the same nation
     const nationHighlight = (!area && !community && nation) ||
       (hover && data.byId[hover].properties._type === 'nation' && data.byId[hover].properties._nationName)
 
@@ -115,6 +124,8 @@ class MapView extends React.Component {
     })
   }
 
+  // We don't use React to update this component. All update logic and diffing
+  // is in componentWillReceiveProps()
   shouldComponentUpdate () {
     return false
   }
@@ -130,12 +141,8 @@ class MapView extends React.Component {
     this.props.onClick(id)
   }
 
-  handleMouseEnter = (e) => {
-    const id = e.features[0].properties._id
-    this.props.onHover(id)
-  }
-
   handleMouseMove = (e) => {
+    // Check if the mouse is over a community
     const communities = this.map.queryRenderedFeatures(e.point, {
       layers: [
         'alianza-communities-houses',
@@ -146,30 +153,35 @@ class MapView extends React.Component {
       if (communities[0].properties._id === this.props.hover) return
       return this.props.onHover(communities[0].properties._id)
     }
+
+    // Check if the mouse is inside an area
     const area = this.polygonIndex([e.lngLat.lng, e.lngLat.lat])
     if (area) {
       if (area._id === this.props.hover) return
       return this.props.onHover(area._id)
     }
+
+    // If the mouse is not over a community or area, clear the hover
     if (this.props.hover) {
       return this.props.onHover()
     }
   }
 
-  handleMouseLeave = (e) => {
-    this.props.onHover()
-  }
-
   zoomToData (data, nation, area, community) {
     const map = this.map
 
+    // Navigation to `/` - zoom to all data
     if (!nation && !area && !community) {
       return map.fitBounds(data.bbox, {padding: 20, duration: 3000})
     }
 
+    // If the current nation does not exist, return
+    // (this is probably unnecessary, we should 404 before this)
     const nationFeature = data.nations[nation]
     if (!nationFeature) return
 
+    // If current navigation is a community, zoom to that community
+    // at zoom 14
     if (nation && community) {
       const communityFeature = nationFeature.communities[community]
       if (!communityFeature) return
@@ -179,17 +191,21 @@ class MapView extends React.Component {
       })
     }
 
+    // If navigation is an area, zoom to that area
     if (nation && area) {
       const areaFeature = data.areas[area]
       if (!areaFeature) return
       return map.fitBounds(areaFeature.bbox, {padding: 20})
     }
 
+    // If current navigation is a nation, zoom to all areas for that nation
     if (nation) {
       return map.fitBounds(nationFeature.bbox, {padding: 20})
     }
   }
 
+  // Transform the data for areas into a GeoJSON FeatureCollection
+  // Add a prop for the zoom value when the area bounds fit to the map bounds
   getAreaGeoJSON (data) {
     const areaFeatures = Object.keys(data.areas)
       .map(key => data.areas[key])
@@ -202,6 +218,8 @@ class MapView extends React.Component {
     }
   }
 
+  // Transform the data for communities into a GeoJSON FeatureCollection
+  // Add a prop for the zoom value when the communty's area fits the map bounds
   getCommunityGeoJSON (data) {
     const communityFeatures = Object.keys(data.byId)
       .map(key => data.byId[key])
@@ -219,6 +237,7 @@ class MapView extends React.Component {
     }
   }
 
+  // Get the zoom value when the feature will fit to the map bounds
   getZoom (feature) {
     var padding = 20
     var maxZoom = 18
