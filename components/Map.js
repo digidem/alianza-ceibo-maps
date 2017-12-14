@@ -65,6 +65,11 @@ class MapView extends React.Component {
     map.on('click', 'alianza-areas-fill', this.handleClick)
     map.on('click', 'alianza-communities-dots', this.handleClick)
     map.on('click', 'alianza-communities-houses', this.handleClick)
+
+    const {data, nation, area, community} = this.props
+    if (data) {
+      this.setupLayersAndData(data, nation, area, community)
+    }
   }
 
   componentWillReceiveProps ({data, nation, area, community, hover, location}) {
@@ -75,32 +80,7 @@ class MapView extends React.Component {
     // **NB**: Strange things will happen if the data prop changes, it will
     // try to re-add the same layers to the map and probably break.
     if (data && data !== this.props.data) {
-      const areaGeoJSON = this.getAreaGeoJSON(data)
-      const communityGeoJSON = this.getCommunityGeoJSON(data)
-      // We build an index for interaction testing, because map.queryRenderedFeatures()
-      // is too slow for these large polygons
-      this.polygonIndex = whichPolygon(areaGeoJSON)
-      this.ready(() => {
-        // Wait until the map is ready and add all the custom layers
-        map.addSource('areas', {type: 'geojson', data: areaGeoJSON})
-        map.addSource('communities', {type: 'geojson', data: communityGeoJSON})
-        map.addSource('bing', bingSource)
-        map.addLayer(layerStyles.bingSatellite, 'aerialway')
-        map.addLayer(layerStyles.areasFill)
-        map.addLayer(layerStyles.areasUnlegalized)
-        map.addLayer(layerStyles.areasLine)
-        map.addLayer(layerStyles.areasHighlight)
-        map.addLayer(layerStyles.communitiesHighlight)
-        map.addLayer(layerStyles.communitiesHouses)
-        map.addLayer(layerStyles.communitiesDots)
-        map.on('mousemove', this.handleMouseMove)
-        this.loaded = true
-        // Wait for 2 seconds then zoom into the data
-        this.zoomTimerId = setTimeout(
-          () => this.zoomToData(data, nation, area, community),
-          2000
-        )
-      })
+      this.setupLayersAndData(data, nation, area, community)
     }
 
     // Navigation event (user had clicked a link to navigate the app)
@@ -201,6 +181,36 @@ class MapView extends React.Component {
     if (this.props.hover) {
       return this.props.onHover()
     }
+  }
+
+  setupLayersAndData (data, nation, area, community) {
+    const map = this.map
+    const areaGeoJSON = this.getAreaGeoJSON(data)
+    const communityGeoJSON = this.getCommunityGeoJSON(data)
+    // We build an index for interaction testing, because map.queryRenderedFeatures()
+    // is too slow for these large polygons
+    this.polygonIndex = whichPolygon(areaGeoJSON)
+    this.ready(() => {
+      // Wait until the map is ready and add all the custom layers
+      map.addSource('areas', {type: 'geojson', data: areaGeoJSON})
+      map.addSource('communities', {type: 'geojson', data: communityGeoJSON})
+      map.addSource('bing', bingSource)
+      map.addLayer(layerStyles.bingSatellite, 'aerialway')
+      map.addLayer(layerStyles.areasFill)
+      map.addLayer(layerStyles.areasUnlegalized)
+      map.addLayer(layerStyles.areasLine)
+      map.addLayer(layerStyles.areasHighlight)
+      map.addLayer(layerStyles.communitiesHighlight)
+      map.addLayer(layerStyles.communitiesHouses)
+      map.addLayer(layerStyles.communitiesDots)
+      map.on('mousemove', this.handleMouseMove)
+      this.loaded = true
+      // Wait for 2 seconds then zoom into the data
+      this.zoomTimerId = setTimeout(
+        () => this.zoomToData(data, nation, area, community),
+        2000
+      )
+    })
   }
 
   zoomToData (data, nation, area, community) {
