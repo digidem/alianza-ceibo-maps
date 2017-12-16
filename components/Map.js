@@ -197,6 +197,7 @@ class MapView extends React.Component {
       map.addSource('bing', bingSource)
       map.addLayer(layerStyles.bingSatellite, 'aerialway')
       map.addLayer(layerStyles.areasFill)
+      map.addLayer(layerStyles.areasLabel)
       map.addLayer(layerStyles.areasUnlegalized)
       map.addLayer(layerStyles.areasLine)
       map.addLayer(layerStyles.areasHighlight)
