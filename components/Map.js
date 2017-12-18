@@ -5,8 +5,9 @@ import injectSheet from 'react-jss'
 import mapboxgl from 'mapbox-gl'
 import extent from '@mapbox/geojson-extent'
 import whichPolygon from 'which-polygon'
+
 import layerStyles from '../lib/layer_styles'
-import getPopupData from '../lib/get_popup_data'
+import getPopupData from '../lib/popup_data'
 import Popup from './Popup'
 
 /* Mapbox [API access token](https://www.mapbox.com/help/create-api-access-token/) */

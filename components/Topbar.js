@@ -3,25 +3,24 @@ import PropTypes from 'prop-types'
 import injectSheet from 'react-jss'
 import { Link } from 'react-router-dom'
 import classNames from 'classnames'
-import Typography from './Typography'
-import gett from '../lib/get_translations'
+import { defineMessages, FormattedMessage } from 'react-intl'
 
-const t = {
-  en: {
-    legend: 'Map Legend',
-    water: 'Water Installations',
-    solar: 'Solar Installations',
-    waterSolar: 'Water & Solar Installations',
-    story: 'Communities With Story'
-  },
-  es: {
-    legend: 'Leyenda del Mapa',
-    water: 'Instalaciones de Agua',
-    solar: 'Instalaciones de Solar',
-    waterSolar: 'Instalaciones de Agua y Solar',
-    story: 'Comunidades con Historia'
-  }
-}
+import Typography from './Typography'
+
+const messages = defineMessages({
+  // Link in top bar to zoom out to whole map
+  overview: 'Map Overview',
+  // Map legend button label
+  legend: 'Map Legend',
+  // Map legend item: communities with water installations
+  water: 'Water Installations',
+  // Map legend item: communities with solar installations
+  solar: 'Solar Installations',
+  // Map legend item: communities with water and solar installations
+  waterSolar: 'Water & Solar Installations',
+  // Map legend item: communities with a story
+  story: 'Communities With Story'
+})
 
 const styles = {
   root: {
@@ -129,6 +128,12 @@ const LegendItem = injectSheet(legendItemStyles)(({icon, color, text, classes}) 
   </li>
 ))
 
+LegendItem.propTypes = {
+  icon: PropTypes.string,
+  color: PropTypes.string,
+  text: PropTypes.node.isRequired
+}
+
 class Topbar extends React.Component {
   state = {
     legendOpen: false
@@ -143,7 +148,7 @@ class Topbar extends React.Component {
       <div>
         <Typography type='sectionTitle' color='#999999' className={classes.topbarItem}>
           <Link className={classNames(classes.link, {[classes.active]: !nation})} to='/'>
-            Map Overview
+            <FormattedMessage {...messages.overview} />
           </Link>
           <span>
             {!!nation && <Breadcrumb last={!area} text={nation} to={`/${nation}`} classes={classes} />}
@@ -157,17 +162,17 @@ class Topbar extends React.Component {
       <div>
         <div className={classes.legendButton} onClick={() => this.setState({legendOpen: !legendOpen})}>
           <Typography type='sectionTitle' color='#999999' className={classes.topbarItem}>
-            {gett(t).legend}
+            <FormattedMessage {...messages.legend} />
           </Typography>
           <img className={legendIconClassName} src='/icons/expand.svg' />
         </div>
         <div className={legendClassName}>
           <div className={classes.legendInner}>
             <ul className={classes.legendList}>
-              <LegendItem text={gett(t).water} icon='/icons/comunidad-agua-dot.svg' />
-              <LegendItem text={gett(t).solar} icon='/icons/comunidad-solar-dot.svg' />
-              <LegendItem text={gett(t).waterSolar} icon='/icons/comunidad-agua-solar-dot.svg' />
-              <LegendItem text={gett(t).story} icon='/icons/star.svg' />
+              <LegendItem text={<FormattedMessage {...messages.water} />} icon='/icons/comunidad-agua-dot.svg' />
+              <LegendItem text={<FormattedMessage {...messages.solar} />} icon='/icons/comunidad-solar-dot.svg' />
+              <LegendItem text={<FormattedMessage {...messages.waterSolar} />} icon='/icons/comunidad-agua-solar-dot.svg' />
+              <LegendItem text={<FormattedMessage {...messages.story} />} icon='/icons/star.svg' />
               <hr className={classes.legendDivider} />
               {nationList.map(nation => (
                 <LegendItem key={nation.name} text={nation.name} color={nation.color} />

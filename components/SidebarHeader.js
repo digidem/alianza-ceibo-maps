@@ -2,23 +2,22 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import injectSheet from 'react-jss'
 import classNames from 'classnames'
+import { defineMessages, FormattedMessage } from 'react-intl'
+
 import Typography from './Typography'
 
-const gett = require('../lib/get_translations')
-const Typography = require('./Typography')
-
-const t = {
-  es: {
-    installations: 'instalaciones en total',
-    in: 'en',
-    communities: 'comunidades'
-  },
-  en: {
-    installations: 'total installations',
-    in: 'in',
-    communities: 'communities'
-  }
-}
+const messages = defineMessages({
+  // Installation count for sidebar subheading
+  installationsCount: `{count, plural,
+    =0 {0 total installations}
+    one {1 total installation}
+    other {# total installations}}`,
+  // Communities count for sidebar subheading
+  communitiesCount: `{count, plural,
+    =0 {0 communities}
+    one {1 community}
+    other {# communities}}`
+})
 
 const styles = {
   root: {
@@ -32,10 +31,10 @@ const SidebarHeader = ({title, installationsCount, communitiesCount, className, 
   <div className={classNames(classes.root, className)}>
     <Typography gutterBottom type='title'>{title}</Typography>
     {!!installationsCount && <Typography type='subtitle'>
-      {installationsCount} {gett(t).installations}
+      <FormattedMessage {...messages.installationsCount} values={{count: installationsCount}} />
     </Typography>}
     {!!communitiesCount && <Typography type='subtitle'>
-      {communitiesCount} {gett(t).communities}
+      <FormattedMessage {...messages.communitiesCount} values={{count: communitiesCount}} />
     </Typography>}
   </div>
 )

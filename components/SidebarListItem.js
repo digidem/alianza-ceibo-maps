@@ -2,9 +2,18 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import injectSheet from 'react-jss'
 import { Link } from 'react-router-dom'
-import gett from '../lib/get_translations'
+import { defineMessages, FormattedMessage } from 'react-intl'
+
 import Typography from './Typography'
 import Image from './Image'
+
+const messages = defineMessages({
+  // Installation count for sidebar list subheading
+  installationsCount: `{count, plural,
+    =0 {0 installations}
+    one {1 installation}
+    other {# installations}}`
+})
 
 const styles = {
   root: {
@@ -69,7 +78,7 @@ const SidebarListItem = ({id, name, solar, water, color, featured, image, baseUr
         <div className={classes.label}>
           <Typography type='listTitle'>{name}</Typography>
           <Typography type='listSubtitle' noWrap>
-            {solar + water} Installations
+            <FormattedMessage {...messages.installationsCount} values={{count: solar + water}} />
           </Typography>
         </div>
         <div className={classes.image}>

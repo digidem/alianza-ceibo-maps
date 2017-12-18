@@ -1,11 +1,14 @@
 import React from 'react'
+
 import injectSheet from 'react-jss'
 import { Redirect } from 'react-router-dom'
 import { TransitionGroup, Transition } from 'react-transition-group'
+import { injectIntl, intlShape } from 'react-intl'
+
 import Sidebar from './Sidebar'
 import Topbar from './Topbar'
 import MapView from './Map'
-import getSidebarData from '../lib/get_sidebar_data'
+import getSidebarData from '../lib/sidebar_data'
 import { fetch as fetchData } from '../lib/data'
 
 const styles = {
@@ -73,19 +76,19 @@ class Main extends React.Component {
   }
 
   getSidebarData () {
-    const {nation, area, community} = this.props
+    const {nation, area, community, intl} = this.props
     const {data} = this.state
 
     if (!data) return {}
 
     if (nation && area && community) {
-      return getSidebarData.community(data, nation, community)
+      return getSidebarData.community(data, intl, nation, community)
     } else if (nation && area) {
-      return getSidebarData.area(data, area)
+      return getSidebarData.area(data, intl, area)
     } else if (nation) {
-      return getSidebarData.nation(data, nation)
+      return getSidebarData.nation(data, intl, nation)
     } else {
-      return getSidebarData.home(data)
+      return getSidebarData.home(data, intl)
     }
   }
 
@@ -142,7 +145,11 @@ class Main extends React.Component {
   }
 }
 
-module.exports = injectSheet(styles)(Main)
+Main.propTypes = {
+  intl: intlShape.isRequired
+}
+
+module.exports = injectSheet(styles)(injectIntl(Main))
 
 function getPath (nation, area, community) {
   let path = '/' + nation

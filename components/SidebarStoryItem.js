@@ -1,8 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import injectSheet from 'react-jss'
-import { Link } from 'react-router-dom'
-import gett from '../lib/get_translations'
+
 import Typography from './Typography'
 import Image from './Image'
 

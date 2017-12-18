@@ -52,6 +52,7 @@ const styles = {
 class Popup extends React.PureComponent {
   render () {
     const {name, solar, water, color, classes} = this.props
+    if (!name) return null
     return (<div className={classes.root}>
       {!!color && <div className={classes.square} style={{backgroundColor: color}} />}
       <div className={classes.name}>
@@ -70,7 +71,7 @@ class Popup extends React.PureComponent {
 }
 
 Popup.propTypes = {
-  name: PropTypes.string.isRequired,
+  name: PropTypes.string,
   solar: PropTypes.number,
   water: PropTypes.number,
   color: PropTypes.string,

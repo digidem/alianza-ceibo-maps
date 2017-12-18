@@ -1,19 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import injectSheet from 'react-jss'
-import gett from '../lib/get_translations'
+import {defineMessages, FormattedMessage} from 'react-intl'
+
 import Typography from './Typography'
 
-const t = {
-  es: {
-    water: 'Agua',
-    solar: 'Solar'
-  },
-  en: {
-    water: 'Water',
-    solar: 'Solar'
-  }
-}
+const messages = defineMessages({
+  // Label for count of water installations
+  water: 'Water',
+  // Label for count of solar installations
+  solar: 'Solar'
+})
 
 const styles = {
   outer: {
@@ -115,7 +112,7 @@ class Count extends React.Component {
 
 Count.propTypes = {
   total: PropTypes.number.isRequired,
-  name: PropTypes.string.isRequired,
+  name: PropTypes.node.isRequired,
   icon: PropTypes.string.isRequired
 }
 
@@ -125,13 +122,13 @@ const SidebarCounts = ({water, solar, classes}) => (
       <Count
         icon='/icons/water.svg'
         total={water}
-        name={gett(t).water}
+        name={<FormattedMessage {...messages.water} />}
         classes={classes} />
       <div className={classes.divider} />
       <Count
         icon='/icons/solar.svg'
         total={solar}
-        name={gett(t).solar}
+        name={<FormattedMessage {...messages.solar} />}
         classes={classes} />
     </div>
   </div>

@@ -3,6 +3,8 @@ import PropTypes from 'prop-types'
 import injectSheet from 'react-jss'
 import Markdown from 'react-markdown'
 import classNames from 'classnames'
+import { defineMessages, FormattedMessage } from 'react-intl'
+
 import Typography from './Typography'
 import SidebarHeader from './SidebarHeader'
 import SidebarCounts from './SidebarCounts'
@@ -31,14 +33,10 @@ const styles = {
   }
 }
 
-const t = {
-  en: {
-    installations: 'Installations'
-  },
-  es: {
-    installations: 'Instalaciones'
-  }
-}
+const messages = defineMessages({
+  // Heading for sidebar section with installation counts
+  installations: 'Installations'
+})
 
 class Sidebar extends React.Component {
   componentWillReceiveProps ({title, image, solar, water, text}) {
@@ -78,7 +76,9 @@ class Sidebar extends React.Component {
           }} />
         </div>}
         {!!(solar + water) && <div className={classes.sectionTitle}>
-          <Typography type='sectionTitle'>{gett(t).installations}</Typography>
+          <Typography type='sectionTitle'>
+            <FormattedMessage {...messages.installations} />
+          </Typography>
         </div>}
         {!!(solar + water) && <div className={classes.padding}>
           <SidebarCounts water={water} solar={solar} />
