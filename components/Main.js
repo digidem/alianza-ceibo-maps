@@ -1,13 +1,12 @@
-const React = require('react')
-const injectSheet = require('react-jss').default
-const {Redirect} = require('react-router-dom')
-const {TransitionGroup, Transition} = require('react-transition-group')
-
-const Sidebar = require('./Sidebar')
-const Topbar = require('./Topbar')
-const MapView = require('./Map')
-const getSidebarData = require('../lib/get_sidebar_data')
-const {fetch: fetchData} = require('../lib/data')
+import React from 'react'
+import injectSheet from 'react-jss'
+import { Redirect } from 'react-router-dom'
+import { TransitionGroup, Transition } from 'react-transition-group'
+import Sidebar from './Sidebar'
+import Topbar from './Topbar'
+import MapView from './Map'
+import getSidebarData from '../lib/get_sidebar_data'
+import { fetch as fetchData } from '../lib/data'
 
 const styles = {
   root: {

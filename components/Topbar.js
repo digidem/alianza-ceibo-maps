@@ -1,11 +1,10 @@
-const React = require('react')
-const PropTypes = require('prop-types')
-const injectSheet = require('react-jss').default
-const { Link } = require('react-router-dom')
-const classNames = require('classnames')
-
-const Typography = require('./Typography')
-const gett = require('../lib/get_translations')
+import React from 'react'
+import PropTypes from 'prop-types'
+import injectSheet from 'react-jss'
+import { Link } from 'react-router-dom'
+import classNames from 'classnames'
+import Typography from './Typography'
+import gett from '../lib/get_translations'
 
 const t = {
   en: {

@@ -1,6 +1,6 @@
-const React = require('react')
-const PropTypes = require('prop-types')
-const injectSheet = require('react-jss').default
+import React from 'react'
+import PropTypes from 'prop-types'
+import injectSheet from 'react-jss'
 
 const styles = {
   '@global': {

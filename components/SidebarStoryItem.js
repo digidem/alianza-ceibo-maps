@@ -1,11 +1,10 @@
-const React = require('react')
-const PropTypes = require('prop-types')
-const injectSheet = require('react-jss').default
-const {Link} = require('react-router-dom')
-
-const gett = require('../lib/get_translations')
-const Typography = require('./Typography')
-const Image = require('./Image')
+import React from 'react'
+import PropTypes from 'prop-types'
+import injectSheet from 'react-jss'
+import { Link } from 'react-router-dom'
+import gett from '../lib/get_translations'
+import Typography from './Typography'
+import Image from './Image'
 
 const styles = {
   root: {

@@ -1,18 +1,15 @@
-const React = require('react')
-const PropTypes = require('prop-types')
-const injectSheet = require('react-jss').default
-const Markdown = require('react-markdown')
-const classNames = require('classnames')
-const shallowequal = require('shallowequal')
-
-const gett = require('../lib/get_translations')
-const Typography = require('./Typography')
-const SidebarHeader = require('./SidebarHeader')
-const SidebarCounts = require('./SidebarCounts')
-const SidebarList = require('./SidebarList')
-const SidebarListItem = require('./SidebarListItem')
-const SidebarStoryItem = require('./SidebarStoryItem')
-const Image = require('./Image')
+import React from 'react'
+import PropTypes from 'prop-types'
+import injectSheet from 'react-jss'
+import Markdown from 'react-markdown'
+import classNames from 'classnames'
+import Typography from './Typography'
+import SidebarHeader from './SidebarHeader'
+import SidebarCounts from './SidebarCounts'
+import SidebarList from './SidebarList'
+import SidebarListItem from './SidebarListItem'
+import SidebarStoryItem from './SidebarStoryItem'
+import Image from './Image'
 
 const styles = {
   root: {

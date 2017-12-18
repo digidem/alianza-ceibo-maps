@@ -1,14 +1,13 @@
-const React = require('react')
-const ReactDOM = require('react-dom')
-const PropTypes = require('prop-types')
-const injectSheet = require('react-jss').default
-const mapboxgl = require('mapbox-gl')
-const extent = require('@mapbox/geojson-extent')
-const whichPolygon = require('which-polygon')
-
-const layerStyles = require('../lib/layer_styles')
-const getPopupData = require('../lib/get_popup_data')
-const Popup = require('./Popup')
+import React from 'react'
+import ReactDOM from 'react-dom'
+import PropTypes from 'prop-types'
+import injectSheet from 'react-jss'
+import mapboxgl from 'mapbox-gl'
+import extent from '@mapbox/geojson-extent'
+import whichPolygon from 'which-polygon'
+import layerStyles from '../lib/layer_styles'
+import getPopupData from '../lib/get_popup_data'
+import Popup from './Popup'
 
 /* Mapbox [API access token](https://www.mapbox.com/help/create-api-access-token/) */
 mapboxgl.accessToken = 'pk.eyJ1IjoiZ21hY2xlbm5hbiIsImEiOiJSaWVtd2lRIn0.ASYMZE2HhwkAw4Vt7SavEg'

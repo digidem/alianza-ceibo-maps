@@ -1,9 +1,8 @@
-const React = require('react')
-const PropTypes = require('prop-types')
-const injectSheet = require('react-jss').default
-
-const gett = require('../lib/get_translations')
-const Typography = require('./Typography')
+import React from 'react'
+import PropTypes from 'prop-types'
+import injectSheet from 'react-jss'
+import gett from '../lib/get_translations'
+import Typography from './Typography'
 
 const t = {
   es: {

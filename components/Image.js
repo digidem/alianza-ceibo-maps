@@ -1,7 +1,7 @@
-const React = require('react')
-const classNames = require('classnames')
-const PropTypes = require('prop-types')
-const injectSheet = require('react-jss').default
+import React from 'react'
+import classNames from 'classnames'
+import PropTypes from 'prop-types'
+import injectSheet from 'react-jss'
 
 const styles = {
   root: {

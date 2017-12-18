@@ -1,7 +1,7 @@
-const React = require('react')
-const {BrowserRouter, Route} = require('react-router-dom')
+import React from 'react'
+import { BrowserRouter, Route } from 'react-router-dom'
+import Main from './Main'
 
-const Main = require('./Main')
 
 const App = () => (
   <BrowserRouter>
