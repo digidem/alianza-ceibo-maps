@@ -1,0 +1,62 @@
+{
+  "components.Sidebar.installations": {
+    "message": "Installations",
+    "description": "Heading for sidebar section with installation counts"
+  },
+  "components.SidebarCounts.water": {
+    "message": "Water",
+    "description": "Label for count of water installations"
+  },
+  "components.SidebarCounts.solar": {
+    "message": "Solar",
+    "description": "Label for count of solar installations"
+  },
+  "components.SidebarHeader.installationsCount": {
+    "message": "{count, plural, =0 {0 total installations} one {1 total installation} other {# total installations}}",
+    "description": "Installation count for sidebar subheading"
+  },
+  "components.SidebarHeader.communitiesCount": {
+    "message": "{count, plural, =0 {0 communities} one {1 community} other {# communities}}",
+    "description": "Communities count for sidebar subheading"
+  },
+  "components.SidebarListItem.installationsCount": {
+    "message": "{count, plural, =0 {0 installations} one {1 installation} other {# installations}}",
+    "description": "Installation count for sidebar list subheading"
+  },
+  "components.Topbar.overview": {
+    "message": "Map Overview",
+    "description": "Link in top bar to zoom out to whole map"
+  },
+  "components.Topbar.legend": {
+    "message": "Map Legend",
+    "description": "Map legend button label"
+  },
+  "components.Topbar.water": {
+    "message": "Water Installations",
+    "description": "Map legend item: communities with water installations"
+  },
+  "components.Topbar.solar": {
+    "message": "Solar Installations",
+    "description": "Map legend item: communities with solar installations"
+  },
+  "components.Topbar.waterSolar": {
+    "message": "Water & Solar Installations",
+    "description": "Map legend item: communities with water and solar installations"
+  },
+  "components.Topbar.story": {
+    "message": "Communities With Story",
+    "description": "Map legend item: communities with a story"
+  },
+  "lib.sidebar_data.homeTitle": {
+    "message": "Where We Work",
+    "description": "Sidebar initial title"
+  },
+  "lib.sidebar_data.homeListTitle": {
+    "message": "Who We Work With",
+    "description": "Sidebar initial list header"
+  },
+  "lib.sidebar_data.homeText": {
+    "message": "Amazon Frontlines and the Ceibo Alliance work on concrete\ninitiatives with over 60 communities from the Siona, Secoya, Kofan and Waorani\nindigenous nations in Ecuador, Peru and Colombia. Explore the *Where We Work*\nmap to learn more about the past and present of these indigenous communities.\nMake sure to check out *Communities with Stories* to watch films or read\nfirst-hand accounts of our work with these communities, from clean water and\nsolar energy, to territorial defense and cultural revival.",
+    "description": "Sidebar initial text"
+  }
+}
