@@ -1,0 +1,4 @@
+# Redirect all requests to the same index.html -
+# Pushstate is managed in the app
+
+/*    /index.html   200
