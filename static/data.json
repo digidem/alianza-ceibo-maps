@@ -1811,33 +1811,33 @@
             "Practicas propias"
           ],
           "Solar": 9,
-          "Foto": [
-            {
-              "id": "attUaA07QOwCjwmfE",
-              "url": "https://dl.airtable.com/EhOGBSQ2SIGRNUQzNvml_chandiana'e.jpg",
-              "filename": "chandianae.jpg",
-              "size": 289368,
-              "type": "image/jpeg",
-              "thumbnails": {
-                "small": {
-                  "url": "https://dl.airtable.com/eEBOfBjRkGdeg0LsCbgh_small_chandiana'e.jpg",
-                  "width": 64,
-                  "height": 36
-                },
-                "large": {
-                  "url": "https://dl.airtable.com/tIHwfbvCQKGTRyMRhE1o_large_chandiana'e.jpg",
-                  "width": 913,
-                  "height": 512
-                }
-              }
-            }
-          ],
           "Description English": "The A'I Kofan community of Chandiana'e lies close to the Bermejo River in the Ecuadorian Amazon. Composed of nine families, Chandiana'e works with ClearWater and the Ceibo Alliance on three programs",
           "Agua": 9,
           "Agua Familias": 9,
           "Agua Usuarios": 36,
           "Most recent": "2016-03-08",
-          "First": "2016-03-08"
+          "First": "2016-03-08",
+          "Foto": [
+            {
+              "id": "att2MqEWLtP1WoYkM",
+              "url": "https://dl.airtable.com/2GxyubD6QleEUBwktf79_chandianae.jpg",
+              "filename": "chandianae.jpg",
+              "size": 289368,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/3FZb8XzRSWymUZVivmvA_small_chandianae.jpg",
+                  "width": 64,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/HUS3kdCtQgWKhPJxLeQR_large_chandianae.jpg",
+                  "width": 913,
+                  "height": 512
+                }
+              }
+            }
+          ]
         },
         "geometry": {
           "type": "Point",
