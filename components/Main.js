@@ -149,7 +149,7 @@ Main.propTypes = {
   intl: intlShape.isRequired
 }
 
-module.exports = injectSheet(styles)(injectIntl(Main))
+module.exports = injectIntl(injectSheet(styles)(Main))
 
 function getPath (nation, area, community) {
   let path = '/' + nation
