@@ -1,10 +1,10 @@
 {
   "components.Sidebar.installations": {
-    "message": "Installations",
+    "message": "Instalaciones",
     "description": "Heading for sidebar section with installation counts"
   },
   "components.SidebarCounts.water": {
-    "message": "Water",
+    "message": "Agua",
     "description": "Label for count of water installations"
   },
   "components.SidebarCounts.solar": {
@@ -52,11 +52,11 @@
     "description": "Sidebar initial title"
   },
   "lib.sidebar_data.homeListTitle": {
-    "message": "Who We Work With",
+    "message": "Trabajamos con",
     "description": "Sidebar initial list header"
   },
   "lib.sidebar_data.homeText": {
-    "message": "Amazon Frontlines and the Ceibo Alliance work on concrete\ninitiatives with over 60 communities from the Siona, Secoya, Kofan and Waorani\nindigenous nations in Ecuador, Peru and Colombia. Explore the *Where We Work*\nmap to learn more about the past and present of these indigenous communities.\nMake sure to check out *Communities with Stories* to watch films or read\nfirst-hand accounts of our work with these communities, from clean water and\nsolar energy, to territorial defense and cultural revival.",
+    "message": "AmazonFrontlines y Alianza Ceibo trabajan en iniciativas concretas con más de 60 comunidades de las naciones indígenas Kofan, Siona, Secoya y Huaorani en Ecuador, Perú y Colombia. Explorar el mapa *Donde Trabajamos* para aprender más sobre la historia y situación actual de estas comunidades indígenas. Asegúrese de buscar las *comunidades con historias* para ver videos y leer relatos de primera mano de nuestro trabajo con estas comunidades, acerca del agua potable, energía solar, la defensa territorial y el renacimiento cultural.",
     "description": "Sidebar initial text"
   }
 }
