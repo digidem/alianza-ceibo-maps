@@ -28,23 +28,23 @@
     "description": "Link in top bar to zoom out to whole map"
   },
   "components.Topbar.legend": {
-    "message": "Map Legend",
+    "message": "Leyenda",
     "description": "Map legend button label"
   },
   "components.Topbar.water": {
-    "message": "Water Installations",
+    "message": "Instalaciones de agua",
     "description": "Map legend item: communities with water installations"
   },
   "components.Topbar.solar": {
-    "message": "Solar Installations",
+    "message": "Instalaciones de energía solar",
     "description": "Map legend item: communities with solar installations"
   },
   "components.Topbar.waterSolar": {
-    "message": "Water & Solar Installations",
+    "message": "Instalaciones de agua y solar",
     "description": "Map legend item: communities with water and solar installations"
   },
   "components.Topbar.story": {
-    "message": "Communities With Story",
+    "message": "Comunidades con cuentos",
     "description": "Map legend item: communities with a story"
   },
   "lib.sidebar_data.homeTitle": {
