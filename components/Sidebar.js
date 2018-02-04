@@ -15,11 +15,11 @@ import Image from './Image'
 
 const styles = {
   root: {
-    display: 'flex',
-    flexDirection: 'column'
+    overflowY: 'scroll',
+    height: '100%'
   },
   content: {
-    overflowY: 'scroll',
+    // overflowY: 'scroll',
     borderRight: '1px solid #E3E3E3',
     height: '100%'
   },
@@ -66,9 +66,9 @@ class Sidebar extends React.Component {
 
     const className = classNames(classNameProp, classes.root)
 
-    return <div className={className}>
+    return <div className={className + ' ' + classes.root} ref={el => (this.scrollContent = el)}>
       <SidebarHeader title={title} installationsCount={solar + water} />
-      <div className={classes.content} ref={el => (this.scrollContent = el)}>
+      <div className={classes.content}>
         {image && <Image src={image} ratio='4x3' />}
         {text && <div className={classes.padding}>
           <Markdown source={text} parserOptions={{smart: true}} renderers={{
