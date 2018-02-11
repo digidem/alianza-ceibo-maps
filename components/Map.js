@@ -345,7 +345,7 @@ class MapView extends React.Component {
       fn()
     } else {
       console.log('waiting for style data to load before calling ready(fn)')
-      this.map.once('styledata', () => fn.call(this))
+      this.map.once('data', () => this.ready(fn))
     }
   }
 
