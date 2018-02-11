@@ -60,7 +60,7 @@ class MapView extends React.Component {
     map.fitBounds(INITIAL_BOUNDS, {duration: 0})
 
     // Add zoom and rotation controls to the map.
-    map.addControl(new mapboxgl.NavigationControl(), 'top-left')
+    map.addControl(new mapboxgl.NavigationControl({showCompass: false}), 'top-left')
 
     map.on('click', 'alianza-areas-fill', this.handleClick)
     map.on('click', 'alianza-communities-dots', this.handleClick)
