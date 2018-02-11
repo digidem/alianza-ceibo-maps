@@ -185,6 +185,7 @@ class MapView extends React.Component {
   }
 
   setupLayersAndData (data, nation, area, community) {
+    console.log('setup layers and data')
     const map = this.map
     const areaGeoJSON = this.getAreaGeoJSON(data)
     const communityGeoJSON = this.getCommunityGeoJSON(data)
