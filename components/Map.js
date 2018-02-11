@@ -13,7 +13,7 @@ import Popup from './Popup'
 /* Mapbox [API access token](https://www.mapbox.com/help/create-api-access-token/) */
 mapboxgl.accessToken = 'pk.eyJ1IjoiZ21hY2xlbm5hbiIsImEiOiJSaWVtd2lRIn0.ASYMZE2HhwkAw4Vt7SavEg'
 
-const MAP_STYLE = 'mapbox://styles/gmaclennan/cjb1e10ya5lwl2sr0hqbzo2l8'
+const MAP_STYLE = 'mapbox://styles/gmaclennan/cjb1e10ya5lwl2sr0hqbzo2l8?optimize=true'
 // const MAP_STYLE = 'http://localhost:8080/style.json'
 const INITIAL_BOUNDS = [-82.573242, -5.287887, -74.750977, 1.834403]
 
