@@ -193,6 +193,7 @@ class MapView extends React.Component {
     // is too slow for these large polygons
     this.polygonIndex = whichPolygon(areaGeoJSON)
     this.ready(() => {
+      console.log('map is ready now')
       // Wait until the map is ready and add all the custom layers
       map.addSource('areas', {type: 'geojson', data: areaGeoJSON})
       map.addSource('communities', {type: 'geojson', data: communityGeoJSON})
@@ -218,6 +219,7 @@ class MapView extends React.Component {
 
   zoomToData (data, nation, area, community) {
     const map = this.map
+    console.log('zoom to data')
 
     // Navigation to `/` - zoom to all data
     if (!nation && !area && !community) {
