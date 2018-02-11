@@ -68,6 +68,7 @@ class MapView extends React.Component {
 
     const {data, nation, area, community} = this.props
     if (data) {
+      console.log('layer setup during mount')
       this.setupLayersAndData(data, nation, area, community)
     }
   }
@@ -337,8 +338,10 @@ class MapView extends React.Component {
 
   ready (fn) {
     if (this.map.isStyleLoaded() || this.loaded) {
+      console.log('map was loaded when ready() was called')
       fn()
     } else {
+      console.log('waiting for style data to load before calling ready(fn)')
       this.map.once('styledata', () => fn.call(this))
     }
   }
