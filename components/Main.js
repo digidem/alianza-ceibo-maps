@@ -1,4 +1,5 @@
 import React from 'react'
+import querystring from 'querystring'
 
 import injectSheet from 'react-jss'
 import { Redirect } from 'react-router-dom'
@@ -106,7 +107,7 @@ class Main extends React.Component {
   }
 
   render () {
-    const {classes, nation, area, community, location} = this.props
+    const {classes, nation, area, community, location, show} = this.props
     const sidebarProps = this.getSidebarData()
 
     if (!sidebarProps) return <Redirect to='/' />
@@ -118,6 +119,7 @@ class Main extends React.Component {
           key={location.key}>
           {state => {
             return <Sidebar
+              show={show}
               className={classes.sidebarAnimationBase + ' ' + classes['sidebar-' + state]}
               {...sidebarProps}
               onHover={this.handleHover} />
@@ -127,6 +129,7 @@ class Main extends React.Component {
       <div className={classes.main}>
         <Topbar
           className={classes.topbar}
+          show={show}
           nation={nation}
           area={area}
           community={community}
@@ -134,6 +137,7 @@ class Main extends React.Component {
         <MapView
           data={this.state.data}
           nation={nation}
+          show={show}
           area={area}
           community={community}
           location={location}

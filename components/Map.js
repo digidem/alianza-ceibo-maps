@@ -73,7 +73,7 @@ class MapView extends React.Component {
     }
   }
 
-  componentWillReceiveProps ({data, nation, area, community, hover, location}) {
+  componentWillReceiveProps ({data, nation, area, community, show, hover, location}) {
     const map = this.map
     if (!map || !data) return
 
@@ -137,7 +137,7 @@ class MapView extends React.Component {
       map.setFilter('alianza-areas-highlight', areaFilter)
     })
 
-    ReactDOM.render(<Popup {...getPopupData(data, hover)} />, this.popupNode)
+    ReactDOM.render(<Popup show={show} {...getPopupData(data, hover)} />, this.popupNode)
   }
 
   // We don't use React to update this component. All update logic and diffing
@@ -272,11 +272,15 @@ class MapView extends React.Component {
   // Transform the data for communities into a GeoJSON FeatureCollection
   // Add a prop for the zoom value when the communty's area fits the map bounds
   getCommunityGeoJSON (data) {
+    const show = this.props.show
     const communityFeatures = Object.keys(data.byId)
       .map(key => data.byId[key])
       .filter(f => f.properties._type === 'community')
 
     communityFeatures.forEach(f => {
+      if (show && f.properties._icon === 'comunidad-agua-solar') {
+        f.properties._icon = `comunidad-${show}`
+      }
       const area = data.areas[f.properties._areaName]
       if (!area) f.properties._zoom = 10
       else f.properties._zoom = area.properties._zoom

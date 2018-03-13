@@ -39,12 +39,13 @@ const messages = defineMessages({
 })
 
 class Sidebar extends React.Component {
-  componentWillReceiveProps ({title, image, solar, water, text}) {
+  componentWillReceiveProps ({title, image, solar, water, text, show}) {
     const propsUnchanged = title === this.props.title &&
       image === this.props.image &&
       solar === this.props.solar &&
       water === this.props.water &&
-      text === this.props.text
+      text === this.props.text &&
+      show === this.props.show
     if (propsUnchanged || !this.scrollContent) return
     this.scrollContent.scrollTop = 0
   }
@@ -61,13 +62,17 @@ class Sidebar extends React.Component {
       className: classNameProp,
       classes,
       stories,
+      show,
       onHover
     } = this.props
 
     const className = classNames(classNameProp, classes.root)
+    const installationsCount = (show === 'agua')
+      ? water : (show === 'solar')
+        ? solar : (water + solar)
 
     return <div className={className + ' ' + classes.root} ref={el => (this.scrollContent = el)}>
-      <SidebarHeader title={title} installationsCount={solar + water} />
+      <SidebarHeader title={title} installationsCount={installationsCount} />
       <div className={classes.content}>
         {image && <Image src={image} ratio='4x3' />}
         {text && <div className={classes.padding}>
@@ -81,7 +86,7 @@ class Sidebar extends React.Component {
           </Typography>
         </div>}
         {!!(solar + water) && <div className={classes.padding}>
-          <SidebarCounts water={water} solar={solar} />
+          <SidebarCounts water={water} solar={solar} show={show} />
         </div>}
         {listTitle && list && !!list.length && <div className={classes.sectionTitle}>
           <Typography type='sectionTitle'>{listTitle}</Typography>

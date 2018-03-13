@@ -51,18 +51,18 @@ const styles = {
 
 class Popup extends React.PureComponent {
   render () {
-    const {name, solar, water, color, classes} = this.props
+    const {name, solar, water, color, classes, show} = this.props
     if (!name) return null
     return (<div className={classes.root}>
       {!!color && <div className={classes.square} style={{backgroundColor: color}} />}
       <div className={classes.name}>
         {name}
       </div>
-      {!!water && <div className={classes.dataItem}>
+      {show !== 'solar' && !!water && <div className={classes.dataItem}>
         <img className={classes.icon} src='/icons/comunidad-agua-dot.svg' />
         <div className={classes.count}>{water}</div>
       </div>}
-      {!!solar && <div className={classes.dataItem}>
+      {show !== 'agua' && !!solar && <div className={classes.dataItem}>
         <img className={classes.icon} src='/icons/comunidad-solar-dot.svg' />
         <div className={classes.count}>{solar}</div>
       </div>}
