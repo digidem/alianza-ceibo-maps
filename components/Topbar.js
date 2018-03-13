@@ -169,9 +169,9 @@ class Topbar extends React.Component {
         <div className={legendClassName}>
           <div className={classes.legendInner}>
             <ul className={classes.legendList}>
-              {show !== 'solar' ? <LegendItem text={<FormattedMessage {...messages.water} />} icon='/icons/comunidad-agua-dot.svg' /> : '' }
-              {show !== 'agua' ? <LegendItem text={<FormattedMessage {...messages.solar} />} icon='/icons/comunidad-solar-dot.svg' /> : '' }
-              {show ? '' : <LegendItem text={<FormattedMessage {...messages.waterSolar} />} icon='/icons/comunidad-agua-solar-dot.svg' />}
+              {show !== 'solar' && <LegendItem text={<FormattedMessage {...messages.water} />} icon='/icons/comunidad-agua-dot.svg' />}
+              {show !== 'agua' && <LegendItem text={<FormattedMessage {...messages.solar} />} icon='/icons/comunidad-solar-dot.svg' />}
+              {!show && <LegendItem text={<FormattedMessage {...messages.waterSolar} />} icon='/icons/comunidad-agua-solar-dot.svg' />}
               <LegendItem text={<FormattedMessage {...messages.story} />} icon='/icons/star.svg' />
               <hr className={classes.legendDivider} />
               {nationList.map(nation => (
