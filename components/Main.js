@@ -1,5 +1,5 @@
 import React from 'react'
-import querystring from 'querystring'
+import classNames from 'classnames'
 
 import injectSheet from 'react-jss'
 import { Redirect } from 'react-router-dom'
@@ -43,26 +43,37 @@ const styles = {
     opacity: 1
   },
   main: {
-    flex: 2,
+    flex: 1,
     display: 'flex',
     flexDirection: 'column'
   },
-  topbar: {
-    flex: '1 0 auto',
-    zIndex: 9999
+  closed: {
+    maxWidth: 0,
+    minWidth: 0,
+    display: 'none'
   },
-  map: {
+  topbar: {
+    flex: '2 0 auto',
+    zIndex: 9999
   }
 }
 
 class Main extends React.Component {
-  state = {}
+  state = {
+    mapView: true
+  }
 
   componentDidMount () {
     fetchData((err, data) => {
       if (err) return console.error(err)
-      this.setState({data: data})
+      this.setState({
+        data: data
+      })
     })
+  }
+
+  smallScreen () {
+    return window.innerWidth < 600
   }
 
   getNationList () {
@@ -101,26 +112,33 @@ class Main extends React.Component {
     const {history} = this.props
     const {data} = this.state
     if (!data) return
-    const fProps = data.byId[id] && data.byId[id].properties
+  const fProps = data.byId[id] && data.byId[id].properties
     if (!fProps) return
     history.push(getPath(fProps._nationName, fProps._areaName, fProps._communityName))
   }
 
   render () {
     const {classes, nation, area, community, location, show} = this.props
+    const {mapView} = this.state
     const sidebarProps = this.getSidebarData()
+    const smallScreen = this.smallScreen()
+    const sideBarClassName = state => classNames(
+      classes.sidebarAnimationBase,
+      classes['sidebar-' + state]
+    )
+    const transitionSidebar = classNames(classes.sidebar, {[classes.closed]: smallScreen && mapView})
 
     if (!sidebarProps) return <Redirect to='/' />
 
     return <div className={classes.root}>
-      <TransitionGroup className={classes.sidebar}>
+      <TransitionGroup className={transitionSidebar}>
         <Transition
           timeout={200}
           key={location.key}>
           {state => {
             return <Sidebar
               show={show}
-              className={classes.sidebarAnimationBase + ' ' + classes['sidebar-' + state]}
+              className={sideBarClassName(state)}
               {...sidebarProps}
               onHover={this.handleHover} />
           }}
@@ -128,6 +146,7 @@ class Main extends React.Component {
       </TransitionGroup>
       <div className={classes.main}>
         <Topbar
+          smallScreen={smallScreen}
           className={classes.topbar}
           show={show}
           nation={nation}
@@ -135,6 +154,7 @@ class Main extends React.Component {
           community={community}
           nationList={this.getNationList()} />
         <MapView
+          className={classNames({[classes.closed]: smallScreen && !mapView})}
           data={this.state.data}
           nation={nation}
           show={show}
