@@ -140,16 +140,16 @@ class Topbar extends React.Component {
   }
 
   render () {
-    const {nation, area, community, nationList, className, classes, show, smallScreen} = this.props
+    const {nation, area, community, nationList, className, classes, show} = this.props
     const {legendOpen} = this.state
     const legendIconClassName = classNames(classes.legendIcon, {[classes.collapse]: legendOpen})
     const legendClassName = classNames(classes.legend, {[classes.open]: legendOpen})
     return <div className={classes.root + ' ' + className}>
       <div>
         <Typography type='sectionTitle' color='#999999' className={classes.topbarItem}>
-          {!smallScreen && <Link className={classNames(classes.link, {[classes.active]: !nation})} to='/'>
+          <Link className={classNames(classes.link, {[classes.active]: !nation})} to='/'>
             <FormattedMessage {...messages.overview} />
-          </Link>}
+          </Link>
           <span>
             {!!nation && <Breadcrumb last={!area} text={nation} to={`/${nation}`} classes={classes} />}
             {!!nation && !!area && area !== '_' &&

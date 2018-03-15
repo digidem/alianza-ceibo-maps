@@ -5,8 +5,10 @@ import injectSheet from 'react-jss'
 import { Redirect } from 'react-router-dom'
 import { TransitionGroup, Transition } from 'react-transition-group'
 import { injectIntl, intlShape } from 'react-intl'
+import Media from 'react-media'
 
 import Sidebar from './Sidebar'
+import Mobilebar from './Mobilebar'
 import Topbar from './Topbar'
 import MapView from './Map'
 import getSidebarData from '../lib/sidebar_data'
@@ -19,11 +21,23 @@ const styles = {
     width: '100vw',
     height: '100vh'
   },
+  mobilebar: {
+    position: 'absolute',
+    bottom: 0,
+    width: '100%',
+    zIndex: 9999
+  },
+  sidebarDesktop: {
+    maxWidth: 400,
+    minWidth: 350
+  },
   sidebar: {
     flex: 1,
-    maxWidth: 400,
-    minWidth: 350,
     position: 'relative'
+  },
+  'sidebarMobile': {
+    minWidth: '100%',
+    'margin-bottom': 50
   },
   'sidebarAnimationBase': {
     position: 'absolute',
@@ -45,7 +59,9 @@ const styles = {
   main: {
     flex: 1,
     display: 'flex',
-    flexDirection: 'column'
+    flexDirection: 'column',
+    width: '100%',
+    height: '100%'
   },
   closed: {
     maxWidth: 0,
@@ -60,7 +76,7 @@ const styles = {
 
 class Main extends React.Component {
   state = {
-    mapView: true
+    page: 'listView'
   }
 
   componentDidMount () {
@@ -70,10 +86,6 @@ class Main extends React.Component {
         data: data
       })
     })
-  }
-
-  smallScreen () {
-    return window.innerWidth < 600
   }
 
   getNationList () {
@@ -108,6 +120,14 @@ class Main extends React.Component {
     this.setState({hover: id})
   }
 
+  handleMapPageClick = () => {
+    this.setState({page: 'mapView'})
+  }
+
+  handleListPageClick = () => {
+    this.setState({page: 'listView'})
+  }
+
   handleMapClick = (id) => {
     const {history} = this.props
     const {data} = this.state
@@ -119,42 +139,44 @@ class Main extends React.Component {
 
   render () {
     const {classes, nation, area, community, location, show} = this.props
-    const {mapView} = this.state
+    const {page} = this.state
     const sidebarProps = this.getSidebarData()
-    const smallScreen = this.smallScreen()
     const sideBarClassName = state => classNames(
       classes.sidebarAnimationBase,
       classes['sidebar-' + state]
     )
-    const transitionSidebar = classNames(classes.sidebar, {[classes.closed]: smallScreen && mapView})
-
     if (!sidebarProps) return <Redirect to='/' />
 
     return <div className={classes.root}>
-      <TransitionGroup className={transitionSidebar}>
-        <Transition
-          timeout={200}
-          key={location.key}>
-          {state => {
-            return <Sidebar
-              show={show}
-              className={sideBarClassName(state)}
-              {...sidebarProps}
-              onHover={this.handleHover} />
-          }}
-        </Transition>
-      </TransitionGroup>
+      <Media query='(max-width: 599px)'>
+        {smallScreen =>
+          <TransitionGroup className={classNames(classes.sidebar,
+            smallScreen ? classes.sidebarMobile : classes.sidebarDesktop,
+            {[classes.closed]: smallScreen && page === 'mapView'})}>
+            <Transition
+              timeout={200}
+              key={location.key}>
+              {state => {
+                return <Sidebar
+                  show={show}
+                  className={sideBarClassName(state)}
+                  {...sidebarProps}
+                  onHover={this.handleHover} />
+              }}
+            </Transition>
+          </TransitionGroup>
+        }
+      </Media>
       <div className={classes.main}>
-        <Topbar
-          smallScreen={smallScreen}
-          className={classes.topbar}
-          show={show}
-          nation={nation}
-          area={area}
-          community={community}
-          nationList={this.getNationList()} />
+        <Media query='(min-width: 600px)'
+          render={() => <Topbar
+            className={classes.topbar}
+            nation={nation}
+            show={show}
+            area={area}
+            community={community}
+            nationList={this.getNationList()} />} />
         <MapView
-          className={classNames({[classes.closed]: smallScreen && !mapView})}
           data={this.state.data}
           nation={nation}
           show={show}
@@ -165,6 +187,13 @@ class Main extends React.Component {
           onClick={this.handleMapClick}
           onHover={this.handleHover} />
       </div>
+      <Media query='(max-width: 599px)'
+        render={() => <Mobilebar
+          className={classes.mobilebar}
+          page={this.state.page}
+          handleListPageClick={this.handleListPageClick}
+          handleMapPageClick={this.handleMapPageClick}
+          nationList={this.getNationList()} />} />
     </div>
   }
 }
