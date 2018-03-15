@@ -1,11 +1,14 @@
 import React from 'react'
+import classNames from 'classnames'
 
 import injectSheet from 'react-jss'
 import { Redirect } from 'react-router-dom'
 import { TransitionGroup, Transition } from 'react-transition-group'
 import { injectIntl, intlShape } from 'react-intl'
+import Media from 'react-media'
 
 import Sidebar from './Sidebar'
+import Mobilebar from './Mobilebar'
 import Topbar from './Topbar'
 import MapView from './Map'
 import getSidebarData from '../lib/sidebar_data'
@@ -18,11 +21,23 @@ const styles = {
     width: '100vw',
     height: '100vh'
   },
+  mobilebar: {
+    position: 'absolute',
+    bottom: 0,
+    width: '100%',
+    zIndex: 9999
+  },
+  sidebarDesktop: {
+    maxWidth: 400,
+    minWidth: 350
+  },
   sidebar: {
     flex: 1,
-    maxWidth: 400,
-    minWidth: 350,
     position: 'relative'
+  },
+  'sidebarMobile': {
+    minWidth: '100%',
+    'margin-bottom': 50
   },
   'sidebarAnimationBase': {
     position: 'absolute',
@@ -42,25 +57,34 @@ const styles = {
     opacity: 1
   },
   main: {
-    flex: 2,
+    flex: 1,
     display: 'flex',
-    flexDirection: 'column'
+    flexDirection: 'column',
+    width: '100%',
+    height: '100%'
+  },
+  closed: {
+    maxWidth: 0,
+    minWidth: 0,
+    display: 'none'
   },
   topbar: {
-    flex: '1 0 auto',
+    flex: '2 0 auto',
     zIndex: 9999
-  },
-  map: {
   }
 }
 
 class Main extends React.Component {
-  state = {}
+  state = {
+    page: 'listView'
+  }
 
   componentDidMount () {
     fetchData((err, data) => {
       if (err) return console.error(err)
-      this.setState({data: data})
+      this.setState({
+        data: data
+      })
     })
   }
 
@@ -96,44 +120,66 @@ class Main extends React.Component {
     this.setState({hover: id})
   }
 
+  handleMapPageClick = () => {
+    this.setState({page: 'mapView'})
+  }
+
+  handleListPageClick = () => {
+    this.setState({page: 'listView'})
+  }
+
   handleMapClick = (id) => {
     const {history} = this.props
     const {data} = this.state
     if (!data) return
-    const fProps = data.byId[id] && data.byId[id].properties
+  const fProps = data.byId[id] && data.byId[id].properties
     if (!fProps) return
     history.push(getPath(fProps._nationName, fProps._areaName, fProps._communityName))
   }
 
   render () {
-    const {classes, nation, area, community, location} = this.props
+    const {classes, nation, area, community, location, show} = this.props
+    const {page} = this.state
     const sidebarProps = this.getSidebarData()
-
+    const sideBarClassName = state => classNames(
+      classes.sidebarAnimationBase,
+      classes['sidebar-' + state]
+    )
     if (!sidebarProps) return <Redirect to='/' />
 
     return <div className={classes.root}>
-      <TransitionGroup className={classes.sidebar}>
-        <Transition
-          timeout={200}
-          key={location.key}>
-          {state => {
-            return <Sidebar
-              className={classes.sidebarAnimationBase + ' ' + classes['sidebar-' + state]}
-              {...sidebarProps}
-              onHover={this.handleHover} />
-          }}
-        </Transition>
-      </TransitionGroup>
+      <Media query='(max-width: 599px)'>
+        {smallScreen =>
+          <TransitionGroup className={classNames(classes.sidebar,
+            smallScreen ? classes.sidebarMobile : classes.sidebarDesktop,
+            {[classes.closed]: smallScreen && page === 'mapView'})}>
+            <Transition
+              timeout={200}
+              key={location.key}>
+              {state => {
+                return <Sidebar
+                  show={show}
+                  className={sideBarClassName(state)}
+                  {...sidebarProps}
+                  onHover={this.handleHover} />
+              }}
+            </Transition>
+          </TransitionGroup>
+        }
+      </Media>
       <div className={classes.main}>
-        <Topbar
-          className={classes.topbar}
-          nation={nation}
-          area={area}
-          community={community}
-          nationList={this.getNationList()} />
+        <Media query='(min-width: 600px)'
+          render={() => <Topbar
+            className={classes.topbar}
+            nation={nation}
+            show={show}
+            area={area}
+            community={community}
+            nationList={this.getNationList()} />} />
         <MapView
           data={this.state.data}
           nation={nation}
+          show={show}
           area={area}
           community={community}
           location={location}
@@ -141,6 +187,13 @@ class Main extends React.Component {
           onClick={this.handleMapClick}
           onHover={this.handleHover} />
       </div>
+      <Media query='(max-width: 599px)'
+        render={() => <Mobilebar
+          className={classes.mobilebar}
+          page={this.state.page}
+          handleListPageClick={this.handleListPageClick}
+          handleMapPageClick={this.handleMapPageClick}
+          nationList={this.getNationList()} />} />
     </div>
   }
 }
