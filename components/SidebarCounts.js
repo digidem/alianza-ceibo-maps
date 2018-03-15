@@ -9,7 +9,9 @@ const messages = defineMessages({
   // Label for count of water installations
   water: 'Water',
   // Label for count of solar installations
-  solar: 'Solar'
+  solar: 'Solar',
+  // Label for count of coming soon water installations,
+  waterRequired: 'Water to Install in 2018'
 })
 
 const styles = {
@@ -116,17 +118,23 @@ Count.propTypes = {
   icon: PropTypes.string.isRequired
 }
 
-const SidebarCounts = ({water, solar, classes, show}) => (
+const SidebarCounts = ({water, waterRequired, solar, classes, show}) => (
   <div className={classes.outer}>
     <div className={classes.root}>
-      {show !== 'solar' && <Count
+      {show !== 'solar' && water && <Count
         icon='/icons/water.svg'
         total={water}
         name={<FormattedMessage {...messages.water} />}
         classes={classes} />
-        }
+      }
+      {show !== 'solar' && waterRequired && <Count
+        icon='/icons/water.svg'
+        total={waterRequired}
+        name={<FormattedMessage {...messages.waterRequired} />}
+        classes={classes} />
+      }
       {!show && <div className={classes.divider} />}
-      {show !== 'agua' && <Count
+      {show !== 'agua' && solar && <Count
         icon='/icons/solar.svg'
         total={solar}
         name={<FormattedMessage {...messages.solar} />}
@@ -137,12 +145,14 @@ const SidebarCounts = ({water, solar, classes, show}) => (
 
 SidebarCounts.propTypes = {
   water: PropTypes.number,
-  solar: PropTypes.number
+  solar: PropTypes.number,
+  waterRequired: PropTypes.number
 }
 
 SidebarCounts.defaultProps = {
   water: 0,
-  solar: 0
+  solar: 0,
+  waterRequired: 0
 }
 
 module.exports = injectSheet(styles)(SidebarCounts)
