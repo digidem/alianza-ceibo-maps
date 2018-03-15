@@ -71,7 +71,7 @@ class Sidebar extends React.Component {
       ? water : (show === 'solar')
         ? solar : (water + solar)
 
-    return <div className={className + ' ' + classes.root} ref={el => (this.scrollContent = el)}>
+    return <div className={className} ref={el => (this.scrollContent = el)}>
       <SidebarHeader title={title} installationsCount={installationsCount} />
       <div className={classes.content}>
         {image && <Image src={image} ratio='4x3' />}
