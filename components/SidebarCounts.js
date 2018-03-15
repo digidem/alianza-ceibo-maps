@@ -11,7 +11,7 @@ const messages = defineMessages({
   // Label for count of solar installations
   solar: 'Solar',
   // Label for count of coming soon water installations,
-  waterRequired: 'Water to Install in 2018'
+  waterRequired: 'Underway in 2018'
 })
 
 const styles = {
