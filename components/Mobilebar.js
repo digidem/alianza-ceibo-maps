@@ -11,9 +11,10 @@ const messages = defineMessages({
   // Link to zoom out to whole map
   zoomout: 'Zoom out',
   // Links to toggle between map and list view
-  listView: 'List',
-  mapView: 'Map',
+  listView: 'View Community List',
+  mapView: 'View in Map',
   // Map legend button label
+  closeLegend: 'Close Legend',
   legend: 'Legend',
   // Map legend item: communities with water installations
   water: 'Water Installations',
@@ -33,16 +34,11 @@ const styles = {
     backgroundColor: 'rgba(51, 51, 51, 1)'
   },
   link: {
-    color: '#999999',
     textDecoration: 'none',
     '&:hover': {
       textDecoration: 'none',
-      color: '#cccccc',
       cursor: 'pointer'
     }
-  },
-  selected: {
-    color: '#cccccc'
   },
   active: {
     color: '#ffffff'
@@ -54,11 +50,26 @@ const styles = {
   },
   mobilebarItem: {
     padding: '1rem 0',
-    borderLeft: '1px solid #333333'
+    borderLeft: '1px solid #333333',
+    color: '#999999',
+    '&:hover': {
+      color: '#cccccc'
+    }
+  },
+  legendButton: {
+    top: 0,
+    color: 'rgb(40,40,40,1)',
+    right: 0,
+    padding: '9px',
+    position: 'fixed',
+    'background-color': 'white',
+    margin: '10px',
+    'border-radius': '5px',
+    border: '1px solid white'
   },
   legend: {
     overflow: 'auto',
-    height: 0
+    height: '0'
   },
   legendInner: {
     overflow: 'auto',
@@ -67,7 +78,7 @@ const styles = {
     transition: 'transform 200ms ease'
   },
   open: {
-    position: 'absolute',
+    position: 'fixed',
     'z-index': 999,
     width: '100%',
     left: 0,
@@ -147,19 +158,19 @@ class Mobilebar extends React.Component {
           </ul>
         </div>
       </div>
+      {page === 'mapView' && <Typography type='sectionTitle' className={classNames(classes.legendButton)}>
+        <div className={classNames(classes.link)} onClick={() => this.setState({legendOpen: !legendOpen})}>
+          {legendOpen ? <FormattedMessage {...messages.closeLegend} /> : <FormattedMessage {...messages.legend} />}
+        </div>
+      </Typography>}
       <div className={classes.mobilebar}>
-        {page === 'listView' ? <Typography type='sectionTitle' color='#999999' className={classes.mobilebarItem}>
+        {page === 'listView' ? <Typography type='sectionTitle' className={classes.mobilebarItem}>
           <div className={classNames(classes.link)} onClick={this.props.handleMapPageClick}>
             <FormattedMessage {...messages.mapView} />
           </div>
-        </Typography> : <Typography type='sectionTitle' color='#999999' className={classes.mobilebarItem}>
+        </Typography> : <Typography type='sectionTitle' className={classes.mobilebarItem}>
           <div className={classNames(classes.link)} onClick={this.props.handleListPageClick}>
             <FormattedMessage {...messages.listView} />
-          </div>
-        </Typography>}
-        {page === 'mapView' && <Typography type='sectionTitle' color='#999999' className={classes.mobilebarItem}>
-          <div className={classNames(classes.link, {[classes.selected]: legendOpen})} onClick={() => this.setState({legendOpen: !legendOpen})}>
-            <FormattedMessage {...messages.legend} />
           </div>
         </Typography>}
       </div>
