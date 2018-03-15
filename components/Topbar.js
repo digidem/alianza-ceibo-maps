@@ -1,10 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import injectSheet from 'react-jss'
-import { Link } from 'react-router-dom'
 import classNames from 'classnames'
 import { defineMessages, FormattedMessage } from 'react-intl'
 
+import Link from './Link'
 import Typography from './Typography'
 
 const messages = defineMessages({
