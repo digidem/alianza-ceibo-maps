@@ -1136,7 +1136,8 @@
           "Descripción": "Yarentaro está ubicada en la Provincia de Orellana, a la orilla del río del mismo nombre donde se encuentra unas hojas finas, las cuales sirven a la elaboración de bodoquera y lanzas de cacería. Con el apoyo de la Asociación de Mujeres Waorani (AMWAE), Yarentaro tiene una producción de cacao destinado a la venta.",
           "Agua": 0,
           "Agua Familias": 0,
-          "Agua Usuarios": 0
+          "Agua Usuarios": 0,
+          "Agua Requerido": 16
         },
         "geometry": {
           "type": "Point",
