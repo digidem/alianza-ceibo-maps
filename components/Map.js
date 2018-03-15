@@ -345,7 +345,6 @@ class MapView extends React.Component {
 
   ready (fn) {
     if (this.map.isStyleLoaded() || this.loaded) {
-      console.log('map was loaded when ready() was called')
       fn()
     } else {
       console.log('waiting for style data to load before calling ready(fn)')
