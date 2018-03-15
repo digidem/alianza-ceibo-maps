@@ -116,20 +116,21 @@ Count.propTypes = {
   icon: PropTypes.string.isRequired
 }
 
-const SidebarCounts = ({water, solar, classes}) => (
+const SidebarCounts = ({water, solar, classes, show}) => (
   <div className={classes.outer}>
     <div className={classes.root}>
-      <Count
+      {show !== 'solar' && <Count
         icon='/icons/water.svg'
         total={water}
         name={<FormattedMessage {...messages.water} />}
         classes={classes} />
-      <div className={classes.divider} />
-      <Count
+        }
+      {!show && <div className={classes.divider} />}
+      {show !== 'agua' && <Count
         icon='/icons/solar.svg'
         total={solar}
         name={<FormattedMessage {...messages.solar} />}
-        classes={classes} />
+        classes={classes} /> }
     </div>
   </div>
 )

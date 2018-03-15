@@ -24,6 +24,8 @@ function formatMessages (strings, locale) {
 
 const query = qs.parse(window.location.search.replace(/^\?/, ''))
 let locale = query.lang || 'en'
+let show = query.show || false
+if (show === 'water') show = 'agua'
 addLocaleData(esLocaleData)
 
 if (typeof query.translate !== 'undefined') {
@@ -44,6 +46,7 @@ const App = () => (
     <BrowserRouter>
       <Route path='/:nation?/:area?/:community?' render={({match, history, location}) => (
         <Main
+          show={show}
           nation={dec(match.params.nation)}
           area={dec(match.params.area)}
           community={dec(match.params.community)}

@@ -1,10 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import injectSheet from 'react-jss'
-import { Link } from 'react-router-dom'
 import classNames from 'classnames'
 import { defineMessages, FormattedMessage } from 'react-intl'
 
+import Link from './Link'
 import Typography from './Typography'
 
 const messages = defineMessages({
@@ -140,7 +140,7 @@ class Topbar extends React.Component {
   }
 
   render () {
-    const {nation, area, community, nationList, className, classes} = this.props
+    const {nation, area, community, nationList, className, classes, show} = this.props
     const {legendOpen} = this.state
     const legendIconClassName = classNames(classes.legendIcon, {[classes.collapse]: legendOpen})
     const legendClassName = classNames(classes.legend, {[classes.open]: legendOpen})
@@ -169,9 +169,9 @@ class Topbar extends React.Component {
         <div className={legendClassName}>
           <div className={classes.legendInner}>
             <ul className={classes.legendList}>
-              <LegendItem text={<FormattedMessage {...messages.water} />} icon='/icons/comunidad-agua-dot.svg' />
-              <LegendItem text={<FormattedMessage {...messages.solar} />} icon='/icons/comunidad-solar-dot.svg' />
-              <LegendItem text={<FormattedMessage {...messages.waterSolar} />} icon='/icons/comunidad-agua-solar-dot.svg' />
+              {show !== 'solar' && <LegendItem text={<FormattedMessage {...messages.water} />} icon='/icons/comunidad-agua-dot.svg' />}
+              {show !== 'agua' && <LegendItem text={<FormattedMessage {...messages.solar} />} icon='/icons/comunidad-solar-dot.svg' />}
+              {!show && <LegendItem text={<FormattedMessage {...messages.waterSolar} />} icon='/icons/comunidad-agua-solar-dot.svg' />}
               <LegendItem text={<FormattedMessage {...messages.story} />} icon='/icons/star.svg' />
               <hr className={classes.legendDivider} />
               {nationList.map(nation => (
