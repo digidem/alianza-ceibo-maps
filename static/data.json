@@ -1134,10 +1134,10 @@
             "Sistemas de agua"
           ],
           "Descripción": "Yarentaro está ubicada en la Provincia de Orellana, a la orilla del río del mismo nombre donde se encuentra unas hojas finas, las cuales sirven a la elaboración de bodoquera y lanzas de cacería. Con el apoyo de la Asociación de Mujeres Waorani (AMWAE), Yarentaro tiene una producción de cacao destinado a la venta.",
+          "Agua Requerido": 16,
           "Agua": 0,
           "Agua Familias": 0,
-          "Agua Usuarios": 0,
-          "Agua Requerido": 16
+          "Agua Usuarios": 0
         },
         "geometry": {
           "type": "Point",
@@ -1528,16 +1528,6 @@
       },
       {
         "type": "Feature",
-        "id": "recF7FpWt0xnDhZzA",
-        "properties": {
-          "Agua": 0,
-          "Agua Familias": 0,
-          "Agua Usuarios": 0
-        },
-        "geometry": null
-      },
-      {
-        "type": "Feature",
         "id": "recFwXEE5UupKEzI3",
         "properties": {
           "Comunidad": "Timpoca",
@@ -1793,14 +1783,14 @@
         "type": "Feature",
         "id": "recIlGreO20Ud3YhK",
         "properties": {
+          "Comunidad": "Obepare",
           "Nacionalidad": [
             "rec7nhastozSVnJax"
           ],
+          "Agua Requerido": 12,
           "Agua": 0,
           "Agua Familias": 0,
-          "Agua Usuarios": 0,
-          "Comunidad": "Obepare",
-          "Agua Requerido": 12
+          "Agua Usuarios": 0
         },
         "geometry": null
       },
@@ -2310,10 +2300,10 @@
             "Sistemas de agua",
             "Mujer y familia"
           ],
+          "Agua Requerido": 2,
           "Agua": 0,
           "Agua Familias": 0,
-          "Agua Usuarios": 0,
-          "Agua Requerido": 2
+          "Agua Usuarios": 0
         },
         "geometry": {
           "type": "Point",
@@ -2873,10 +2863,10 @@
           "Programas": [
             "Sistemas de agua"
           ],
+          "Agua Requerido": 6,
           "Agua": 0,
           "Agua Familias": 0,
-          "Agua Usuarios": 0,
-          "Agua Requerido": 6
+          "Agua Usuarios": 0
         },
         "geometry": {
           "type": "Point",
@@ -2885,16 +2875,6 @@
             -1.10268
           ]
         }
-      },
-      {
-        "type": "Feature",
-        "id": "recYGBCuZXZMKQ5WB",
-        "properties": {
-          "Agua": 0,
-          "Agua Familias": 0,
-          "Agua Usuarios": 0
-        },
-        "geometry": null
       },
       {
         "type": "Feature",
@@ -3134,17 +3114,17 @@
         "type": "Feature",
         "id": "recZZnUzyhpPOBb4e",
         "properties": {
+          "Comunidad": "Puerto Silencio",
           "Nacionalidad": [
             "rec7QOgAYxMln7nHN"
           ],
-          "Agua": 0,
-          "Agua Familias": 0,
-          "Agua Usuarios": 0,
-          "Comunidad": "Puerto Silencio",
           "Programas": [
             "Sistemas de agua"
           ],
-          "Agua Requerido": 13
+          "Agua Requerido": 13,
+          "Agua": 0,
+          "Agua Familias": 0,
+          "Agua Usuarios": 0
         },
         "geometry": null
       },
@@ -3252,14 +3232,14 @@
         "type": "Feature",
         "id": "reccLuIfTNeDNmK5L",
         "properties": {
+          "Comunidad": "Bameno",
           "Nacionalidad": [
             "rec7nhastozSVnJax"
           ],
-          "Comunidad": "Bameno",
+          "Agua Requerido": 26,
           "Agua": 0,
           "Agua Familias": 0,
-          "Agua Usuarios": 0,
-          "Agua Requerido": 26
+          "Agua Usuarios": 0
         },
         "geometry": null
       },
@@ -3437,14 +3417,14 @@
         "type": "Feature",
         "id": "recjFMaouXchK6CHX",
         "properties": {
+          "Comunidad": "Boanamo",
           "Nacionalidad": [
             "rec7nhastozSVnJax"
           ],
+          "Agua Requerido": 6,
           "Agua": 0,
           "Agua Familias": 0,
-          "Agua Usuarios": 0,
-          "Comunidad": "Boanamo",
-          "Agua Requerido": 6
+          "Agua Usuarios": 0
         },
         "geometry": null
       },
@@ -3529,17 +3509,17 @@
         "type": "Feature",
         "id": "recnUYN9AKFvu56gn",
         "properties": {
+          "Comunidad": "Santa Rosa de los Kofanes",
           "Nacionalidad": [
             "recmAG2tQi6scRRzZ"
           ],
-          "Agua": 0,
-          "Agua Familias": 0,
-          "Agua Usuarios": 0,
-          "Comunidad": "Santa Rosa de los Kofanes",
           "Programas": [
             "Sistemas de agua"
           ],
-          "Agua Requerido": 15
+          "Agua Requerido": 15,
+          "Agua": 0,
+          "Agua Familias": 0,
+          "Agua Usuarios": 0
         },
         "geometry": null
       },
@@ -4262,17 +4242,17 @@
         "type": "Feature",
         "id": "recxg0pHkjl3B7GUu",
         "properties": {
+          "Comunidad": "Paikënapë",
           "Nacionalidad": [
             "recHGwwudtmODsfLg"
           ],
-          "Agua": 0,
-          "Agua Familias": 0,
-          "Agua Usuarios": 0,
-          "Comunidad": "Paikënapë",
           "Programas": [
             "Sistemas de agua"
           ],
-          "Agua Requerido": 5
+          "Agua Requerido": 5,
+          "Agua": 0,
+          "Agua Familias": 0,
+          "Agua Usuarios": 0
         },
         "geometry": null
       },
@@ -4333,7 +4313,6 @@
             "rect2gEXX0MaogdEI",
             "recKU2fQsI6PmsWV2",
             "recz1YNXptnKqeQgr",
-            "recw5rnRUYvcbqbkI",
             "rec0uPT9oNaQ9MQ5w",
             "recPCUND3p3j9Of1o",
             "recC0OmfwoYRCtg57",
@@ -4349,7 +4328,8 @@
             "recjW7OkxFpOr2lR4",
             "rec9sIToXzzUsTFdY",
             "recIyVFBHrR0INUIv",
-            "recmG1cRii9pESgcR"
+            "recmG1cRii9pESgcR",
+            "recw5rnRUYvcbqbkI"
           ],
           "Nacionalidad": [
             "recHGwwudtmODsfLg"
