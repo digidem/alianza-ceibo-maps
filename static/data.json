@@ -578,7 +578,8 @@
           "Agua Familias": 8,
           "Agua Usuarios": 41,
           "Most recent": "2014-12-22",
-          "First": "2013-12-17"
+          "First": "2013-12-17",
+          "Estatus": "Completo"
         },
         "geometry": {
           "type": "Point",
@@ -622,7 +623,8 @@
           "Agua Familias": 13,
           "Agua Usuarios": 52,
           "Most recent": "2015-11-30",
-          "First": "2015-11-30"
+          "First": "2015-11-30",
+          "Estatus": "Completo"
         },
         "geometry": {
           "type": "Point",
@@ -704,7 +706,8 @@
           "Agua Familias": 14,
           "Agua Usuarios": 56,
           "Most recent": "2014-12-30",
-          "First": "2014-12-30"
+          "First": "2014-12-30",
+          "Estatus": "Completo"
         },
         "geometry": {
           "type": "Point",
@@ -801,7 +804,8 @@
           "Agua Familias": 11,
           "Agua Usuarios": 44,
           "Most recent": "2015-09-20",
-          "First": "2015-09-20"
+          "First": "2015-09-20",
+          "Estatus": "Completo"
         },
         "geometry": {
           "type": "Point",
@@ -862,7 +866,8 @@
           "Agua Familias": 9,
           "Agua Usuarios": 46,
           "Most recent": "2014-01-23",
-          "First": "2014-01-15"
+          "First": "2014-01-15",
+          "Estatus": "Completo"
         },
         "geometry": {
           "type": "Point",
@@ -933,7 +938,8 @@
           "Agua Familias": 29,
           "Agua Usuarios": 185,
           "Most recent": "2013-09-11",
-          "First": "2012-05-14"
+          "First": "2012-05-14",
+          "Estatus": "Completo"
         },
         "geometry": {
           "type": "Point",
@@ -1021,7 +1027,8 @@
           "Agua Familias": 35,
           "Agua Usuarios": 140,
           "Most recent": "2016-01-11",
-          "First": "2016-01-11"
+          "First": "2016-01-11",
+          "Estatus": "Completo"
         },
         "geometry": {
           "type": "Point",
@@ -1085,7 +1092,8 @@
           "Agua Familias": 10,
           "Agua Usuarios": 40,
           "Most recent": "2016-11-30",
-          "First": "2016-11-30"
+          "First": "2016-11-30",
+          "Estatus": "Completo"
         },
         "geometry": {
           "type": "Point",
@@ -1110,7 +1118,8 @@
           ],
           "Agua": 0,
           "Agua Familias": 0,
-          "Agua Usuarios": 0
+          "Agua Usuarios": 0,
+          "Estatus": "Completo"
         },
         "geometry": {
           "type": "Point",
@@ -1174,7 +1183,8 @@
           "Agua Familias": 6,
           "Agua Usuarios": 24,
           "Most recent": "2017-08-15",
-          "First": "2017-08-15"
+          "First": "2017-08-15",
+          "Estatus": "Completo"
         },
         "geometry": null
       },
@@ -1240,7 +1250,8 @@
           "Agua Familias": 20,
           "Agua Usuarios": 80,
           "Most recent": "2016-01-11",
-          "First": "2016-01-11"
+          "First": "2016-01-11",
+          "Estatus": "Completo"
         },
         "geometry": {
           "type": "Point",
@@ -1385,7 +1396,8 @@
           ],
           "Agua": 0,
           "Agua Familias": 0,
-          "Agua Usuarios": 0
+          "Agua Usuarios": 0,
+          "Estatus": "Completo"
         },
         "geometry": {
           "type": "Point",
@@ -1516,7 +1528,8 @@
           "Agua Familias": 80,
           "Agua Usuarios": 397,
           "Most recent": "2015-05-20",
-          "First": "2012-04-25"
+          "First": "2012-04-25",
+          "Estatus": "Completo"
         },
         "geometry": {
           "type": "Point",
@@ -1616,7 +1629,8 @@
           "Agua Familias": 10,
           "Agua Usuarios": 40,
           "Most recent": "2016-04-30",
-          "First": "2016-04-30"
+          "First": "2016-04-30",
+          "Estatus": "Completo"
         },
         "geometry": {
           "type": "Point",
@@ -1706,7 +1720,8 @@
           "Agua Familias": 42,
           "Agua Usuarios": 248,
           "Most recent": "2011-11-01",
-          "First": "2011-01-01"
+          "First": "2011-01-01",
+          "Estatus": "Completo"
         },
         "geometry": {
           "type": "Point",
@@ -1769,7 +1784,8 @@
           "Agua Familias": 7,
           "Agua Usuarios": 28,
           "Most recent": "2015-08-20",
-          "First": "2015-08-20"
+          "First": "2015-08-20",
+          "Estatus": "Completo"
         },
         "geometry": {
           "type": "Point",
@@ -1846,7 +1862,8 @@
           "Agua Familias": 9,
           "Agua Usuarios": 36,
           "Most recent": "2016-03-08",
-          "First": "2016-03-08"
+          "First": "2016-03-08",
+          "Estatus": "Completo"
         },
         "geometry": {
           "type": "Point",
@@ -1873,7 +1890,8 @@
           "Descripción": "Nenquipare significa “estero de sol” en idioma Waorani y, se encuentra por la vía Auca en la provincia de Pastaza. En la comunidad viven ocho familias, las cuales no tienen acceso a electricidad y se demoran tres horas para llegar a la ciudad más cerca para comprar víveres.",
           "Agua": 0,
           "Agua Familias": 0,
-          "Agua Usuarios": 0
+          "Agua Usuarios": 0,
+          "Estatus": "Completo"
         },
         "geometry": {
           "type": "Point",
@@ -1924,7 +1942,8 @@
           "Agua Familias": 22,
           "Agua Usuarios": 88,
           "Most recent": "2017-02-28",
-          "First": "2017-02-28"
+          "First": "2017-02-28",
+          "Estatus": "Completo"
         },
         "geometry": {
           "type": "Point",
@@ -1979,7 +1998,8 @@
           "Agua Familias": 4,
           "Agua Usuarios": 24,
           "Most recent": "2014-10-12",
-          "First": "2014-10-11"
+          "First": "2014-10-11",
+          "Estatus": "Completo"
         },
         "geometry": {
           "type": "Point",
@@ -2017,7 +2037,8 @@
           "Agua Familias": 8,
           "Agua Usuarios": 32,
           "Most recent": "2014-12-30",
-          "First": "2014-12-30"
+          "First": "2014-12-30",
+          "Estatus": "Completo"
         },
         "geometry": {
           "type": "Point",
@@ -2109,7 +2130,8 @@
           "Agua Familias": 39,
           "Agua Usuarios": 238,
           "Most recent": "2013-09-03",
-          "First": "2013-08-20"
+          "First": "2013-08-20",
+          "Estatus": "Completo"
         },
         "geometry": {
           "type": "Point",
@@ -2184,7 +2206,8 @@
           "Agua Familias": 30,
           "Agua Usuarios": 155,
           "Most recent": "2014-04-23",
-          "First": "2014-04-12"
+          "First": "2014-04-12",
+          "Estatus": "Completo"
         },
         "geometry": {
           "type": "Point",
@@ -2220,7 +2243,8 @@
           "Agua Familias": 9,
           "Agua Usuarios": 36,
           "Most recent": "2017-08-20",
-          "First": "2017-08-20"
+          "First": "2017-08-20",
+          "Estatus": "Completo"
         },
         "geometry": null
       },
@@ -2276,7 +2300,8 @@
           "Agua Familias": 9,
           "Agua Usuarios": 55,
           "Most recent": "2014-12-20",
-          "First": "2014-01-20"
+          "First": "2014-01-20",
+          "Estatus": "Completo"
         },
         "geometry": {
           "type": "Point",
@@ -2385,7 +2410,8 @@
           "Agua Familias": 28,
           "Agua Usuarios": 148,
           "Most recent": "2015-10-09",
-          "First": "2014-10-01"
+          "First": "2014-10-01",
+          "Estatus": "Completo"
         },
         "geometry": {
           "type": "Point",
@@ -2461,7 +2487,8 @@
           "Agua Familias": 26,
           "Agua Usuarios": 133,
           "Most recent": "2016-11-25",
-          "First": "2012-01-01"
+          "First": "2012-01-01",
+          "Estatus": "Completo"
         },
         "geometry": {
           "type": "Point",
@@ -2529,7 +2556,8 @@
           "Agua Familias": 15,
           "Agua Usuarios": 0,
           "Most recent": "2016-11-30",
-          "First": "2016-11-30"
+          "First": "2016-11-30",
+          "Estatus": "Completo"
         },
         "geometry": {
           "type": "Point",
@@ -2555,7 +2583,8 @@
           ],
           "Agua": 0,
           "Agua Familias": 0,
-          "Agua Usuarios": 0
+          "Agua Usuarios": 0,
+          "Estatus": "Completo"
         },
         "geometry": {
           "type": "Point",
@@ -2647,7 +2676,8 @@
           "Descripción": "Ñoneno es una comunidad que se ubica por la vía Auca en la provincia de Orellana y, cuyo nombre significa “río de los guaduales” en idioma Waorani. Las cuatro familias que viven en la comunidad no tienen acceso a la electricidad y se demoran unas dos horas para llegar a la ciudad más cerca para comprar víveres.   ",
           "Agua": 0,
           "Agua Familias": 3,
-          "Agua Usuarios": 12
+          "Agua Usuarios": 12,
+          "Estatus": "Completo"
         },
         "geometry": {
           "type": "Point",
@@ -2711,7 +2741,8 @@
           "Agua Familias": 8,
           "Agua Usuarios": 32,
           "Most recent": "2015-08-20",
-          "First": "2015-08-20"
+          "First": "2015-08-20",
+          "Estatus": "Completo"
         },
         "geometry": {
           "type": "Point",
@@ -2769,7 +2800,8 @@
           "Agua Familias": 6,
           "Agua Usuarios": 0,
           "Most recent": "2015-08-20",
-          "First": "2015-08-20"
+          "First": "2015-08-20",
+          "Estatus": "Completo"
         },
         "geometry": {
           "type": "Point",
@@ -2840,7 +2872,8 @@
           "Agua Familias": 19,
           "Agua Usuarios": 98,
           "Most recent": "2014-12-20",
-          "First": "2014-01-30"
+          "First": "2014-01-30",
+          "Estatus": "Completo"
         },
         "geometry": {
           "type": "Point",
@@ -2866,7 +2899,8 @@
           "Agua Requerido": 6,
           "Agua": 0,
           "Agua Familias": 0,
-          "Agua Usuarios": 0
+          "Agua Usuarios": 0,
+          "Estatus": "Planificado"
         },
         "geometry": {
           "type": "Point",
@@ -2931,7 +2965,8 @@
           "Agua Familias": 9,
           "Agua Usuarios": 59,
           "Most recent": "2014-01-25",
-          "First": "2014-01-20"
+          "First": "2014-01-20",
+          "Estatus": "Completo"
         },
         "geometry": {
           "type": "Point",
@@ -3017,7 +3052,8 @@
           "Agua Familias": 12,
           "Agua Usuarios": 67,
           "Most recent": "2014-01-31",
-          "First": "2014-01-30"
+          "First": "2014-01-30",
+          "Estatus": "Completo"
         },
         "geometry": {
           "type": "Point",
@@ -3073,7 +3109,8 @@
           "Agua Familias": 4,
           "Agua Usuarios": 16,
           "Most recent": "2015-08-20",
-          "First": "2015-08-20"
+          "First": "2015-08-20",
+          "Estatus": "Completo"
         },
         "geometry": {
           "type": "Point",
@@ -3100,7 +3137,8 @@
           "Descripción": "En idioma Waorani, Peneno significa “río de los plátanos” debido a que antiguamente las familias solían sembrar plátanos a la orilla del río Tivacuno, el cual bordea la comunidad. La comunidad se encuentra en la vía Maxus dentro del parque nacional Yasuní y sus familias se dedican a la caza, la pesca.",
           "Agua": 0,
           "Agua Familias": 0,
-          "Agua Usuarios": 0
+          "Agua Usuarios": 0,
+          "Estatus": "Completo"
         },
         "geometry": {
           "type": "Point",
@@ -3124,7 +3162,8 @@
           "Agua Requerido": 13,
           "Agua": 0,
           "Agua Familias": 0,
-          "Agua Usuarios": 0
+          "Agua Usuarios": 0,
+          "Estatus": "Planificado"
         },
         "geometry": null
       },
@@ -3275,7 +3314,8 @@
           "Agua Familias": 11,
           "Agua Usuarios": 44,
           "Most recent": "2015-11-30",
-          "First": "2015-11-30"
+          "First": "2015-11-30",
+          "Estatus": "Completo"
         },
         "geometry": {
           "type": "Point",
@@ -3310,7 +3350,8 @@
           "Agua Familias": 2,
           "Agua Usuarios": 8,
           "Most recent": "2015-12-30",
-          "First": "2015-12-30"
+          "First": "2015-12-30",
+          "Estatus": "Completo"
         },
         "geometry": {
           "type": "Point",
@@ -3343,7 +3384,8 @@
           "Agua Familias": 3,
           "Agua Usuarios": 12,
           "Most recent": "2017-08-08",
-          "First": "2017-08-08"
+          "First": "2017-08-08",
+          "Estatus": "Completo"
         },
         "geometry": {
           "type": "Point",
@@ -3403,7 +3445,8 @@
           "Agua Familias": 8,
           "Agua Usuarios": 32,
           "Most recent": "2015-07-15",
-          "First": "2015-07-15"
+          "First": "2015-07-15",
+          "Estatus": "Completo"
         },
         "geometry": {
           "type": "Point",
@@ -3470,7 +3513,8 @@
           "Descripción": "La comunidad de Waiya fue fundada en 1999 frente a la comunidad de San Pablo, cruzando el río Aguarico. A pesar de su cercanía con pozos petroleras y plataciones de palma africana a gran escala, las 23 familias que viven hoy día en la comunidad aspiran a preservar su modo de vida y a recuperar la parte de su cultura que está en peligro de perderse. Así, los abuelos mayores de la comunidad comparten yoco por la mañana, bebida tradicional hecha con el bejuco sagrado que da fuerza para desempeñar las actividades diarias y las mujeres se están dedicando a la confección de cerámica. ",
           "Agua": 0,
           "Agua Familias": 0,
-          "Agua Usuarios": 0
+          "Agua Usuarios": 0,
+          "Estatus": "Completo"
         },
         "geometry": {
           "type": "Point",
@@ -3519,7 +3563,8 @@
           "Agua Requerido": 15,
           "Agua": 0,
           "Agua Familias": 0,
-          "Agua Usuarios": 0
+          "Agua Usuarios": 0,
+          "Estatus": "Planificado"
         },
         "geometry": null
       },
@@ -3585,7 +3630,8 @@
           "Agua Familias": 21,
           "Agua Usuarios": 84,
           "Most recent": "2015-09-30",
-          "First": "2015-09-30"
+          "First": "2015-09-30",
+          "Estatus": "Completo"
         },
         "geometry": {
           "type": "Point",
@@ -3633,7 +3679,8 @@
           "Agua Familias": 18,
           "Agua Usuarios": 72,
           "Most recent": "2015-10-20",
-          "First": "2015-10-20"
+          "First": "2015-10-20",
+          "Estatus": "Completo"
         },
         "geometry": {
           "type": "Point",
@@ -3731,7 +3778,8 @@
           "Agua Familias": 44,
           "Agua Usuarios": 277,
           "Most recent": "2016-09-15",
-          "First": "2012-10-25"
+          "First": "2012-10-25",
+          "Estatus": "Completo"
         },
         "geometry": {
           "type": "Point",
@@ -3816,7 +3864,8 @@
           "Agua Familias": 34,
           "Agua Usuarios": 16,
           "Most recent": "2015-03-30",
-          "First": "2015-03-11"
+          "First": "2015-03-11",
+          "Estatus": "Completo"
         },
         "geometry": {
           "type": "Point",
@@ -3870,7 +3919,8 @@
           "Agua Familias": 3,
           "Agua Usuarios": 37,
           "Most recent": "2013-03-24",
-          "First": "2013-03-22"
+          "First": "2013-03-22",
+          "Estatus": "Completo"
         },
         "geometry": {
           "type": "Point",
@@ -3897,7 +3947,8 @@
           "Descripción": "Dicaro significa “río de piedras” en idioma Waorani. Ubicada dentro del parque nacional Yasuní, al kilómetro noventa y ocho de la vía Maxus, las familias en Dicaro se dedican a la caza y a la pesca para alimentar a sus familia. Con el apoyo de la Asociación de Mujeres Waorani (AMWAE), Dicaro tiene una producción de cacao destinado a la venta.",
           "Agua": 0,
           "Agua Familias": 0,
-          "Agua Usuarios": 0
+          "Agua Usuarios": 0,
+          "Estatus": "Completo"
         },
         "geometry": {
           "type": "Point",
@@ -3972,7 +4023,8 @@
           "Agua Familias": 22,
           "Agua Usuarios": 152,
           "Most recent": "2014-01-18",
-          "First": "2014-01-18"
+          "First": "2014-01-18",
+          "Estatus": "Completo"
         },
         "geometry": {
           "type": "Point",
@@ -4040,7 +4092,8 @@
           "Agua Familias": 13,
           "Agua Usuarios": 52,
           "Most recent": "2015-09-20",
-          "First": "2015-09-20"
+          "First": "2015-09-20",
+          "Estatus": "Completo"
         },
         "geometry": {
           "type": "Point",
@@ -4109,7 +4162,8 @@
           "Agua Familias": 14,
           "Agua Usuarios": 0,
           "Most recent": "2016-12-30",
-          "First": "2016-12-30"
+          "First": "2016-12-30",
+          "Estatus": "Completo"
         },
         "geometry": {
           "type": "Point",
@@ -4171,7 +4225,8 @@
           "Agua Familias": 6,
           "Agua Usuarios": 24,
           "Most recent": "2016-12-30",
-          "First": "2016-12-30"
+          "First": "2016-12-30",
+          "Estatus": "Completo"
         },
         "geometry": {
           "type": "Point",
@@ -4228,7 +4283,8 @@
           "Agua Familias": 26,
           "Agua Usuarios": 104,
           "Most recent": "2015-04-30",
-          "First": "2015-04-30"
+          "First": "2015-04-30",
+          "Estatus": "Completo"
         },
         "geometry": {
           "type": "Point",
@@ -4252,7 +4308,8 @@
           "Agua Requerido": 5,
           "Agua": 0,
           "Agua Familias": 0,
-          "Agua Usuarios": 0
+          "Agua Usuarios": 0,
+          "Estatus": "Planificado"
         },
         "geometry": null
       },
@@ -4290,7 +4347,8 @@
           "Agua Familias": 20,
           "Agua Usuarios": 80,
           "Most recent": "2017-08-15",
-          "First": "2017-08-15"
+          "First": "2017-08-15",
+          "Estatus": "Completo"
         },
         "geometry": null
       },
@@ -4343,7 +4401,8 @@
           "Agua Familias": 30,
           "Agua Usuarios": 120,
           "Most recent": "2015-02-20",
-          "First": "2015-02-20"
+          "First": "2015-02-20",
+          "Estatus": "Completo"
         },
         "geometry": {
           "type": "Point",
@@ -4376,7 +4435,8 @@
           "Agua Familias": 1,
           "Agua Usuarios": 4,
           "Most recent": "2015-08-20",
-          "First": "2015-08-20"
+          "First": "2015-08-20",
+          "Estatus": "Completo"
         },
         "geometry": {
           "type": "Point",
