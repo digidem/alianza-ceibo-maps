@@ -741,7 +741,8 @@
           "Agua Familias": 2,
           "Agua Usuarios": 8,
           "Most recent": "2016-12-30",
-          "First": "2016-12-30"
+          "First": "2016-12-30",
+          "Estatus": "Completo"
         },
         "geometry": {
           "type": "Point",
@@ -1146,7 +1147,8 @@
           "Agua Requerido": 16,
           "Agua": 0,
           "Agua Familias": 0,
-          "Agua Usuarios": 0
+          "Agua Usuarios": 0,
+          "Estatus": "Planificado"
         },
         "geometry": {
           "type": "Point",
@@ -1310,7 +1312,8 @@
           "Agua Familias": 9,
           "Agua Usuarios": 48,
           "Most recent": "2014-04-27",
-          "First": "2014-04-24"
+          "First": "2014-04-24",
+          "Estatus": "Completo"
         },
         "geometry": {
           "type": "Point",
@@ -1371,7 +1374,8 @@
           "Agua Familias": 10,
           "Agua Usuarios": 123,
           "Most recent": "2013-03-22",
-          "First": "2013-03-17"
+          "First": "2013-03-17",
+          "Estatus": "Completo"
         },
         "geometry": {
           "type": "Point",
@@ -1806,7 +1810,8 @@
           "Agua Requerido": 12,
           "Agua": 0,
           "Agua Familias": 0,
-          "Agua Usuarios": 0
+          "Agua Usuarios": 0,
+          "Estatus": "Planificado"
         },
         "geometry": null
       },
@@ -2328,7 +2333,8 @@
           "Agua Requerido": 2,
           "Agua": 0,
           "Agua Familias": 0,
-          "Agua Usuarios": 0
+          "Agua Usuarios": 0,
+          "Estatus": "Planificado"
         },
         "geometry": {
           "type": "Point",
@@ -2645,7 +2651,8 @@
           "Agua Familias": 7,
           "Agua Usuarios": 28,
           "Most recent": "2016-12-30",
-          "First": "2016-12-30"
+          "First": "2016-12-30",
+          "Estatus": "Completo"
         },
         "geometry": {
           "type": "Point",
@@ -3257,7 +3264,8 @@
           "Agua Familias": 47,
           "Agua Usuarios": 188,
           "Most recent": "2016-11-30",
-          "First": "2016-11-30"
+          "First": "2016-11-30",
+          "Estatus": "Completo"
         },
         "geometry": {
           "type": "Point",
