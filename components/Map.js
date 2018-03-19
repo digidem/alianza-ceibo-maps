@@ -96,7 +96,7 @@ class MapView extends React.Component {
     // Add a popup to hovered features, but not if the hovered feature
     // is the active area
     if (hover !== this.props.hover || area !== this.props.area) {
-      map.getCanvas().style.cursor = typeof hover === 'undefined' ? '' : 'cursor'
+      map.getCanvas().style.cursor = typeof hover === 'undefined' ? '' : 'pointer'
       if (typeof hover === 'undefined' || hoverNation ||
         (hoverArea && hover && data.byId[hover].properties._areaName === area)) {
         this.popup.remove()
