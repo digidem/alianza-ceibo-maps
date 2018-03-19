@@ -8,7 +8,7 @@
     "alianza-elements": "^3.0.2",
     "classnames": "^2.2.5",
     "lodash": "^4.17.5",
-    "mapbox-gl": "^0.44.0",
+    "mapbox-gl": "~0.44.1",
     "mapbox-gl-toggle-control": "^1.0.0",
     "object-assign": "^4.1.1",
     "querystring": "^0.2.0",
