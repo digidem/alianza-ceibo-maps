@@ -128,7 +128,7 @@ const SidebarCounts = ({water, waterRequired, solar, classes, show}) => (
         classes={classes} />
       }
       {show !== 'solar' && waterRequired > 0 && <Count
-        icon='/icons/water.svg'
+        icon='/icons/agua-requerido.svg'
         total={waterRequired}
         name={<FormattedMessage {...messages.waterRequired} />}
         classes={classes} />}
