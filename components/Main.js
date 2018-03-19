@@ -100,7 +100,7 @@ class Main extends React.Component {
   }
 
   getSidebarData () {
-    const {nation, area, community, intl} = this.props
+    const {nation, area, community, intl, show} = this.props
     const {data} = this.state
 
     if (!data) return {}
@@ -112,7 +112,7 @@ class Main extends React.Component {
     } else if (nation) {
       return getSidebarData.nation(data, intl, nation)
     } else {
-      return getSidebarData.home(data, intl)
+      return getSidebarData.home(data, intl, show)
     }
   }
 
