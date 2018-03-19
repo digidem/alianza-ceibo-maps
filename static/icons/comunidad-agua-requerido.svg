@@ -40,7 +40,7 @@
      inkscape:window-maximized="0"
      inkscape:current-layer="Layer_1" /><g
      id="circle"
-     transform="translate(0.9016949,1.3294915)"><path
+     transform="translate(0.63118643,1.1491525)"><path
        style="fill:none"
        inkscape:connector-curvature="0"
        id="path14"
@@ -155,6 +155,11 @@
        inkscape:connector-curvature="0"
        id="path58"
        d="M 7.1,3.3857145 3.9,6.5857151 C 3.3,7.3857154 2.9,8.3857154 2.6,9.2857154 L 9.9,1.9857142 c -1,0.4 -2,0.8000003 -2.8,1.4000003 z"
-       class="st1" /></g><metadata
+       class="st1" /></g><circle
+     style="opacity:1;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     id="path4221"
+     cx="14"
+     cy="14"
+     r="12.3" /><metadata
      id="metadata4219"><rdf:RDF><cc:Work
          rdf:about=""><dc:title></dc:title></cc:Work></rdf:RDF></metadata></svg>
