@@ -1811,9 +1811,17 @@
           "Estatus": "Planificado",
           "Agua": 0,
           "Agua Familias": 0,
-          "Agua Usuarios": 0
+          "Agua Usuarios": 0,
+          "Lon": -77.53705,
+          "Lat": -1.17732
         },
-        "geometry": null
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -77.53705,
+            -1.17732
+          ]
+        }
       },
       {
         "type": "Feature",
@@ -2226,7 +2234,6 @@
         "type": "Feature",
         "id": "recNxQCVGPUTdu5SL",
         "properties": {
-          "Comunidad": "Ñenkepare",
           "Installations": [
             "recnNbs0zwi7FxzI6",
             "recN3vHRmJvDjTWdq",
@@ -2238,13 +2245,6 @@
             "rec14RRCRpxDkeI6m",
             "recMbJaAa16w2SdCh"
           ],
-          "Nacionalidad": [
-            "rec7nhastozSVnJax"
-          ],
-          "Programas": [
-            "Sistemas de agua"
-          ],
-          "Estatus": "Completo",
           "Agua": 9,
           "Agua Familias": 9,
           "Agua Usuarios": 36,
@@ -3432,7 +3432,8 @@
           "Agua Familias": 44,
           "Agua Usuarios": 0,
           "Most recent": "2016-12-15",
-          "First": "2016-12-15"
+          "First": "2016-12-15",
+          "Descripción": "Dikaro significa “río de piedras” en idioma Waorani. Ubicada dentro del parque nacional Yasuní, al kilómetro noventa y ocho de la vía Maxus, las familias en Dicaro se dedican a la caza y a la pesca para alimentar a sus familia. Con el apoyo de la Asociación de Mujeres Waorani (AMWAE), Dicaro tiene una producción de cacao destinado a la venta."
         },
         "geometry": null
       },
@@ -4940,7 +4941,6 @@
             "rec9OlycuOUlTjFAh",
             "recOI0PqgXb84snJR",
             "recRfatd3eaTyBXL0",
-            "recNxQCVGPUTdu5SL",
             "recxrXI0IWoHwJ1EO",
             "recjFMaouXchK6CHX",
             "reccLuIfTNeDNmK5L",
