@@ -3269,9 +3269,17 @@
           "Agua Requerido": 26,
           "Agua": 0,
           "Agua Familias": 0,
-          "Agua Usuarios": 0
+          "Agua Usuarios": 0,
+          "Lon": -76.15655049547864,
+          "Lat": -1.299971
         },
-        "geometry": null
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.15655049547864,
+            -1.299971
+          ]
+        }
       },
       {
         "type": "Feature",
