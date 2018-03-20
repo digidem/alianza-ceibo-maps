@@ -2577,28 +2577,11 @@
         "type": "Feature",
         "id": "recRfatd3eaTyBXL0",
         "properties": {
-          "Comunidad": "Keweriuno",
-          "Nacionalidad": [
-            "rec7nhastozSVnJax"
-          ],
-          "Lon": -77.16446,
-          "Lat": -1.02046,
-          "Programas": [
-            "Sistemas de agua",
-            "Mujer y familia"
-          ],
-          "Estatus": "Completo",
           "Agua": 0,
           "Agua Familias": 0,
           "Agua Usuarios": 0
         },
-        "geometry": {
-          "type": "Point",
-          "coordinates": [
-            -77.16446,
-            -1.02046
-          ]
-        }
+        "geometry": null
       },
       {
         "type": "Feature",
@@ -3424,18 +3407,27 @@
           "Nacionalidad": [
             "rec7nhastozSVnJax"
           ],
-          "Programas": [
-            "Sistemas de agua"
-          ],
           "Estatus": "Completo",
           "Agua": 45,
           "Agua Familias": 44,
           "Agua Usuarios": 0,
           "Most recent": "2016-12-15",
           "First": "2016-12-15",
-          "Descripción": "Dikaro significa “río de piedras” en idioma Waorani. Ubicada dentro del parque nacional Yasuní, al kilómetro noventa y ocho de la vía Maxus, las familias en Dicaro se dedican a la caza y a la pesca para alimentar a sus familia. Con el apoyo de la Asociación de Mujeres Waorani (AMWAE), Dicaro tiene una producción de cacao destinado a la venta."
+          "Descripción": "Dikaro significa “río de piedras” en idioma Waorani. Ubicada dentro del parque nacional Yasuní, al kilómetro noventa y ocho de la vía Maxus, las familias en Dicaro se dedican a la caza y a la pesca para alimentar a sus familia. Con el apoyo de la Asociación de Mujeres Waorani (AMWAE), Dicaro tiene una producción de cacao destinado a la venta.",
+          "Programas": [
+            "Sistemas de agua",
+            "Mujer y familia"
+          ],
+          "Lon": -76.21435,
+          "Lat": -0.9371
         },
-        "geometry": null
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.21435,
+            -0.9371
+          ]
+        }
       },
       {
         "type": "Feature",
@@ -3961,6 +3953,19 @@
       },
       {
         "type": "Feature",
+        "id": "rect094YGfz57MKIh",
+        "properties": {
+          "Nacionalidad": [
+            "rec7nhastozSVnJax"
+          ],
+          "Agua": 0,
+          "Agua Familias": 0,
+          "Agua Usuarios": 0
+        },
+        "geometry": null
+      },
+      {
+        "type": "Feature",
         "id": "recuUbO75IrI3wH40",
         "properties": {
           "Comunidad": "Nampaweno",
@@ -4018,29 +4023,11 @@
         "type": "Feature",
         "id": "recuZJUZ7pznTDFuC",
         "properties": {
-          "Comunidad": "Dikaro",
-          "Nacionalidad": [
-            "rec7nhastozSVnJax"
-          ],
-          "Lon": -76.21435,
-          "Lat": -0.9371,
-          "Programas": [
-            "Sistemas de agua",
-            "Mujer y familia"
-          ],
-          "Descripción": "Dikaro significa “río de piedras” en idioma Waorani. Ubicada dentro del parque nacional Yasuní, al kilómetro noventa y ocho de la vía Maxus, las familias en Dicaro se dedican a la caza y a la pesca para alimentar a sus familia. Con el apoyo de la Asociación de Mujeres Waorani (AMWAE), Dicaro tiene una producción de cacao destinado a la venta.",
-          "Estatus": "Completo",
           "Agua": 0,
           "Agua Familias": 0,
           "Agua Usuarios": 0
         },
-        "geometry": {
-          "type": "Point",
-          "coordinates": [
-            -76.21435,
-            -0.9371
-          ]
-        }
+        "geometry": null
       },
       {
         "type": "Feature",
@@ -4393,9 +4380,17 @@
           "Estatus": "Planificado",
           "Agua": 0,
           "Agua Familias": 0,
-          "Agua Usuarios": 0
+          "Agua Usuarios": 0,
+          "Lat": -0.95335,
+          "Lon": -75.36582639867346
         },
-        "geometry": null
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -75.36582639867346,
+            -0.95335
+          ]
+        }
       },
       {
         "type": "Feature",
@@ -4432,9 +4427,21 @@
           "Agua Familias": 20,
           "Agua Usuarios": 80,
           "Most recent": "2017-08-15",
-          "First": "2017-08-15"
+          "First": "2017-08-15",
+          "Lon": -77.16446,
+          "Lat": -1.02046,
+          "Programas": [
+            "Sistemas de agua",
+            "Mujer y familia"
+          ]
         },
-        "geometry": null
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -77.16446,
+            -1.02046
+          ]
+        }
       },
       {
         "type": "Feature",
@@ -4912,7 +4919,6 @@
             "recPuF7pRs3yUVQ1V",
             "recweSnkIEnnfMVNy",
             "recUh3St4TaXUx4zo",
-            "recuZJUZ7pznTDFuC",
             "recWANUTAlbXmztQV",
             "reczlAU8IIeq4IVJG",
             "recLaodqR3XmtYlQD",
@@ -4940,12 +4946,12 @@
             "rec3l0Q38OQEsxqg6",
             "rec9OlycuOUlTjFAh",
             "recOI0PqgXb84snJR",
-            "recRfatd3eaTyBXL0",
             "recxrXI0IWoHwJ1EO",
             "recjFMaouXchK6CHX",
             "reccLuIfTNeDNmK5L",
             "recIlGreO20Ud3YhK",
-            "recgJ3avFTAC7ybjV"
+            "recgJ3avFTAC7ybjV",
+            "rect094YGfz57MKIh"
           ]
         },
         "geometry": null
