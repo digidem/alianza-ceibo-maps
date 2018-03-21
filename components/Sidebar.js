@@ -69,9 +69,7 @@ class Sidebar extends React.Component {
     } = this.props
 
     const className = classNames(classNameProp, classes.root)
-    const installationsCount = (show === 'agua')
-      ? water : (show === 'solar')
-        ? solar : (water + solar)
+    const installationsCount = getInstallationsCount(show, {water, solar})
 
     return <div className={className} ref={el => (this.scrollContent = el)}>
       <SidebarHeader title={title} installationsCount={installationsCount} />
@@ -96,12 +94,18 @@ class Sidebar extends React.Component {
         {list && <SidebarList>
           {list.map(item => stories
             ? <SidebarStoryItem key={item.name} {...item} />
-            : <SidebarListItem key={item.name} {...item} onHover={onHover} />
+            : <SidebarListItem key={item.name} total={getInstallationsCount(show, item)} {...item} onHover={onHover} />
           )}
         </SidebarList>}
       </div>
     </div>
   }
+}
+
+function getInstallationsCount (show, item) {
+  if (show === 'agua') return item.water
+  else if (show === 'solar') return item.solar
+  else return item.water + item.solar
 }
 
 Sidebar.propTypes = {
