@@ -3725,9 +3725,17 @@
           "Estatus": "Planificado",
           "Agua": 0,
           "Agua Familias": 0,
-          "Agua Usuarios": 0
+          "Agua Usuarios": 0,
+          "Lat": 0.295955,
+          "Lon": -77.095945
         },
-        "geometry": null
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -77.095945,
+            0.295955
+          ]
+        }
       },
       {
         "type": "Feature",
