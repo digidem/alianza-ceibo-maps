@@ -15,6 +15,8 @@ const messages = defineMessages({
   // Map legend item: communities with water installations
   water: 'Water Installations',
   // Map legend item: communities with solar installations
+  waterRequired: 'Installations Underway in 2018',
+  // Map legend item: communities with solar installations
   solar: 'Solar Installations',
   // Map legend item: communities with water and solar installations
   waterSolar: 'Water & Solar Installations',
@@ -171,6 +173,7 @@ class Topbar extends React.Component {
             <ul className={classes.legendList}>
               {show !== 'solar' && <LegendItem text={<FormattedMessage {...messages.water} />} icon='/icons/comunidad-agua-dot.svg' />}
               {show !== 'agua' && <LegendItem text={<FormattedMessage {...messages.solar} />} icon='/icons/comunidad-solar-dot.svg' />}
+              {show === 'agua' && <LegendItem text={<FormattedMessage {...messages.waterRequired} />} icon='/icons/comunidad-agua-requerido-dot.svg' />}
               {!show && <LegendItem text={<FormattedMessage {...messages.waterSolar} />} icon='/icons/comunidad-agua-solar-dot.svg' />}
               <LegendItem text={<FormattedMessage {...messages.story} />} icon='/icons/star.svg' />
               <hr className={classes.legendDivider} />

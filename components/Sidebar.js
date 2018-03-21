@@ -39,11 +39,12 @@ const messages = defineMessages({
 })
 
 class Sidebar extends React.Component {
-  componentWillReceiveProps ({title, image, solar, water, text, show}) {
+  componentWillReceiveProps ({title, image, solar, water, waterRequired, text, show}) {
     const propsUnchanged = title === this.props.title &&
       image === this.props.image &&
       solar === this.props.solar &&
       water === this.props.water &&
+      waterRequired === this.props.waterRequired &&
       text === this.props.text &&
       show === this.props.show
     if (propsUnchanged || !this.scrollContent) return
@@ -56,6 +57,7 @@ class Sidebar extends React.Component {
       title,
       solar,
       water,
+      waterRequired,
       text,
       listTitle,
       list,
@@ -80,14 +82,14 @@ class Sidebar extends React.Component {
             paragraph: props => <Typography gutterBottom type='body'>{props.children}</Typography>
           }} />
         </div>}
-        {!!(solar + water) && <div className={classes.sectionTitle}>
+        {(installationsCount || waterRequired) && <div className={classes.sectionTitle}>
           <Typography type='sectionTitle'>
             <FormattedMessage {...messages.installations} />
           </Typography>
         </div>}
-        {!!(solar + water) && <div className={classes.padding}>
-          <SidebarCounts water={water} solar={solar} show={show} />
-        </div>}
+        <div className={classes.padding}>
+          <SidebarCounts water={water} waterRequired={waterRequired} solar={solar} show={show} />
+        </div>
         {listTitle && list && !!list.length && <div className={classes.sectionTitle}>
           <Typography type='sectionTitle'>{listTitle}</Typography>
         </div>}
@@ -109,6 +111,8 @@ Sidebar.propTypes = {
   solar: PropTypes.number.isRequired,
   /* Total number of water installations for this sidebar context */
   water: PropTypes.number.isRequired,
+  /* Total number of water installations required to show at top of sidebar */
+  waterRequired: PropTypes.number.isRequired,
   /* URL to image to show at top of sidebar */
   image: PropTypes.string,
   /* Sidebar body text */
@@ -128,6 +132,7 @@ Sidebar.defaultProps = {
   title: 'Loading…',
   solar: 0,
   water: 0,
+  waterRequired: 0,
   stories: false
 }
 
