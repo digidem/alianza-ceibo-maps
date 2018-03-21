@@ -27,7 +27,7 @@ class Donatebutton extends React.Component {
     return <div className={classes.root}>
       <Typography type='sectionTitle'>
         <FormattedMessage {...messages.text} />
-        <Link to='http://clearwater.com/donate'>
+        <Link to='https://www.amazonfrontlines.org/donate/'>
           <FormattedMessage {...messages.linkText} />
         </Link>
       </Typography>

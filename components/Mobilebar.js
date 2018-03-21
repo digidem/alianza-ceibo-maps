@@ -23,7 +23,8 @@ const messages = defineMessages({
   // Map legend item: communities with water and solar installations
   waterSolar: 'Water & Solar Installations',
   // Map legend item: communities with a story
-  story: 'Communities With Story'
+  story: 'Communities With Story',
+  donateText: 'Donate'
 })
 
 var mobilebarHeight = 50
@@ -35,6 +36,7 @@ const styles = {
   },
   link: {
     textDecoration: 'none',
+    color: '#cccccc',
     '&:hover': {
       textDecoration: 'none',
       cursor: 'pointer'
@@ -164,6 +166,11 @@ class Mobilebar extends React.Component {
         </div>
       </Typography>}
       <div className={classes.mobilebar}>
+        <Typography type='sectionTitle' className={classes.mobilebarItem}>
+          <Link className={classNames(classes.link)} to='http://amazonfrontlines.com/donate'>
+            <FormattedMessage {...messages.donateText} />
+          </Link>
+        </Typography>
         {page === 'listView' ? <Typography type='sectionTitle' className={classes.mobilebarItem}>
           <div className={classNames(classes.link)} onClick={this.props.handleMapPageClick}>
             <FormattedMessage {...messages.mapView} />
