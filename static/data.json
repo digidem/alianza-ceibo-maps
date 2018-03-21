@@ -1902,9 +1902,13 @@
           ],
           "Descripción": "Nenquipare significa “estero de sol” en idioma Waorani y, se encuentra por la vía Auca en la provincia de Pastaza. En la comunidad viven ocho familias, las cuales no tienen acceso a electricidad y se demoran tres horas para llegar a la ciudad más cerca para comprar víveres.",
           "Estatus": "Completo",
-          "Agua": 0,
-          "Agua Familias": 0,
-          "Agua Usuarios": 0
+          "Agua": 2,
+          "Agua Familias": 1,
+          "Agua Usuarios": 0,
+          "Installations": [
+            "rectidiiAEYPWtw1q",
+            "rec7lBO8CmoJlPK7v"
+          ]
         },
         "geometry": {
           "type": "Point",
