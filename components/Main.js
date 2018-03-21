@@ -80,7 +80,8 @@ class Main extends React.Component {
   }
 
   componentDidMount () {
-    fetchData((err, data) => {
+    var show = this.props.show
+    fetchData(show, (err, data) => {
       if (err) return console.error(err)
       this.setState({
         data: data
