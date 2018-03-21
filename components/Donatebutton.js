@@ -5,8 +5,7 @@ import { defineMessages, FormattedMessage } from 'react-intl'
 import Typography from './Typography'
 
 const messages = defineMessages({
-  text: 'Support our Work',
-  linkText: 'Donate'
+  text: 'Support our Work - Donate'
 })
 
 var styles = {
@@ -15,23 +14,35 @@ var styles = {
     'position': 'fixed',
     'bottom': '0',
     'width': '100%',
-    'background-color': 'rgba(51,51,51,.8)',
-    'color': 'white',
-    'text-align': 'center'
+    'text-align': 'center',
+    'z-index': 999,
+    'background-color': 'white',
+    textDecoration: 'none',
+    'border-color': '#be9926',
+    'border-top': '1px solid',
+    '&:hover': {
+      textDecoration: 'none',
+      cursor: 'pointer',
+      'background-color': '#be9926'
+    }
+  },
+  text: {
+    'color': '#be9926',
+    'line-height': '30px',
+    '&:hover': {
+      color: 'white'
+    }
   }
 }
 
 class Donatebutton extends React.Component {
   render () {
     const {classes} = this.props
-    return <div className={classes.root}>
-      <Typography type='sectionTitle'>
+    return <Link className={classes.root} to='https://www.amazonfrontlines.org/donate/' target='_blank'>
+      <Typography className={classes.text} type='sectionTitle'>
         <FormattedMessage {...messages.text} />
-        <Link to='https://www.amazonfrontlines.org/donate/'>
-          <FormattedMessage {...messages.linkText} />
-        </Link>
       </Typography>
-    </div>
+    </Link>
   }
 }
 
