@@ -1747,7 +1747,8 @@
             "recq16xLYm7h5uo4d",
             "recQfumxFH26wx1Ws",
             "recR8h5hfI7QZH2IO",
-            "rec7kwl7lhprgP86s"
+            "rec7kwl7lhprgP86s",
+            "recBJAjn80u68RAtt"
           ],
           "Nacionalidad": [
             "rec7nhastozSVnJax"
@@ -1785,8 +1786,8 @@
           ],
           "Descripción": "La comunidad de Nemonpare se sitúa por las orillas del río Curaray  en la provincia de Pastaza.  Se nombró la comunidad en honor de una joven mujer Waorani llamada Nemo quien fue matada por los clanes Waorani enemigos, unos años atrás. Hoy en día, viven ocho familias en Nemonpare. En el 2016, la Alianza Ceibo mediante el programa de Mapeo Territorial, apoyó a la elaboración de un mapa del territorio junto a los miembros de la comunidad, el cual les permite organizarse en la defensa de su territorio. Con el apoyo de los programas de sistemas de agua y de paneles solares, Nemonpare cuenta hoy día con ocho sistemas de agua y ocho sistemas solares. Actualmente la comunidad está organizando su casa, escribir sus estatutos y reglamento interno.",
           "Estatus": "Completo",
-          "Agua": 7,
-          "Agua Familias": 7,
+          "Agua": 8,
+          "Agua Familias": 8,
           "Agua Usuarios": 28,
           "Most recent": "2015-08-20",
           "First": "2015-08-20"
@@ -1902,13 +1903,22 @@
           ],
           "Descripción": "Nenquipare significa “estero de sol” en idioma Waorani y, se encuentra por la vía Auca en la provincia de Pastaza. En la comunidad viven ocho familias, las cuales no tienen acceso a electricidad y se demoran tres horas para llegar a la ciudad más cerca para comprar víveres.",
           "Estatus": "Completo",
-          "Agua": 2,
-          "Agua Familias": 1,
+          "Agua": 9,
+          "Agua Familias": 9,
           "Agua Usuarios": 0,
           "Installations": [
             "rectidiiAEYPWtw1q",
-            "rec7lBO8CmoJlPK7v"
-          ]
+            "rec7lBO8CmoJlPK7v",
+            "rec2KUj5ryHENmKgJ",
+            "recPdWf97TJRvva8v",
+            "receGw6D85EHDtUvM",
+            "reciDOVrMfhYTxnas",
+            "recJ0ou3cZLAKMlmj",
+            "recw8fusry726UZ3A",
+            "recI12GKRjFN0wOna"
+          ],
+          "Most recent": "2017-11-29",
+          "First": "2017-11-29"
         },
         "geometry": {
           "type": "Point",
@@ -2186,7 +2196,14 @@
             "recFzlk3tR4nn37dE",
             "recNAB5RZjQ20M73i",
             "recSsFf63fumznziG",
-            "recITlmTtx4yoRSIx"
+            "recITlmTtx4yoRSIx",
+            "recTkzFCh3nNTWDDf",
+            "recvTu77idLHgDjh2",
+            "recJcZjQ3d9Y158Fw",
+            "recydcl7WaEBD06fI",
+            "rec8VYSdxf4kExn2f",
+            "rec0QWIOJCyc2fLc3",
+            "recsdnbIPLhRajoU7"
           ],
           "Nacionalidad": [
             "rec7nhastozSVnJax"
@@ -2220,8 +2237,8 @@
           ],
           "Descripción": "La comunidad de Miwaguno se encuentra en la provincia de Orellana y se caracteriza por la gran diversidad de su fauna y de su flora dentro de los bosques tropicales que la rodean. También conocida como “río de los chiparros” en idioma Waorani, Miwaguno fue dejada de lado durante muchos años por las autoridades provinciales. Por esta razón, muchas de las familias se fueron a trabajar para las compañías petroleras, recibiendo un sueldo, aunque sea mínimo. ",
           "Estatus": "Completo",
-          "Agua": 23,
-          "Agua Familias": 30,
+          "Agua": 30,
+          "Agua Familias": 37,
           "Agua Usuarios": 155,
           "Most recent": "2014-04-23",
           "First": "2014-04-12"
