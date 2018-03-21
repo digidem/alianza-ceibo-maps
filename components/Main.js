@@ -97,7 +97,6 @@ class Main extends React.Component {
         name: data.nations[key].properties._nationName,
         color: data.nations[key].properties._color
       }))
-      .filter(nation => nation.name !== 'Kichwa')
   }
 
   getSidebarData () {
