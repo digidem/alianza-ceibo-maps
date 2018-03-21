@@ -2727,9 +2727,18 @@
             "recIq6n5ZvMvvML2S",
             "recKGX2RAk21vU3Ec",
             "rec8d3L2gCNR3XK7q"
-          ]
+          ],
+          "Lat": -0.681777,
+          "Lon": -76.787766,
+          "Estatus": "Completo"
         },
-        "geometry": null
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.787766,
+            -0.681777
+          ]
+        }
       },
       {
         "type": "Feature",
