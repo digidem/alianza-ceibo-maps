@@ -3126,9 +3126,19 @@
           ],
           "Descripción": "En idioma Waorani, Peneno significa “río de los plátanos” debido a que antiguamente las familias solían sembrar plátanos a la orilla del río Tivacuno, el cual bordea la comunidad. La comunidad se encuentra en la vía Maxus dentro del parque nacional Yasuní y sus familias se dedican a la caza, la pesca.",
           "Estatus": "Completo",
-          "Agua": 0,
-          "Agua Familias": 0,
-          "Agua Usuarios": 0
+          "Agua": 6,
+          "Agua Familias": 6,
+          "Agua Usuarios": 0,
+          "Installations": [
+            "rec5HZSL2K8vWLbX9",
+            "recOlG4XkP2RHMcy9",
+            "rec02hMIoyOpN4doL",
+            "rec4m1pj2V1A2J6hm",
+            "recq7T4kstZ788vjq",
+            "recTNGZkMSNBSg1LE"
+          ],
+          "Most recent": "2017-12-20",
+          "First": "2017-12-20"
         },
         "geometry": {
           "type": "Point",
