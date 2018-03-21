@@ -661,7 +661,8 @@
           "Agua Familias": 7,
           "Agua Usuarios": 28,
           "Most recent": "2017-08-15",
-          "First": "2017-08-15"
+          "First": "2017-08-15",
+          "Estatus": "Completo"
         },
         "geometry": {
           "type": "Point",
@@ -1570,7 +1571,8 @@
           "Agua Familias": 4,
           "Agua Usuarios": 16,
           "Most recent": "2014-12-30",
-          "First": "2014-12-30"
+          "First": "2014-12-30",
+          "Estatus": "Completo"
         },
         "geometry": {
           "type": "Point",
@@ -3308,7 +3310,8 @@
           "Agua Familias": 0,
           "Agua Usuarios": 0,
           "Lon": -76.15308877784759,
-          "Lat": 1.296347
+          "Lat": 1.296347,
+          "Estatus": "Planificado"
         },
         "geometry": {
           "type": "Point",
@@ -3582,7 +3585,8 @@
           "Agua Familias": 0,
           "Agua Usuarios": 0,
           "Lat": -1.262108,
-          "Lon": -76.38714072036643
+          "Lon": -76.38714072036643,
+          "Estatus": "Planificado"
         },
         "geometry": {
           "type": "Point",
