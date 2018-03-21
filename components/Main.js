@@ -10,6 +10,7 @@ import Media from 'react-media'
 import Sidebar from './Sidebar'
 import Mobilebar from './Mobilebar'
 import Topbar from './Topbar'
+import Donatebutton from './Donatebutton'
 import MapView from './Map'
 import getSidebarData from '../lib/sidebar_data'
 import { fetch as fetchData } from '../lib/data'
@@ -195,6 +196,10 @@ class Main extends React.Component {
           handleListPageClick={this.handleListPageClick}
           handleMapPageClick={this.handleMapPageClick}
           nationList={this.getNationList()} />} />
+      <Media query='(min-width: 600px)'
+        render={() =>
+          <Donatebutton />
+        } />
     </div>
   }
 }
