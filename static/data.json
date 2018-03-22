@@ -1189,7 +1189,7 @@
             "rec7nhastozSVnJax"
           ],
           "Lon": -77.07712,
-          "Lat": 0,
+          "Lat": 0.00001,
           "Programas": [
             "Sistemas de agua",
             "Mujer y familia"
@@ -1202,7 +1202,13 @@
           "Most recent": "2017-08-15",
           "First": "2017-08-15"
         },
-        "geometry": null
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -77.07712,
+            0.00001
+          ]
+        }
       },
       {
         "type": "Feature",
