@@ -657,12 +657,12 @@
             "Mujer y familia"
           ],
           "Descripción": "La comunidad de Wentaro, cuyo nombre significa “río oscuro” en idioma Waorani, está ubicada en la provincia de Pastaza. Ocho familias viven en esta comunidad remota y rodeada por varios bosques tropicales. Disponen de un pequeño panel solar que les permite conectar un radio, único medio de comunicación con el exterior.",
+          "Estatus": "Completo",
           "Agua": 7,
           "Agua Familias": 7,
           "Agua Usuarios": 28,
           "Most recent": "2017-08-15",
-          "First": "2017-08-15",
-          "Estatus": "Completo"
+          "First": "2017-08-15"
         },
         "geometry": {
           "type": "Point",
@@ -1584,12 +1584,12 @@
             "Mujer y familia"
           ],
           "Descripción": "La comunidad de Timpoca se encuentra al borde de la vía Maxus en el parque nacional Yasuní y a la orilla del río Tiputini.",
+          "Estatus": "Completo",
           "Agua": 4,
           "Agua Familias": 4,
           "Agua Usuarios": 16,
           "Most recent": "2014-12-30",
-          "First": "2014-12-30",
-          "Estatus": "Completo"
+          "First": "2014-12-30"
         },
         "geometry": {
           "type": "Point",
@@ -1831,16 +1831,16 @@
           "Nacionalidad": [
             "rec7nhastozSVnJax"
           ],
-          "Agua Requerido": 12,
-          "Estatus": "Planificado",
-          "Agua": 0,
-          "Agua Familias": 0,
-          "Agua Usuarios": 0,
           "Lon": -77.53705,
           "Lat": -1.17732,
           "Programas": [
             "Sistemas de agua"
-          ]
+          ],
+          "Agua Requerido": 12,
+          "Estatus": "Planificado",
+          "Agua": 0,
+          "Agua Familias": 0,
+          "Agua Usuarios": 0
         },
         "geometry": {
           "type": "Point",
@@ -1918,6 +1918,17 @@
         "id": "recKWlidS4Y9g5Z6R",
         "properties": {
           "Comunidad": "Nenquipare",
+          "Installations": [
+            "rectidiiAEYPWtw1q",
+            "rec7lBO8CmoJlPK7v",
+            "rec2KUj5ryHENmKgJ",
+            "recPdWf97TJRvva8v",
+            "receGw6D85EHDtUvM",
+            "reciDOVrMfhYTxnas",
+            "recJ0ou3cZLAKMlmj",
+            "recw8fusry726UZ3A",
+            "recI12GKRjFN0wOna"
+          ],
           "Nacionalidad": [
             "rec7nhastozSVnJax"
           ],
@@ -1932,17 +1943,6 @@
           "Agua": 9,
           "Agua Familias": 9,
           "Agua Usuarios": 0,
-          "Installations": [
-            "rectidiiAEYPWtw1q",
-            "rec7lBO8CmoJlPK7v",
-            "rec2KUj5ryHENmKgJ",
-            "recPdWf97TJRvva8v",
-            "receGw6D85EHDtUvM",
-            "reciDOVrMfhYTxnas",
-            "recJ0ou3cZLAKMlmj",
-            "recw8fusry726UZ3A",
-            "recI12GKRjFN0wOna"
-          ],
           "Most recent": "2017-11-29",
           "First": "2017-11-29"
         },
@@ -2637,9 +2637,6 @@
         "id": "recSjhaI1IFsPImSq",
         "properties": {
           "Comunidad": "Rumipamba",
-          "Agua": 85,
-          "Agua Familias": 85,
-          "Agua Usuarios": 0,
           "Installations": [
             "recMoU2qzK99QmWfA",
             "recikkli7PDYUrf9j",
@@ -2727,9 +2724,15 @@
             "recKGX2RAk21vU3Ec",
             "rec8d3L2gCNR3XK7q"
           ],
-          "Lat": -0.681777,
           "Lon": -76.787766,
-          "Estatus": "Completo"
+          "Lat": -0.681777,
+          "Estatus": "Completo",
+          "Agua": 85,
+          "Agua Familias": 85,
+          "Agua Usuarios": 0,
+          "Programas": [
+            "Sistemas de agua"
+          ]
         },
         "geometry": {
           "type": "Point",
@@ -3272,6 +3275,14 @@
         "id": "recZO42URyar47XiJ",
         "properties": {
           "Comunidad": "Peneno",
+          "Installations": [
+            "rec5HZSL2K8vWLbX9",
+            "recOlG4XkP2RHMcy9",
+            "rec02hMIoyOpN4doL",
+            "rec4m1pj2V1A2J6hm",
+            "recq7T4kstZ788vjq",
+            "recTNGZkMSNBSg1LE"
+          ],
           "Nacionalidad": [
             "rec7nhastozSVnJax"
           ],
@@ -3286,14 +3297,6 @@
           "Agua": 6,
           "Agua Familias": 6,
           "Agua Usuarios": 0,
-          "Installations": [
-            "rec5HZSL2K8vWLbX9",
-            "recOlG4XkP2RHMcy9",
-            "rec02hMIoyOpN4doL",
-            "rec4m1pj2V1A2J6hm",
-            "recq7T4kstZ788vjq",
-            "recTNGZkMSNBSg1LE"
-          ],
           "Most recent": "2017-12-20",
           "First": "2017-12-20"
         },
@@ -3313,6 +3316,8 @@
           "Nacionalidad": [
             "rec7QOgAYxMln7nHN"
           ],
+          "Lon": -76.287586,
+          "Lat": 0.432503,
           "Programas": [
             "Sistemas de agua"
           ],
@@ -3320,9 +3325,7 @@
           "Estatus": "Planificado",
           "Agua": 0,
           "Agua Familias": 0,
-          "Agua Usuarios": 0,
-          "Lon": -76.287586,
-          "Lat": 0.432503
+          "Agua Usuarios": 0
         },
         "geometry": {
           "type": "Point",
@@ -3441,16 +3444,16 @@
           "Nacionalidad": [
             "rec7nhastozSVnJax"
           ],
-          "Agua Requerido": 26,
-          "Agua": 0,
-          "Agua Familias": 0,
-          "Agua Usuarios": 0,
           "Lon": -76.15308877784759,
           "Lat": 1.296347,
-          "Estatus": "Planificado",
           "Programas": [
             "Sistemas de agua"
-          ]
+          ],
+          "Agua Requerido": 26,
+          "Estatus": "Planificado",
+          "Agua": 0,
+          "Agua Familias": 0,
+          "Agua Usuarios": 0
         },
         "geometry": {
           "type": "Point",
@@ -3594,19 +3597,19 @@
           "Nacionalidad": [
             "rec7nhastozSVnJax"
           ],
+          "Lon": -76.21435,
+          "Lat": -0.9371,
+          "Programas": [
+            "Sistemas de agua",
+            "Mujer y familia"
+          ],
+          "Descripción": "Dikaro significa “río de piedras” en idioma Waorani. Ubicada dentro del parque nacional Yasuní, al kilómetro noventa y ocho de la vía Maxus, las familias en Dicaro se dedican a la caza y a la pesca para alimentar a sus familia. Con el apoyo de la Asociación de Mujeres Waorani (AMWAE), Dicaro tiene una producción de cacao destinado a la venta.",
           "Estatus": "Completo",
           "Agua": 45,
           "Agua Familias": 44,
           "Agua Usuarios": 0,
           "Most recent": "2016-12-15",
-          "First": "2016-12-15",
-          "Descripción": "Dikaro significa “río de piedras” en idioma Waorani. Ubicada dentro del parque nacional Yasuní, al kilómetro noventa y ocho de la vía Maxus, las familias en Dicaro se dedican a la caza y a la pesca para alimentar a sus familia. Con el apoyo de la Asociación de Mujeres Waorani (AMWAE), Dicaro tiene una producción de cacao destinado a la venta.",
-          "Programas": [
-            "Sistemas de agua",
-            "Mujer y familia"
-          ],
-          "Lon": -76.21435,
-          "Lat": -0.9371
+          "First": "2016-12-15"
         },
         "geometry": {
           "type": "Point",
@@ -3719,16 +3722,16 @@
           "Nacionalidad": [
             "rec7nhastozSVnJax"
           ],
-          "Agua Requerido": 6,
-          "Agua": 0,
-          "Agua Familias": 0,
-          "Agua Usuarios": 0,
-          "Lat": -1.262108,
           "Lon": -76.38714072036643,
-          "Estatus": "Planificado",
+          "Lat": -1.262108,
           "Programas": [
             "Sistemas de agua"
-          ]
+          ],
+          "Agua Requerido": 6,
+          "Estatus": "Planificado",
+          "Agua": 0,
+          "Agua Familias": 0,
+          "Agua Usuarios": 0
         },
         "geometry": {
           "type": "Point",
@@ -3824,6 +3827,8 @@
           "Nacionalidad": [
             "recmAG2tQi6scRRzZ"
           ],
+          "Lon": -77.095945,
+          "Lat": 0.295955,
           "Programas": [
             "Sistemas de agua"
           ],
@@ -3831,9 +3836,7 @@
           "Estatus": "Planificado",
           "Agua": 0,
           "Agua Familias": 0,
-          "Agua Usuarios": 0,
-          "Lat": 0.295955,
-          "Lon": -77.095945
+          "Agua Usuarios": 0
         },
         "geometry": {
           "type": "Point",
@@ -4573,6 +4576,8 @@
           "Nacionalidad": [
             "recHGwwudtmODsfLg"
           ],
+          "Lon": -75.36582639867346,
+          "Lat": -0.95335,
           "Programas": [
             "Sistemas de agua"
           ],
@@ -4580,9 +4585,7 @@
           "Estatus": "Planificado",
           "Agua": 0,
           "Agua Familias": 0,
-          "Agua Usuarios": 0,
-          "Lat": -0.95335,
-          "Lon": -75.36582639867346
+          "Agua Usuarios": 0
         },
         "geometry": {
           "type": "Point",
@@ -4622,18 +4625,18 @@
           "Nacionalidad": [
             "rec7nhastozSVnJax"
           ],
-          "Estatus": "Completo",
-          "Agua": 20,
-          "Agua Familias": 20,
-          "Agua Usuarios": 80,
-          "Most recent": "2017-08-15",
-          "First": "2017-08-15",
           "Lon": -77.16446,
           "Lat": -1.02046,
           "Programas": [
             "Sistemas de agua",
             "Mujer y familia"
-          ]
+          ],
+          "Estatus": "Completo",
+          "Agua": 20,
+          "Agua Familias": 20,
+          "Agua Usuarios": 80,
+          "Most recent": "2017-08-15",
+          "First": "2017-08-15"
         },
         "geometry": {
           "type": "Point",
