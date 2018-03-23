@@ -2741,6 +2741,15 @@
           ],
           "Nacionalidad": [
             "recZAO8E6PBu2ygvn"
+          ],
+          "Foto": [
+            {
+              "id": "attT4v4d07dk0rpDi",
+              "url": "https://dl.airtable.com/xiMRjSUR7qJIzTq8uDfF_021762085648c1911c4c4ad7e3f5945120519607.jpg",
+              "filename": "021762085648c1911c4c4ad7e3f5945120519607.jpg",
+              "size": 2091726,
+              "type": "image/jpeg"
+            }
           ]
         },
         "geometry": {
