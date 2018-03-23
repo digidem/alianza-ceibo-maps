@@ -11,7 +11,8 @@ const messages = defineMessages({
   // Label for count of solar installations
   solar: 'Solar',
   // Label for count of coming soon water installations,
-  waterRequired: 'Underway in 2018'
+  waterBuilt: 'Built',
+  waterRequired: 'Underway'
 })
 
 const styles = {
@@ -118,21 +119,23 @@ Count.propTypes = {
   icon: PropTypes.string.isRequired
 }
 
-const SidebarCounts = ({water, waterRequired, solar, classes, show}) => (
-  <div className={classes.outer}>
+const SidebarCounts = ({water, waterRequired, solar, classes, show}) => {
+  const leftName = show === 'agua' ? messages.waterBuilt : messages.water
+
+  return (<div className={classes.outer}>
     <div className={classes.root}>
       {show !== 'solar' && water && <Count
         icon='/icons/water.svg'
         total={water}
-        name={<FormattedMessage {...messages.water} />}
+        name={<FormattedMessage {...leftName} />}
         classes={classes} />
       }
+      <div className={classes.divider} />
       {show !== 'solar' && waterRequired > 0 && <Count
         icon='/icons/agua-requerido.svg'
         total={waterRequired}
         name={<FormattedMessage {...messages.waterRequired} />}
         classes={classes} />}
-      {!show && <div className={classes.divider} />}
       {show !== 'agua' && solar && <Count
         icon='/icons/solar.svg'
         total={solar}
@@ -140,7 +143,8 @@ const SidebarCounts = ({water, waterRequired, solar, classes, show}) => (
         classes={classes} /> }
     </div>
   </div>
-)
+  )
+}
 
 SidebarCounts.propTypes = {
   water: PropTypes.number,
