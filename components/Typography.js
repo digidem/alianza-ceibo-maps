@@ -39,7 +39,7 @@ const styles = {
     letterSpacing: '0.05em'
   },
   listTitle: {
-    fontSize: '1.3rem',
+    fontSize: '1.2rem',
     color: 'rgb(153, 51, 0)',
     fontWeight: 600,
     lineHeight: 1.2,
