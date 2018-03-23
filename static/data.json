@@ -2738,6 +2738,9 @@
           "Agua Usuarios": 0,
           "Programas": [
             "Sistemas de agua"
+          ],
+          "Nacionalidad": [
+            "recZAO8E6PBu2ygvn"
           ]
         },
         "geometry": {
@@ -5204,6 +5207,39 @@
             "recy3BZ5TP6lwZEwt",
             "reck5JuhF5oB2WDyM",
             "recxg0pHkjl3B7GUu"
+          ]
+        },
+        "geometry": null
+      },
+      {
+        "type": "Feature",
+        "id": "recZAO8E6PBu2ygvn",
+        "properties": {
+          "Nacionalidad": "Kichwa of Rumipamba",
+          "Resumen": "The Kichwa community of Rumipamba is emblematic of oil contamination in the Amazon. Open waste pits and oil spills left by Chevron-Texaco pockmark the community. For several years in fact, cleaning up the mess left by oil companies was a job for many community members, who were hired by the state oil company Petroamazonas to clean up oil waste in the community. Starting in 2011 and finishing in 2014, the ClearWater project worked in Rumipamba to build rainwater catchment systems that would provide clean drinking water to some of the families hit hardest by the oil industry. Now every family in Rumipamba has access to clean, safe drinking water. ",
+          "Foto": [
+            {
+              "id": "attk3aix5Y2mVQ6B2",
+              "url": "https://dl.airtable.com/XRTout2Trm1VTFuIFEHw_kichwa.jpg",
+              "filename": "kichwa.jpg",
+              "size": 124597,
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/G9enQM7OQWSCoGjaN0BD_small_kichwa.jpg",
+                  "width": 54,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/fSnACiAmSYWjx6gClhMB_large_kichwa.jpg",
+                  "width": 772,
+                  "height": 512
+                }
+              }
+            }
+          ],
+          "Comunidades": [
+            "recSjhaI1IFsPImSq"
           ]
         },
         "geometry": null
