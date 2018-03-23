@@ -235,7 +235,7 @@ class MapView extends React.Component {
     // at zoom 14
     if (nation && community) {
       const communityFeature = nationFeature.communities[community]
-      if (!communityFeature) return
+      if (!communityFeature || !communityFeature.geometry) return
       return map.flyTo({
         center: communityFeature.geometry.coordinates,
         zoom: 14
@@ -245,12 +245,13 @@ class MapView extends React.Component {
     // If navigation is an area, zoom to that area
     if (nation && area) {
       const areaFeature = data.areas[area]
-      if (!areaFeature) return
+      if (!areaFeature || !areaFeature.bbox) return
       return map.fitBounds(areaFeature.bbox, {padding: 20})
     }
 
     // If current navigation is a nation, zoom to all areas for that nation
     if (nation) {
+      if (!nationFeature || !nationFeature.bbox) return
       return map.fitBounds(nationFeature.bbox, {padding: 20})
     }
   }
