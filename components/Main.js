@@ -30,7 +30,8 @@ const styles = {
   },
   sidebarDesktop: {
     maxWidth: 400,
-    minWidth: 350
+    minWidth: 350,
+    'margin-bottom': 30
   },
   sidebar: {
     flex: 1,
