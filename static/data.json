@@ -5033,6 +5033,12 @@
                 }
               }
             }
+          ],
+          "Nacionalidad": [
+            "recZAO8E6PBu2ygvn"
+          ],
+          "Color": [
+            "rgb(255, 165, 0)"
           ]
         },
         "geometry": null
@@ -5241,7 +5247,10 @@
           "Comunidades": [
             "recSjhaI1IFsPImSq"
           ],
-          "Color": "rgb(255, 165, 0)"
+          "Color": "rgb(255, 165, 0)",
+          "Area": [
+            "recq7JCzDcDUz82Gx"
+          ]
         },
         "geometry": null
       },
