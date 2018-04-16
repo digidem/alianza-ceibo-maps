@@ -24,7 +24,7 @@
     "description": "Installation count for sidebar list subheading"
   },
   "components.Topbar.overview": {
-    "message": "Map Overview",
+    "message": "Resumen del Mapa",
     "description": "Link in top bar to zoom out to whole map"
   },
   "components.Topbar.legend": {
@@ -48,7 +48,7 @@
     "description": "Map legend item: communities with a story"
   },
   "lib.sidebar_data.homeTitle": {
-    "message": "Where We Work",
+    "message": "Donde trabajamos",
     "description": "Sidebar initial title"
   },
   "lib.sidebar_data.homeListTitle": {
