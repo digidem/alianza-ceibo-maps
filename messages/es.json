@@ -20,7 +20,7 @@
     "description": "Communities count for sidebar subheading"
   },
   "components.SidebarListItem.installationsCount": {
-    "message": "403 INSTALACIONES TOTALES",
+    "message": "{count, plural, =0 {instalaciones 0} one {1 instalación} other {# instalaciones en total}}",
     "description": "Installation count for sidebar list subheading"
   },
   "components.Topbar.overview": {
