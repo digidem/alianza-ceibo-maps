@@ -91,7 +91,7 @@ storiesOf('Sidebar', module)
   .add('Sidebar', () => (
     <div style={{maxHeight: 700, display: 'flex'}}>
       <Sidebar
-        title='Where We Work'
+        intlTitle='Where We Work'
         image='https://placeimg.com/500/500/nature'
         water={195}
         solar={54}

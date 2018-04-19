@@ -27,17 +27,19 @@ const styles = {
   }
 }
 
-const SidebarHeader = ({title, installationsCount, communitiesCount, className, classes}) => (
-  <div className={classNames(classes.root, className)}>
-    <Typography gutterBottom type='title'>{title}</Typography>
-    {!!installationsCount && <Typography type='subtitle'>
-      <FormattedMessage {...messages.installationsCount} values={{count: installationsCount}} />
-    </Typography>}
-    {!!communitiesCount && <Typography type='subtitle'>
-      <FormattedMessage {...messages.communitiesCount} values={{count: communitiesCount}} />
-    </Typography>}
-  </div>
-)
+const SidebarHeader = ({title, installationsCount, communitiesCount, className, classes}) => {
+  return (
+    <div className={classNames(classes.root, className)}>
+      <Typography gutterBottom type='title'>{title}</Typography>
+      {!!installationsCount && <Typography type='subtitle'>
+        <FormattedMessage {...messages.installationsCount} values={{count: installationsCount}} />
+      </Typography>}
+      {!!communitiesCount && <Typography type='subtitle'>
+        <FormattedMessage {...messages.communitiesCount} values={{count: communitiesCount}} />
+      </Typography>}
+    </div>
+  )
+}
 
 SidebarHeader.propTypes = {
   title: PropTypes.string.isRequired,

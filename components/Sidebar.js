@@ -39,9 +39,9 @@ const messages = defineMessages({
 })
 
 class Sidebar extends React.Component {
-  componentWillReceiveProps ({title, image, solar, water, waterRequired, text, show}) {
-    const propsUnchanged = title === this.props.title &&
-      image === this.props.image &&
+  componentWillReceiveProps ({image, solar, water, waterRequired, text, intlTitle, show}) {
+    const propsUnchanged = image === this.props.image &&
+      intlTitle === this.props.intlTitle &&
       solar === this.props.solar &&
       water === this.props.water &&
       waterRequired === this.props.waterRequired &&
@@ -54,7 +54,7 @@ class Sidebar extends React.Component {
   render () {
     const {
       image,
-      title,
+      intlTitle,
       solar,
       water,
       waterRequired,
@@ -72,7 +72,7 @@ class Sidebar extends React.Component {
     const installationsCount = getInstallationsCount(show, {water, solar})
 
     return <div className={className} ref={el => (this.scrollContent = el)}>
-      <SidebarHeader title={title} installationsCount={installationsCount} />
+      <SidebarHeader title={intlTitle} installationsCount={installationsCount} />
       <div className={classes.content}>
         {image && <Image src={image} ratio='4x3' />}
         {text && <div className={classes.padding}>
@@ -109,8 +109,8 @@ function getInstallationsCount (show, item) {
 }
 
 Sidebar.propTypes = {
-  /* Sidebar title */
-  title: PropTypes.string,
+  /* Internationalized title */
+  intlTitle: PropTypes.string.isRequired,
   /* Total number of solar installations for this sidebar context */
   solar: PropTypes.number.isRequired,
   /* Total number of water installations for this sidebar context */

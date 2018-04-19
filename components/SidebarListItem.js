@@ -71,31 +71,34 @@ const styles = {
   }
 }
 
-const SidebarListItem = ({id, name, total, color, featured, image, baseUrl, onHover, classes}) => (
-  <li className={classes.root} onMouseEnter={() => onHover(id)} onMouseLeave={() => onHover()}>
-    <Link to={`${baseUrl}/${window.encodeURIComponent(name)}`} className={classes.link}>
-      <div className={classes.wrapper}>
-        <div className={classes.label}>
-          <Typography type='listTitle'>{name}</Typography>
-          <Typography type='listSubtitle' noWrap>
-            <FormattedMessage {...messages.installationsCount} values={{count: total}} />
-          </Typography>
+const SidebarListItem = ({id, intlName, name, total, color, featured, image, baseUrl, onHover, classes}) => {
+  return (
+    <li className={classes.root} onMouseEnter={() => onHover(id)} onMouseLeave={() => onHover()}>
+      <Link to={`${baseUrl}/${window.encodeURIComponent(name)}`} className={classes.link}>
+        <div className={classes.wrapper}>
+          <div className={classes.label}>
+            <Typography type='listTitle'>{intlName || name}</Typography>
+            <Typography type='listSubtitle' noWrap>
+              <FormattedMessage {...messages.installationsCount} values={{count: total}} />
+            </Typography>
+          </div>
+          <div className={classes.image}>
+            {image && <Image src={image} ratio='3x2' />}
+          </div>
         </div>
-        <div className={classes.image}>
-          {image && <Image src={image} ratio='3x2' />}
-        </div>
-      </div>
-      {featured && <img src='/icons/star.svg' className={classes.featuredIcon} />}
-      {color && <div className={classes.color} style={{backgroundColor: color}}>
-        {featured && <img src='/icons/play.svg' className={classes.playIcon} />}
-      </div>}
-    </Link>
-  </li>
-)
+        {featured && <img src='/icons/star.svg' className={classes.featuredIcon} />}
+        {color && <div className={classes.color} style={{backgroundColor: color}}>
+          {featured && <img src='/icons/play.svg' className={classes.playIcon} />}
+        </div>}
+      </Link>
+    </li>
+  )
+}
 
 SidebarListItem.propTypes = {
   id: PropTypes.string,
   baseUrl: PropTypes.string,
+  intlName: PropTypes.string,
   name: PropTypes.string.isRequired,
   total: PropTypes.number,
   color: PropTypes.string,
