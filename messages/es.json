@@ -12,7 +12,7 @@
     "description": "Label for count of solar installations"
   },
   "components.SidebarHeader.installationsCount": {
-    "message": "{count, plural, =0 {0 total installations} one {1 total installation} other {# total installations}}",
+    "message": "{count, plural, =0 {0 instalaciones en total} one {1 instalación en total} other {# instalaciones en total}}",
     "description": "Installation count for sidebar subheading"
   },
   "components.SidebarHeader.communitiesCount": {
@@ -48,7 +48,7 @@
     "description": "Map legend item: communities with a story"
   },
   "lib.sidebar_data.homeTitle": {
-    "message": "Donde trabajamos",
+    "message": "Dónde Trabajamos",
     "description": "Sidebar initial title"
   },
   "lib.sidebar_data.homeListTitle": {
