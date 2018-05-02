@@ -58,5 +58,17 @@
   "lib.sidebar_data.homeText": {
     "message": "crwdns15:0crwdne15:0",
     "description": "Sidebar initial text"
+  },
+  "lib.sidebar_data.aguaText": {
+    "message": "crwdns16:0crwdne16:0",
+    "description": "Sidebar initial text for agua map"
+  },
+  "lib.sidebar_data.nationListHeader": {
+    "message": "crwdns17:0crwdne17:0",
+    "description": "Sidebar text for nation list header"
+  },
+  "lib.sidebar_data.areaListHeader": {
+    "message": "crwdns18:0crwdne18:0",
+    "description": "Sidebar text for area list header"
   }
 }
