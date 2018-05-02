@@ -16,7 +16,7 @@
     "description": "Installation count for sidebar subheading"
   },
   "components.SidebarHeader.communitiesCount": {
-    "message": "{count, plural, =0 {0 communities} one {1 community} other {# communities}}",
+    "message": "{count, plural, =0 {¡0 comunidades} one {¡1 comunidad} other {¡# comunidades}}",
     "description": "Communities count for sidebar subheading"
   },
   "components.SidebarListItem.installationsCount": {
@@ -58,5 +58,17 @@
   "lib.sidebar_data.homeText": {
     "message": "AmazonFrontlines y Alianza Ceibo trabajan en iniciativas concretas con más de 60 comunidades de las naciones indígenas Kofan, Siona, Secoya y Huaorani en Ecuador, Perú y Colombia. Explorar el mapa *Donde Trabajamos* para aprender más sobre la historia y situación actual de estas comunidades indígenas. Asegúrese de buscar las *comunidades con historias* para ver videos y leer relatos de primera mano de nuestro trabajo con estas comunidades, acerca del agua potable, energía solar, la defensa territorial y el renacimiento cultural.",
     "description": "Sidebar initial text"
+  },
+  "lib.sidebar_data.aguaText": {
+    "message": "Since 2011, Amazon Frontlines and Ceibo Alliance have built rainwater catchment systems in 72 communities of the Kofán, Siona, Secoya and Waorani indigenous nations living downriver from polluting oil fields, oil palm plantations and cities. Explore the ClearWater project map to see the impact of our work and where we will be building more systems in 2018. By donating to the #LessOilMoreWater campaign you can help us reach our goal of providing every family of these four nations with access to clean, safe drinking water.",
+    "description": "Sidebar initial text for agua map"
+  },
+  "lib.sidebar_data.nationListHeader": {
+    "message": "Communities",
+    "description": "Sidebar text for nation list header"
+  },
+  "lib.sidebar_data.areaListHeader": {
+    "message": "Communities in",
+    "description": "Sidebar text for area list header"
   }
 }
