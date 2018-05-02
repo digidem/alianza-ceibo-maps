@@ -16,7 +16,7 @@
     "description": "Installation count for sidebar subheading"
   },
   "components.SidebarHeader.communitiesCount": {
-    "message": "{count, plural, =0 {0 communities} one {1 community} other {# communities}}",
+    "message": "{count, plural, =0 {¡0 comunidades} one {¡1 comunidad} other {¡# comunidades}}",
     "description": "Communities count for sidebar subheading"
   },
   "components.SidebarListItem.installationsCount": {
