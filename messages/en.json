@@ -67,8 +67,8 @@
     "message": "Communities",
     "description": "Sidebar text for nation list header"
   },
-  "lib.sidebar_data.areaListHeader: {
+  "lib.sidebar_data.areaListHeader": {
     "message": "Communities in",
-    "description": Sidebar text for area list header"
+    "description": "Sidebar text for area list header"
   }
 }
