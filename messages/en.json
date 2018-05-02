@@ -63,9 +63,9 @@
     "message": "Since 2011, Amazon Frontlines and Ceibo Alliance have built rainwater catchment systems in 72 communities of the Kofán, Siona, Secoya and Waorani indigenous nations living downriver from polluting oil fields, oil palm plantations and cities. Explore the ClearWater project map to see the impact of our work and where we will be building more systems in 2018. By donating to the #LessOilMoreWater campaign you can help us reach our goal of providing every family of these four nations with access to clean, safe drinking water.",
     "description": "Sidebar initial text for agua map"
   },
-  "lib.sidebar_data.nationListHeader: {
+  "lib.sidebar_data.nationListHeader": {
     "message": "Communities",
-    "description": Sidebar text for nation list header"
+    "description": "Sidebar text for nation list header"
   },
   "lib.sidebar_data.areaListHeader: {
     "message": "Communities in",
