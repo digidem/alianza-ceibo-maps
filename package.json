@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "@digidem/attribution-control": "^1.0.0",
     "@mapbox/geojson-extent": "^0.3.2",
     "alianza-elements": "^3.0.2",
     "classnames": "^2.2.5",

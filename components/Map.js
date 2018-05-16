@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import injectSheet from 'react-jss'
 import mapboxgl from 'mapbox-gl'
 import extent from '@mapbox/geojson-extent'
+import DigidemAttribution from '@digidem/attribution-control'
 import whichPolygon from 'which-polygon'
 
 import layerStyles from '../lib/layer_styles'
@@ -45,7 +46,8 @@ class MapView extends React.Component {
       style: MAP_STYLE,
       pitchWithRotate: false,
       dragRotate: false,
-      container: this.mapContainer
+      container: this.mapContainer,
+      showAttribution: false
     })
 
     this.popup = new mapboxgl.Popup({
@@ -61,6 +63,8 @@ class MapView extends React.Component {
 
     // Add zoom and rotation controls to the map.
     map.addControl(new mapboxgl.NavigationControl({showCompass: false}), 'top-left')
+    map.addControl(new DigidemAttribution(), 'top-right')
+    map.addControl(new mapboxgl.AttributionControl({compact: true}))
 
     map.on('click', 'alianza-areas-fill', this.handleClick)
     map.on('click', 'alianza-communities-dots', this.handleClick)
