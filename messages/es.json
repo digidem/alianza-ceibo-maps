@@ -64,11 +64,11 @@
     "description": "Sidebar initial text for agua map"
   },
   "lib.sidebar_data.nationListHeader": {
-    "message": "Communities",
+    "message": "Comunidades",
     "description": "Sidebar text for nation list header"
   },
   "lib.sidebar_data.areaListHeader": {
-    "message": "Communities in",
+    "message": "Comunidades en",
     "description": "Sidebar text for area list header"
   }
 }
