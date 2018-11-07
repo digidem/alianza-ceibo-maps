@@ -2914,7 +2914,24 @@
               "url": "https://dl.airtable.com/xiMRjSUR7qJIzTq8uDfF_021762085648c1911c4c4ad7e3f5945120519607.jpg",
               "filename": "021762085648c1911c4c4ad7e3f5945120519607.jpg",
               "size": 2091726,
-              "type": "image/jpeg"
+              "type": "image/jpeg",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/rVR7dOBfRMKBJovOfd8g_small_021762085648c1911c4c4ad7e3f5945120519607.jpg",
+                  "width": 54,
+                  "height": 36
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/5PdQFh0LQsmfheeU4i3F_large_021762085648c1911c4c4ad7e3f5945120519607.jpg",
+                  "width": 762,
+                  "height": 512
+                },
+                "full": {
+                  "url": "https://dl.airtable.com/5jAD6qB3RBWHhYREFd0V_full_021762085648c1911c4c4ad7e3f5945120519607.jpg",
+                  "width": 2000,
+                  "height": 1344
+                }
+              }
             }
           ],
           "Estatus": "Completo",
