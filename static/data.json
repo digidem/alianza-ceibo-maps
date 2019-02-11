@@ -589,6 +589,19 @@
     "features": [
       {
         "type": "Feature",
+        "id": "rec01TH5fcLK3Nb8w",
+        "properties": {
+          "Nacionalidad": [
+            "recZAO8E6PBu2ygvn"
+          ],
+          "Agua": 0,
+          "Agua Familias": 0,
+          "Agua Usuarios": 0
+        },
+        "geometry": null
+      },
+      {
+        "type": "Feature",
         "id": "rec1e8A3YqHHWiUA4",
         "properties": {
           "Comunidad": "Bavoroe ",
@@ -5585,7 +5598,8 @@
           ],
           "Color": "rgb(255, 165, 0)",
           "Comunidades": [
-            "recSjhaI1IFsPImSq"
+            "recSjhaI1IFsPImSq",
+            "rec01TH5fcLK3Nb8w"
           ],
           "Nombre Español": "Kichwa de Rumipamba"
         },
