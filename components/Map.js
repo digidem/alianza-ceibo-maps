@@ -12,7 +12,7 @@ import getPopupData from '../lib/popup_data'
 import Popup from './Popup'
 
 /* Mapbox [API access token](https://www.mapbox.com/help/create-api-access-token/) */
-mapboxgl.accessToken = 'pk.eyJ1IjoiZ21hY2xlbm5hbiIsImEiOiJSaWVtd2lRIn0.ASYMZE2HhwkAw4Vt7SavEg'
+mapboxgl.accessToken = 'pk.eyJ1IjoiZ21hY2xlbm5hbiIsImEiOiJjbHNjMHlvY2owNXloMmlxdTVsY3R3N3BtIn0.4SBh4c-N8P9BMtAgR_vKMA'
 
 const MAP_STYLE = 'mapbox://styles/gmaclennan/cjb1e10ya5lwl2sr0hqbzo2l8?optimize=true'
 // const MAP_STYLE = 'http://localhost:8080/style.json'
