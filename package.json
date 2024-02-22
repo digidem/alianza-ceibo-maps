@@ -47,7 +47,7 @@
     "file-watcher-webpack-plugin": "^1.1.0",
     "filewatcher-webpack-plugin": "^1.2.0",
     "gh-pages": "^1.1.0",
-    "mapshaper": "^0.4.60",
+    "mapshaper": "^0.6.44",
     "mkdirp": "^0.5.1",
     "ndjson-cli": "^0.3.1",
     "shapefile": "^0.6.2",
