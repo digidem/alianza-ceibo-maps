@@ -46,7 +46,7 @@
     "es2020": "^1.1.9",
     "file-watcher-webpack-plugin": "^1.1.0",
     "filewatcher-webpack-plugin": "^1.2.0",
-    "gh-pages": "^1.1.0",
+    "gh-pages": "^5.0.0",
     "mapshaper": "^0.4.60",
     "mkdirp": "^0.5.1",
     "ndjson-cli": "^0.3.1",
